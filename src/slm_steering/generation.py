@@ -15,6 +15,7 @@ class GeneratorConfig:
     temperature: float = 0.8
     top_p: float = 0.95
     use_chat_template: bool = True
+    local_files_only: bool = False
 
 
 @dataclass(frozen=True)
@@ -25,7 +26,7 @@ class GeneratedSample:
     seed: int
 
 
-class QwenCodeGenerator:
+class AutoCodeGenerator:
     def __init__(self, config: GeneratorConfig):
         self.config = config
 
@@ -42,6 +43,7 @@ class QwenCodeGenerator:
         self.tokenizer = AutoTokenizer.from_pretrained(
             config.model_id,
             trust_remote_code=True,
+            local_files_only=config.local_files_only,
         )
         if self.tokenizer.pad_token_id is None:
             self.tokenizer.pad_token = self.tokenizer.eos_token
@@ -50,6 +52,7 @@ class QwenCodeGenerator:
             config.model_id,
             torch_dtype=self.dtype,
             trust_remote_code=True,
+            local_files_only=config.local_files_only,
         )
         self.model.to(self.device)
         self.model.eval()
@@ -159,3 +162,6 @@ class QwenCodeGenerator:
             "memory_allocated_mb": self.torch.cuda.memory_allocated() / (1024**2),
             "memory_reserved_mb": self.torch.cuda.memory_reserved() / (1024**2),
         }
+
+
+QwenCodeGenerator = AutoCodeGenerator

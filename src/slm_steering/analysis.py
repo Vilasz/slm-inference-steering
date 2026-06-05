@@ -28,6 +28,20 @@ def load_run(jsonl_path: Path, summary_path: Path | None = None, label: str | No
     return RunBundle(label=label or jsonl_path.stem, records=records, summary=summary)
 
 
+def load_runs_from_manifest(manifest_path: Path) -> list[RunBundle]:
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    runs = []
+    for entry in manifest.get("runs", []):
+        if entry.get("status") not in {"completed", "skipped_existing"}:
+            continue
+        jsonl_path = Path(entry["jsonl_path"])
+        summary_path = Path(entry["summary_path"])
+        if not jsonl_path.exists() or not summary_path.exists():
+            continue
+        runs.append(load_run(jsonl_path, summary_path, label=entry["label"]))
+    return runs
+
+
 def attempts_frame(run: RunBundle) -> pd.DataFrame:
     rows = []
     for record in run.records:
@@ -91,9 +105,19 @@ def comparison_frame(runs: list[RunBundle]) -> pd.DataFrame:
     rows = []
     for run in runs:
         summary = run.summary
+        matrix = summary.get("matrix", {})
+        config = summary.get("config", {})
         rows.append(
             {
                 "run": run.label,
+                "model_key": matrix.get("model_key"),
+                "model_id": matrix.get("model_id") or config.get("model_id"),
+                "family": matrix.get("family"),
+                "parameters_b": matrix.get("parameters_b"),
+                "decoding_key": matrix.get("decoding_key"),
+                "temperature": matrix.get("temperature") or config.get("temperature"),
+                "top_p": matrix.get("top_p") or config.get("top_p"),
+                "early_stop": matrix.get("early_stop") if matrix else config.get("early_stop"),
                 "tasks": summary.get("num_tasks"),
                 "requested_n": summary.get("requested_n"),
                 "adaptive": summary.get("adaptive_sampling_used"),
@@ -108,6 +132,43 @@ def comparison_frame(runs: list[RunBundle]) -> pd.DataFrame:
                 "generation_seconds": summary.get("total_generation_seconds"),
                 "mean_tokens_per_second": summary.get("mean_generation_tokens_per_second"),
                 "oracle_early_stop_token_savings": summary.get("token_savings_if_oracle_early_stop"),
+            }
+        )
+    return pd.DataFrame(rows)
+
+
+def matrix_frame(manifest_path: Path) -> pd.DataFrame:
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    rows = []
+    for entry in manifest.get("runs", []):
+        metrics = entry.get("metrics", {})
+        rows.append(
+            {
+                "run": entry.get("label"),
+                "status": entry.get("status"),
+                "model_key": entry.get("model_key"),
+                "model_id": entry.get("model_id"),
+                "family": entry.get("family"),
+                "parameters_b": entry.get("parameters_b"),
+                "gpu_tier": entry.get("gpu_tier"),
+                "decoding_key": entry.get("decoding_key"),
+                "requested_n": entry.get("n"),
+                "temperature": entry.get("temperature"),
+                "top_p": entry.get("top_p"),
+                "early_stop": entry.get("early_stop"),
+                "tasks": metrics.get("num_tasks"),
+                "attempts": metrics.get("total_attempts"),
+                "solved": metrics.get("solved_tasks"),
+                "pass_at_1": metrics.get("strict_pass_at_1"),
+                "best_of_n": metrics.get("observed_best_of_n"),
+                "generated_tokens": metrics.get("total_generated_tokens"),
+                "generation_seconds": metrics.get("total_generation_seconds"),
+                "tokens_per_second": metrics.get("mean_generation_tokens_per_second"),
+                "token_savings": metrics.get("token_savings_if_oracle_early_stop"),
+                "tokens_per_solved_task": metrics.get("generated_tokens_per_solved_task"),
+                "effective_tokens_per_solved_task": metrics.get("effective_tokens_per_solved_task"),
+                "summary_path": entry.get("summary_path"),
+                "jsonl_path": entry.get("jsonl_path"),
             }
         )
     return pd.DataFrame(rows)

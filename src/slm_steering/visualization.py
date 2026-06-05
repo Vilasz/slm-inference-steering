@@ -118,3 +118,72 @@ def plot_diversity_vs_success(diversity: pd.DataFrame, ax: Any | None = None):
     ax.set_ylim(0, 1.05)
     ax.set_title("Diversidade vs sucesso")
     return ax
+
+
+def plot_model_size_tradeoff(matrix: pd.DataFrame, ax: Any | None = None):
+    import matplotlib.pyplot as plt
+
+    ax = ax or plt.gca()
+    frame = matrix.dropna(subset=["parameters_b", "best_of_n"])
+    if frame.empty:
+        ax.set_title("Tamanho do modelo vs sucesso")
+        return ax
+    for decoding, group in frame.groupby("decoding_key"):
+        ax.scatter(
+            group["parameters_b"],
+            group["best_of_n"],
+            s=90,
+            alpha=0.8,
+            label=decoding,
+        )
+        for _, row in group.iterrows():
+            label = str(row["model_key"]).replace("-instruct", "").replace("qwen2.5-coder-", "qwen-")
+            ax.annotate(label, (row["parameters_b"], row["best_of_n"]), xytext=(5, 5), textcoords="offset points")
+    ax.set_xlabel("Parametros (B)")
+    ax.set_ylabel("Best-of-N observado")
+    ax.set_ylim(0, 1.05)
+    ax.set_title("Escala do modelo vs sucesso")
+    ax.legend()
+    return ax
+
+
+def plot_decoding_bars(matrix: pd.DataFrame, ax: Any | None = None):
+    import matplotlib.pyplot as plt
+
+    ax = ax or plt.gca()
+    frame = matrix.dropna(subset=["best_of_n"])
+    if frame.empty:
+        ax.set_title("Decoding vs sucesso")
+        return ax
+    pivot = frame.pivot_table(
+        index="model_key",
+        columns="decoding_key",
+        values="best_of_n",
+        aggfunc="mean",
+    )
+    pivot.plot(kind="bar", ax=ax)
+    ax.set_xlabel("Modelo")
+    ax.set_ylabel("Best-of-N observado")
+    ax.set_ylim(0, 1.05)
+    ax.set_title("Efeito da estrategia de decodificacao")
+    ax.tick_params(axis="x", labelrotation=30)
+    return ax
+
+
+def plot_token_efficiency(matrix: pd.DataFrame, ax: Any | None = None):
+    import matplotlib.pyplot as plt
+
+    ax = ax or plt.gca()
+    frame = matrix.dropna(subset=["effective_tokens_per_solved_task", "best_of_n"])
+    if frame.empty:
+        ax.set_title("Eficiencia por solucao")
+        return ax
+    ax.scatter(frame["effective_tokens_per_solved_task"], frame["best_of_n"], s=90)
+    for _, row in frame.iterrows():
+        label = f"{row['model_key']}\n{row['decoding_key']}"
+        ax.annotate(label, (row["effective_tokens_per_solved_task"], row["best_of_n"]), xytext=(5, 5), textcoords="offset points")
+    ax.set_xlabel("Tokens efetivos por tarefa resolvida")
+    ax.set_ylabel("Best-of-N observado")
+    ax.set_ylim(0, 1.05)
+    ax.set_title("Eficiencia custo-acuracia")
+    return ax

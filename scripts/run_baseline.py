@@ -16,7 +16,7 @@ if str(SRC) not in sys.path:
 
 from slm_steering.datasets import DEFAULT_HUMANEVAL_DATASET, CodingProblem, load_humaneval
 from slm_steering.env import assert_cuda_available, collect_torch_environment, format_torch_environment
-from slm_steering.generation import GeneratorConfig, QwenCodeGenerator
+from slm_steering.generation import AutoCodeGenerator, GeneratorConfig
 from slm_steering.metrics import summarize
 from slm_steering.reporting import write_run_artifacts
 from slm_steering.verifier import check_correctness
@@ -24,7 +24,7 @@ from slm_steering.verifier import check_correctness
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Baseline: prompt -> Qwen2.5-Coder -> resposta -> verificador -> metricas."
+        description="Baseline: prompt -> modelo de codigo -> resposta -> verificador -> metricas."
     )
     parser.add_argument(
         "--model-id",
@@ -68,6 +68,11 @@ def parse_args() -> argparse.Namespace:
         "--no-chat-template",
         action="store_true",
         help="Usa o prompt bruto do HumanEval, util para modelos base nao-instruct.",
+    )
+    parser.add_argument(
+        "--local-files-only",
+        action="store_true",
+        help="Carrega modelo/tokenizer apenas do cache local do Hugging Face.",
     )
     parser.add_argument(
         "--early-stop",
@@ -114,7 +119,7 @@ def main() -> None:
     args.output_jsonl.parent.mkdir(parents=True, exist_ok=True)
     args.summary_json.parent.mkdir(parents=True, exist_ok=True)
 
-    generator = QwenCodeGenerator(
+    generator = AutoCodeGenerator(
         GeneratorConfig(
             model_id=args.model_id,
             device=args.device,
@@ -123,6 +128,7 @@ def main() -> None:
             temperature=args.temperature,
             top_p=args.top_p,
             use_chat_template=not args.no_chat_template,
+            local_files_only=args.local_files_only,
         )
     )
     problems = load_humaneval(limit=args.limit, offset=args.offset, dataset_id=args.dataset_id)
@@ -157,6 +163,7 @@ def main() -> None:
         "device": generator.device,
         "dtype": str(generator.dtype).replace("torch.", ""),
         "chat_template": not args.no_chat_template,
+        "local_files_only": args.local_files_only,
         "early_stop": args.early_stop,
         "timeout_seconds": args.timeout_seconds,
         "started_at": started_at,
@@ -181,7 +188,7 @@ def main() -> None:
 
 def run_problem(
     problem: CodingProblem,
-    generator: QwenCodeGenerator,
+    generator: AutoCodeGenerator,
     n: int,
     seed: int,
     global_attempt_start: int,

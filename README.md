@@ -177,6 +177,68 @@ Se ainda nao tiver instalado as dependencias de visualizacao:
 uv pip install -r requirements.txt
 ```
 
+## Etapa 2: Matriz de Modelos e Decoding
+
+Antes dos hooks, a proxima evolucao natural e comparar modelos e estrategias
+de inferencia sob o mesmo verificador. Isso separa quatro fatores:
+
+- ganho por escala do modelo;
+- ganho por amostragem Best-of-N;
+- economia por `early-stop`;
+- relacao entre diversidade e acerto.
+
+Liste os modelos e presets disponiveis:
+
+```powershell
+python scripts/run_model_matrix.py --list
+```
+
+Rode primeiro um plano sem executar:
+
+```powershell
+python scripts/run_model_matrix.py --preset core --limit 5 --dry-run
+```
+
+Smoke test leve, bom para baixar e validar um segundo modelo:
+
+```powershell
+python scripts/run_model_matrix.py `
+  --preset smoke `
+  --limit 5 `
+  --max-new-tokens 256 `
+  --require-cuda
+```
+
+Matriz principal recomendada para a RTX 3050 de 6 GB:
+
+```powershell
+python scripts/run_model_matrix.py `
+  --preset core `
+  --limit 20 `
+  --max-new-tokens 256 `
+  --skip-existing `
+  --continue-on-error `
+  --require-cuda
+```
+
+Depois que os modelos ja estiverem baixados, voce pode repetir runs sem chamadas
+ao Hugging Face adicionando:
+
+```powershell
+--local-files-only
+```
+
+O preset `core` compara:
+
+- `Qwen/Qwen2.5-Coder-0.5B-Instruct`;
+- `Qwen/Qwen2.5-Coder-1.5B-Instruct`;
+- `deepseek-ai/deepseek-coder-1.3b-instruct`;
+- `greedy_n1`, `sample_n5` e `sample_n5_early_stop`.
+
+O script salva `manifest.json`, `matrix_summary.csv`, `matrix_report.md` e os
+JSONL/summaries individuais em `runs/model_matrix/`. O notebook de analise
+avancada detecta esses arquivos automaticamente quando eles existem.
+
 ## Saidas
 
 O JSONL contem um registro por problema, incluindo cada tentativa, resposta

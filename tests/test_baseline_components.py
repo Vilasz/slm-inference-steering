@@ -9,9 +9,12 @@ from slm_steering.analysis import (
     bootstrap_success_table,
     counterfactual_early_stop_frame,
     diversity_frame,
+    load_runs_from_manifest,
+    matrix_frame,
     tasks_frame,
 )
 from slm_steering.datasets import DEFAULT_HUMANEVAL_DATASET, CodingProblem, load_humaneval
+from slm_steering.experiment_registry import decoding_specs, model_specs, preset_keys, run_label
 from slm_steering.metrics import estimate_pass_at_k, summarize
 from slm_steering.reporting import write_run_artifacts
 from slm_steering.verifier import build_candidate_source, check_correctness, normalize_completion
@@ -315,6 +318,108 @@ class AnalysisTests(unittest.TestCase):
         self.assertIn("mean_pairwise_code_distance", diversity.columns)
         self.assertEqual(len(confidence), 2)
         self.assertTrue(confidence["mean"].between(0, 1).all())
+
+
+class ExperimentRegistryTests(unittest.TestCase):
+    def test_core_preset_is_gpu_conservative(self) -> None:
+        model_keys, decoding_keys = preset_keys("core")
+        models = model_specs(model_keys)
+        decodings = decoding_specs(decoding_keys)
+
+        self.assertIn("qwen2.5-coder-1.5b-instruct", model_keys)
+        self.assertTrue(all(model.gpu_tier == "core_cuda_6gb" for model in models))
+        self.assertTrue(any(decoding.early_stop for decoding in decodings))
+
+    def test_run_label_is_filesystem_safe(self) -> None:
+        model = model_specs(["qwen2.5-coder-0.5b-instruct"])[0]
+        decoding = decoding_specs(["sample_n5"])[0]
+
+        self.assertEqual(run_label(model, decoding), "qwen2.5-coder-0.5b-instruct__sample_n5")
+
+
+class MatrixManifestTests(unittest.TestCase):
+    def test_matrix_manifest_loads_completed_runs(self) -> None:
+        import json
+        import shutil
+        from pathlib import Path
+
+        temp_dir = Path("runs/tmp_tests/matrix")
+        shutil.rmtree(temp_dir, ignore_errors=True)
+        temp_dir.mkdir(parents=True, exist_ok=True)
+        jsonl_path = temp_dir / "run.jsonl"
+        summary_path = temp_dir / "run_summary.json"
+        manifest_path = temp_dir / "manifest.json"
+        record = {
+            "task_id": "HumanEval/0",
+            "entry_point": "f",
+            "solved": True,
+            "first_success_attempt": 1,
+            "problem_wall_seconds": 1.0,
+            "attempts": [
+                {
+                    "attempt": 1,
+                    "seed": 1,
+                    "passed": True,
+                    "generated_tokens": 3,
+                    "generation_seconds": 0.5,
+                    "verification_seconds": 0.1,
+                    "candidate_source": "def f():\n    return 1",
+                    "raw_completion": "return 1",
+                }
+            ],
+        }
+        summary = summarize([record], requested_n=1)
+        summary["matrix"] = {
+            "label": "sample_run",
+            "model_key": "qwen2.5-coder-0.5b-instruct",
+            "model_id": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+            "family": "Qwen2.5-Coder",
+            "parameters_b": 0.5,
+            "decoding_key": "greedy_n1",
+            "n": 1,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "early_stop": False,
+        }
+        manifest = {
+            "runs": [
+                {
+                    "label": "sample_run",
+                    "status": "completed",
+                    "model_key": "qwen2.5-coder-0.5b-instruct",
+                    "model_id": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+                    "family": "Qwen2.5-Coder",
+                    "parameters_b": 0.5,
+                    "gpu_tier": "core_cuda_6gb",
+                    "decoding_key": "greedy_n1",
+                    "n": 1,
+                    "temperature": 0.0,
+                    "top_p": 1.0,
+                    "early_stop": False,
+                    "metrics": {
+                        "num_tasks": 1,
+                        "strict_pass_at_1": 1.0,
+                        "observed_best_of_n": 1.0,
+                    },
+                    "jsonl_path": str(jsonl_path),
+                    "summary_path": str(summary_path),
+                }
+            ]
+        }
+        try:
+            jsonl_path.write_text(json.dumps(record) + "\n", encoding="utf-8")
+            summary_path.write_text(json.dumps(summary), encoding="utf-8")
+            manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+
+            runs = load_runs_from_manifest(manifest_path)
+            matrix = matrix_frame(manifest_path)
+
+            self.assertEqual(len(runs), 1)
+            self.assertEqual(runs[0].label, "sample_run")
+            self.assertEqual(matrix.loc[0, "model_key"], "qwen2.5-coder-0.5b-instruct")
+            self.assertEqual(matrix.loc[0, "best_of_n"], 1.0)
+        finally:
+            shutil.rmtree(temp_dir, ignore_errors=True)
 
 
 if __name__ == "__main__":
