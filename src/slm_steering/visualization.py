@@ -187,3 +187,75 @@ def plot_token_efficiency(matrix: pd.DataFrame, ax: Any | None = None):
     ax.set_ylim(0, 1.05)
     ax.set_title("Eficiencia custo-acuracia")
     return ax
+
+
+def plot_marginal_gain(curve: pd.DataFrame, ax: Any | None = None):
+    import matplotlib.pyplot as plt
+
+    ax = ax or plt.gca()
+    if curve.empty:
+        ax.set_title("Ganho marginal Best-of-K")
+        return ax
+    ax.bar(curve["k"].astype(str), curve["marginal_gain_k"], color="#4f81bd")
+    ax.set_xlabel("Tentativa adicional K")
+    ax.set_ylabel("Ganho marginal de acuracia")
+    ax.set_title("Quanto cada nova tentativa compra")
+    return ax
+
+
+def plot_difficulty_distribution(difficulty: pd.DataFrame, ax: Any | None = None):
+    import matplotlib.pyplot as plt
+
+    ax = ax or plt.gca()
+    if difficulty.empty:
+        ax.set_title("Distribuicao de dificuldade")
+        return ax
+    counts = difficulty["difficulty"].value_counts().reindex(
+        ["easy", "sampling_sensitive", "fragile", "hard"],
+        fill_value=0,
+    )
+    colors = ["#4c9f70", "#4f81bd", "#d89c3a", "#d95f5f"]
+    ax.bar(counts.index, counts.values, color=colors)
+    ax.set_xlabel("Classe")
+    ax.set_ylabel("Tarefas")
+    ax.set_title("Distribuicao empirica de dificuldade")
+    ax.tick_params(axis="x", labelrotation=20)
+    return ax
+
+
+def plot_pareto_front(
+    frame: pd.DataFrame,
+    ax: Any | None = None,
+    *,
+    cost_col: str = "mean_effective_tokens",
+    quality_col: str = "accuracy",
+):
+    import matplotlib.pyplot as plt
+
+    ax = ax or plt.gca()
+    data = frame.dropna(subset=[cost_col, quality_col])
+    if data.empty:
+        ax.set_title("Fronteira de Pareto")
+        return ax
+    colors = data["temperature"].fillna(0)
+    sizes = data["n"].fillna(1).astype(float) * 35
+    scatter = ax.scatter(data[cost_col], data[quality_col], c=colors, s=sizes, alpha=0.8)
+    if "is_pareto_efficient" in data:
+        efficient = data[data["is_pareto_efficient"]]
+        ax.scatter(
+            efficient[cost_col],
+            efficient[quality_col],
+            facecolors="none",
+            edgecolors="#111111",
+            s=efficient["n"].fillna(1).astype(float) * 55,
+            linewidths=1.5,
+        )
+    for _, row in data.iterrows():
+        label = row.get("model_key") or row.get("model_id") or row.get("run")
+        ax.annotate(str(label), (row[cost_col], row[quality_col]), xytext=(5, 5), textcoords="offset points")
+    ax.set_xlabel("Custo medio efetivo em tokens")
+    ax.set_ylabel("Taxa de resolucao")
+    ax.set_ylim(0, 1.05)
+    ax.set_title("Pareto custo-acuracia")
+    plt.colorbar(scatter, ax=ax, label="temperature")
+    return ax

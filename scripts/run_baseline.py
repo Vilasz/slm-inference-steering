@@ -14,7 +14,8 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from slm_steering.datasets import DEFAULT_HUMANEVAL_DATASET, CodingProblem, load_humaneval
+from slm_steering.benchmark_registry import get_benchmark, load_benchmark
+from slm_steering.datasets import CodingProblem
 from slm_steering.env import assert_cuda_available, collect_torch_environment, format_torch_environment
 from slm_steering.generation import AutoCodeGenerator, GeneratorConfig
 from slm_steering.metrics import summarize
@@ -33,9 +34,14 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--n", type=int, default=1, help="Numero de respostas por problema.")
     parser.add_argument(
+        "--benchmark",
+        default="humaneval",
+        help="Benchmark registrado a avaliar. Padrao: humaneval.",
+    )
+    parser.add_argument(
         "--dataset-id",
-        default=DEFAULT_HUMANEVAL_DATASET,
-        help="Dataset Hugging Face no formato namespace/name.",
+        default=None,
+        help="Dataset Hugging Face no formato namespace/name; override para o benchmark.",
     )
     parser.add_argument("--limit", type=int, default=None, help="Limite de problemas do HumanEval.")
     parser.add_argument("--offset", type=int, default=0, help="Offset inicial no HumanEval.")
@@ -131,7 +137,14 @@ def main() -> None:
             local_files_only=args.local_files_only,
         )
     )
-    problems = load_humaneval(limit=args.limit, offset=args.offset, dataset_id=args.dataset_id)
+    benchmark = get_benchmark(args.benchmark)
+    resolved_dataset_id = args.dataset_id or benchmark.dataset_id
+    problems = load_benchmark(
+        args.benchmark,
+        limit=args.limit,
+        offset=args.offset,
+        dataset_id=args.dataset_id,
+    )
 
     records: list[dict] = []
     with args.output_jsonl.open("w", encoding="utf-8") as output_file:
@@ -152,7 +165,8 @@ def main() -> None:
     summary = summarize(records, requested_n=args.n)
     summary["config"] = {
         "model_id": args.model_id,
-        "dataset": f"{args.dataset_id}/test",
+        "benchmark": args.benchmark,
+        "dataset": f"{resolved_dataset_id}/test",
         "limit": args.limit,
         "offset": args.offset,
         "n": args.n,

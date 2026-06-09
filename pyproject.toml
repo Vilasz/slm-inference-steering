@@ -16,6 +16,7 @@ dependencies = [
   "numpy==1.26.4",
   "pandas==2.2.3",
   "pyarrow==17.0.0",
+  "pytest==8.3.3",
   "safetensors==0.4.5",
   "tqdm==4.66.5",
   "transformers==4.46.3",
@@ -23,3 +24,7 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-p no:cacheprovider"
+norecursedirs = [".venv", "runs", "pytest-cache-files-*"]

@@ -239,6 +239,144 @@ O script salva `manifest.json`, `matrix_summary.csv`, `matrix_report.md` e os
 JSONL/summaries individuais em `runs/model_matrix/`. O notebook de analise
 avancada detecta esses arquivos automaticamente quando eles existem.
 
+## Phase 2: Difficulty-Aware Inference Scaling
+
+Antes de manipular ativacoes internas, precisamos entender em quais problemas
+e sob quais condicoes o escalonamento de inferencia via Best-of-N realmente
+gera valor. A Fase 2 mede custo marginal, dificuldade, diversidade e fronteira
+de Pareto, criando a base experimental para testar se Activation Steering
+desloca essa fronteira para maior acuracia com menor custo.
+
+O script principal da fase e:
+
+```powershell
+python scripts/run_experiment_matrix.py --limit 10 --dry-run
+```
+
+Para rodar uma matriz pequena e segura:
+
+```powershell
+python scripts/run_experiment_matrix.py `
+  --models qwen2.5-coder-0.5b-instruct `
+  --temperatures 0.2,0.8 `
+  --n-values 1,5 `
+  --limit 10 `
+  --skip-existing
+```
+
+Para a matriz maior proposta para a fase:
+
+```powershell
+python scripts/run_experiment_matrix.py `
+  --models qwen2.5-coder-0.5b-instruct,qwen2.5-coder-1.5b-instruct `
+  --temperatures 0.2,0.6,0.8,1.0 `
+  --n-values 1,2,5,10 `
+  --limit 50 `
+  --skip-existing `
+  --continue-on-error
+```
+
+Para comparar Best-of-N completo com parada antecipada, adicione:
+
+```powershell
+--early-stop-modes full,early_stop
+```
+
+Depois de baixar os modelos uma vez, use `--local-files-only` para repetir
+experimentos sem depender de chamadas ao Hugging Face.
+
+A Fase 2 grava resultados em `runs/phase2/`:
+
+- `*.jsonl`: uma linha por problema, com todas as tentativas;
+- `*_summary.json`: metricas agregadas da run;
+- `manifest.json`: indice das combinacoes executadas;
+- `phase2_summary.csv`: tabela comparativa;
+- `phase2_report.md`: resumo em Markdown.
+
+Abra o notebook:
+
+```text
+notebooks/phase2_difficulty_scaling.ipynb
+```
+
+Metricas principais desta fase:
+
+- `difficulty`: `easy`, `sampling_sensitive`, `fragile` ou `hard`;
+- `solved_by_sampling`: problema que falhou no pass@1, mas passou em tentativa posterior;
+- `best_of_k_accuracy`: acuracia acumulada ate K tentativas;
+- `marginal_gain_k`: ganho comprado pela tentativa adicional K;
+- `accuracy_per_1k_tokens`: retorno em acuracia por custo medio de tokens;
+- `is_pareto_efficient`: configuracao nao dominada em custo-acuracia.
+
+## Phase 3: Activation Probing and Representation Extraction
+
+A Fase 3 ainda nao implementa Activation Steering. Ela observa ativacoes
+internas do modelo em respostas ja geradas, separando tentativas corretas e
+incorretas. O objetivo e investigar se existe uma direcao latente associada a
+respostas bem-sucedidas.
+
+Fluxo recomendado:
+
+1. Rode uma matriz da Fase 2 com `N > 1`.
+2. Escolha uma run com tarefas `sampling_sensitive` ou `fragile`.
+3. Extraia ativacoes por camada e posicao de token.
+4. Analise separabilidade, PCA, probes lineares e direcoes candidatas.
+
+Exemplo de planejamento sem carregar modelo:
+
+```powershell
+python scripts/extract_activations.py `
+  --input-jsonl runs/phase2/qwen15b_temp08_n5.jsonl `
+  --summary-json runs/phase2/qwen15b_temp08_n5_summary.json `
+  --output-dir runs/phase3/qwen15b_temp08_n5_probe `
+  --layers 0:28:4 `
+  --token-position completion_last `
+  --difficulty-filter sampling_sensitive,fragile `
+  --dry-run
+```
+
+Extraindo de fato, depois que modelo/dataset ja estiverem em cache:
+
+```powershell
+python scripts/extract_activations.py `
+  --input-jsonl runs/phase2/qwen15b_temp08_n5.jsonl `
+  --summary-json runs/phase2/qwen15b_temp08_n5_summary.json `
+  --output-dir runs/phase3/qwen15b_temp08_n5_probe `
+  --layers 0:28:4 `
+  --token-position completion_last `
+  --difficulty-filter sampling_sensitive,fragile `
+  --local-files-only `
+  --require-cuda
+```
+
+Analise os artefatos:
+
+```powershell
+python scripts/analyze_activations.py runs/phase3/qwen15b_temp08_n5_probe
+```
+
+O armazenamento da Fase 3 fica em:
+
+- `activations.npz`: tensor `[amostras, camadas, hidden_size]`;
+- `metadata.jsonl`: metadados por tentativa;
+- `manifest.json`: configuracao de extracao;
+- `separability.csv`: distancia de centroides e Fisher ratio por camada;
+- `linear_probes.csv`: acuracia de probes lineares simples;
+- `latent_directions.npz`: vetores `mean_correct - mean_incorrect`.
+
+Abra o notebook:
+
+```text
+notebooks/phase3_activation_probing.ipynb
+```
+
+Interpretacao esperada:
+
+- `centroid_distance` alto sugere separacao entre corretas e incorretas;
+- `test_accuracy` do probe indica se a separacao e linearmente exploravel;
+- PCA 2D ajuda a visualizar, mas nao deve ser usado como unica evidencia;
+- a melhor camada candidata vira hipotese para uma Fase 4 de steering.
+
 ## Saidas
 
 O JSONL contem um registro por problema, incluindo cada tentativa, resposta
@@ -266,12 +404,16 @@ Nao implemente hooks antes de ter pelo menos:
 - um baseline `N=1` em uma amostra maior;
 - uma curva Best-of-K com `N>=5`;
 - uma medida de economia com `--early-stop`;
+- uma analise de dificuldade por tarefa;
+- uma curva de ganho marginal por K;
+- uma fronteira de Pareto custo-acuracia;
 - relatorios Markdown/CSV salvos para comparar com a versao intervencionada.
 
 O activation steering deve ser avaliado contra essas mesmas saidas. A pergunta
 experimental passa a ser: com o mesmo verificador e o mesmo orcamento de N, o
 steering aumenta o acerto nas primeiras tentativas e reduz tokens ate o primeiro
-acerto?
+acerto? Em termos da Fase 2: steering so sera convincente se deslocar a
+fronteira de Pareto para maior acuracia, menor custo ou ambos.
 
 ## Nota de seguranca
 

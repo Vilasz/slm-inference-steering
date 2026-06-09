@@ -26,6 +26,33 @@ class GeneratedSample:
     seed: int
 
 
+def render_code_prompt(tokenizer, humaneval_prompt: str, *, use_chat_template: bool = True) -> str:
+    if use_chat_template and tokenizer.chat_template:
+        messages = [
+            {
+                "role": "system",
+                "content": (
+                    "You are a careful Python coding assistant. "
+                    "Return only valid Python code, with no markdown or commentary."
+                ),
+            },
+            {
+                "role": "user",
+                "content": (
+                    "Complete the following Python function for HumanEval. "
+                    "Return only the code needed to complete the function.\n\n"
+                    f"```python\n{humaneval_prompt}\n```"
+                ),
+            },
+        ]
+        return tokenizer.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=True,
+        )
+    return humaneval_prompt
+
+
 class AutoCodeGenerator:
     def __init__(self, config: GeneratorConfig):
         self.config = config
@@ -91,30 +118,11 @@ class AutoCodeGenerator:
         )
 
     def _render_prompt(self, humaneval_prompt: str) -> str:
-        if self.config.use_chat_template and self.tokenizer.chat_template:
-            messages = [
-                {
-                    "role": "system",
-                    "content": (
-                        "You are a careful Python coding assistant. "
-                        "Return only valid Python code, with no markdown or commentary."
-                    ),
-                },
-                {
-                    "role": "user",
-                    "content": (
-                        "Complete the following Python function for HumanEval. "
-                        "Return only the code needed to complete the function.\n\n"
-                        f"```python\n{humaneval_prompt}\n```"
-                    ),
-                },
-            ]
-            return self.tokenizer.apply_chat_template(
-                messages,
-                tokenize=False,
-                add_generation_prompt=True,
-            )
-        return humaneval_prompt
+        return render_code_prompt(
+            self.tokenizer,
+            humaneval_prompt,
+            use_chat_template=self.config.use_chat_template,
+        )
 
     def _resolve_device(self, requested: str) -> str:
         if requested == "auto":

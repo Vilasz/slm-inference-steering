@@ -42,6 +42,22 @@ def load_runs_from_manifest(manifest_path: Path) -> list[RunBundle]:
     return runs
 
 
+def discover_run_bundles(run_dir: Path) -> list[RunBundle]:
+    runs = []
+    for summary_path in sorted(run_dir.glob("*_summary.json")):
+        jsonl_path = summary_path.with_name(summary_path.name.removesuffix("_summary.json") + ".jsonl")
+        if not jsonl_path.exists():
+            continue
+        summary = json.loads(summary_path.read_text(encoding="utf-8"))
+        label = (
+            summary.get("phase2", {}).get("label")
+            or summary.get("matrix", {}).get("label")
+            or jsonl_path.stem
+        )
+        runs.append(load_run(jsonl_path, summary_path, label=label))
+    return runs
+
+
 def attempts_frame(run: RunBundle) -> pd.DataFrame:
     rows = []
     for record in run.records:
