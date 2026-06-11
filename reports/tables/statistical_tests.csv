@@ -1,0 +1,2 @@
+comparison,metric,effect_size,note
+max_minus_min,observed_best_of_n,0.30000000000000004,Efeito descritivo; substitua por teste pareado quando houver mesmas tarefas por run.

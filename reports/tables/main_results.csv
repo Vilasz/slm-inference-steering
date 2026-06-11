@@ -1,0 +1,7 @@
+model_id,benchmark,policy,layer,alpha,direction_type,num_tasks,requested_n,total_attempts,strict_pass_at_1,observed_best_of_n,mean_generated_tokens_per_attempt,mean_tokens_until_success_or_budget,mean_attempts_until_success_or_budget,diversity_score,collapse_score,syntax_error_rate,runtime_error_rate,test_failure_rate,budget_saved_vs_fixed_n,tokens_per_success,phase,summary_path,run_label
+,,,,,,5,5,13,0.2,0.8,72.46153846153847,188.4,2.6,,,,,,,,phase1,C:\Users\joaof\slm-inference-steering\runs\phase1_pilot\humaneval5_n5_seed1234_earlystop_summary.json,humaneval5_n5_seed1234_earlystop
+,,,,,,5,5,25,0.2,0.8,59.88,188.4,2.6,,,,,,,,phase1,C:\Users\joaof\slm-inference-steering\runs\phase1_pilot\humaneval5_n5_seed1234_summary.json,humaneval5_n5_seed1234
+,,,,,,10,1,10,0.8,0.8,150.4,150.4,1.0,,,,,,,,phase2,C:\Users\joaof\slm-inference-steering\runs\phase2\qwen05b_temp02_n1_summary.json,qwen05b_temp02_n1
+,,,,,,10,5,50,0.8,1.0,152.9,224.6,1.5,,,,,,,,phase2,C:\Users\joaof\slm-inference-steering\runs\phase2\qwen05b_temp02_n5_summary.json,qwen05b_temp02_n5
+,,,,,,10,1,10,0.7,0.7,156.6,156.6,1.0,,,,,,,,phase2,C:\Users\joaof\slm-inference-steering\runs\phase2\qwen05b_temp08_n1_summary.json,qwen05b_temp08_n1
+,,,,,,10,5,50,0.8,0.8,154.06,267.9,1.8,,,,,,,,phase2,C:\Users\joaof\slm-inference-steering\runs\phase2\qwen05b_temp08_n5_summary.json,qwen05b_temp08_n5

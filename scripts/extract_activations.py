@@ -10,12 +10,7 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from slm_steering.activations.extraction import (
-    ActivationExtractionConfig,
-    ActivationExtractor,
-    plan_activation_extraction,
-)
-from slm_steering.env import assert_cuda_available
+from slm_steering.env import assert_cuda_available, collect_torch_environment, cuda_install_hint, format_torch_environment
 
 
 def parse_args() -> argparse.Namespace:
@@ -34,7 +29,11 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--benchmark", default=None)
     parser.add_argument("--dataset-id", default=None)
-    parser.add_argument("--difficulty-filter", default="sampling_sensitive,fragile")
+    parser.add_argument(
+        "--difficulty-filter",
+        default="sampling_sensitive,fragile",
+        help="Classes separadas por virgula; use 'all' para nao filtrar.",
+    )
     parser.add_argument("--task-ids", default="")
     parser.add_argument("--max-tasks", type=int, default=None)
     parser.add_argument("--max-attempts-per-task", type=int, default=None)
@@ -55,10 +54,26 @@ def main() -> None:
     if not model_id:
         raise ValueError("--model-id e obrigatorio quando o summary nao contem config/phase2.model_id")
     benchmark = args.benchmark or _summary_value(summary, "benchmark") or "humaneval"
-    if args.require_cuda:
+    if args.require_cuda or args.device == "cuda":
         assert_cuda_available()
         if args.device == "auto":
             args.device = "cuda"
+    elif not args.dry_run:
+        torch_env = collect_torch_environment()
+        if not torch_env.torch_installed:
+            raise RuntimeError(
+                "Nao foi possivel importar torch antes da extracao de ativacoes.\n\n"
+                f"{format_torch_environment(torch_env)}\n\n"
+                f"{cuda_install_hint()}"
+            )
+
+    # On Windows, import torch before pandas/datasets/transformers-heavy modules.
+    # This avoids intermittent DLL initialization failures around torch/lib/c10.dll.
+    from slm_steering.activations.extraction import (
+        ActivationExtractionConfig,
+        ActivationExtractor,
+        plan_activation_extraction,
+    )
 
     config = ActivationExtractionConfig(
         input_jsonl=args.input_jsonl,
@@ -101,6 +116,8 @@ def _summary_value(summary: dict, key: str):
 
 
 def parse_csv(value: str) -> list[str]:
+    if value.strip().lower() in {"", "all", "none", "*"}:
+        return []
     return [item.strip() for item in value.split(",") if item.strip()]
 
 

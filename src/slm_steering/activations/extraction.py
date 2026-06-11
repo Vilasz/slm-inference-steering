@@ -135,12 +135,28 @@ class ActivationExtractor:
     def _load_prompts(self, records: list[dict[str, Any]]) -> dict[str, str]:
         if not records:
             return {}
+        prompt_by_task = {
+            record["task_id"]: record["prompt"]
+            for record in records
+            if record.get("task_id") is not None and record.get("prompt")
+        }
+        missing = [record["task_id"] for record in records if record["task_id"] not in prompt_by_task]
+        if not missing:
+            return prompt_by_task
+
         benchmark = get_benchmark(self.config.benchmark)
-        problems = load_benchmark(
-            self.config.benchmark,
-            dataset_id=self.config.dataset_id or benchmark.dataset_id,
-        )
-        prompt_by_task = {problem.task_id: problem.prompt for problem in problems}
+        try:
+            problems = load_benchmark(
+                self.config.benchmark,
+                dataset_id=self.config.dataset_id or benchmark.dataset_id,
+            )
+        except Exception as exc:
+            raise RuntimeError(
+                "Nao foi possivel carregar prompts do benchmark e o JSONL nao contem campo 'prompt'. "
+                "Rode novamente a Fase 2 com a versao atual do run_baseline.py, ou permita acesso/cache "
+                "ao dataset HumanEval para a extracao de ativacoes."
+            ) from exc
+        prompt_by_task.update({problem.task_id: problem.prompt for problem in problems})
         missing = [record["task_id"] for record in records if record["task_id"] not in prompt_by_task]
         if missing:
             raise KeyError(f"Prompts nao encontrados para tarefas: {missing[:5]}")

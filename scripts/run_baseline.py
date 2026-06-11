@@ -249,6 +249,7 @@ def run_problem(
     return {
         "task_id": problem.task_id,
         "entry_point": problem.entry_point,
+        "prompt": problem.prompt,
         "solved": first_success_attempt is not None,
         "first_success_attempt": first_success_attempt,
         "problem_wall_seconds": time.perf_counter() - problem_start,

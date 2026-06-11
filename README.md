@@ -377,6 +377,208 @@ Interpretacao esperada:
 - PCA 2D ajuda a visualizar, mas nao deve ser usado como unica evidencia;
 - a melhor camada candidata vira hipotese para uma Fase 4 de steering.
 
+## Phase 3.5: Statistical Latent Geometry
+
+Antes de intervir causalmente nas ativacoes, o projeto testa se ha sinal
+estatisticamente robusto no espaco latente associado a corretude. A Fase 3.5
+combina probes lineares, controles negativos, permutation tests, regressao de
+sucesso, calibracao e survival analysis para identificar camadas e direcoes
+candidatas para steering.
+
+Motivacao:
+
+- PCA e visualmente util, mas nao prova separabilidade nem significancia;
+- probes precisam usar split por `task_id`, porque varias tentativas do mesmo
+  problema nao sao independentes;
+- permutation tests ajudam a verificar se o sinal latente excede o que surgiria
+  por acaso com labels embaralhados;
+- survival analysis trata Best-of-N como tempo ate primeiro sucesso, que e a
+  medida diretamente ligada a custo de inferencia;
+- regressao testa se `latent_score` prediz sucesso mesmo controlando tokens,
+  tentativa, dificuldade e configuracao observavel.
+
+Comando principal:
+
+```powershell
+python scripts/analyze_latent_geometry.py `
+  --activations-dir runs/phase3/qwen_phase3_probe `
+  --phase2-runs-dir runs/phase2 `
+  --output-dir runs/phase35/latent_geometry `
+  --n-bootstrap 1000 `
+  --n-permutations 500
+```
+
+Para uma validacao curta:
+
+```powershell
+python scripts/analyze_latent_geometry.py `
+  --activations-dir runs/phase3/qwen_phase3_probe `
+  --phase2-runs-dir runs/phase2 `
+  --output-dir runs/phase35/latent_geometry `
+  --n-bootstrap 100 `
+  --n-permutations 100
+```
+
+A fase salva:
+
+- `probe_results.csv`: AUC, accuracy, F1, Brier e calibracao por camada;
+- `latent_score_results.csv`: projecoes nas direcoes latentes e controles;
+- `permutation_results.csv`: significancia empirica dos scores;
+- `regression_results.csv`: ablations com e sem `latent_score`;
+- `survival_results.csv`: Kaplan-Meier, hazard e custo ate sucesso;
+- `bootstrap_results.csv`: intervalos de confianca por reamostragem de tarefas;
+- `summary.json`: sintese para TCC com camadas candidatas.
+
+Abra:
+
+```text
+notebooks/phase35_statistical_latent_geometry.ipynb
+```
+
+Leitura esperada:
+
+- `best_probe_auc` alto sugere que a corretude e linearmente acessivel;
+- `permutation_p_value` baixo sugere que a separacao nao e facilmente explicada
+  por acaso;
+- `latent_score_delta_auc` positivo sugere poder preditivo incremental do
+  espaco latente;
+- `recommended_steering_layers` define hipoteses para a Fase 4;
+- se a amostra for pequena, trate tudo como piloto e reporte essa limitacao.
+
+## Phase 4: Causal Activation Steering
+
+A Fase 4 testa causalmente as direcoes candidatas da Fase 3. Agora a pergunta
+nao e apenas "existe separabilidade?", mas sim: adicionar a direcao durante a
+geracao muda acuracia, custo, diversidade e tipos de erro?
+
+O sweep minimo recomendado e:
+
+```powershell
+python scripts/run_steering_sweep.py `
+  --limit 5 `
+  --n 2 `
+  --alphas 0,1 `
+  --layers 12 `
+  --skip-existing
+```
+
+Para validar sem carregar o modelo:
+
+```powershell
+python scripts/run_steering_sweep.py --limit 5 --n 2 --alphas 0,1 --layers 12 --skip-existing --dry-run
+```
+
+Controles implementados:
+
+- `correctness_direction`: direcao `mean_correct - mean_incorrect`;
+- `negative_correctness_direction`: direcao invertida;
+- `random_direction`: direcao aleatoria normalizada;
+- `shuffled_label_direction`: direcao estimada com labels embaralhados;
+- `length_direction`: direcao associada ao comprimento da resposta.
+
+Abra:
+
+```text
+notebooks/phase4_causal_activation_steering.ipynb
+```
+
+## Phase 5: Latent-Adaptive Best-of-N
+
+A Fase 5 transforma as evidencias latentes em uma politica de amostragem. Em
+vez de sempre gastar `N` tentativas, a politica decide continuar ou parar com
+base em sucesso do verificador, orcamento, custo medio e score latente quando
+`latent_directions.npz` estiver disponivel.
+
+Comando minimo:
+
+```powershell
+python scripts/run_adaptive_bon.py `
+  --limit 5 `
+  --max-n 3 `
+  --policy latent_adaptive
+```
+
+Validacao leve:
+
+```powershell
+python scripts/run_adaptive_bon.py --limit 5 --max-n 3 --policy latent_adaptive --dry-run
+```
+
+Politicas implementadas:
+
+- `fixed_n_1`, `fixed_n_5`, `fixed_n_10`;
+- `verifier_early_stop`;
+- `difficulty_adaptive`;
+- `latent_adaptive`;
+- `steering_fixed_n` e `steering_latent_adaptive` como familias para comparacao futura.
+
+Abra:
+
+```text
+notebooks/phase5_latent_adaptive_bon.ipynb
+```
+
+## Phase 6: Robustness and Stress Benchmark
+
+A Fase 6 adiciona um pequeno benchmark local `humaneval_stress`, com casos de
+borda inspirados em tarefas HumanEval. Ele serve para testar se ganhos do
+baseline, steering ou politicas adaptativas sobrevivem a entradas adversariais
+simples.
+
+Exemplo:
+
+```powershell
+python scripts/run_baseline.py `
+  --benchmark humaneval_stress `
+  --limit 3 `
+  --n 2
+```
+
+Tambem e possivel usar o benchmark de stress nas Fases 4 e 5 com:
+
+```powershell
+--benchmark humaneval_stress
+```
+
+## Phase 7: Cross-Model Transfer
+
+A Fase 7 organiza a pergunta de transferencia: uma direcao extraida em um
+modelo ajuda em outro modelo coder pequeno? A primeira analise fica em:
+
+```text
+notebooks/phase7_cross_model_transfer.ipynb
+```
+
+O desenho recomendado e extrair direcoes no `Qwen/Qwen2.5-Coder-1.5B-Instruct`
+e testar sweeps no `Qwen/Qwen2.5-Coder-0.5B-Instruct`, sempre mantendo
+`random_direction` e `negative_correctness_direction` como controles.
+
+## Phase 8: Final Artifacts
+
+Para consolidar tabelas e figuras para entrega/apresentacao:
+
+```powershell
+python scripts/generate_final_report_artifacts.py
+```
+
+O script cria:
+
+- `reports/tables/main_results.csv`;
+- `reports/tables/steering_controls.csv`;
+- `reports/tables/adaptive_policy_results.csv`;
+- `reports/tables/robustness_results.csv`;
+- `reports/tables/cross_model_results.csv`;
+- `reports/tables/statistical_tests.csv`;
+- `reports/figures/accuracy_cost_scatter.png`;
+- `reports/figures/phase_coverage.png`;
+- `runs/final_summary.json`.
+
+Abra:
+
+```text
+notebooks/final_research_summary.ipynb
+```
+
 ## Saidas
 
 O JSONL contem um registro por problema, incluindo cada tentativa, resposta
@@ -396,9 +598,10 @@ O arquivo de resumo contem as metricas principais:
 - `token_savings_if_oracle_early_stop`: economia maxima simulada se parasse exatamente no primeiro acerto.
 - `generated_tokens_per_solved_task`: custo bruto em tokens por tarefa resolvida.
 
-## Quando Passar Para Steering
+## Criterio Para Interpretar Steering
 
-Nao implemente hooks antes de ter pelo menos:
+Os hooks da Fase 4 so devem ser interpretados como evidencia experimental depois
+de ter pelo menos:
 
 - um piloto `limit=5, n=5` validado;
 - um baseline `N=1` em uma amostra maior;
@@ -413,7 +616,8 @@ O activation steering deve ser avaliado contra essas mesmas saidas. A pergunta
 experimental passa a ser: com o mesmo verificador e o mesmo orcamento de N, o
 steering aumenta o acerto nas primeiras tentativas e reduz tokens ate o primeiro
 acerto? Em termos da Fase 2: steering so sera convincente se deslocar a
-fronteira de Pareto para maior acuracia, menor custo ou ambos.
+fronteira de Pareto para maior acuracia, menor custo ou ambos, e se controles
+negativos nao explicarem o mesmo ganho.
 
 ## Nota de seguranca
 
