@@ -15,16 +15,6 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from slm_steering.activations.controls import load_direction_map
-from slm_steering.activations.layer_sweep import build_sweep, parse_float_list, parse_int_list, parse_str_list
-from slm_steering.activations.steering import SteeredCodeGenerator, SteeringConfig
-from slm_steering.benchmark_registry import load_benchmark
-from slm_steering.env import assert_cuda_available
-from slm_steering.experiment_metrics import extended_generation_metrics
-from slm_steering.generation import GeneratorConfig
-from slm_steering.metrics import summarize
-from slm_steering.verifier import check_correctness
-
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Fase 4: causal activation steering sweep.")
@@ -58,6 +48,15 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+    prepare_torch_runtime(args)
+
+    from slm_steering.activations.layer_sweep import (
+        build_sweep,
+        parse_float_list,
+        parse_int_list,
+        parse_str_list,
+    )
+
     layers = parse_int_list(args.layers)
     alphas = parse_float_list(args.alphas)
     direction_types = parse_str_list(args.direction_types)
@@ -66,10 +65,8 @@ def main() -> None:
         for point in sweep:
             print(point.label)
         return
-    if args.require_cuda:
-        assert_cuda_available()
-        if args.device == "auto":
-            args.device = "cuda"
+
+    from slm_steering.benchmark_registry import load_benchmark
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     (args.output_dir / "steering_config.json").write_text(
@@ -96,7 +93,27 @@ def main() -> None:
     write_manifest(args.output_dir, args, manifest_entries)
 
 
+def prepare_torch_runtime(args: argparse.Namespace) -> None:
+    """Import/check torch before Windows-hostile heavy module imports."""
+    if args.dry_run:
+        return
+    if args.require_cuda or args.device == "cuda":
+        from slm_steering.env import assert_cuda_available
+
+        assert_cuda_available()
+        if args.device == "auto":
+            args.device = "cuda"
+        return
+
+    # A real generation run will need torch even in auto/CPU mode. Importing it
+    # here keeps Windows DLL initialization ahead of pandas/datasets/transformers.
+    import torch  # noqa: F401
+
+
 def build_generator(args: argparse.Namespace, initial_layer: int) -> SteeredCodeGenerator:
+    from slm_steering.activations.steering import SteeredCodeGenerator, SteeringConfig
+    from slm_steering.generation import GeneratorConfig
+
     return SteeredCodeGenerator(
         GeneratorConfig(
             model_id=args.model_id,
@@ -119,6 +136,11 @@ def run_single_sweep_point(
     jsonl_path: Path,
     summary_path: Path,
 ) -> dict[str, Any]:
+    from slm_steering.activations.controls import load_direction_map
+    from slm_steering.activations.steering import SteeringConfig
+    from slm_steering.experiment_metrics import extended_generation_metrics
+    from slm_steering.metrics import summarize
+
     direction_map = load_direction_map(
         args.directions_dir,
         direction_type=point.direction_type,
@@ -177,6 +199,8 @@ def run_single_sweep_point(
 
 
 def run_problem(problem, generator, n: int, seed: int, global_attempt_start: int, timeout_seconds: float) -> dict[str, Any]:
+    from slm_steering.verifier import check_correctness
+
     problem_start = time.perf_counter()
     attempts = []
     first_success_attempt = None

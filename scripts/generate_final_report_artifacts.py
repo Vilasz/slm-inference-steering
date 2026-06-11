@@ -25,6 +25,7 @@ PHASE_DIRS = {
     "phase35": Path("runs/phase35"),
     "phase4": Path("runs/phase4"),
     "phase5": Path("runs/phase5"),
+    "model_matrix": Path("runs/model_matrix"),
 }
 
 
@@ -102,7 +103,7 @@ def collect_summary_records(root: Path) -> list[dict[str, Any]]:
     records = []
     for phase, relative_dir in PHASE_DIRS.items():
         phase_dir = root / relative_dir
-        for path in sorted(phase_dir.rglob("*_summary.json")) if phase_dir.exists() else []:
+        for path in summary_paths(phase_dir, phase):
             try:
                 summary = json.loads(path.read_text(encoding="utf-8"))
             except Exception:
@@ -110,30 +111,61 @@ def collect_summary_records(root: Path) -> list[dict[str, Any]]:
             row = flatten_summary(summary)
             row["phase"] = phase
             row["summary_path"] = str(path)
-            row["run_label"] = path.stem.replace("_summary", "")
+            row["run_label"] = run_label_from_summary_path(path)
             records.append(row)
     return records
 
 
+def summary_paths(phase_dir: Path, phase: str) -> list[Path]:
+    if not phase_dir.exists():
+        return []
+    paths = set(phase_dir.rglob("*_summary.json"))
+    if phase == "phase35":
+        paths.update(phase_dir.rglob("summary.json"))
+    return sorted(paths)
+
+
+def run_label_from_summary_path(path: Path) -> str:
+    if path.stem == "summary":
+        return path.parent.name
+    return path.stem.replace("_summary", "")
+
+
 def flatten_summary(summary: dict[str, Any]) -> dict[str, Any]:
-    metadata = summary.get("steering") or summary.get("policy") or summary.get("run") or {}
+    metadata = merged_metadata(summary)
+    benchmark = metadata.get("benchmark") or summary.get("benchmark") or infer_benchmark(metadata)
     return {
         "model_id": metadata.get("model_id") or summary.get("model_id"),
-        "benchmark": metadata.get("benchmark") or summary.get("benchmark"),
+        "model_key": metadata.get("model_key"),
+        "family": metadata.get("family"),
+        "parameters_b": metadata.get("parameters_b"),
+        "benchmark": benchmark,
         "policy": metadata.get("name"),
         "layer": metadata.get("layer"),
         "alpha": metadata.get("alpha"),
         "direction_type": metadata.get("direction_type"),
+        "decoding_key": metadata.get("decoding_key"),
+        "temperature": metadata.get("temperature"),
+        "top_p": metadata.get("top_p"),
+        "early_stop": metadata.get("early_stop"),
+        "status": summary.get("status"),
         "num_tasks": summary.get("num_tasks"),
+        "num_activation_samples": summary.get("num_activation_samples"),
         "requested_n": summary.get("requested_n"),
         "total_attempts": summary.get("total_attempts"),
         "strict_pass_at_1": summary.get("strict_pass_at_1"),
-        "observed_best_of_n": summary.get("observed_best_of_n") or summary.get("success_rate"),
+        "observed_best_of_n": first_present(summary, "observed_best_of_n", "success_rate"),
         "mean_generated_tokens_per_attempt": summary.get("mean_generated_tokens_per_attempt"),
-        "mean_tokens_until_success_or_budget": summary.get("mean_tokens_until_success_or_budget")
-        or summary.get("mean_tokens"),
-        "mean_attempts_until_success_or_budget": summary.get("mean_attempts_until_success_or_budget")
-        or summary.get("mean_attempts"),
+        "mean_tokens_until_success_or_budget": first_present(
+            summary,
+            "mean_tokens_until_success_or_budget",
+            "mean_tokens",
+        ),
+        "mean_attempts_until_success_or_budget": first_present(
+            summary,
+            "mean_attempts_until_success_or_budget",
+            "mean_attempts",
+        ),
         "diversity_score": summary.get("diversity_score"),
         "collapse_score": summary.get("collapse_score"),
         "syntax_error_rate": summary.get("syntax_error_rate"),
@@ -141,7 +173,40 @@ def flatten_summary(summary: dict[str, Any]) -> dict[str, Any]:
         "test_failure_rate": summary.get("test_failure_rate"),
         "budget_saved_vs_fixed_n": summary.get("budget_saved_vs_fixed_n"),
         "tokens_per_success": summary.get("tokens_per_success"),
+        "best_probe_layer": summary.get("best_probe_layer"),
+        "best_probe_auc": summary.get("best_probe_auc"),
+        "permutation_p_value": summary.get("permutation_p_value"),
+        "latent_score_delta_auc": summary.get("latent_score_delta_auc"),
+        "mean_attempt_reduction_candidate": summary.get("mean_attempt_reduction_candidate"),
+        "recommended_steering_layers": json.dumps(
+            summary.get("recommended_steering_layers") or [],
+            ensure_ascii=False,
+        ),
     }
+
+
+def merged_metadata(summary: dict[str, Any]) -> dict[str, Any]:
+    metadata: dict[str, Any] = {}
+    for section in ["config", "phase2", "matrix", "run", "policy", "steering"]:
+        values = summary.get(section)
+        if isinstance(values, dict):
+            metadata.update(values)
+    return metadata
+
+
+def first_present(values: dict[str, Any], *keys: str) -> Any:
+    for key in keys:
+        value = values.get(key)
+        if value is not None:
+            return value
+    return None
+
+
+def infer_benchmark(metadata: dict[str, Any]) -> str | None:
+    dataset = str(metadata.get("dataset") or metadata.get("dataset_id") or "").lower()
+    if "humaneval" in dataset:
+        return "humaneval"
+    return None
 
 
 def empty_summary_frame() -> pd.DataFrame:
@@ -151,12 +216,21 @@ def empty_summary_frame() -> pd.DataFrame:
             "run_label",
             "summary_path",
             "model_id",
+            "model_key",
+            "family",
+            "parameters_b",
             "benchmark",
             "policy",
             "layer",
             "alpha",
             "direction_type",
+            "decoding_key",
+            "temperature",
+            "top_p",
+            "early_stop",
+            "status",
             "num_tasks",
+            "num_activation_samples",
             "requested_n",
             "total_attempts",
             "strict_pass_at_1",
@@ -171,6 +245,12 @@ def empty_summary_frame() -> pd.DataFrame:
             "test_failure_rate",
             "budget_saved_vs_fixed_n",
             "tokens_per_success",
+            "best_probe_layer",
+            "best_probe_auc",
+            "permutation_p_value",
+            "latent_score_delta_auc",
+            "mean_attempt_reduction_candidate",
+            "recommended_steering_layers",
         ]
     )
 
@@ -215,32 +295,75 @@ def robustness_frame(frame: pd.DataFrame) -> pd.DataFrame:
 
 
 def cross_model_frame(frame: pd.DataFrame) -> pd.DataFrame:
-    columns = ["run_label", "model_id", "benchmark", "observed_best_of_n", "mean_tokens_until_success_or_budget"]
+    columns = [
+        "run_label",
+        "phase",
+        "model_id",
+        "model_key",
+        "family",
+        "benchmark",
+        "decoding_key",
+        "requested_n",
+        "temperature",
+        "early_stop",
+        "observed_best_of_n",
+        "mean_tokens_until_success_or_budget",
+    ]
     if frame.empty or "model_id" not in frame:
         return pd.DataFrame(columns=columns)
-    return frame.loc[frame["model_id"].notna(), columns].copy()
+    mask = frame["model_id"].notna() & frame["observed_best_of_n"].notna()
+    return frame.loc[mask, columns].copy()
 
 
 def statistical_tests_frame(frame: pd.DataFrame) -> pd.DataFrame:
     columns = ["comparison", "metric", "effect_size", "note"]
-    if frame.empty or len(frame) < 2:
-        return pd.DataFrame(
-            [{"comparison": "pending", "metric": "observed_best_of_n", "effect_size": None, "note": "Execute ao menos duas runs."}],
-            columns=columns,
-        )
-    metric = pd.to_numeric(frame["observed_best_of_n"], errors="coerce")
-    effect = float(metric.max() - metric.min()) if metric.notna().any() else None
-    return pd.DataFrame(
-        [
+    rows = phase35_statistical_rows(frame)
+    if len(frame) >= 2:
+        metric = pd.to_numeric(frame["observed_best_of_n"], errors="coerce")
+        effect = float(metric.max() - metric.min()) if metric.notna().any() else None
+        rows.append(
             {
                 "comparison": "max_minus_min",
                 "metric": "observed_best_of_n",
                 "effect_size": effect,
                 "note": "Efeito descritivo; substitua por teste pareado quando houver mesmas tarefas por run.",
             }
-        ],
+        )
+    if rows:
+        return pd.DataFrame(rows, columns=columns)
+    return pd.DataFrame(
+        [{"comparison": "pending", "metric": "observed_best_of_n", "effect_size": None, "note": "Execute ao menos duas runs."}],
         columns=columns,
     )
+
+
+def phase35_statistical_rows(frame: pd.DataFrame) -> list[dict[str, Any]]:
+    if frame.empty or "phase" not in frame:
+        return []
+    rows = []
+    phase35 = frame[frame["phase"].eq("phase35")]
+    if phase35.empty:
+        return rows
+    for _, row in phase35.iterrows():
+        status = row.get("status")
+        run_label = row.get("run_label")
+        for metric, note in [
+            ("best_probe_auc", "AUC do melhor probe linear por camada."),
+            ("permutation_p_value", "Significancia empirica da direcao de corretude."),
+            ("latent_score_delta_auc", "Ganho incremental da regressao ao incluir score latente."),
+            ("mean_attempt_reduction_candidate", "Reducao media candidata em tentativas ate sucesso."),
+        ]:
+            value = row.get(metric)
+            if pd.notna(value):
+                rows.append(
+                    {
+                        "comparison": f"{run_label}:{status or 'summary'}",
+                        "metric": metric,
+                        "effect_size": value,
+                        "note": note,
+                    }
+                )
+    return rows
 
 
 def write_figures(frame: pd.DataFrame, figures_dir: Path) -> list[Path]:

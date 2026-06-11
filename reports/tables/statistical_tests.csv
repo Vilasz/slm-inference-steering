@@ -1,2 +1,6 @@
 comparison,metric,effect_size,note
-max_minus_min,observed_best_of_n,0.30000000000000004,Efeito descritivo; substitua por teste pareado quando houver mesmas tarefas por run.
+latent_geometry:completed,best_probe_auc,0.9533333333333334,AUC do melhor probe linear por camada.
+latent_geometry:completed,permutation_p_value,0.001996007984031936,Significancia empirica da direcao de corretude.
+latent_geometry:completed,latent_score_delta_auc,0.013333333333333308,Ganho incremental da regressao ao incluir score latente.
+latent_geometry:completed,mean_attempt_reduction_candidate,1.1,Reducao media candidata em tentativas ate sucesso.
+max_minus_min,observed_best_of_n,0.43333333333333335,Efeito descritivo; substitua por teste pareado quando houver mesmas tarefas por run.

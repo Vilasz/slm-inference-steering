@@ -15,23 +15,6 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from slm_steering.benchmark_registry import load_benchmark
-from slm_steering.env import assert_cuda_available
-from slm_steering.experiment_metrics import extended_generation_metrics
-from slm_steering.generation import AutoCodeGenerator, GeneratorConfig
-from slm_steering.metrics import summarize
-from slm_steering.policies import (
-    DifficultyAdaptivePolicy,
-    FixedNPolicy,
-    LatentScoreAdaptivePolicy,
-    LatentScoreConfig,
-    PolicyState,
-    SteeringAdaptivePolicy,
-    VerifierEarlyStopPolicy,
-    build_latent_direction_scorer,
-)
-from slm_steering.verifier import check_correctness
-
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Fase 5: Latent-Adaptive Best-of-N.")
@@ -64,10 +47,14 @@ def main() -> None:
     if args.dry_run:
         print(json.dumps({"policy": args.policy, "max_n": args.max_n, "limit": args.limit}, indent=2))
         return
-    if args.require_cuda:
-        assert_cuda_available()
-        if args.device == "auto":
-            args.device = "cuda"
+    prepare_torch_runtime(args)
+
+    from slm_steering.benchmark_registry import load_benchmark
+    from slm_steering.experiment_metrics import extended_generation_metrics
+    from slm_steering.generation import AutoCodeGenerator, GeneratorConfig
+    from slm_steering.metrics import summarize
+    from slm_steering.policies import LatentScoreConfig, build_latent_direction_scorer
+
     args.output_dir.mkdir(parents=True, exist_ok=True)
     policy = build_policy(args.policy, args.max_n)
     generator = AutoCodeGenerator(
@@ -135,7 +122,25 @@ def main() -> None:
     print(json.dumps(summary, indent=2, ensure_ascii=False))
 
 
+def prepare_torch_runtime(args: argparse.Namespace) -> None:
+    """Import/check torch before Windows-hostile heavy module imports."""
+    if args.require_cuda or args.device == "cuda":
+        from slm_steering.env import assert_cuda_available
+
+        assert_cuda_available()
+        if args.device == "auto":
+            args.device = "cuda"
+        return
+
+    # A real generation run will need torch even in auto/CPU mode. Importing it
+    # here keeps Windows DLL initialization ahead of pandas/datasets/transformers.
+    import torch  # noqa: F401
+
+
 def run_problem(problem, generator, policy, scorer, args: argparse.Namespace, problem_index: int):
+    from slm_steering.policies import PolicyState
+    from slm_steering.verifier import check_correctness
+
     problem_start = time.perf_counter()
     attempts = []
     decisions = []
@@ -198,6 +203,14 @@ def run_problem(problem, generator, policy, scorer, args: argparse.Namespace, pr
 
 
 def build_policy(name: str, max_n: int):
+    from slm_steering.policies import (
+        DifficultyAdaptivePolicy,
+        FixedNPolicy,
+        LatentScoreAdaptivePolicy,
+        SteeringAdaptivePolicy,
+        VerifierEarlyStopPolicy,
+    )
+
     if name == "fixed_n_1":
         return FixedNPolicy(1)
     if name == "fixed_n_5":

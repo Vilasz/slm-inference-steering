@@ -1,1 +1,6 @@
 run_label,policy,observed_best_of_n,mean_attempts_until_success_or_budget,mean_tokens_until_success_or_budget,budget_saved_vs_fixed_n,tokens_per_success
+difficulty_adaptive_maxn5,difficulty_adaptive,0.8333333333333334,2.1,134.3,0.5800000000000001,161.16
+fixed_n_1_maxn5,fixed_n_1,0.5666666666666667,1.0,54.56666666666667,0.8,96.29411764705883
+fixed_n_5_maxn5,fixed_n_5,0.8333333333333334,2.1,134.3,0.0,325.96
+latent_adaptive_maxn5,latent_adaptive,0.8333333333333334,2.1,134.3,0.5800000000000001,161.16
+verifier_early_stop_maxn5,verifier_early_stop,0.8333333333333334,2.1,134.3,0.5800000000000001,161.16
