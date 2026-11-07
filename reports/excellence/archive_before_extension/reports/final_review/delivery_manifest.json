@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-10-16T03:19:41.155080+00:00",
+  "as_of": "2026-10-16",
+  "evidence_status": "fixed_design_main_analysis",
+  "notebook_code_cells_executed": 14,
+  "notebook_errors": 0,
+  "pdf_pages": 40,
+  "checks": "All publication input hashes match; notebook cells executed; PDF compiled",
+  "supplemental": {
+    "available": true,
+    "status": "post_hoc_exploratory_frozen_predictions",
+    "primary_contrasts_reproduced": true,
+    "original_decisions_preserved": true,
+    "artifacts_verified": 20
+  },
+  "tests": [
+    {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "4",
+      "tests": "139",
+      "time": "46.950",
+      "timestamp": "2026-10-16T00:17:19.209447-03:00",
+      "hostname": "Legion_do_Vilas"
+    }
+  ],
+  "packages": {
+    "numpy": "1.26.4",
+    "scikit-learn": "1.5.2",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "nbconvert": "7.17.2",
+    "ipykernel": "7.4.0",
+    "typst": "0.15.0"
+  },
+  "artifacts": {
+    "notebooks/final_research_summary.ipynb": "00fcf8ea31ee8f8cdac0e0c76f8fe4e00e66aa425f4550b525f0518de567365d",
+    "reports/final_review/notebook.html": "3ce368e1dfd7c0cbbfec6abd8cfc4ec5957fc66021ae476bb3b79bfa1fb64e10",
+    "reports/final_review/evidence.json": "1c6cc1b216eba8c67204b46f526f2fc37b90f3e13fdf1e23aa83ab460993e78d",
+    "tcc/build/manuscrito.pdf": "94de4cd71ec69d2f461c58459d77a1df2ee42dd13f1fc2c1459780c2c2e1a66d",
+    "tcc/referencias.bib": "3f2892285fcc33f5903f8dd009ee424bee6512c10bbf907c0f7e7572c1f7e524",
+    "RESULTS.md": "8b82acea0caaf67521d6283e36df90d7ec94aabdb5386907211acd368aa0e5a1"
+  }
+}

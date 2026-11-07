@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-10-17T16:26:01.878704+00:00",
+  "scope": "Preserve prior publication and existing edits at start of final mission; approved collector unchanged",
+  "files": {
+    "tcc/main.typ": "02db97e618e8e27ac0c830e11453af72d013c5d2662ebf388dff313fab603106",
+    "tcc/lib.typ": "7864b49ce94ee8403627a96a14588b3b48033cfad4ba78e7ac021e0808bc487b",
+    "scripts/publish_excellence_independent.py": "230ece7cd454458b95e6f399b064595af2c0299e9e274517df534cc76b850f5a",
+    "scripts/build_excellence_materials.py": "0780b4147cd4449a384076ea1e30a70bfb05b784ef37bcd75c6beb737540429c",
+    "scripts/render_main_manuscript.py": "a0290961716420e5bcbb53755f04cb284e61147300b49b81b3282ec85b38ca1b",
+    "scripts/build_final_notebook.py": "78070d205c8ca0bfb0c06f8c798a7192c7b5be6ad66fabbd1b38e8b5fb877a0c",
+    "src/slm_steering/excellence/report.py": "fd0b026853549a1df47e36ecae235d9e3aa2b923ac6199ec930e382b18ddeb1c",
+    "src/slm_steering/excellence/independent_report.py": "d4a749cb3e04bb16060277f2f85e30ed4ebb5ce822dc25cf9e18944e0283e0ed",
+    "docs/excellence_defense.md": "e8104a0bff2e21604fffc6179b18892778acb6ac8074fb4c0327910fa387d94e",
+    "tcc/build/manuscrito.pdf": "c55e93f7fd82cf860450ad69cc54926af5e5d3cc22edc2684919d0670abeb524",
+    "tcc/chapters/01_introducao.typ": "3e664dc7e4b99f3c7d696cc5d85aff1f3f614d681550ea5d115712e759a47e69",
+    "tcc/chapters/02_relacionados.typ": "a194ce85b0ea35c4e33fcb53636ef119da0c80a21dc59c459ce193def72d1145",
+    "tcc/chapters/03_fundamentacao.typ": "dd667ca98da02c49e4c294f3ad940883aff626fd38a6280fa272f023ebb62a1b",
+    "tcc/chapters/04_metodologia.typ": "9361be57d576b0b7fca9a8e39b939a643284167886929b5c9320ff578d70a985",
+    "tcc/chapters/06_discussao.typ": "30ce9452e1e0f89876adb6adda8ddd1e2ac260b7d466a3424bbe73acc6565bb4",
+    "tcc/chapters/08_reprodutibilidade.typ": "c8673a38ec57f84c162584bf0e475e9bb764c9f51ddb9ea67a443d895f6c0bc2"
+  }
+}

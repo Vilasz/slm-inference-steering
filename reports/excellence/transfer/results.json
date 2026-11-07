@@ -1,0 +1,2330 @@
+{
+  "status": "completed_frozen_transfer_diagnostics",
+  "created_at": "2026-10-17T06:16:17.813839+00:00",
+  "summaries": [
+    {
+      "dataset": "source_OOF_external",
+      "family": "B",
+      "checkpoint": 8,
+      "attempts": 2640,
+      "tasks": 132,
+      "candidate_prevalence": 0.49166666666666664,
+      "metrics": {
+        "roc_auc": 0.5892210072127473,
+        "pr_auc": 0.6063053016137849,
+        "log_loss": 0.6866996689681697,
+        "brier": 0.24670038826561472,
+        "within_task_auc": 0.5544320414288584
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.5544320414288584,
+        "ci95": [
+          0.5220254976559925,
+          0.588344428409863
+        ],
+        "tasks": 100,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.3780429084406527,
+          0.4589645133602814,
+          0.4980831417429788,
+          0.516928822591277,
+          0.5343839508787468
+        ],
+        "1": [
+          0.4034300035036624,
+          0.4610475205499654,
+          0.5136391109951277,
+          0.5392538444560565,
+          0.610105191661763
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.3091252652480124,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 0.9738058551617874,
+        "ci95": [
+          0.9377523914076041,
+          0.9976691331923889
+        ],
+        "correct": 1298,
+        "retained": 1264,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 53,
+      "near_threshold_correct": 24
+    },
+    {
+      "dataset": "source_OOF_external",
+      "family": "B",
+      "checkpoint": 16,
+      "attempts": 2608,
+      "tasks": 132,
+      "candidate_prevalence": 0.4904141104294479,
+      "metrics": {
+        "roc_auc": 0.6607788965634322,
+        "pr_auc": 0.6426221877239874,
+        "log_loss": 0.6717398398677011,
+        "brier": 0.23544072521356763,
+        "within_task_auc": 0.5992272707408575
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.5992272707408575,
+        "ci95": [
+          0.5564769502472624,
+          0.6416711367110973
+        ],
+        "tasks": 97,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.2356365622882248,
+          0.3498634301434991,
+          0.4639199084801543,
+          0.5546645922102085,
+          0.6342285278632201
+        ],
+        "1": [
+          0.3198633560346095,
+          0.436101642685195,
+          0.5574758332410307,
+          0.6599983042938558,
+          0.7255430067381735
+        ]
+      },
+      "original_policy_checkpoint": true,
+      "frozen_threshold": 0.3091252652480124,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 0.9053948397185301,
+        "ci95": [
+          0.8513544167563539,
+          0.9506807262757199
+        ],
+        "correct": 1279,
+        "retained": 1158,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 116,
+      "near_threshold_correct": 30
+    },
+    {
+      "dataset": "source_OOF_external",
+      "family": "B",
+      "checkpoint": 32,
+      "attempts": 2158,
+      "tasks": 132,
+      "candidate_prevalence": 0.47775718257645966,
+      "metrics": {
+        "roc_auc": 0.7005388050669171,
+        "pr_auc": 0.7197218330414143,
+        "log_loss": 0.6302167257514909,
+        "brier": 0.21993367365692676,
+        "within_task_auc": 0.628155136147495
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.628155136147495,
+        "ci95": [
+          0.5833350933801488,
+          0.6745308482009916
+        ],
+        "tasks": 92,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.20380406390708197,
+          0.31478347373445476,
+          0.4493417040514224,
+          0.5625015215076918,
+          0.6475036299976074
+        ],
+        "1": [
+          0.3295991825534046,
+          0.43133410663401245,
+          0.577246701876685,
+          0.6792246606337515,
+          0.7662202722386657
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.3091252652480124,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 0.9078564500484966,
+        "ci95": [
+          0.854956775464645,
+          0.9522382196575193
+        ],
+        "correct": 1031,
+        "retained": 936,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 90,
+      "near_threshold_correct": 19
+    },
+    {
+      "dataset": "source_OOF_external",
+      "family": "B",
+      "checkpoint": 64,
+      "attempts": 1228,
+      "tasks": 122,
+      "candidate_prevalence": 0.5260586319218241,
+      "metrics": {
+        "roc_auc": 0.6977522486234025,
+        "pr_auc": 0.7181522515728643,
+        "log_loss": 0.6339583558277155,
+        "brier": 0.22103764285255842,
+        "within_task_auc": 0.5814148652161937
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.5814148652161937,
+        "ci95": [
+          0.5132475367309483,
+          0.6503960544592203
+        ],
+        "tasks": 69,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.19997594069699337,
+          0.29652955113883406,
+          0.4483712552434862,
+          0.5760647379144035,
+          0.6580536042951004
+        ],
+        "1": [
+          0.3415983202095537,
+          0.4533009702256248,
+          0.5882192578705328,
+          0.6917099443814525,
+          0.7680044632281123
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.3091252652480124,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 0.9195046439628483,
+        "ci95": [
+          0.8649028977219069,
+          0.9606445484290891
+        ],
+        "correct": 646,
+        "retained": 594,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 61,
+      "near_threshold_correct": 13
+    },
+    {
+      "dataset": "source_OOF_external",
+      "family": "HB",
+      "checkpoint": 8,
+      "attempts": 2640,
+      "tasks": 132,
+      "candidate_prevalence": 0.49166666666666664,
+      "metrics": {
+        "roc_auc": 0.6084722225411558,
+        "pr_auc": 0.6012467636010115,
+        "log_loss": 0.675305737187051,
+        "brier": 0.2410926516628636,
+        "within_task_auc": 0.5172663208706069
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.5172663208706069,
+        "ci95": [
+          0.4877819098870149,
+          0.545947050748717
+        ],
+        "tasks": 100,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.3360002593646436,
+          0.4148015032887816,
+          0.4762601536683528,
+          0.5336298387162781,
+          0.5936631265742566
+        ],
+        "1": [
+          0.3799204122358453,
+          0.4535045274573742,
+          0.5076017577197198,
+          0.592779710518712,
+          0.6362070338031659
+        ]
+      },
+      "original_policy_checkpoint": true,
+      "frozen_threshold": 0.26953905544150975,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 0.9884437596302003,
+        "ci95": [
+          0.9776168953068592,
+          0.9969017464593657
+        ],
+        "correct": 1298,
+        "retained": 1283,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 18,
+      "near_threshold_correct": 4
+    },
+    {
+      "dataset": "source_OOF_external",
+      "family": "HB",
+      "checkpoint": 16,
+      "attempts": 2608,
+      "tasks": 132,
+      "candidate_prevalence": 0.4904141104294479,
+      "metrics": {
+        "roc_auc": 0.5692888566534593,
+        "pr_auc": 0.5447408454769255,
+        "log_loss": 0.6874314710725157,
+        "brier": 0.24709035391416834,
+        "within_task_auc": 0.5401389654946337
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.5401389654946337,
+        "ci95": [
+          0.5019193221007701,
+          0.5798797379546251
+        ],
+        "tasks": 97,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.4145583529559938,
+          0.4502684212744097,
+          0.4900633972214721,
+          0.5233132215782053,
+          0.5733833974175022
+        ],
+        "1": [
+          0.4256949449955822,
+          0.46347269939764923,
+          0.5057373512576658,
+          0.545056882432242,
+          0.5782077536619408
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.26953905544150975,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "correct": 1279,
+        "retained": 1279,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 0,
+      "near_threshold_correct": 0
+    },
+    {
+      "dataset": "source_OOF_external",
+      "family": "HB",
+      "checkpoint": 32,
+      "attempts": 2158,
+      "tasks": 132,
+      "candidate_prevalence": 0.47775718257645966,
+      "metrics": {
+        "roc_auc": 0.645649618218971,
+        "pr_auc": 0.6230770322787882,
+        "log_loss": 0.6680673306367098,
+        "brier": 0.23621441410182079,
+        "within_task_auc": 0.5811264786356591
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.5811264786356591,
+        "ci95": [
+          0.5337048357184878,
+          0.6294412122364857
+        ],
+        "tasks": 92,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.3285876960464028,
+          0.3984225687398229,
+          0.4654761381485146,
+          0.5547882213995838,
+          0.641408245917455
+        ],
+        "1": [
+          0.3864667047820184,
+          0.45445244879014646,
+          0.523100708759399,
+          0.6069009565406945,
+          0.705614916649562
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.26953905544150975,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 0.9864209505334627,
+        "ci95": [
+          0.9723208723274617,
+          0.9965220405395222
+        ],
+        "correct": 1031,
+        "retained": 1017,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 33,
+      "near_threshold_correct": 11
+    },
+    {
+      "dataset": "source_OOF_external",
+      "family": "HB",
+      "checkpoint": 64,
+      "attempts": 1228,
+      "tasks": 122,
+      "candidate_prevalence": 0.5260586319218241,
+      "metrics": {
+        "roc_auc": 0.6240123332725421,
+        "pr_auc": 0.6536760215239334,
+        "log_loss": 0.6676273993888702,
+        "brier": 0.23753821699273536,
+        "within_task_auc": 0.5496968688313887
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.5496968688313887,
+        "ci95": [
+          0.4826281929915109,
+          0.6159025722515883
+        ],
+        "tasks": 69,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.41042697478453627,
+          0.45716783773202807,
+          0.5088162940777443,
+          0.5605124661122598,
+          0.6102893305852138
+        ],
+        "1": [
+          0.44920106933914394,
+          0.4914602825985975,
+          0.5426732110275617,
+          0.6017788859282635,
+          0.6514956306666149
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.26953905544150975,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "correct": 646,
+        "retained": 646,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 1,
+      "near_threshold_correct": 0
+    },
+    {
+      "dataset": "source_development_not_external",
+      "family": "B",
+      "checkpoint": 8,
+      "attempts": 2640,
+      "tasks": 132,
+      "candidate_prevalence": 0.49166666666666664,
+      "metrics": {
+        "roc_auc": 0.6093896031725985,
+        "pr_auc": 0.598650241482258,
+        "log_loss": 0.677124860710519,
+        "brier": 0.24203588731382789,
+        "within_task_auc": 0.554092016958145
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.554092016958145,
+        "ci95": [
+          0.5190451254281387,
+          0.5887615345030518
+        ],
+        "tasks": 100,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.36716891396905077,
+          0.4208106269153031,
+          0.48398529334473145,
+          0.5274395892008491,
+          0.5847710032283344
+        ],
+        "1": [
+          0.38894963347252126,
+          0.4560593379749844,
+          0.5092880931974864,
+          0.5722859098342236,
+          0.6169877504435707
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.3091252652480124,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 0.9892141756548536,
+        "ci95": [
+          0.9767272590772591,
+          0.9976906642117475
+        ],
+        "correct": 1298,
+        "retained": 1284,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 122,
+      "near_threshold_correct": 51
+    },
+    {
+      "dataset": "source_development_not_external",
+      "family": "B",
+      "checkpoint": 16,
+      "attempts": 2608,
+      "tasks": 132,
+      "candidate_prevalence": 0.4904141104294479,
+      "metrics": {
+        "roc_auc": 0.637796546057614,
+        "pr_auc": 0.6138014928949657,
+        "log_loss": 0.6631181622339387,
+        "brier": 0.23542686385794728,
+        "within_task_auc": 0.603796937834303
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.603796937834303,
+        "ci95": [
+          0.560105579625102,
+          0.6465714195599047
+        ],
+        "tasks": 97,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.30016088243122696,
+          0.38273384769272617,
+          0.4691394508662741,
+          0.5583367484693376,
+          0.6153698780502654
+        ],
+        "1": [
+          0.3610215635800894,
+          0.44248362192227136,
+          0.5379323198957907,
+          0.6118733642861724,
+          0.6630845365516493
+        ]
+      },
+      "original_policy_checkpoint": true,
+      "frozen_threshold": 0.3091252652480124,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 0.9702892885066459,
+        "ci95": [
+          0.9530565553966768,
+          0.9848910673915384
+        ],
+        "correct": 1279,
+        "retained": 1241,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 140,
+      "near_threshold_correct": 49
+    },
+    {
+      "dataset": "source_development_not_external",
+      "family": "B",
+      "checkpoint": 32,
+      "attempts": 2158,
+      "tasks": 132,
+      "candidate_prevalence": 0.47775718257645966,
+      "metrics": {
+        "roc_auc": 0.7090555673077086,
+        "pr_auc": 0.7330460603656564,
+        "log_loss": 0.6232773211037685,
+        "brier": 0.21726151985895728,
+        "within_task_auc": 0.6300449928892624
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.6300449928892624,
+        "ci95": [
+          0.5847191538277784,
+          0.6759350164262804
+        ],
+        "tasks": 92,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.21521488022421267,
+          0.3158895923237038,
+          0.4463785353282313,
+          0.5757470763854403,
+          0.6580190235542971
+        ],
+        "1": [
+          0.3382967368706974,
+          0.4424919621983015,
+          0.5819343880146449,
+          0.6847050090349305,
+          0.7499685483091654
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.3091252652480124,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 0.9253152279340446,
+        "ci95": [
+          0.8807565481758652,
+          0.9591401020153824
+        ],
+        "correct": 1031,
+        "retained": 954,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 102,
+      "near_threshold_correct": 28
+    },
+    {
+      "dataset": "source_development_not_external",
+      "family": "B",
+      "checkpoint": 64,
+      "attempts": 1228,
+      "tasks": 122,
+      "candidate_prevalence": 0.5260586319218241,
+      "metrics": {
+        "roc_auc": 0.674757234297813,
+        "pr_auc": 0.6714696233731006,
+        "log_loss": 0.6416018504225566,
+        "brier": 0.2251168917257651,
+        "within_task_auc": 0.5812849081719854
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.5812849081719854,
+        "ci95": [
+          0.5109644551017944,
+          0.6496374923798153
+        ],
+        "tasks": 69,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.279341934240921,
+          0.36015909987012956,
+          0.461277355658509,
+          0.5667383577387677,
+          0.671973191470768
+        ],
+        "1": [
+          0.39992383624956723,
+          0.4704586651485899,
+          0.5669239630062046,
+          0.6469373189272153,
+          0.7302214390707311
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.3091252652480124,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 0.9690402476780186,
+        "ci95": [
+          0.9455722160246736,
+          0.9875535794802719
+        ],
+        "correct": 646,
+        "retained": 626,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 45,
+      "near_threshold_correct": 14
+    },
+    {
+      "dataset": "source_development_not_external",
+      "family": "HB",
+      "checkpoint": 8,
+      "attempts": 2640,
+      "tasks": 132,
+      "candidate_prevalence": 0.49166666666666664,
+      "metrics": {
+        "roc_auc": 0.6642292165638297,
+        "pr_auc": 0.6466902050063716,
+        "log_loss": 0.6487457202743119,
+        "brier": 0.22870463166452962,
+        "within_task_auc": 0.5344644885547459
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.5344644885547459,
+        "ci95": [
+          0.5031169302804394,
+          0.5645449693202178
+        ],
+        "tasks": 100,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.2707121939902017,
+          0.3556550508760409,
+          0.4434391186896831,
+          0.5266855536086286,
+          0.6370416604188054
+        ],
+        "1": [
+          0.35828197890205615,
+          0.43393850486724067,
+          0.5262097385004173,
+          0.614760463787122,
+          0.7456996401891369
+        ]
+      },
+      "original_policy_checkpoint": true,
+      "frozen_threshold": 0.26953905544150975,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 0.9714946070878274,
+        "ci95": [
+          0.9382334087481147,
+          0.9934030791788856
+        ],
+        "correct": 1298,
+        "retained": 1261,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 72,
+      "near_threshold_correct": 28
+    },
+    {
+      "dataset": "source_development_not_external",
+      "family": "HB",
+      "checkpoint": 16,
+      "attempts": 2608,
+      "tasks": 132,
+      "candidate_prevalence": 0.4904141104294479,
+      "metrics": {
+        "roc_auc": 0.5959126283677141,
+        "pr_auc": 0.5572719695933765,
+        "log_loss": 0.6798711035152643,
+        "brier": 0.24340738431942158,
+        "within_task_auc": 0.57527680135761
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.57527680135761,
+        "ci95": [
+          0.5352017909600515,
+          0.6139248870752074
+        ],
+        "tasks": 97,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.37810343724525447,
+          0.42840046742960897,
+          0.48018148384340076,
+          0.5340669729428905,
+          0.5902856735250509
+        ],
+        "1": [
+          0.40657456542332815,
+          0.454455879997244,
+          0.5084869264565014,
+          0.566918907624264,
+          0.598798742394534
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.26953905544150975,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "correct": 1279,
+        "retained": 1279,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 11,
+      "near_threshold_correct": 2
+    },
+    {
+      "dataset": "source_development_not_external",
+      "family": "HB",
+      "checkpoint": 32,
+      "attempts": 2158,
+      "tasks": 132,
+      "candidate_prevalence": 0.47775718257645966,
+      "metrics": {
+        "roc_auc": 0.6079058495337146,
+        "pr_auc": 0.6161295698424515,
+        "log_loss": 0.6730041929785316,
+        "brier": 0.2402228261247829,
+        "within_task_auc": 0.5864211040939382
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.5864211040939382,
+        "ci95": [
+          0.5411956154372484,
+          0.6287911170645994
+        ],
+        "tasks": 92,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.36697551680683294,
+          0.4216763953248537,
+          0.4943607786407021,
+          0.5543537748680711,
+          0.6101795413614057
+        ],
+        "1": [
+          0.40455381358010967,
+          0.4570059108172028,
+          0.5218609414187714,
+          0.5867465754119457,
+          0.6494036253097127
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.26953905544150975,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 0.9990300678952473,
+        "ci95": [
+          0.9967381439230879,
+          1.0
+        ],
+        "correct": 1031,
+        "retained": 1030,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 17,
+      "near_threshold_correct": 7
+    },
+    {
+      "dataset": "source_development_not_external",
+      "family": "HB",
+      "checkpoint": 64,
+      "attempts": 1228,
+      "tasks": 122,
+      "candidate_prevalence": 0.5260586319218241,
+      "metrics": {
+        "roc_auc": 0.5960615291157672,
+        "pr_auc": 0.6524384397405377,
+        "log_loss": 0.6727899887096545,
+        "brier": 0.24030402320877758,
+        "within_task_auc": 0.5772747293713832
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.5772747293713832,
+        "ci95": [
+          0.5148305057171877,
+          0.6371083544342107
+        ],
+        "tasks": 69,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.41113224307854956,
+          0.4534289128856515,
+          0.5145475134179427,
+          0.5748922060762812,
+          0.6187440495692816
+        ],
+        "1": [
+          0.4467374746191366,
+          0.4897613069175273,
+          0.544697735026446,
+          0.605367461758162,
+          0.6535951112844216
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.26953905544150975,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "correct": 646,
+        "retained": 646,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 0,
+      "near_threshold_correct": 0
+    },
+    {
+      "dataset": "target_frozen_external",
+      "family": "B",
+      "checkpoint": 8,
+      "attempts": 640,
+      "tasks": 32,
+      "candidate_prevalence": 0.571875,
+      "metrics": {
+        "roc_auc": 0.4700400861553189,
+        "pr_auc": 0.578248517887394,
+        "log_loss": 0.7181154697914993,
+        "brier": 0.26218605460534794,
+        "within_task_auc": 0.5448769374375266
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.5448769374375266,
+        "ci95": [
+          0.4463475722560051,
+          0.6426802007427279
+        ],
+        "tasks": 24,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.4048386598619455,
+          0.4323737234981488,
+          0.4658574964738915,
+          0.5450204575953717,
+          0.5610196295787696
+        ],
+        "1": [
+          0.382776588719793,
+          0.4250203578126904,
+          0.4712250925656847,
+          0.5348767106201567,
+          0.5619605266605413
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.3091252652480124,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 0.994535519125683,
+        "ci95": [
+          0.9824033983094704,
+          1.0
+        ],
+        "correct": 366,
+        "retained": 364,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 2,
+      "near_threshold_correct": 0
+    },
+    {
+      "dataset": "target_frozen_external",
+      "family": "B",
+      "checkpoint": 16,
+      "attempts": 640,
+      "tasks": 32,
+      "candidate_prevalence": 0.571875,
+      "metrics": {
+        "roc_auc": 0.7253500059830083,
+        "pr_auc": 0.7624931863061072,
+        "log_loss": 0.6587838596150686,
+        "brier": 0.23335430938856846,
+        "within_task_auc": 0.7151262281982579
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.7151262281982579,
+        "ci95": [
+          0.6475204731678103,
+          0.7797664756260986
+        ],
+        "tasks": 24,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.2947115746935889,
+          0.35766402869528485,
+          0.4089826781984143,
+          0.4718982225302862,
+          0.523683344622385
+        ],
+        "1": [
+          0.38811399076946695,
+          0.429991957881822,
+          0.4919194734742491,
+          0.5257057265110147,
+          0.5698687832070687
+        ]
+      },
+      "original_policy_checkpoint": true,
+      "frozen_threshold": 0.3091252652480124,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 0.9726775956284153,
+        "ci95": [
+          0.9550554366565602,
+          0.9887656142112862
+        ],
+        "correct": 366,
+        "retained": 356,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 26,
+      "near_threshold_correct": 6
+    },
+    {
+      "dataset": "target_frozen_external",
+      "family": "B",
+      "checkpoint": 32,
+      "attempts": 377,
+      "tasks": 31,
+      "candidate_prevalence": 0.46949602122015915,
+      "metrics": {
+        "roc_auc": 0.7561646268289786,
+        "pr_auc": 0.8104291208787979,
+        "log_loss": 0.6478312273994161,
+        "brier": 0.2257008233638688,
+        "within_task_auc": 0.6422636731460261
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.6422636731460261,
+        "ci95": [
+          0.4837060291288232,
+          0.7782180877401466
+        ],
+        "tasks": 18,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.26805867830928615,
+          0.340986904498342,
+          0.4145761611708328,
+          0.4784562277654932,
+          0.5125624236794968
+        ],
+        "1": [
+          0.3836109652422361,
+          0.4619560085337512,
+          0.5110126195028384,
+          0.5449691170792902,
+          0.5663332752485453
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.3091252652480124,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 0.96045197740113,
+        "ci95": [
+          0.9236627968617472,
+          0.9848503883051621
+        ],
+        "correct": 177,
+        "retained": 170,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 19,
+      "near_threshold_correct": 4
+    },
+    {
+      "dataset": "target_frozen_external",
+      "family": "B",
+      "checkpoint": 64,
+      "attempts": 125,
+      "tasks": 17,
+      "candidate_prevalence": 0.416,
+      "metrics": {
+        "roc_auc": 0.9151731150258384,
+        "pr_auc": 0.9163565581853981,
+        "log_loss": 0.5899113431201027,
+        "brier": 0.19941419900677773,
+        "within_task_auc": 0.8472222222222222
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.8472222222222222,
+        "ci95": [
+          0.5972222222222222,
+          1.0
+        ],
+        "tasks": 6,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.3551617779773698,
+          0.4174322905282867,
+          0.4729892791254759,
+          0.5137629715821694,
+          0.543353635338798
+        ],
+        "1": [
+          0.48876444225558213,
+          0.5450523830948926,
+          0.5655995017418285,
+          0.5845019423588167,
+          0.5893172016133282
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.3091252652480124,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "correct": 52,
+        "retained": 52,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 5,
+      "near_threshold_correct": 0
+    },
+    {
+      "dataset": "target_frozen_external",
+      "family": "HB",
+      "checkpoint": 8,
+      "attempts": 640,
+      "tasks": 32,
+      "candidate_prevalence": 0.571875,
+      "metrics": {
+        "roc_auc": 0.3636123409516972,
+        "pr_auc": 0.486618813812109,
+        "log_loss": 0.8828089214616917,
+        "brier": 0.3313852600225383,
+        "within_task_auc": 0.4940143677120022
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.4940143677120022,
+        "ci95": [
+          0.397698888167995,
+          0.592720383659607
+        ],
+        "tasks": 24,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.2607742754818782,
+          0.3727633393733126,
+          0.5109179401828687,
+          0.6362829017140995,
+          0.722671465144246
+        ],
+        "1": [
+          0.2121632113988221,
+          0.2857844628032323,
+          0.3727633393733126,
+          0.5473100975367624,
+          0.6479211231427751
+        ]
+      },
+      "original_policy_checkpoint": true,
+      "frozen_threshold": 0.26953905544150975,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 0.7540983606557377,
+        "ci95": [
+          0.6186639175257732,
+          0.8773604614495191
+        ],
+        "correct": 366,
+        "retained": 276,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 61,
+      "near_threshold_correct": 32
+    },
+    {
+      "dataset": "target_frozen_external",
+      "family": "HB",
+      "checkpoint": 16,
+      "attempts": 640,
+      "tasks": 32,
+      "candidate_prevalence": 0.571875,
+      "metrics": {
+        "roc_auc": 0.6441107255394679,
+        "pr_auc": 0.721066253011936,
+        "log_loss": 0.6629397585313621,
+        "brier": 0.23539340987733642,
+        "within_task_auc": 0.6181338417505696
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.6181338417505696,
+        "ci95": [
+          0.5306025789998132,
+          0.7055033516450046
+        ],
+        "tasks": 24,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.3590176080779938,
+          0.41951390755586065,
+          0.45628388488577853,
+          0.5026752043710891,
+          0.5614306894032236
+        ],
+        "1": [
+          0.3968509525319318,
+          0.4425140528262097,
+          0.49146800048896705,
+          0.5821633570170336,
+          0.6356127956285977
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.26953905544150975,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "correct": 366,
+        "retained": 366,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 11,
+      "near_threshold_correct": 1
+    },
+    {
+      "dataset": "target_frozen_external",
+      "family": "HB",
+      "checkpoint": 32,
+      "attempts": 377,
+      "tasks": 31,
+      "candidate_prevalence": 0.46949602122015915,
+      "metrics": {
+        "roc_auc": 0.7330216923698519,
+        "pr_auc": 0.7280707352492399,
+        "log_loss": 0.6398175627417473,
+        "brier": 0.22285024953004734,
+        "within_task_auc": 0.6426702246555187
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.6426702246555187,
+        "ci95": [
+          0.49744814360929557,
+          0.7679525987583585
+        ],
+        "tasks": 18,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.2962542641177881,
+          0.3598333276868457,
+          0.4324963680591475,
+          0.4948314158648426,
+          0.5734689922223704
+        ],
+        "1": [
+          0.395811401000274,
+          0.4627672601826118,
+          0.5554939642682387,
+          0.5980522207510682,
+          0.6531829152478391
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.26953905544150975,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 0.9830508474576272,
+        "ci95": [
+          0.955687726039783,
+          1.0
+        ],
+        "correct": 177,
+        "retained": 174,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 11,
+      "near_threshold_correct": 3
+    },
+    {
+      "dataset": "target_frozen_external",
+      "family": "HB",
+      "checkpoint": 64,
+      "attempts": 125,
+      "tasks": 17,
+      "candidate_prevalence": 0.416,
+      "metrics": {
+        "roc_auc": 0.7411535059609335,
+        "pr_auc": 0.6792978842428946,
+        "log_loss": 0.6442118465312963,
+        "brier": 0.22603602248639806,
+        "within_task_auc": 0.5416666666666666
+      },
+      "within_task_auc_interval": {
+        "estimate": 0.5416666666666666,
+        "ci95": [
+          0.22222222222222224,
+          0.8472222222222223
+        ],
+        "tasks": 6,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "score_quantiles_given_label": {
+        "0": [
+          0.42572075478554006,
+          0.4788253594462508,
+          0.5285661333405968,
+          0.592614954604747,
+          0.6305542432974446
+        ],
+        "1": [
+          0.484146207159441,
+          0.515700672004599,
+          0.579590373209226,
+          0.6223137342951726,
+          0.6977005136196003
+        ]
+      },
+      "original_policy_checkpoint": false,
+      "frozen_threshold": 0.26953905544150975,
+      "retention_at_frozen_numeric_threshold": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "correct": 52,
+        "retained": 52,
+        "undefined_draws": 0
+      },
+      "near_threshold_attempts": 0,
+      "near_threshold_correct": 0
+    }
+  ],
+  "population_composition": [
+    {
+      "phase": "definitive",
+      "checkpoint": 0,
+      "attempts": 2640,
+      "tasks": 132,
+      "prevalence": 0.49166666666666664,
+      "length_quantiles_all": [
+        27.0,
+        61.0,
+        152.0
+      ],
+      "mean_length_all": 76.70151515151515
+    },
+    {
+      "phase": "definitive",
+      "checkpoint": 8,
+      "attempts": 2640,
+      "tasks": 132,
+      "prevalence": 0.49166666666666664,
+      "length_quantiles_all": [
+        27.0,
+        61.0,
+        152.0
+      ],
+      "mean_length_all": 76.70151515151515
+    },
+    {
+      "phase": "definitive",
+      "checkpoint": 16,
+      "attempts": 2608,
+      "tasks": 132,
+      "prevalence": 0.4904141104294479,
+      "length_quantiles_all": [
+        27.0,
+        61.0,
+        152.0
+      ],
+      "mean_length_all": 76.70151515151515
+    },
+    {
+      "phase": "definitive",
+      "checkpoint": 32,
+      "attempts": 2158,
+      "tasks": 132,
+      "prevalence": 0.47775718257645966,
+      "length_quantiles_all": [
+        27.0,
+        61.0,
+        152.0
+      ],
+      "mean_length_all": 76.70151515151515
+    },
+    {
+      "phase": "definitive",
+      "checkpoint": 64,
+      "attempts": 1228,
+      "tasks": 122,
+      "prevalence": 0.5260586319218241,
+      "length_quantiles_all": [
+        27.0,
+        61.0,
+        152.0
+      ],
+      "mean_length_all": 76.70151515151515
+    },
+    {
+      "phase": "transfer",
+      "checkpoint": 0,
+      "attempts": 640,
+      "tasks": 32,
+      "prevalence": 0.571875,
+      "length_quantiles_all": [
+        23.0,
+        36.0,
+        88.0
+      ],
+      "mean_length_all": 47.49375
+    },
+    {
+      "phase": "transfer",
+      "checkpoint": 8,
+      "attempts": 640,
+      "tasks": 32,
+      "prevalence": 0.571875,
+      "length_quantiles_all": [
+        23.0,
+        36.0,
+        88.0
+      ],
+      "mean_length_all": 47.49375
+    },
+    {
+      "phase": "transfer",
+      "checkpoint": 16,
+      "attempts": 640,
+      "tasks": 32,
+      "prevalence": 0.571875,
+      "length_quantiles_all": [
+        23.0,
+        36.0,
+        88.0
+      ],
+      "mean_length_all": 47.49375
+    },
+    {
+      "phase": "transfer",
+      "checkpoint": 32,
+      "attempts": 377,
+      "tasks": 31,
+      "prevalence": 0.46949602122015915,
+      "length_quantiles_all": [
+        23.0,
+        36.0,
+        88.0
+      ],
+      "mean_length_all": 47.49375
+    },
+    {
+      "phase": "transfer",
+      "checkpoint": 64,
+      "attempts": 125,
+      "tasks": 17,
+      "prevalence": 0.416,
+      "length_quantiles_all": [
+        23.0,
+        36.0,
+        88.0
+      ],
+      "mean_length_all": 47.49375
+    }
+  ],
+  "false_abort_concentration": [
+    {
+      "dataset": "source_OOF_external",
+      "family": "B",
+      "false_aborts_all_correct": 121,
+      "tasks_with_false_aborts": 26,
+      "share_in_top_five_tasks": 0.5371900826446281
+    },
+    {
+      "dataset": "source_OOF_external",
+      "family": "HB",
+      "false_aborts_all_correct": 15,
+      "tasks_with_false_aborts": 8,
+      "share_in_top_five_tasks": 0.8
+    },
+    {
+      "dataset": "source_development_not_external",
+      "family": "B",
+      "false_aborts_all_correct": 38,
+      "tasks_with_false_aborts": 19,
+      "share_in_top_five_tasks": 0.5
+    },
+    {
+      "dataset": "source_development_not_external",
+      "family": "HB",
+      "false_aborts_all_correct": 37,
+      "tasks_with_false_aborts": 10,
+      "share_in_top_five_tasks": 0.8648648648648649
+    },
+    {
+      "dataset": "target_frozen_external",
+      "family": "B",
+      "false_aborts_all_correct": 10,
+      "tasks_with_false_aborts": 8,
+      "share_in_top_five_tasks": 0.7
+    },
+    {
+      "dataset": "target_frozen_external",
+      "family": "HB",
+      "false_aborts_all_correct": 90,
+      "tasks_with_false_aborts": 12,
+      "share_in_top_five_tasks": 0.6666666666666666
+    }
+  ],
+  "target_coverage": [
+    {
+      "task_id": "Mbpp/772",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/111",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 3,
+      "gate_started": 4,
+      "started_correct": 2,
+      "started_active_correct": 2,
+      "started_correct_false_aborts": 1
+    },
+    {
+      "task_id": "Mbpp/285",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/123",
+      "family": "B",
+      "verifier_resolved": 0,
+      "gate_resolved": 0,
+      "lost_task": false,
+      "verifier_started": 20,
+      "gate_started": 20,
+      "started_correct": 0,
+      "started_active_correct": 0,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/569",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/282",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/808",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/470",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/252",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 2,
+      "gate_started": 2,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/445",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 6,
+      "gate_started": 6,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/773",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 5,
+      "gate_started": 6,
+      "started_correct": 2,
+      "started_active_correct": 2,
+      "started_correct_false_aborts": 1
+    },
+    {
+      "task_id": "Mbpp/279",
+      "family": "B",
+      "verifier_resolved": 0,
+      "gate_resolved": 0,
+      "lost_task": false,
+      "verifier_started": 20,
+      "gate_started": 20,
+      "started_correct": 0,
+      "started_active_correct": 0,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/463",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/58",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/265",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/439",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/397",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/775",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 2,
+      "gate_started": 2,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/735",
+      "family": "B",
+      "verifier_resolved": 0,
+      "gate_resolved": 0,
+      "lost_task": false,
+      "verifier_started": 20,
+      "gate_started": 20,
+      "started_correct": 0,
+      "started_active_correct": 0,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/564",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/145",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 2,
+      "gate_started": 2,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/68",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/259",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 8,
+      "gate_started": 8,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/791",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/630",
+      "family": "B",
+      "verifier_resolved": 0,
+      "gate_resolved": 0,
+      "lost_task": false,
+      "verifier_started": 20,
+      "gate_started": 20,
+      "started_correct": 0,
+      "started_active_correct": 0,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/166",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 2,
+      "gate_started": 2,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/600",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 3,
+      "gate_started": 3,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/65",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/100",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 3,
+      "gate_started": 3,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/92",
+      "family": "B",
+      "verifier_resolved": 0,
+      "gate_resolved": 0,
+      "lost_task": false,
+      "verifier_started": 20,
+      "gate_started": 20,
+      "started_correct": 0,
+      "started_active_correct": 0,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/276",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/296",
+      "family": "B",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/772",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/111",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 3,
+      "gate_started": 3,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/285",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/123",
+      "family": "HB",
+      "verifier_resolved": 0,
+      "gate_resolved": 0,
+      "lost_task": false,
+      "verifier_started": 20,
+      "gate_started": 20,
+      "started_correct": 0,
+      "started_active_correct": 0,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/569",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/282",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/808",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 2,
+      "started_correct": 2,
+      "started_active_correct": 2,
+      "started_correct_false_aborts": 1
+    },
+    {
+      "task_id": "Mbpp/470",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/252",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 2,
+      "gate_started": 2,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/445",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 6,
+      "gate_started": 6,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/773",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 5,
+      "gate_started": 5,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/279",
+      "family": "HB",
+      "verifier_resolved": 0,
+      "gate_resolved": 0,
+      "lost_task": false,
+      "verifier_started": 20,
+      "gate_started": 20,
+      "started_correct": 0,
+      "started_active_correct": 0,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/463",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/58",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/265",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 17,
+      "started_correct": 12,
+      "started_active_correct": 12,
+      "started_correct_false_aborts": 11
+    },
+    {
+      "task_id": "Mbpp/439",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/397",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/775",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 2,
+      "gate_started": 2,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/735",
+      "family": "HB",
+      "verifier_resolved": 0,
+      "gate_resolved": 0,
+      "lost_task": false,
+      "verifier_started": 20,
+      "gate_started": 20,
+      "started_correct": 0,
+      "started_active_correct": 0,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/564",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 3,
+      "started_correct": 3,
+      "started_active_correct": 3,
+      "started_correct_false_aborts": 2
+    },
+    {
+      "task_id": "Mbpp/145",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 2,
+      "gate_started": 2,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/68",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/259",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 0,
+      "lost_task": true,
+      "verifier_started": 8,
+      "gate_started": 20,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 1
+    },
+    {
+      "task_id": "Mbpp/791",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/630",
+      "family": "HB",
+      "verifier_resolved": 0,
+      "gate_resolved": 0,
+      "lost_task": false,
+      "verifier_started": 20,
+      "gate_started": 20,
+      "started_correct": 0,
+      "started_active_correct": 0,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/166",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 0,
+      "lost_task": true,
+      "verifier_started": 2,
+      "gate_started": 20,
+      "started_correct": 8,
+      "started_active_correct": 8,
+      "started_correct_false_aborts": 8
+    },
+    {
+      "task_id": "Mbpp/600",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 3,
+      "gate_started": 3,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/65",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/100",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 3,
+      "gate_started": 3,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/92",
+      "family": "HB",
+      "verifier_resolved": 0,
+      "gate_resolved": 0,
+      "lost_task": false,
+      "verifier_started": 20,
+      "gate_started": 20,
+      "started_correct": 0,
+      "started_active_correct": 0,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/276",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    },
+    {
+      "task_id": "Mbpp/296",
+      "family": "HB",
+      "verifier_resolved": 1,
+      "gate_resolved": 1,
+      "lost_task": false,
+      "verifier_started": 1,
+      "gate_started": 1,
+      "started_correct": 1,
+      "started_active_correct": 1,
+      "started_correct_false_aborts": 0
+    }
+  ],
+  "policies": {
+    "B": {
+      "checkpoint": 16,
+      "threshold": 0.3091252652480124,
+      "mean_tokens": 430.5,
+      "resolution": 0.8333333333333334,
+      "validation_correct_recall": 0.9702892885066459,
+      "active_validation_positives": 1279,
+      "no_abort": false,
+      "selection_data": "outer_training_development_only",
+      "recall_interpretation": "Empirical development target, not an external guarantee",
+      "tie_tolerance": 1e-09
+    },
+    "HB": {
+      "checkpoint": 8,
+      "threshold": 0.26953905544150975,
+      "mean_tokens": 439.1969696969697,
+      "resolution": 0.8106060606060606,
+      "validation_correct_recall": 0.9714946070878274,
+      "active_validation_positives": 1298,
+      "no_abort": false,
+      "selection_data": "outer_training_development_only",
+      "recall_interpretation": "Empirical development target, not an external guarantee",
+      "tie_tolerance": 1e-09
+    }
+  },
+  "source_development_scope": "Raw scores cross-fit whole selection, but source calibrator and threshold fitted on these same development labels; not external performance",
+  "limitations": [
+    "No target fitting, recalibration or threshold selection",
+    "Source OOF and target full-source-fitted scorers are different procedures",
+    "Curves using target outcomes are retrospective diagnostics, not deployable target-optimized gates",
+    "Length and score shifts do not identify a unique causal explanation",
+    "All-candidate retention and initiated-candidate false-abort rates have different denominators"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "verified_at_utc": "2026-11-07T22:21:58.753493+00:00",
+  "publication": "dist/github_final",
+  "inventory": {
+    "files": 238,
+    "bytes": 61364232,
+    "mib": 58.52,
+    "pdfs": [
+      "tcc/build/manuscrito.pdf"
+    ]
+  },
+  "git_tree": "e0cfeacc0bface1cc6e67956d326595a9ca24a9d",
+  "git_autocrlf_tested": true,
+  "git_roundtrip_hashes_match": true,
+  "original_git_index_untouched": true,
+  "smoke_commands": [
+    {
+      "command": [
+        "scripts/finalization_audit.py"
+      ],
+      "seconds": 38.82900000002701,
+      "returncode": 0,
+      "stdout": "Predictive contrasts, losses, Gamma and task denominators reproduced\nAll 5,600 task replay rows and 56 operational summaries reproduced\nFinalization audit passed in 36.2 seconds\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/build_manuscript.py",
+        "--compile"
+      ],
+      "seconds": 3.202999999979511,
+      "returncode": 0,
+      "stdout": "Integrated manuscript rendered from both completed experimental stages\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scripts/audit_integrated_manuscript.py"
+      ],
+      "seconds": 1.922000000020489,
+      "returncode": 0,
+      "stdout": "Integrated edition: 58 pages, zero compiler warnings, frozen results intact\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "pytest",
+        "tests/test_final_extension_resources.py"
+      ],
+      "returncode": 0,
+      "stdout": "...                                                                      [100%]\n3 passed in 0.28s\n",
+      "stderr": ""
+    }
+  ],
+  "model_packages_blocked_for_script_smoke": true,
+  "smoke_python": "C:\\Users\\joaof\\slm-inference-steering\\dist\\final_publication_env\\Scripts\\python.exe",
+  "script_hashes": {
+    "scripts/audit_integrated_manuscript.py": "93f45f9635971ead574d4cfd0a6015a40f14e93fa8d1ebda05ab9f254e15e727",
+    "scripts/build_manuscript.py": "8db0f2e48b5a36c3494f8f223aff26fcbb19535dedb993d71abc8f7e11b99c70",
+    "scripts/evalplus_worker.py": "d7949a521fe6af7ff5ea54e26a448f80a478946c72b5cc135e8dbceca016b397",
+    "scripts/export_final_repository.py": "397419d22103788a4bb628943a273b2e7c58e9b02a52cc22277b85e356386dac",
+    "scripts/final_extension_worker.py": "f9097593cb4b421740f2fbe530c5eccb263c8a5e0d96d0e28a2a5648b3431413",
+    "scripts/finalization_audit.py": "06b9ab486cc2ad4796084f6aea3f28506a021ebf7844c089a612beaf21a0ebd8",
+    "scripts/render_integrated_manuscript.py": "5e8fdfd9602f5eee579ba5e17c56940ab0a8a1499c88d17f8ce7b7f1f4987426",
+    "scripts/run_final_extension.py": "6afabfbb31f03637ad74fc04c4e1fceaa492da60ddd79d97a96d24219335b6fb",
+    "scripts/verify_publication_roundtrip.py": "7994b943576a1726ae0dd1fa5f3b425177293de4e5d24c64a59f0215cdcb658a"
+  },
+  "check_directory": "dist/publication_checks/20261107T222103Z_e425e53d",
+  "scope": "CPU execution from a Git-extracted copy with model packages blocked; interpreter and dependency installation are recorded separately; no fresh model inference"
+}

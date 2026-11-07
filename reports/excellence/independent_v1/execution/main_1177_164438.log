@@ -1,0 +1,51 @@
+
+2026-10-17T16:44:38.008467+00:00 command=["C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe", "-u", "C:\\Users\\joaof\\slm-inference-steering\\scripts\\run_excellence_extension.py", "--phase", "main", "--time-budget-seconds", "600", "--wsl-python", "/home/joaof/.venvs/slm-evalplus-v031/bin/python"]
+<string>:8: SyntaxWarning: invalid escape sequence '\.'
+<string>:8: SyntaxWarning: invalid escape sequence '\.'
+<string>:9: SyntaxWarning: invalid escape sequence '\w'
+<string>:9: SyntaxWarning: invalid escape sequence '\w'
+main 1223/2400 Mbpp/305 attempt=10
+main 1224/2400 Mbpp/597 attempt=10
+main 1225/2400 Mbpp/725 attempt=10
+main 1226/2400 Mbpp/9 attempt=10
+main 1227/2400 Mbpp/620 attempt=10
+main 1228/2400 Mbpp/568 attempt=10
+main 1229/2400 Mbpp/639 attempt=10
+main 1230/2400 Mbpp/286 attempt=10
+main 1231/2400 Mbpp/422 attempt=10
+main 1232/2400 Mbpp/589 attempt=10
+main 1233/2400 Mbpp/273 attempt=10
+main 1234/2400 Mbpp/557 attempt=10
+main 1235/2400 Mbpp/239 attempt=10
+main 1236/2400 Mbpp/251 attempt=10
+main 1237/2400 Mbpp/565 attempt=10
+main 1238/2400 Mbpp/598 attempt=10
+main 1239/2400 Mbpp/257 attempt=10
+main 1240/2400 Mbpp/720 attempt=10
+main 1241/2400 Mbpp/556 attempt=10
+main 1242/2400 Mbpp/784 attempt=10
+main 1243/2400 Mbpp/758 attempt=10
+main 1244/2400 Mbpp/70 attempt=10
+main 1245/2400 Mbpp/592 attempt=10
+main 1246/2400 Mbpp/74 attempt=10
+main 1247/2400 Mbpp/142 attempt=10
+main 1248/2400 Mbpp/19 attempt=10
+main 1249/2400 Mbpp/465 attempt=10
+main 1250/2400 Mbpp/626 attempt=10
+main 1251/2400 Mbpp/428 attempt=10
+main 1252/2400 Mbpp/724 attempt=10
+main 1253/2400 Mbpp/101 attempt=10
+main 1254/2400 Mbpp/420 attempt=10
+main 1255/2400 Mbpp/635 attempt=10
+main 1256/2400 Mbpp/278 attempt=10
+main 1257/2400 Mbpp/458 attempt=10
+main 1258/2400 Mbpp/223 attempt=10
+main 1259/2400 Mbpp/395 attempt=10
+main 1260/2400 Mbpp/398 attempt=10
+main 1261/2400 Mbpp/471 attempt=10
+main 1262/2400 Mbpp/392 attempt=10
+main 1263/2400 Mbpp/796 attempt=10
+main 1264/2400 Mbpp/90 attempt=10
+main 1265/2400 Mbpp/270 attempt=10
+main 1266/2400 Mbpp/614 attempt=10
+main 1267/2400 Mbpp/741 attempt=10

@@ -22,6 +22,11 @@ class VerificationResult:
     stdout: str
     stderr: str
     candidate_source: str
+    failure_stage: str | None = None
+
+    @property
+    def elapsed_seconds(self) -> float:
+        return self.verification_seconds
 
 
 def check_correctness(
@@ -31,6 +36,17 @@ def check_correctness(
     temp_root: Path | None = None,
 ) -> VerificationResult:
     candidate_source = build_candidate_source(problem, completion)
+    unsafe_reason = unsafe_code_reason(candidate_source)
+    if unsafe_reason is not None:
+        return VerificationResult(
+            passed=False,
+            verification_seconds=0.0,
+            error_type="unsafe_code",
+            stdout="",
+            stderr=unsafe_reason,
+            candidate_source=candidate_source,
+            failure_stage="preflight",
+        )
     script = compose_verification_script(problem, candidate_source)
     temp_root = temp_root or _default_temp_root()
     temp_root.mkdir(parents=True, exist_ok=True)
@@ -58,19 +74,22 @@ def check_correctness(
             stdout=_clip(exc.stdout or ""),
             stderr=_clip(exc.stderr or ""),
             candidate_source=candidate_source,
+            failure_stage="execution",
         )
     finally:
         shutil.rmtree(temp_dir, ignore_errors=True)
 
     elapsed = time.perf_counter() - start
     passed = completed.returncode == 0
+    error_type, failure_stage = (None, None) if passed else classify_failure(completed.stderr)
     return VerificationResult(
         passed=passed,
         verification_seconds=elapsed,
-        error_type=None if passed else "runtime_error",
+        error_type=error_type,
         stdout=_clip(completed.stdout),
         stderr=_clip(completed.stderr),
         candidate_source=candidate_source,
+        failure_stage=failure_stage,
     )
 
 
@@ -92,6 +111,36 @@ def compose_verification_script(problem: CodingProblem, candidate_source: str) -
         f"{problem.test.rstrip()}\n\n"
         f"check({problem.entry_point})\n"
     )
+
+
+def unsafe_code_reason(source: str) -> str | None:
+    blocked_patterns = [
+        (r"\bos\.system\s*\(", "blocked os.system call"),
+        (r"\bsubprocess\.", "blocked subprocess access"),
+        (r"\bsocket\.", "blocked socket access"),
+        (r"\bshutil\.rmtree\s*\(", "blocked recursive delete"),
+        (r"\bPath\s*\(\s*['\"]/[\"']", "blocked absolute root path access"),
+        (r"\bopen\s*\(\s*['\"](?:/|[A-Za-z]:\\)", "blocked absolute file access"),
+    ]
+    for pattern, reason in blocked_patterns:
+        if re.search(pattern, source):
+            return reason
+    return None
+
+
+def classify_failure(stderr: str) -> tuple[str, str]:
+    text = stderr or ""
+    if "SyntaxError" in text or "IndentationError" in text:
+        return "syntax_error", "compile"
+    if "ModuleNotFoundError" in text or "ImportError" in text:
+        return "import_error", "import"
+    if "AssertionError" in text:
+        return "wrong_answer", "test"
+    if "TimeoutExpired" in text:
+        return "timeout", "execution"
+    if "Traceback" in text:
+        return "runtime_error", "execution"
+    return "unknown_error", "execution"
 
 
 def normalize_completion(text: str) -> str:

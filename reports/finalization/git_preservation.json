@@ -1,0 +1,35 @@
+{
+  "verified_at_utc": "2026-11-07T22:13:15.193201+00:00",
+  "git_head_unchanged": true,
+  "git_index_unchanged": true,
+  "preexisting_tracked_diffs_unchanged": [
+    "RESEARCH_PROTOCOL.md",
+    "notebooks/final_research_summary.ipynb",
+    "pyproject.toml",
+    "requirements.txt",
+    "scripts/analyze_latent_geometry.py",
+    "scripts/generate_final_report_artifacts.py",
+    "scripts/run_adaptive_bon.py",
+    "scripts/run_steering_sweep.py",
+    "src/slm_steering/activations/controls.py",
+    "src/slm_steering/activations/extraction.py",
+    "src/slm_steering/activations/intervention.py",
+    "src/slm_steering/benchmark_registry.py",
+    "src/slm_steering/datasets.py",
+    "src/slm_steering/verifier.py",
+    "tests/test_adaptive_bon.py",
+    "tests/test_baseline_components.py",
+    "tests/test_controls.py",
+    "tests/test_final_reporting.py",
+    "tests/test_intervention.py",
+    "tests/test_steering.py",
+    "tests/test_stress_benchmark.py",
+    "uv.lock"
+  ],
+  "authorized_tracked_changes": [
+    ".gitignore",
+    "README.md"
+  ],
+  "editorial_backup_files_intact": 32,
+  "scope": "Original tracked differences outside README/.gitignore and the Git index were preserved; frozen scientific paths are verified separately"
+}

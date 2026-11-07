@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-10-17T06:48:08.308815+00:00",
+  "as_of": "2026-10-17",
+  "evidence_status": "fixed_design_main_analysis",
+  "notebook_code_cells_executed": 18,
+  "notebook_errors": 0,
+  "pdf_pages": 48,
+  "checks": "All publication input hashes match; notebook cells executed; PDF compiled",
+  "supplemental": {
+    "available": true,
+    "status": "post_hoc_exploratory_frozen_predictions",
+    "primary_contrasts_reproduced": true,
+    "original_decisions_preserved": true,
+    "artifacts_verified": 20
+  },
+  "excellence": {
+    "available": true,
+    "historical_science_preserved": true,
+    "model_units": 70,
+    "research_summary_pages": 2,
+    "defense_slides": 12,
+    "questions": 33,
+    "independent_collection_started": false
+  },
+  "tests": [
+    {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "4",
+      "tests": "156",
+      "time": "110.792",
+      "timestamp": "2026-10-17T03:38:03.255016-03:00",
+      "hostname": "Legion_do_Vilas"
+    }
+  ],
+  "packages": {
+    "numpy": "1.26.4",
+    "scikit-learn": "1.5.2",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "nbconvert": "7.17.2",
+    "ipykernel": "7.4.0",
+    "typst": "0.15.0"
+  },
+  "artifacts": {
+    "notebooks/final_research_summary.ipynb": "1dd2d6e25c19debf2264d2fc916a672579eed0fcc8cbf716198e1f7bf91fb8ee",
+    "reports/final_review/notebook.html": "e5750808904a8c311df9a55ca4260b542146e2f42a749605ce99d20e8bfa81c8",
+    "reports/final_review/evidence.json": "aa3fc4aab603ae8e7d20eefa364f3ed1efc89e31c6c527e3d87802c9e59aec9a",
+    "tcc/build/manuscrito.pdf": "216f82ee6fdbf84b5b49b2377616135a99bd25f82a1998d560cc557c94dbf837",
+    "tcc/referencias.bib": "ea20ee3655821e44f9cd76f9c7c7e62c46dd7fee340ec6e1108fc92793b3f79e",
+    "RESULTS.md": "3697f39868d8658f27e6ebd9c1f0e63f95c7904cf58876adb1b3f157447befbe",
+    "tcc/main.typ": "02db97e618e8e27ac0c830e11453af72d013c5d2662ebf388dff313fab603106",
+    "tcc/lib.typ": "7864b49ce94ee8403627a96a14588b3b48033cfad4ba78e7ac021e0808bc487b",
+    "tcc/chapters/01_introducao.typ": "3e664dc7e4b99f3c7d696cc5d85aff1f3f614d681550ea5d115712e759a47e69",
+    "tcc/chapters/02_relacionados.typ": "a194ce85b0ea35c4e33fcb53636ef119da0c80a21dc59c459ce193def72d1145",
+    "tcc/chapters/03_fundamentacao.typ": "dd667ca98da02c49e4c294f3ad940883aff626fd38a6280fa272f023ebb62a1b",
+    "tcc/chapters/04_metodologia.typ": "9361be57d576b0b7fca9a8e39b939a643284167886929b5c9320ff578d70a985",
+    "tcc/chapters/06_discussao.typ": "62c7336146208c615a24bd083a0b3ee49ffcc0ce6978acf530cd77fe6fffd9a9",
+    "tcc/chapters/08_reprodutibilidade.typ": "c8673a38ec57f84c162584bf0e475e9bb764c9f51ddb9ea67a443d895f6c0bc2",
+    "tcc/generated/conclusao.typ": "e9f1046bfc9fd8dbd717ef3218debc60e600d8d43b28d2a757dc8f4cc782b16e",
+    "tcc/generated/discussion_findings.typ": "522298c73d1ebddcdf5d73a9deceae85cf4413729b986148734ef1595747951e",
+    "tcc/generated/excellence.typ": "57c92b59721dee042f807dae41ef0b734a4c6f9f557cc01bbdcdf6607d814457",
+    "tcc/generated/resultados.typ": "dd817abbe9e261714947d8ae12b8bc74a7f71ba1f3c609cc93e19de72419de57",
+    "tcc/generated/resumo.typ": "9501a08eb6a05effd3c11bbbc0bff851aed1153a563387e20005b2b8047b81d9",
+    "reports/excellence/materials/research_summary_en.pdf": "a3652caaca7d5ed616dcfc304c54b86bafe6bef3aaec37304deb1c74f73deae7",
+    "reports/excellence/materials/defesa.pdf": "1888727ae85b12d222fd6cd96f428054b5d4261c0af27ff53e66e4661908fd42",
+    "docs/excellence_defense.md": "e8104a0bff2e21604fffc6179b18892778acb6ac8074fb4c0327910fa387d94e"
+  }
+}

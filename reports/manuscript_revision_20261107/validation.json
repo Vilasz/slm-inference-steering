@@ -1,0 +1,531 @@
+{
+  "audited_at_utc": "2026-11-07T22:20:56.649748+00:00",
+  "pages": 58,
+  "frozen_at_utc": "2026-11-05T19:29:00.600277+00:00",
+  "frozen_sources_and_history_unchanged": true,
+  "input_and_output_hashes_verified": true,
+  "compiler_warnings": [],
+  "obsolete_scope_phrases_in_active_text": 0,
+  "numeric_contrasts_found_in_pdf": true,
+  "width_overflows": 0,
+  "vertical_overflows": 0,
+  "empty_conference_prefixes": 0,
+  "active_sources": [
+    "tcc/chapters/01_introducao.typ",
+    "tcc/chapters/02_relacionados.typ",
+    "tcc/chapters/03_fundamentacao.typ",
+    "tcc/chapters/04_metodologia.typ",
+    "tcc/chapters/07_discussao_integrada.typ",
+    "tcc/chapters/08_reprodutibilidade.typ",
+    "tcc/generated/comparacao.typ",
+    "tcc/generated/conclusao.typ",
+    "tcc/generated/discussion_findings.typ",
+    "tcc/generated/etapa_qwen.typ",
+    "tcc/generated/resumo.typ",
+    "tcc/lib.typ",
+    "tcc/main.typ"
+  ],
+  "chapters": [
+    [
+      1,
+      "1 Introdução",
+      7
+    ],
+    [
+      2,
+      "1.1 Gerar uma solução e decidir quando continuar",
+      7
+    ],
+    [
+      2,
+      "1.2 O que significa um sinal de corretude",
+      7
+    ],
+    [
+      2,
+      "1.3 Objetivos e sequência de evidências",
+      8
+    ],
+    [
+      2,
+      "1.4 Contribuições e delimitação",
+      9
+    ],
+    [
+      1,
+      "2 Trabalhos relacionados e posicionamento",
+      10
+    ],
+    [
+      2,
+      "2.1 Amostragem repetida e verificação funcional",
+      10
+    ],
+    [
+      2,
+      "2.2 Representações internas e estimação de corretude",
+      10
+    ],
+    [
+      2,
+      "2.3 Duas famílias de geradores de código",
+      11
+    ],
+    [
+      2,
+      "2.4 Dificuldade e interrupção adaptativa",
+      11
+    ],
+    [
+      2,
+      "2.5 Complexidade do probe e transporte de probabilidades",
+      11
+    ],
+    [
+      2,
+      "2.6 Interrupção como decisão sequencial",
+      12
+    ],
+    [
+      2,
+      "2.7 Contribuição delimitada e limites da reivindicação",
+      12
+    ],
+    [
+      2,
+      "2.8 Matriz de posicionamento",
+      13
+    ],
+    [
+      1,
+      "3 Fundamentação matemática e computacional",
+      14
+    ],
+    [
+      2,
+      "3.1 Formulação probabilística e notação",
+      14
+    ],
+    [
+      3,
+      "3.1.1 Tarefas, candidatos e configuração",
+      14
+    ],
+    [
+      3,
+      "3.1.2 Corretude operacional",
+      15
+    ],
+    [
+      3,
+      "3.1.3 Informação disponível durante a geração",
+      15
+    ],
+    [
+      2,
+      "3.2 Transformers, espaço latente e extração causal",
+      15
+    ],
+    [
+      3,
+      "3.2.1 Representações e atenção causal",
+      15
+    ],
+    [
+      3,
+      "3.2.2 Convenção temporal e alinhamento",
+      16
+    ],
+    [
+      3,
+      "3.2.3 Propriedade do estado anterior à amostragem",
+      16
+    ],
+    [
+      3,
+      "3.2.4 Teste de ausência de informação futura",
+      17
+    ],
+    [
+      3,
+      "3.2.5 Estatísticas observáveis do prefixo",
+      17
+    ],
+    [
+      3,
+      "3.2.6 Alcance informacional do estado interno",
+      17
+    ],
+    [
+      2,
+      "3.3 Dificuldade da tarefa e sinal específico da trajetória",
+      18
+    ],
+    [
+      3,
+      "3.3.1 Heterogeneidade entre problemas",
+      18
+    ],
+    [
+      3,
+      "3.3.2 Decomposição da associação",
+      18
+    ],
+    [
+      3,
+      "3.3.3 Discriminação dentro da tarefa",
+      18
+    ],
+    [
+      3,
+      "3.3.4 Informação incremental e hipótese operacional",
+      19
+    ],
+    [
+      3,
+      "3.3.5 Perdas probabilísticas e calibração",
+      19
+    ],
+    [
+      2,
+      "3.4 Capacidade do decodificador de corretude",
+      20
+    ],
+    [
+      3,
+      "3.4.1 Da representação à probabilidade",
+      20
+    ],
+    [
+      3,
+      "3.4.2 Redução de dimensão e risco de vazamento",
+      21
+    ],
+    [
+      2,
+      "3.5 Amostragem repetida, seleção e custo",
+      21
+    ],
+    [
+      3,
+      "3.5.1 Cobertura e pass@k",
+      21
+    ],
+    [
+      3,
+      "3.5.2 Terminologia: Best-of-N e verificador",
+      22
+    ],
+    [
+      3,
+      "3.5.3 Custo até sucesso ou esgotamento",
+      22
+    ],
+    [
+      3,
+      "3.5.4 Retenção de candidatos e efeito sobre resolução",
+      22
+    ],
+    [
+      3,
+      "3.5.5 Condição econômica para interromper",
+      23
+    ],
+    [
+      3,
+      "3.5.6 Derivação, limite ilimitado e retenção ativa",
+      23
+    ],
+    [
+      3,
+      "3.5.7 Oracle retrospectivo e alcance do limite econômico",
+      24
+    ],
+    [
+      3,
+      "3.5.8 Tokens, latência e fronteira custo–resolução",
+      25
+    ],
+    [
+      2,
+      "3.6 Decisão sequencial sob orçamento finito",
+      25
+    ],
+    [
+      3,
+      "3.6.1 Objetivo e estado",
+      25
+    ],
+    [
+      3,
+      "3.6.2 Recursão de Bellman",
+      26
+    ],
+    [
+      3,
+      "3.6.3 Quando a regra se reduz a um limiar",
+      26
+    ],
+    [
+      3,
+      "3.6.4 Conexão com a política empírica",
+      27
+    ],
+    [
+      1,
+      "4 Metodologia",
+      28
+    ],
+    [
+      2,
+      "4.1 Desenho geral e estatuto das análises",
+      28
+    ],
+    [
+      2,
+      "4.2 Geração, corretude e informação disponível",
+      28
+    ],
+    [
+      3,
+      "4.2.1 Dois modelos e uma especificação funcional comum",
+      28
+    ],
+    [
+      3,
+      "4.2.2 Amostragem e independência dos candidatos",
+      29
+    ],
+    [
+      3,
+      "4.2.3 Desfecho funcional e segurança",
+      29
+    ],
+    [
+      3,
+      "4.2.4 Checkpoint, conjunto ativo e causalidade",
+      30
+    ],
+    [
+      2,
+      "4.3 Primeira etapa: avaliação Qwen e desenvolvimento exploratório",
+      30
+    ],
+    [
+      3,
+      "4.3.1 Separação de tarefas e ajuste linear",
+      30
+    ],
+    [
+      3,
+      "4.3.2 Critério original e diagnósticos posteriores",
+      31
+    ],
+    [
+      3,
+      "4.3.3 Transferência e validação dos gates",
+      31
+    ],
+    [
+      2,
+      "4.4 Segunda etapa: comparação entre modelos e classes de probes",
+      31
+    ],
+    [
+      3,
+      "4.4.1 Piloto DeepSeek e inventário externo",
+      31
+    ],
+    [
+      3,
+      "4.4.2 Features e comparação fatorial",
+      32
+    ],
+    [
+      3,
+      "4.4.3 Desenvolvimento na origem, calibração e congelamento",
+      32
+    ],
+    [
+      3,
+      "4.4.4 Hipótese primária e comparações secundárias",
+      33
+    ],
+    [
+      3,
+      "4.4.5 Estabilidade do treinamento",
+      33
+    ],
+    [
+      2,
+      "4.5 Métricas, denominadores e inferência",
+      34
+    ],
+    [
+      2,
+      "4.6 Replay e contabilidade do custo",
+      34
+    ],
+    [
+      2,
+      "4.7 Condições computacionais e integridade",
+      35
+    ],
+    [
+      1,
+      "5 Primeira etapa: Qwen, transferência e diagnósticos",
+      36
+    ],
+    [
+      2,
+      "5.1 Composição do banco e comparação intratarefa",
+      36
+    ],
+    [
+      2,
+      "5.2 O resultado de classificação e a política original",
+      37
+    ],
+    [
+      2,
+      "5.3 Transporte para MBPP+ e validação independente dos gates",
+      39
+    ],
+    [
+      2,
+      "5.4 O que as ablações exploratórias acrescentam",
+      39
+    ],
+    [
+      2,
+      "5.5 O espaço econômico disponível",
+      40
+    ],
+    [
+      1,
+      "6 Comparação entre modelos e decodificadores",
+      41
+    ],
+    [
+      2,
+      "6.1 Desenvolvimento, precisão e população externa",
+      41
+    ],
+    [
+      2,
+      "6.2 Hipótese primária: incremento no DeepSeek com MLP",
+      42
+    ],
+    [
+      2,
+      "6.3 Capacidade do probe e diferenças entre geradores",
+      43
+    ],
+    [
+      2,
+      "6.4 Probabilidades, ranking e calibração",
+      44
+    ],
+    [
+      2,
+      "6.5 Replay secundário e consequência das decisões",
+      45
+    ],
+    [
+      2,
+      "6.6 Recursos medidos e síntese da etapa",
+      47
+    ],
+    [
+      1,
+      "7 Discussão",
+      48
+    ],
+    [
+      2,
+      "7.1 Uma resposta articulada às perguntas do estudo",
+      48
+    ],
+    [
+      2,
+      "7.2 O que o resultado inconclusivo permite afirmar",
+      48
+    ],
+    [
+      2,
+      "7.3 Capacidade do probe e acesso ao sinal",
+      49
+    ],
+    [
+      2,
+      "7.4 Modelo, tokenizer e população sob risco",
+      49
+    ],
+    [
+      2,
+      "7.5 Probabilidades, limiares e transporte",
+      50
+    ],
+    [
+      2,
+      "7.6 O que a economia observada representa",
+      50
+    ],
+    [
+      2,
+      "7.7 A contribuição da formulação sequencial",
+      51
+    ],
+    [
+      2,
+      "7.8 Limitações de precisão e de validade",
+      51
+    ],
+    [
+      2,
+      "7.9 Continuidade científica",
+      52
+    ],
+    [
+      1,
+      "8 Considerações finais",
+      53
+    ],
+    [
+      1,
+      "Referências",
+      54
+    ],
+    [
+      1,
+      "APÊNDICE A — Reprodutibilidade e proveniência",
+      56
+    ],
+    [
+      2,
+      "A.1 Separação entre análise e redação",
+      56
+    ],
+    [
+      2,
+      "A.2 Artefatos científicos de referência",
+      56
+    ],
+    [
+      2,
+      "A.3 Cronologia e exposição anterior",
+      57
+    ],
+    [
+      2,
+      "A.4 Integridade temporal, funcional e operacional",
+      57
+    ],
+    [
+      2,
+      "A.5 Assistência computacional e responsabilidade",
+      58
+    ]
+  ],
+  "scope": "Local editorial consistency checks; not an independent scientific or institutional approval"
+}

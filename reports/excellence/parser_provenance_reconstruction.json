@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-10-17T16:52:10.243866+00:00",
+  "status": "preapproval_source_recovered_and_matches",
+  "baseline_created_at": "2026-10-17T06:06:46.779662+00:00",
+  "git_head": "73fce19fc9ff5f38f02ec0ac7c963460bfc81974",
+  "archived_patch_sha256": "ba7aad14857bd86028ef9a55c1c1c269d00bd14ec7726bc2aaa54f40ac7bd144",
+  "sources": [
+    {
+      "path": "src/slm_steering/verifier.py",
+      "sha256": "db029cefe4145e0c60e28a824a05775642f7f37233cf620faae9663b147323a9",
+      "matches_current_bytes": true,
+      "recovered_copy": "reports/excellence/recovered_preapproval_sources/verifier.py.txt"
+    },
+    {
+      "path": "src/slm_steering/datasets.py",
+      "sha256": "e235bc89e60329c7f7697c92e499e0f866b4f3b57a84408027db23ed449f7ac6",
+      "matches_current_bytes": true,
+      "recovered_copy": "reports/excellence/recovered_preapproval_sources/datasets.py.txt"
+    }
+  ],
+  "scope": "These imported helpers were not separate entries in the 46-file extension snapshot. Their pre-approval bytes are recoverable from the initial Git state and saved patch; no prospective snapshot entry is fabricated."
+}

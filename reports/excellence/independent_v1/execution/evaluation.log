@@ -1,0 +1,15 @@
+
+2026-10-17T18:36:03.714478+00:00 command=["C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe", "-u", "C:\\Users\\joaof\\slm-inference-steering\\scripts\\run_excellence_extension.py", "--evaluate"]
+{
+  "estimate": -0.16359060402684564,
+  "ci95": [
+    -0.2402298061170319,
+    -0.0942741120201171
+  ],
+  "tasks": 120,
+  "replications": 10000,
+  "seed": 20261017,
+  "undefined_draws": 0,
+  "identified": true,
+  "directional_hypothesis_supported": true
+}

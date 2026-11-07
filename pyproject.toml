@@ -5,22 +5,55 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "slm-inference-steering"
 version = "0.1.0"
-description = "Baseline experimental para inferencia de SLMs com HumanEval."
+description = "Early trajectory-specific correctness signals for efficient Best-of-N code generation."
 readme = "README.md"
 requires-python = ">=3.10,<3.13"
 dependencies = [
   "accelerate==0.34.2",
   "datasets==2.21.0",
   "huggingface-hub==0.25.2",
-  "matplotlib==3.9.2",
   "numpy==1.26.4",
   "pandas==2.2.3",
   "pyarrow==17.0.0",
-  "pytest==8.3.3",
+  "PyYAML==6.0.2",
   "safetensors==0.4.5",
-  "torch==2.12.0+cu126",
   "tqdm==4.66.5",
   "transformers==4.46.3",
+]
+
+[project.optional-dependencies]
+research = [
+  "scikit-learn==1.5.2",
+  "scipy==1.14.1",
+  "statsmodels==0.14.4",
+]
+evaluation = [
+  "evalplus==0.3.1",
+]
+dev = [
+  "mypy==1.14.1",
+  "pre-commit==4.0.1",
+  "pytest==8.3.3",
+  "ruff==0.8.4",
+]
+viz = [
+  "matplotlib==3.9.2",
+]
+notebooks = [
+  "ipykernel==7.4.0; python_version >= '3.11'",
+  "ipykernel==6.29.5; python_version < '3.11'",
+  "nbformat==5.11.1",
+  "nbclient==0.11.0",
+  "nbconvert==7.17.2",
+  "jupyter>=1.1",
+]
+publication = [
+  "typst==0.15.0",
+  "beautifulsoup4==4.15.0",
+  "requests>=2.32",
+]
+gpu = [
+  "torch==2.12.0+cu126",
 ]
 
 [[tool.uv.index]]
@@ -38,3 +71,27 @@ where = ["src"]
 addopts = "-p no:cacheprovider"
 pythonpath = ["src", "."]
 norecursedirs = [".venv", "runs", "pytest-cache-files-*"]
+markers = [
+  "slow: expensive tests that are skipped in default CI",
+  "gpu: tests or workflows that require CUDA/GPU",
+  "integration: integration tests that may need external services or datasets",
+]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+exclude = [".venv", "runs", "notebooks", ".tmp"]
+
+[tool.ruff.lint]
+select = ["E", "F"]
+ignore = ["E402", "E501"]
+
+[tool.mypy]
+python_version = "3.12"
+explicit_package_bases = true
+ignore_missing_imports = true
+disable_error_code = ["arg-type", "assignment", "import-untyped", "return-value", "var-annotated"]
+warn_unused_ignores = false
+warn_return_any = false
+check_untyped_defs = false
+exclude = ["runs/", "notebooks/"]

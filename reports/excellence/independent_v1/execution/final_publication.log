@@ -1,0 +1,171 @@
+{"primary": {"estimate": -0.16359060402684564, "ci95": [-0.2402298061170319, -0.0942741120201171], "tasks": 120, "replications": 10000, "seed": 20261017, "undefined_draws": 0, "identified": true, "directional_hypothesis_supported": true}, "audited_attempts": 2800, "rescoring_error": 4.440892098500626e-16}
+
+
+{"table_rows": 39, "replay_rows": 14432, "functional_records": 3280, "primary_wt": {"estimate": -0.04702865751183576, "ci95": [-0.09937495818447421, 0.005583498622638404]}, "primary_loss": {"estimate": 0.03785060488521885, "ci95": [0.006657260077646494, 0.0706158375881566]}}
+
+{
+  "status": "post_hoc_exploratory_frozen_predictions",
+  "primary_reproduction": {
+    "within_task_auc": {
+      "matches": true,
+      "effect": {
+        "estimate": -0.04702865751183576,
+        "ci95": [
+          -0.09937495818447424,
+          0.005583498622638421
+        ],
+        "tasks": 92,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    "log_loss": {
+      "matches": true,
+      "effect": {
+        "estimate": 0.03785060488521885,
+        "ci95": [
+          0.006657260077646494,
+          0.0706158375881566
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    }
+  },
+  "influence": [
+    {
+      "metric": "brier",
+      "overall_delta": 0.016280740444894023,
+      "leave_one_out_range": [
+        0.014487779393501704,
+        0.018113173007076485
+      ],
+      "sign_preserved_all_deletions": true,
+      "largest_absolute_influence_task": "HumanEval/44"
+    },
+    {
+      "metric": "log_loss",
+      "overall_delta": 0.03785060488521885,
+      "leave_one_out_range": [
+        0.03247336755322134,
+        0.042036992041204896
+      ],
+      "sign_preserved_all_deletions": true,
+      "largest_absolute_influence_task": "HumanEval/26"
+    },
+    {
+      "metric": "within_task_auc",
+      "overall_delta": -0.04702865751183576,
+      "leave_one_out_range": [
+        -0.05506425293851296,
+        -0.03875424715482297
+      ],
+      "sign_preserved_all_deletions": true,
+      "largest_absolute_influence_task": "HumanEval/26"
+    }
+  ],
+  "retention": {
+    "HumanEval+ OOF": [
+      {
+        "policy": "B",
+        "tasks": 132,
+        "active_correct": 1219,
+        "retained_correct": 1158,
+        "recall": 0.9499589827727646,
+        "ci95": [
+          0.9074776873520638,
+          0.9825192220714608
+        ],
+        "undefined_bootstrap_draws": 0
+      },
+      {
+        "policy": "HB",
+        "tasks": 130,
+        "active_correct": 1079,
+        "retained_correct": 1056,
+        "recall": 0.9786839666357738,
+        "ci95": [
+          0.9605702925607335,
+          0.9925324855117886
+        ],
+        "undefined_bootstrap_draws": 0
+      }
+    ],
+    "MBPP+ frozen": [
+      {
+        "policy": "B",
+        "tasks": 32,
+        "active_correct": 366,
+        "retained_correct": 356,
+        "recall": 0.9726775956284153,
+        "ci95": [
+          0.9550554366565602,
+          0.9887656142112862
+        ],
+        "undefined_bootstrap_draws": 0
+      },
+      {
+        "policy": "HB",
+        "tasks": 32,
+        "active_correct": 366,
+        "retained_correct": 276,
+        "recall": 0.7540983606557377,
+        "ci95": [
+          0.6186639175257732,
+          0.8773604614495191
+        ],
+        "undefined_bootstrap_draws": 0
+      }
+    ]
+  }
+}
+
+Print layouts: 23 figures; 65 file routes
+
+........................................................................ [ 42%]
+........................................................................ [ 84%]
+...........................                                              [100%]
+============================== warnings summary ===============================
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:64
+  C:\Users\joaof\slm-inference-steering\.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+    prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85
+  C:\Users\joaof\slm-inference-steering\.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    parse = parser.parseString(pattern)
+
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89
+  C:\Users\joaof\slm-inference-steering\.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    parser.resetCache()
+
+.venv\Lib\site-packages\matplotlib\_mathtext.py:45
+  C:\Users\joaof\slm-inference-steering\.venv\Lib\site-packages\matplotlib\_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: C:\Users\joaof\slm-inference-steering\reports\research\test_results_v0.2.xml -
+171 passed, 14 warnings in 112.02s (0:01:52)
+
+All checks passed!
+
+Success: no issues found in 134 source files
+
+Excellence synthesis: 245 auditable inputs; exploratory rerun error=0
+
+Academic materials compiled: research summary 2 pages; defense 12 slides; guide 44 questions
+
+
+{"status": "completed_including_approved_independent_evaluation", "primary": {"estimate": -0.16359060402684564, "ci95": [-0.2402298061170319, -0.0942741120201171], "tasks": 120, "replications": 10000, "seed": 20261017, "undefined_draws": 0, "identified": true, "directional_hypothesis_supported": true}, "notebook_cells": 21, "pdfs": {"tcc/build/manuscrito.pdf": {"pages": 69, "sha256": "18dda56f94b17bf51d1f43da8df3cc2c46113d524d6ac70611a15521985df57f"}, "reports/excellence/materials/research_summary_en.pdf": {"pages": 2, "sha256": "5b8c5a389adbadbb7f9e08be713cced0d93d1c69de501a3c8a9951de6b24bf39"}, "reports/excellence/materials/defesa.pdf": {"pages": 12, "sha256": "aae14a774da795b315d05f4aa6f95a8d378c4c65979d55a3d6a9b65a4b350d21"}}}

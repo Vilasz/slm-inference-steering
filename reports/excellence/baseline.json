@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-10-17T06:06:46.779662+00:00",
+  "client_request_date": "2026-10-17",
+  "git_head": "73fce19fc9ff5f38f02ec0ac7c963460bfc81974",
+  "protected": {
+    "RESEARCH_PROTOCOL.md": "e5ce9af1f95a4bf91ada58a3a11495f92c24a2ae3bd6d9eaf9ddebe69139b04c",
+    "configs/protocol_v0.2.yaml": "270c2715f46f0e5aee218962ffa688b367e033d15fe9d047d6c2950f3a3f4a6b",
+    "reports/research/execution_freeze_v0.2/manifest.json": "4340a00cdc3cc5dd9676276ef70a3a8f7d3cae331d00a4c030340809c4e2497a",
+    "runs/candidate_bank/pilot_v0.2/manifest.json": "a8547a2f66765a6422b3d5ecf1c07fbcd698cd1d508c33b24f016c853fb36a1f",
+    "runs/candidate_bank/pilot_v0.2/trajectories.jsonl": "9b241a61af270d7820e8dbfeeb8611f53071ac7755340ee2a0c0e5d455f11009",
+    "runs/candidate_bank/definitive_v0.2/manifest.json": "3b40dd603f9786d395821847247c5c59b9083608c4ebe260419effe66db4fb4d",
+    "runs/candidate_bank/definitive_v0.2/trajectories.jsonl": "8e55c7f8905254029d6ef3e92a17a77f01727f7ba206c5e73098613b26b856fb",
+    "runs/candidate_bank/transfer_v0.2/manifest.json": "1882810092bd960e95ac70ef579828f062496f04e4f1102e5131a8aa509ef8cc",
+    "runs/candidate_bank/transfer_v0.2/trajectories.jsonl": "625b24e8abec429892fc7bbe2b9624aafb5b5d8a0f227893ff5bf96c5892a576",
+    "runs/probes/protocol_v0.2/outer_predictions.csv": "96f941052ef85e6778c3a993596ab841573262169ba7d9adee12f803a26f6a8d",
+    "runs/probes/protocol_v0.2/selection_audit.json": "60fa7a0aede1abf3df1772482810835c95a3e39c158da3fe93ed0c33e54ae070",
+    "runs/transfer/protocol_v0.2/models.joblib": "1adfc6660ed8748c58dc47dbce7e34b2d086d62a076b990bab6934d155f8df83",
+    "runs/transfer/protocol_v0.2/models.json": "c336453eb4bd1d5e09d9db30b8b65a6d43aa3135658f9449f43ee427133680e8",
+    "reports/protocol_v0.2/results.json": "0cc3d457fe59a656418dae2df02e69a38ce424703ee78e036b1a31d9561d2949",
+    "reports/transfer_v0.2/results.json": "841bec2240af6d56f120ed72ad7ae9d34561c6694e5d6937f911b1f31c860910",
+    "reports/transfer_v0.2/predictions.csv": "58fb6b419c6bd4a80d23e75044597341d069b9fcd534e4c23eb247cad78f06c1"
+  },
+  "archived_publication": {
+    "RESULTS.md": "8b82acea0caaf67521d6283e36df90d7ec94aabdb5386907211acd368aa0e5a1",
+    "README.md": "7f94291ee01f6150e1f21af0768e487b4c11cfda0ef2a786353c04e8815e430a",
+    "reports/final_review/evidence.json": "1c6cc1b216eba8c67204b46f526f2fc37b90f3e13fdf1e23aa83ab460993e78d",
+    "reports/final_review/delivery_manifest.json": "e962eb6bb1e075dff2f1f642dbdd192938077b790de589649afcd036b15e0516",
+    "notebooks/final_research_summary.ipynb": "00fcf8ea31ee8f8cdac0e0c76f8fe4e00e66aa425f4550b525f0518de567365d",
+    "tcc/build/manuscrito.pdf": "94de4cd71ec69d2f461c58459d77a1df2ee42dd13f1fc2c1459780c2c2e1a66d",
+    "tcc/referencias.bib": "3f2892285fcc33f5903f8dd009ee424bee6512c10bbf907c0f7e7572c1f7e524",
+    "tcc/chapters/01_introducao.typ": "631255b0a4bd263a1518a4a1c5e5d5efd90ca0b86d8c4adeb5cfe393dd1f1717",
+    "tcc/chapters/02_relacionados.typ": "e6e73b42ba945485dbb03b04fc387bad0c0016aa30e2d39735b7fb65bb3d0c25",
+    "tcc/chapters/03_fundamentacao.typ": "1d756526ef88300b2e3b96bcd17a03257dc5cfe8799b244a705cdba28c5b6c6e",
+    "tcc/chapters/04_metodologia.typ": "7d94178f3f2f9bf1d7435c5d753f32fec6f601c56b451fe01d51b05d2e33d5de",
+    "tcc/chapters/06_discussao.typ": "62c7336146208c615a24bd083a0b3ee49ffcc0ce6978acf530cd77fe6fffd9a9",
+    "tcc/chapters/08_reprodutibilidade.typ": "c8673a38ec57f84c162584bf0e475e9bb764c9f51ddb9ea67a443d895f6c0bc2"
+  },
+  "scope": "Exploratory extensions authorized; independent data collection and scientific freeze await student/advisor review"
+}

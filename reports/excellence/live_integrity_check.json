@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-10-17T17:26:47.551903+00:00",
+  "status": "technical_prefix_contracts_passed",
+  "complete_records_checked": {
+    "technical": 400,
+    "main": 1586
+  },
+  "scope": "Public prompts, frozen decoding/template, parser and saved checker-status consistency only; no partial primary endpoint, rates, policy decisions or model changes",
+  "source_sha256": "9aa91a14da558ee63df99f22d33c5723da22f7a831481bca3d349a990b49ee8c"
+}

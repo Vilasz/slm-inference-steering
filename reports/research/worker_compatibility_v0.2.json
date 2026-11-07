@@ -1,0 +1,117 @@
+{
+  "at": "2026-10-13T02:16:22.970552+00:00",
+  "old_sha256": "8d538f5d25c512e6d094286c1c38876822b903ad00a79e5342d1b8e65f77bf19",
+  "new_sha256": "d7949a521fe6af7ff5ea54e26a448f80a478946c72b5cc135e8dbceca016b397",
+  "reason": "Typed complex/set serialization for MBPP dataset hashing; HumanEval hash and all stored labels reproduced",
+  "checked_trajectories": 21,
+  "dataset_sha256": "0df1afb91f430bcc71fc7a192daf39c3abe11897a7d6e9da66dee67470603fde",
+  "bank_sha256_unchanged": "b056738a06a942e369dcbe9541fc99cec88ec7abde025f1cb1859b5580a8027b",
+  "checks": [
+    {
+      "task_id": "HumanEval/4",
+      "attempt_id": 0,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/4",
+      "attempt_id": 10,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/4",
+      "attempt_id": 20,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/60",
+      "attempt_id": 0,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/60",
+      "attempt_id": 10,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/60",
+      "attempt_id": 20,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/101",
+      "attempt_id": 0,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/101",
+      "attempt_id": 10,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/101",
+      "attempt_id": 20,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/125",
+      "attempt_id": 0,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/125",
+      "attempt_id": 10,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/125",
+      "attempt_id": 20,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/102",
+      "attempt_id": 0,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/102",
+      "attempt_id": 10,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/102",
+      "attempt_id": 20,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/81",
+      "attempt_id": 0,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/81",
+      "attempt_id": 10,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/81",
+      "attempt_id": 20,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/139",
+      "attempt_id": 0,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/139",
+      "attempt_id": 10,
+      "matched": true
+    },
+    {
+      "task_id": "HumanEval/139",
+      "attempt_id": 20,
+      "matched": true
+    }
+  ],
+  "passed": true
+}

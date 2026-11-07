@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-16T03:20:01.732687+00:00",
+  "status": "completed",
+  "stage": "publication_audit",
+  "runner_pid": 18896,
+  "runner_alive": false,
+  "completed_stages": 19,
+  "total_stages": 19,
+  "banks": {
+    "pilot": {
+      "completed": 960,
+      "expected": 960,
+      "status": "completed"
+    },
+    "definitive": {
+      "completed": 2640,
+      "expected": 2640,
+      "status": "completed"
+    },
+    "transfer": {
+      "completed": 640,
+      "expected": 640,
+      "status": "completed"
+    }
+  },
+  "verification": {
+    "passed": true,
+    "stages_verified": 19,
+    "checks": "All stages, samples, bank identities and hashes, evidence and publication artifact hashes verified"
+  }
+}

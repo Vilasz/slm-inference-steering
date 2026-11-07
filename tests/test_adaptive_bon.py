@@ -34,6 +34,23 @@ class AdaptiveBestOfNTests(unittest.TestCase):
         self.assertAlmostEqual(metrics["mean_attempts"], 1.5)
         self.assertAlmostEqual(metrics["budget_saved_vs_fixed_n"], 0.5)
         self.assertEqual(metrics["tokens_per_success"], 60)
+        self.assertEqual(metrics["expected_utility"], 940.0)
+
+    def test_adaptive_metrics_compares_to_baseline_when_available(self) -> None:
+        records = [
+            {"solved": True, "attempts": [{"generated_tokens": 5}]},
+            {"solved": True, "attempts": [{"generated_tokens": 5}]},
+        ]
+        baseline = [
+            {"solved": True, "attempts": [{"generated_tokens": 10}]},
+            {"solved": False, "attempts": [{"generated_tokens": 10}]},
+        ]
+
+        metrics = adaptive_metrics(records, fixed_n=1, baseline_records=baseline)
+
+        self.assertEqual(metrics["accuracy_delta_vs_fixed_n"], 0.5)
+        self.assertEqual(metrics["cost_delta_vs_fixed_n"], -5.0)
+        self.assertEqual(metrics["pareto_dominance"], "dominates_fixed_n")
 
 
 if __name__ == "__main__":

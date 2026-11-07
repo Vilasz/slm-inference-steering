@@ -17,12 +17,17 @@ class InterventionTests(unittest.TestCase):
         hidden = torch.zeros((1, 3, 4))
         direction = torch.tensor([1.0, 2.0, 3.0, 4.0])
 
-        updated = apply_additive_intervention(hidden, direction, alpha=0.5, token_selection="index:1")
-
-        self.assertTrue(torch.allclose(updated[0, 0], torch.zeros(4)))
-        self.assertTrue(torch.allclose(updated[0, 1], direction * 0.5))
-        self.assertTrue(torch.allclose(updated[0, 2], torch.zeros(4)))
-        self.assertTrue(torch.allclose(hidden, torch.zeros_like(hidden)))
+        for normalize in (False, True):
+            with self.subTest(normalize_direction=normalize):
+                updated = apply_additive_intervention(
+                    hidden, direction, alpha=0.5, token_selection="index:1",
+                    normalize_direction=normalize,
+                )
+                expected_direction = direction / torch.linalg.vector_norm(direction) if normalize else direction
+                self.assertTrue(torch.allclose(updated[0, 0], torch.zeros(4)))
+                self.assertTrue(torch.allclose(updated[0, 1], expected_direction * 0.5))
+                self.assertTrue(torch.allclose(updated[0, 2], torch.zeros(4)))
+                self.assertTrue(torch.allclose(hidden, torch.zeros_like(hidden)))
 
     def test_zero_alpha_returns_same_tensor(self) -> None:
         torch = _require_torch()

@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-10-17T06:23:04.179753+00:00",
+  "passed": true,
+  "complete": true,
+  "attempts": 2640,
+  "expected_attempts": 2640,
+  "unique_identities": 2640,
+  "phase": "definitive",
+  "tasks": 132,
+  "generated_completion_tokens": 202492,
+  "bank_sha256": "8e55c7f8905254029d6ef3e92a17a77f01727f7ba206c5e73098613b26b856fb",
+  "confirmatory_ready": true
+}

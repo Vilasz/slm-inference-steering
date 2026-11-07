@@ -1,0 +1,34 @@
+{
+  "at": "2026-11-04T13:01:04.964205+00:00",
+  "reason": "Set official EVALPLUS_MAX_MEMORY_BYTES to the existing 3GiB sandbox hard limit; controls failed before any generated candidate",
+  "previous_plan": {
+    "frozen_at": "2026-11-04T12:58:06.438606+00:00",
+    "authorization": "Student request 2026-11-04",
+    "development_ids": [
+      "HumanEval/148",
+      "HumanEval/45",
+      "HumanEval/85",
+      "HumanEval/121",
+      "HumanEval/144",
+      "HumanEval/43",
+      "HumanEval/101",
+      "HumanEval/64",
+      "HumanEval/109",
+      "HumanEval/48",
+      "HumanEval/139",
+      "HumanEval/91"
+    ],
+    "attempts": 20,
+    "files": {
+      "docs/protocols/FINAL_CROSS_MODEL_EXTENSION_v1.md": "3bf9cfcc871893455f52cea86e6e269f86428155fd20f64e92d3132e7b53b6fd",
+      "reports/final_extension/task_inventory.json": "410dfd3aaa5f3fe58d957a6479952346ce48c7e71f665edf369353fde1471f2c",
+      "reports/final_extension/model_metadata.json": "420c1b46e3339a2c147fdde6832a90f59ca49a55586c60dc5b8f6e532c95a2b9",
+      "src/slm_steering/final_extension/generation.py": "c8017dd70fbff0c74726bef5acbdeceff6589897d4b7a4bc700b4dad1d806702",
+      "src/slm_steering/final_extension/collection.py": "99ee33afd5c8a2644c65dd23ba31ca6a00edb22098bfb4650b1bd770b7d8cecc",
+      "src/slm_steering/final_extension/sandbox.py": "2d94e959a3ebb78ce72d97f51ac44047c30304b7faa0a7798b4b66a9bc840443",
+      "scripts/final_extension_worker.py": "f9097593cb4b421740f2fbe530c5eccb263c8a5e0d96d0e28a2a5648b3431413",
+      "scripts/evalplus_worker.py": "d7949a521fe6af7ff5ea54e26a448f80a478946c72b5cc135e8dbceca016b397"
+    },
+    "external_labels_inspected": false
+  }
+}

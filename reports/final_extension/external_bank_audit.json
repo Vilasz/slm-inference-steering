@@ -1,0 +1,20 @@
+{
+  "audited_at": "2026-11-06T08:50:34.965150+00:00",
+  "phase": "external",
+  "banks": [
+    {
+      "model": "deepseek",
+      "phase": "external",
+      "candidates": 2000,
+      "tasks": 100,
+      "all_checks_passed": true
+    },
+    {
+      "model": "qwen",
+      "phase": "external",
+      "candidates": 2000,
+      "tasks": 100,
+      "all_checks_passed": true
+    }
+  ]
+}

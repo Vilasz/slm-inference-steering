@@ -1,0 +1,166 @@
+{
+  "created_at": "2026-10-18T16:22:11.520465+00:00",
+  "status": "initial_scientific_audit_passed_with_limitations",
+  "banks": {
+    "pilot": {
+      "attempts": 960,
+      "tasks": 32,
+      "seed_identities_verified": 960,
+      "passed": 537,
+      "truncated": 1,
+      "generation_seconds": 14023.24369259039,
+      "verification_seconds": 90.39755192201119
+    },
+    "definitive": {
+      "attempts": 2640,
+      "tasks": 132,
+      "seed_identities_verified": 2640,
+      "passed": 1298,
+      "truncated": 0,
+      "generation_seconds": 27357.739355598686,
+      "verification_seconds": 223.56292358001423
+    },
+    "transfer": {
+      "attempts": 640,
+      "tasks": 32,
+      "seed_identities_verified": 640,
+      "passed": 366,
+      "truncated": 0,
+      "generation_seconds": 3519.8022654999077,
+      "verification_seconds": 28.840231408005682
+    }
+  },
+  "risk_set_32": {
+    "attempts": 2158,
+    "tasks": 132,
+    "mixed_tasks": 92
+  },
+  "metrics": {
+    "B": {
+      "roc_auc": 0.7005388050669171,
+      "pr_auc": 0.7197218330414143,
+      "log_loss": 0.6302167257514908,
+      "brier": 0.21993367365692673,
+      "within_task_auc": 0.628155136147495
+    },
+    "H": {
+      "roc_auc": 0.5923589827609933,
+      "pr_auc": 0.5837251343020206,
+      "log_loss": 0.6868662856354758,
+      "brier": 0.24600698064937684,
+      "within_task_auc": 0.5681088021901578
+    },
+    "HB": {
+      "roc_auc": 0.645649618218971,
+      "pr_auc": 0.6230770322787882,
+      "log_loss": 0.6680673306367095,
+      "brier": 0.23621441410182073,
+      "within_task_auc": 0.5811264786356591
+    }
+  },
+  "delta_wt_auc": {
+    "estimate": -0.04702865751183576,
+    "ci95": [
+      -0.09937495818447421,
+      0.005583498622638404
+    ],
+    "tasks": 92,
+    "replications": 2000,
+    "seed": 20260921,
+    "unit": "task_id"
+  },
+  "delta_log_loss": {
+    "estimate": 0.03785060488521885,
+    "ci95": [
+      0.006657260077646494,
+      0.0706158375881566
+    ],
+    "tasks": 132,
+    "replications": 2000,
+    "seed": 20260921,
+    "unit": "task_id"
+  },
+  "split_checks": 270,
+  "scorer_reproduction": [
+    {
+      "fold": 0,
+      "predictor": "B",
+      "maximum_absolute_error": 8.326672684688674e-17
+    },
+    {
+      "fold": 0,
+      "predictor": "HB",
+      "maximum_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "fold": 0,
+      "predictor": "H",
+      "maximum_absolute_error": 8.326672684688674e-17
+    },
+    {
+      "fold": 1,
+      "predictor": "B",
+      "maximum_absolute_error": 8.326672684688674e-17
+    },
+    {
+      "fold": 1,
+      "predictor": "HB",
+      "maximum_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "fold": 1,
+      "predictor": "H",
+      "maximum_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "fold": 2,
+      "predictor": "B",
+      "maximum_absolute_error": 9.71445146547012e-17
+    },
+    {
+      "fold": 2,
+      "predictor": "HB",
+      "maximum_absolute_error": 8.326672684688674e-17
+    },
+    {
+      "fold": 2,
+      "predictor": "H",
+      "maximum_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "fold": 3,
+      "predictor": "B",
+      "maximum_absolute_error": 8.326672684688674e-17
+    },
+    {
+      "fold": 3,
+      "predictor": "HB",
+      "maximum_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "fold": 3,
+      "predictor": "H",
+      "maximum_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "fold": 4,
+      "predictor": "B",
+      "maximum_absolute_error": 8.326672684688674e-17
+    },
+    {
+      "fold": 4,
+      "predictor": "HB",
+      "maximum_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "fold": 4,
+      "predictor": "H",
+      "maximum_absolute_error": 5.551115123125783e-17
+    }
+  ],
+  "limitations": [
+    "Full hyperparameter searches were audited from saved grids, not independently rerun for all original checkpoints",
+    "Model reproduction covers the primary checkpoint; recorded prefix tests provide numerical invariance evidence",
+    "No historical advisor approval, independent preregistration, or data novelty is inferred"
+  ]
+}

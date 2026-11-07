@@ -1,0 +1,43 @@
+{
+  "started_at": "2026-10-14T13:43:20.685599+00:00",
+  "stages": {
+    "pilot": {
+      "status": "completed",
+      "started_at": "2026-10-14T13:43:20.688721+00:00",
+      "ended_at": "2026-10-14T15:45:09.412165+00:00",
+      "output_sha256": "a8547a2f66765a6422b3d5ecf1c07fbcd698cd1d508c33b24f016c853fb36a1f"
+    },
+    "pilot_audit": {
+      "status": "completed",
+      "started_at": "2026-10-14T15:45:09.412165+00:00",
+      "ended_at": "2026-10-14T15:45:15.594038+00:00",
+      "output_sha256": "407bcdad45e4e388a985a516eaee301e37a771226d9a6694ac6782ef613148c0"
+    },
+    "pilot_prefix_validation": {
+      "status": "completed",
+      "started_at": "2026-10-14T15:45:15.616594+00:00",
+      "ended_at": "2026-10-14T15:45:30.282063+00:00",
+      "output_sha256": "3ad4856ca46a49623999c0d9d712013174d28561674f0e4a8e3ce16738661d53"
+    },
+    "sampling_freeze": {
+      "status": "completed",
+      "started_at": "2026-10-14T15:45:30.299288+00:00",
+      "ended_at": "2026-10-14T15:45:31.418204+00:00",
+      "output_sha256": "3519d8b9185da4600fc71a5f1e897bc15edbdea56da69f4f510e26572d20e062"
+    },
+    "main_bank": {
+      "status": "running",
+      "started_at": "2026-10-15T06:48:13.595041+00:00"
+    }
+  },
+  "status": "failed",
+  "pid": 29804,
+  "config_sha256": "270c2715f46f0e5aee218962ffa688b367e033d15fe9d047d6c2950f3a3f4a6b",
+  "current_stage": "main_bank",
+  "updated_at": "2026-10-15T06:48:13.595041+00:00",
+  "ended_at": "2026-10-15T13:15:37.894142+00:00",
+  "failure": {
+    "type": "RuntimeError",
+    "message": "Stage main_bank exited 1; see C:\\Users\\joaof\\slm-inference-steering\\reports\\research\\full_execution_v0.2\\main_bank.log"
+  }
+}

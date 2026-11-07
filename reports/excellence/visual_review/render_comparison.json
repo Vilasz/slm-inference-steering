@@ -1,0 +1,29 @@
+{
+  "previously_inspected_directory": "reports/excellence/archive_visual_source_pass/visual_review",
+  "identical_image_sha256_groups": [
+    "manuscript_001_004",
+    "manuscript_009_012",
+    "manuscript_013_016",
+    "manuscript_017_020",
+    "manuscript_025_028",
+    "manuscript_029_032",
+    "summary_001_002",
+    "slides_001_004",
+    "slides_005_008"
+  ],
+  "changed_groups": [
+    "manuscript_005_008",
+    "manuscript_021_024",
+    "manuscript_033_036",
+    "manuscript_037_040",
+    "manuscript_041_044",
+    "manuscript_045_048",
+    "manuscript_049_052",
+    "manuscript_053_056",
+    "manuscript_057_060",
+    "manuscript_061_064",
+    "manuscript_065_068",
+    "manuscript_069_069",
+    "slides_009_012"
+  ]
+}

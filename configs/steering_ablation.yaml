@@ -1,0 +1,35 @@
+{
+  "name": "steering_ablation",
+  "output_dir": "runs/config_runs/steering_ablation",
+  "description": "Minimal causal steering sweep with positive, negative and random controls.",
+  "steps": [
+    {
+      "name": "steering_sweep_minimal",
+      "type": "command",
+      "command": [
+        "{python}",
+        "scripts/run_steering_sweep.py",
+        "--directions-dir",
+        "runs/phase3/qwen_phase3_probe",
+        "--layers",
+        "8,12,16",
+        "--alphas",
+        "0,0.5,1",
+        "--direction-types",
+        "correctness_direction,negative_correctness_direction,random_direction,shuffled_label_direction",
+        "--limit",
+        "20",
+        "--n",
+        "2",
+        "--max-new-tokens",
+        "256",
+        "--skip-existing",
+        "--require-cuda"
+      ]
+    },
+    {
+      "name": "report",
+      "type": "report"
+    }
+  ]
+}

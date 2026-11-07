@@ -1,0 +1,13 @@
+{
+  "delivered_at_utc": "2026-11-07T22:24:16.311797+00:00",
+  "total_elapsed_minutes": 43.02186328333333,
+  "within_180_minutes": true,
+  "zip": "dist/github_final.zip",
+  "zip_sha256": "4ba3d182e91e3fe94a50f01000d6e7552b1d5d01c724432220efc42c208eb349",
+  "zip_bytes": 17450869,
+  "files_in_archive": 239,
+  "selected_files": 238,
+  "publication_manifest_sha256": "7c6a4c55ec0ca3e0253da124b2f6b94998e7ae9e3b1d45e7a0354ac9a85ae43f",
+  "archive_crc_and_all_member_hashes_verified": true,
+  "final_pdf_sha256": "2d2b33ffb7a224a489c9ee304af1461da545c9ca25e6f47e3ce4f88962001112"
+}

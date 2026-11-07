@@ -6,7 +6,14 @@ from pathlib import Path
 
 import numpy as np
 
-from slm_steering.activations.controls import load_direction_map, normalize, random_direction_map
+from slm_steering.activations.controls import (
+    layer_shuffled_direction_map,
+    load_direction_map,
+    normalize,
+    orthogonalize,
+    random_direction_map,
+    random_orthogonal_direction_map,
+)
 from slm_steering.activations.storage import save_activation_dataset
 
 
@@ -45,6 +52,35 @@ class ControlDirectionTests(unittest.TestCase):
             self.assertTrue(np.allclose(negative[2], -positive[2]))
         finally:
             shutil.rmtree(output_dir, ignore_errors=True)
+
+    def test_random_orthogonal_direction_removes_base_projection(self) -> None:
+        directions = random_orthogonal_direction_map(
+            [1],
+            base={1: np.asarray([1.0, 0.0], dtype=np.float32)},
+            hidden_size=2,
+            seed=7,
+        )
+
+        self.assertAlmostEqual(float(np.dot(directions[1], np.asarray([1.0, 0.0]))), 0.0, places=5)
+
+    def test_layer_shuffled_direction_reassigns_layers(self) -> None:
+        base = {
+            1: np.asarray([1.0, 0.0], dtype=np.float32),
+            2: np.asarray([0.0, 1.0], dtype=np.float32),
+        }
+
+        shuffled = layer_shuffled_direction_map(base, seed=1)
+
+        self.assertEqual(set(shuffled), {1, 2})
+        self.assertFalse(all(np.allclose(shuffled[layer], base[layer]) for layer in base))
+
+    def test_orthogonalize_returns_vector_perpendicular_to_reference(self) -> None:
+        vector = orthogonalize(
+            np.asarray([1.0, 1.0], dtype=np.float32),
+            np.asarray([1.0, 0.0], dtype=np.float32),
+        )
+
+        self.assertAlmostEqual(float(np.dot(vector, np.asarray([1.0, 0.0]))), 0.0, places=5)
 
     def test_length_control_uses_generated_token_metadata(self) -> None:
         output_dir = Path("runs/tmp_tests/length_direction")

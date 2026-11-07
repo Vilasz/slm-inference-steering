@@ -1,0 +1,3 @@
+
+2026-10-15T15:53:17.667731+00:00 ["C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe", "-u", "C:\\Users\\joaof\\slm-inference-steering\\scripts\\validate_online_replay.py", "--bank-dir", "C:\\Users\\joaof\\slm-inference-steering\\runs\\candidate_bank\\definitive_v0.2", "--config", "C:\\Users\\joaof\\slm-inference-steering\\configs\\protocol_v0.2.yaml", "--wsl-python", "/home/joaof/.venvs/slm-evalplus-v031/bin/python", "--max-tasks", "12"]
+Online replay validated against the verifier baseline and both adaptive policies

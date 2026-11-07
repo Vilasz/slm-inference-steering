@@ -1,0 +1,2495 @@
+{
+  "created_at": "2026-11-04T14:36:26.852055+00:00",
+  "contract": {
+    "name": "deepseek",
+    "phase": "source",
+    "ids": [
+      "HumanEval/0",
+      "HumanEval/1",
+      "HumanEval/10",
+      "HumanEval/100",
+      "HumanEval/103",
+      "HumanEval/104",
+      "HumanEval/105",
+      "HumanEval/106",
+      "HumanEval/107",
+      "HumanEval/108",
+      "HumanEval/11",
+      "HumanEval/110",
+      "HumanEval/111",
+      "HumanEval/112",
+      "HumanEval/113",
+      "HumanEval/114",
+      "HumanEval/115",
+      "HumanEval/116",
+      "HumanEval/118",
+      "HumanEval/119",
+      "HumanEval/120",
+      "HumanEval/122",
+      "HumanEval/123",
+      "HumanEval/124",
+      "HumanEval/126",
+      "HumanEval/127",
+      "HumanEval/128",
+      "HumanEval/13",
+      "HumanEval/130",
+      "HumanEval/131",
+      "HumanEval/132",
+      "HumanEval/133",
+      "HumanEval/134",
+      "HumanEval/135",
+      "HumanEval/136",
+      "HumanEval/137",
+      "HumanEval/138",
+      "HumanEval/14",
+      "HumanEval/141",
+      "HumanEval/142",
+      "HumanEval/143",
+      "HumanEval/145",
+      "HumanEval/146",
+      "HumanEval/147",
+      "HumanEval/149",
+      "HumanEval/15",
+      "HumanEval/150",
+      "HumanEval/151",
+      "HumanEval/152",
+      "HumanEval/153",
+      "HumanEval/154",
+      "HumanEval/155",
+      "HumanEval/156",
+      "HumanEval/157",
+      "HumanEval/158",
+      "HumanEval/159",
+      "HumanEval/16",
+      "HumanEval/160",
+      "HumanEval/161",
+      "HumanEval/162",
+      "HumanEval/163",
+      "HumanEval/17",
+      "HumanEval/18",
+      "HumanEval/19",
+      "HumanEval/2",
+      "HumanEval/20",
+      "HumanEval/21",
+      "HumanEval/22",
+      "HumanEval/23",
+      "HumanEval/24",
+      "HumanEval/25",
+      "HumanEval/26",
+      "HumanEval/27",
+      "HumanEval/28",
+      "HumanEval/3",
+      "HumanEval/30",
+      "HumanEval/31",
+      "HumanEval/32",
+      "HumanEval/33",
+      "HumanEval/36",
+      "HumanEval/38",
+      "HumanEval/39",
+      "HumanEval/40",
+      "HumanEval/41",
+      "HumanEval/42",
+      "HumanEval/44",
+      "HumanEval/46",
+      "HumanEval/47",
+      "HumanEval/49",
+      "HumanEval/50",
+      "HumanEval/51",
+      "HumanEval/52",
+      "HumanEval/53",
+      "HumanEval/54",
+      "HumanEval/55",
+      "HumanEval/56",
+      "HumanEval/57",
+      "HumanEval/58",
+      "HumanEval/59",
+      "HumanEval/6",
+      "HumanEval/61",
+      "HumanEval/62",
+      "HumanEval/63",
+      "HumanEval/65",
+      "HumanEval/67",
+      "HumanEval/68",
+      "HumanEval/7",
+      "HumanEval/70",
+      "HumanEval/71",
+      "HumanEval/72",
+      "HumanEval/73",
+      "HumanEval/74",
+      "HumanEval/75",
+      "HumanEval/76",
+      "HumanEval/77",
+      "HumanEval/78",
+      "HumanEval/79",
+      "HumanEval/8",
+      "HumanEval/80",
+      "HumanEval/82",
+      "HumanEval/84",
+      "HumanEval/86",
+      "HumanEval/87",
+      "HumanEval/88",
+      "HumanEval/89",
+      "HumanEval/9",
+      "HumanEval/90",
+      "HumanEval/93",
+      "HumanEval/95",
+      "HumanEval/97",
+      "HumanEval/98",
+      "HumanEval/99"
+    ],
+    "attempts": 20,
+    "generator": "33d7b42ba1b9c48c6e8141216dd46f8499df5bed72a3c2da2597b7a0cbc7228b",
+    "collector": "99ee33afd5c8a2644c65dd23ba31ca6a00edb22098bfb4650b1bd770b7d8cecc",
+    "sandbox": "4df9ad177c638048996b84ff1b160d5fce2180f248973bc76eba55dca9c7de9e",
+    "worker": "f9097593cb4b421740f2fbe530c5eccb263c8a5e0d96d0e28a2a5648b3431413",
+    "historical_worker": "d7949a521fe6af7ff5ea54e26a448f80a478946c72b5cc135e8dbceca016b397",
+    "metadata": "420c1b46e3339a2c147fdde6832a90f59ca49a55586c60dc5b8f6e532c95a2b9"
+  },
+  "sessions": [
+    {
+      "ended_at": "2026-11-04T14:46:29.161629+00:00",
+      "new_attempts": 22,
+      "wall_seconds": 602.3119999999999,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3138.142578125,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T14:56:58.602079+00:00",
+      "new_attempts": 29,
+      "wall_seconds": 621.7810000000009,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3133.314453125,
+        "peak_reserved_mib": 3570.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T15:07:49.449750+00:00",
+      "new_attempts": 27,
+      "wall_seconds": 642.8279999999995,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3214.205078125,
+        "peak_reserved_mib": 3716.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T15:18:02.007381+00:00",
+      "new_attempts": 22,
+      "wall_seconds": 605.7659999999996,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3121.916015625,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T15:28:25.155110+00:00",
+      "new_attempts": 26,
+      "wall_seconds": 616.6869999999999,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3172.580078125,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T15:38:41.313349+00:00",
+      "new_attempts": 29,
+      "wall_seconds": 609.6720000000005,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3164.330078125,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T15:48:57.072193+00:00",
+      "new_attempts": 24,
+      "wall_seconds": 608.875,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3154.955078125,
+        "peak_reserved_mib": 3574.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T15:59:11.752436+00:00",
+      "new_attempts": 25,
+      "wall_seconds": 607.2029999999995,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3128.658203125,
+        "peak_reserved_mib": 3560.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T16:09:21.453923+00:00",
+      "new_attempts": 24,
+      "wall_seconds": 603.1399999999994,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3214.205078125,
+        "peak_reserved_mib": 3508.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T16:19:34.310541+00:00",
+      "new_attempts": 22,
+      "wall_seconds": 605.7189999999991,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3158.330078125,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T16:30:05.007462+00:00",
+      "new_attempts": 23,
+      "wall_seconds": 620.780999999999,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3114.455078125,
+        "peak_reserved_mib": 3440.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T16:40:29.683713+00:00",
+      "new_attempts": 22,
+      "wall_seconds": 609.0789999999997,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3172.205078125,
+        "peak_reserved_mib": 3448.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T16:50:41.739296+00:00",
+      "new_attempts": 23,
+      "wall_seconds": 601.5310000000009,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3120.087890625,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T17:01:09.944207+00:00",
+      "new_attempts": 25,
+      "wall_seconds": 616.8130000000001,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3179.705078125,
+        "peak_reserved_mib": 3514.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T17:12:04.231792+00:00",
+      "new_attempts": 22,
+      "wall_seconds": 642.780999999999,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3149.892578125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T17:22:37.217614+00:00",
+      "new_attempts": 28,
+      "wall_seconds": 622.2969999999987,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3211.955078125,
+        "peak_reserved_mib": 3700.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T17:33:17.797374+00:00",
+      "new_attempts": 23,
+      "wall_seconds": 629.8590000000004,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3135.330078125,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T17:43:30.268412+00:00",
+      "new_attempts": 22,
+      "wall_seconds": 601.5159999999996,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3217.205078125,
+        "peak_reserved_mib": 3570.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T17:54:06.481643+00:00",
+      "new_attempts": 24,
+      "wall_seconds": 625.155999999999,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3149.267578125,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T18:04:21.434021+00:00",
+      "new_attempts": 23,
+      "wall_seconds": 602.6409999999996,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3197.705078125,
+        "peak_reserved_mib": 3716.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T18:14:35.642598+00:00",
+      "new_attempts": 25,
+      "wall_seconds": 602.9380000000019,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3131.3203125,
+        "peak_reserved_mib": 3516.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T18:24:54.785714+00:00",
+      "new_attempts": 25,
+      "wall_seconds": 607.2649999999994,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3132.41796875,
+        "peak_reserved_mib": 3448.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T18:35:24.475321+00:00",
+      "new_attempts": 23,
+      "wall_seconds": 619.030999999999,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3148.642578125,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T18:45:39.792695+00:00",
+      "new_attempts": 24,
+      "wall_seconds": 603.0620000000017,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3187.994140625,
+        "peak_reserved_mib": 3716.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T18:55:55.264946+00:00",
+      "new_attempts": 25,
+      "wall_seconds": 602.4850000000006,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3214.205078125,
+        "peak_reserved_mib": 3514.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T19:06:16.527735+00:00",
+      "new_attempts": 20,
+      "wall_seconds": 609.2970000000023,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3142.361328125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T19:16:52.836566+00:00",
+      "new_attempts": 21,
+      "wall_seconds": 625.5619999999981,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3142.712890625,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T19:27:16.154512+00:00",
+      "new_attempts": 22,
+      "wall_seconds": 611.780999999999,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3127.580078125,
+        "peak_reserved_mib": 3440.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T19:37:52.502239+00:00",
+      "new_attempts": 25,
+      "wall_seconds": 625.6560000000027,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3175.955078125,
+        "peak_reserved_mib": 3448.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T19:48:39.005016+00:00",
+      "new_attempts": 23,
+      "wall_seconds": 633.6090000000004,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3134.626953125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T19:58:59.704573+00:00",
+      "new_attempts": 25,
+      "wall_seconds": 606.6090000000004,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3214.205078125,
+        "peak_reserved_mib": 3508.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T20:09:37.413437+00:00",
+      "new_attempts": 20,
+      "wall_seconds": 624.3280000000013,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3105.455078125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T20:20:06.375268+00:00",
+      "new_attempts": 21,
+      "wall_seconds": 618.1560000000027,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3152.080078125,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T20:30:22.649989+00:00",
+      "new_attempts": 21,
+      "wall_seconds": 605.0780000000013,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3162.080078125,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T20:41:02.082750+00:00",
+      "new_attempts": 22,
+      "wall_seconds": 628.4369999999981,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3192.080078125,
+        "peak_reserved_mib": 3648.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T20:51:21.177656+00:00",
+      "new_attempts": 27,
+      "wall_seconds": 607.1719999999987,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3128.658203125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T21:02:05.261577+00:00",
+      "new_attempts": 21,
+      "wall_seconds": 632.4530000000013,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3214.205078125,
+        "peak_reserved_mib": 3716.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T21:12:32.541219+00:00",
+      "new_attempts": 23,
+      "wall_seconds": 614.625,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3176.330078125,
+        "peak_reserved_mib": 3516.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T21:23:12.646335+00:00",
+      "new_attempts": 27,
+      "wall_seconds": 628.594000000001,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3134.978515625,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T21:33:49.728667+00:00",
+      "new_attempts": 19,
+      "wall_seconds": 624.2029999999977,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3157.978515625,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T21:44:08.888987+00:00",
+      "new_attempts": 23,
+      "wall_seconds": 607.1880000000019,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3215.705078125,
+        "peak_reserved_mib": 3570.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T21:54:31.483643+00:00",
+      "new_attempts": 22,
+      "wall_seconds": 611.0,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3228.080078125,
+        "peak_reserved_mib": 3648.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T22:05:27.217442+00:00",
+      "new_attempts": 22,
+      "wall_seconds": 644.4850000000006,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3162.080078125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T22:16:01.368183+00:00",
+      "new_attempts": 24,
+      "wall_seconds": 621.1560000000027,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3139.548828125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T22:26:14.314527+00:00",
+      "new_attempts": 23,
+      "wall_seconds": 600.8600000000006,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3150.955078125,
+        "peak_reserved_mib": 3456.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T22:36:37.913593+00:00",
+      "new_attempts": 21,
+      "wall_seconds": 610.9219999999987,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3132.130859375,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T22:47:16.311811+00:00",
+      "new_attempts": 21,
+      "wall_seconds": 626.125,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3132.712890625,
+        "peak_reserved_mib": 3574.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T22:57:50.955306+00:00",
+      "new_attempts": 29,
+      "wall_seconds": 620.4530000000013,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3128.658203125,
+        "peak_reserved_mib": 3570.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T23:08:14.561983+00:00",
+      "new_attempts": 22,
+      "wall_seconds": 611.1100000000006,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3202.205078125,
+        "peak_reserved_mib": 3508.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T23:18:46.687435+00:00",
+      "new_attempts": 21,
+      "wall_seconds": 617.2969999999987,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3179.705078125,
+        "peak_reserved_mib": 3448.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T23:29:51.812445+00:00",
+      "new_attempts": 28,
+      "wall_seconds": 653.0789999999979,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3160.580078125,
+        "peak_reserved_mib": 3440.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T23:40:10.922449+00:00",
+      "new_attempts": 23,
+      "wall_seconds": 606.2029999999941,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3174.830078125,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-04T23:50:42.174705+00:00",
+      "new_attempts": 21,
+      "wall_seconds": 618.0,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3131.462890625,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T00:00:55.520022+00:00",
+      "new_attempts": 25,
+      "wall_seconds": 601.5160000000033,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3087.830078125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T00:11:20.644344+00:00",
+      "new_attempts": 22,
+      "wall_seconds": 612.25,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3116.330078125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T00:21:52.047649+00:00",
+      "new_attempts": 28,
+      "wall_seconds": 618.4529999999941,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3141.658203125,
+        "peak_reserved_mib": 3448.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T00:32:14.005330+00:00",
+      "new_attempts": 20,
+      "wall_seconds": 609.2339999999967,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3160.205078125,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T00:42:55.200287+00:00",
+      "new_attempts": 25,
+      "wall_seconds": 629.6869999999981,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3154.955078125,
+        "peak_reserved_mib": 3510.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T00:53:19.992101+00:00",
+      "new_attempts": 20,
+      "wall_seconds": 612.5,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3128.658203125,
+        "peak_reserved_mib": 3502.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T01:03:44.266013+00:00",
+      "new_attempts": 17,
+      "wall_seconds": 612.3600000000006,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3140.603515625,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T01:14:28.285286+00:00",
+      "new_attempts": 17,
+      "wall_seconds": 632.3119999999981,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3084.830078125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T10:59:59.538813+00:00",
+      "new_attempts": 6,
+      "wall_seconds": 35105.43699999999,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3103.580078125,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T11:10:22.311474+00:00",
+      "new_attempts": 30,
+      "wall_seconds": 609.5939999999973,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3131.482421875,
+        "peak_reserved_mib": 3456.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T11:21:44.846837+00:00",
+      "new_attempts": 19,
+      "wall_seconds": 608.4380000000092,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3180.830078125,
+        "peak_reserved_mib": 3648.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T11:31:56.495924+00:00",
+      "new_attempts": 23,
+      "wall_seconds": 603.3589999999967,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3186.712890625,
+        "peak_reserved_mib": 3510.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T11:42:25.188683+00:00",
+      "new_attempts": 23,
+      "wall_seconds": 619.4220000000059,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3143.830078125,
+        "peak_reserved_mib": 3456.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T11:53:13.703247+00:00",
+      "new_attempts": 24,
+      "wall_seconds": 618.7810000000027,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3214.205078125,
+        "peak_reserved_mib": 3508.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T12:03:23.508739+00:00",
+      "new_attempts": 27,
+      "wall_seconds": 601.75,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3131.482421875,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T12:13:37.707317+00:00",
+      "new_attempts": 28,
+      "wall_seconds": 605.3279999999941,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3162.830078125,
+        "peak_reserved_mib": 3440.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T12:24:14.929985+00:00",
+      "new_attempts": 27,
+      "wall_seconds": 628.4689999999973,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3157.205078125,
+        "peak_reserved_mib": 3576.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T12:34:33.849732+00:00",
+      "new_attempts": 27,
+      "wall_seconds": 610.5310000000027,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3132.869140625,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T12:44:42.752598+00:00",
+      "new_attempts": 23,
+      "wall_seconds": 600.5940000000119,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3155.705078125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T12:55:03.251378+00:00",
+      "new_attempts": 28,
+      "wall_seconds": 611.9060000000027,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3131.482421875,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T13:05:16.189702+00:00",
+      "new_attempts": 21,
+      "wall_seconds": 604.5320000000065,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3172.580078125,
+        "peak_reserved_mib": 3440.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T13:15:38.059212+00:00",
+      "new_attempts": 24,
+      "wall_seconds": 612.9689999999973,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3189.275390625,
+        "peak_reserved_mib": 3456.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T13:25:55.543654+00:00",
+      "new_attempts": 22,
+      "wall_seconds": 608.6410000000033,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3187.673828125,
+        "peak_reserved_mib": 3716.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T13:36:37.962708+00:00",
+      "new_attempts": 28,
+      "wall_seconds": 633.9689999999973,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3139.900390625,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T13:46:51.715751+00:00",
+      "new_attempts": 26,
+      "wall_seconds": 604.3439999999973,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3131.3203125,
+        "peak_reserved_mib": 3508.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T13:57:02.358915+00:00",
+      "new_attempts": 28,
+      "wall_seconds": 601.1870000000054,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3132.41796875,
+        "peak_reserved_mib": 3448.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T14:07:19.796181+00:00",
+      "new_attempts": 23,
+      "wall_seconds": 608.2810000000027,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3186.392578125,
+        "peak_reserved_mib": 3442.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T14:17:35.311698+00:00",
+      "new_attempts": 23,
+      "wall_seconds": 606.5160000000033,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3145.955078125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T14:28:09.198613+00:00",
+      "new_attempts": 28,
+      "wall_seconds": 624.6570000000065,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3214.205078125,
+        "peak_reserved_mib": 3716.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T14:38:34.814233+00:00",
+      "new_attempts": 21,
+      "wall_seconds": 616.375,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3124.955078125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T14:48:53.002597+00:00",
+      "new_attempts": 24,
+      "wall_seconds": 608.4840000000113,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3131.482421875,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T14:59:26.437175+00:00",
+      "new_attempts": 25,
+      "wall_seconds": 624.5939999999973,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3176.330078125,
+        "peak_reserved_mib": 3456.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T15:09:55.616358+00:00",
+      "new_attempts": 25,
+      "wall_seconds": 620.5460000000021,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3238.548828125,
+        "peak_reserved_mib": 3572.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T15:20:27.774480+00:00",
+      "new_attempts": 25,
+      "wall_seconds": 622.9379999999946,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3156.455078125,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T15:30:44.497771+00:00",
+      "new_attempts": 22,
+      "wall_seconds": 607.9220000000059,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3214.205078125,
+        "peak_reserved_mib": 3508.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T15:41:15.905292+00:00",
+      "new_attempts": 23,
+      "wall_seconds": 622.7179999999935,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3153.455078125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T15:51:41.503308+00:00",
+      "new_attempts": 29,
+      "wall_seconds": 616.4220000000059,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3132.41796875,
+        "peak_reserved_mib": 3508.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T16:01:59.850242+00:00",
+      "new_attempts": 25,
+      "wall_seconds": 609.4850000000006,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3173.705078125,
+        "peak_reserved_mib": 3456.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T16:12:24.949739+00:00",
+      "new_attempts": 26,
+      "wall_seconds": 616.1399999999994,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3135.330078125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T16:22:40.470253+00:00",
+      "new_attempts": 24,
+      "wall_seconds": 606.3910000000033,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3203.330078125,
+        "peak_reserved_mib": 3716.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T16:33:03.948030+00:00",
+      "new_attempts": 24,
+      "wall_seconds": 614.7660000000033,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3131.3203125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T16:43:40.191337+00:00",
+      "new_attempts": 30,
+      "wall_seconds": 627.2189999999973,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3168.830078125,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T16:54:06.821493+00:00",
+      "new_attempts": 19,
+      "wall_seconds": 616.9850000000006,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3237.861328125,
+        "peak_reserved_mib": 3694.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T17:04:40.119612+00:00",
+      "new_attempts": 28,
+      "wall_seconds": 624.4210000000021,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3133.330078125,
+        "peak_reserved_mib": 3524.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T17:15:01.752332+00:00",
+      "new_attempts": 28,
+      "wall_seconds": 611.5310000000027,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3151.142578125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T17:25:22.266538+00:00",
+      "new_attempts": 27,
+      "wall_seconds": 610.8600000000006,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3131.3203125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T17:35:44.643660+00:00",
+      "new_attempts": 28,
+      "wall_seconds": 613.4379999999946,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3132.41796875,
+        "peak_reserved_mib": 3448.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T17:46:19.484579+00:00",
+      "new_attempts": 21,
+      "wall_seconds": 625.4060000000027,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3217.205078125,
+        "peak_reserved_mib": 3694.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T17:56:46.891361+00:00",
+      "new_attempts": 20,
+      "wall_seconds": 618.0939999999973,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3195.455078125,
+        "peak_reserved_mib": 3524.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T18:07:03.841088+00:00",
+      "new_attempts": 31,
+      "wall_seconds": 607.75,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3128.658203125,
+        "peak_reserved_mib": 3570.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T18:17:34.092082+00:00",
+      "new_attempts": 23,
+      "wall_seconds": 621.1720000000059,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3152.392578125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T18:27:58.588555+00:00",
+      "new_attempts": 26,
+      "wall_seconds": 615.2029999999941,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3226.205078125,
+        "peak_reserved_mib": 3648.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T18:38:28.484192+00:00",
+      "new_attempts": 25,
+      "wall_seconds": 620.2960000000021,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3132.130859375,
+        "peak_reserved_mib": 3396.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T18:49:10.632250+00:00",
+      "new_attempts": 24,
+      "wall_seconds": 632.875,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3196.955078125,
+        "peak_reserved_mib": 3716.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T18:59:57.701615+00:00",
+      "new_attempts": 30,
+      "wall_seconds": 637.3589999999967,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3128.658203125,
+        "peak_reserved_mib": 3510.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T19:10:18.803773+00:00",
+      "new_attempts": 19,
+      "wall_seconds": 611.4379999999946,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3193.205078125,
+        "peak_reserved_mib": 3716.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T19:20:32.018225+00:00",
+      "new_attempts": 24,
+      "wall_seconds": 603.9850000000006,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3162.455078125,
+        "peak_reserved_mib": 3464.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-05T19:27:40.736221+00:00",
+      "new_attempts": 18,
+      "wall_seconds": 419.0310000000027,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3187.994140625,
+        "peak_reserved_mib": 3448.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    }
+  ],
+  "expected_attempts": 2640,
+  "status": "completed",
+  "completed_attempts": 2640,
+  "last_session_started_at": "2026-11-05T19:20:41.702465+00:00",
+  "benchmark": {
+    "benchmark": "humaneval",
+    "version": "v0.1.10",
+    "evalplus_version": "0.3.1",
+    "official_dataset_md5": "fe585eb4df8c88d844eeb463ea4d0302",
+    "dataset_sha256": "0df1afb91f430bcc71fc7a192daf39c3abe11897a7d6e9da66dee67470603fde",
+    "python": "3.12.3",
+    "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "checker": "evalplus.eval.untrusted_check",
+    "fast_check": true,
+    "mini": false,
+    "noextreme": false,
+    "minimum_time_limit": 1,
+    "groundtruth_time_factor": 4
+  },
+  "verifier_controls": {
+    "positive": {
+      "passed": true,
+      "error_type": null,
+      "verifier_status": {
+        "base": "pass",
+        "plus": "pass"
+      },
+      "verification_time_seconds": 0.023849379000239423,
+      "test_counts": {
+        "base": 7,
+        "plus": 999
+      }
+    },
+    "negative": {
+      "passed": false,
+      "error_type": "evalplus_fail",
+      "verifier_status": {
+        "base": "fail",
+        "plus": "fail"
+      },
+      "verification_time_seconds": 0.014801878000071156,
+      "test_counts": {
+        "base": 7,
+        "plus": 999
+      }
+    },
+    "sandbox": {
+      "host_home_hidden": true,
+      "windows_hidden": true,
+      "no_credentials": true,
+      "address_space_limited": true,
+      "cpu_limited": true,
+      "network_blocked": true,
+      "application_readonly": true
+    }
+  },
+  "numerical_checks": [
+    {
+      "checkpoint": 0,
+      "comparison": "full_sequence",
+      "relative_l2": 1.3842412727171904e-06,
+      "maximum_absolute": 3.814697265625e-06,
+      "passed": true
+    },
+    {
+      "checkpoint": 0,
+      "comparison": "cached",
+      "relative_l2": 0.00021311464222825477,
+      "maximum_absolute": 0.002216339111328125,
+      "passed": true
+    },
+    {
+      "checkpoint": 32,
+      "comparison": "full_sequence",
+      "relative_l2": 0.0,
+      "maximum_absolute": 0.0,
+      "passed": true
+    },
+    {
+      "checkpoint": 32,
+      "comparison": "cached",
+      "relative_l2": 0.00021125205180875888,
+      "maximum_absolute": 0.0017042160034179688,
+      "passed": true
+    },
+    {
+      "token_offset": 0,
+      "quantity": "token_logprobs",
+      "absolute_difference": 2.586841583251953e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 0,
+      "quantity": "token_entropies",
+      "absolute_difference": 3.5762786865234375e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 0,
+      "quantity": "token_margins",
+      "absolute_difference": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 1,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 1,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 1,
+      "quantity": "token_margins",
+      "absolute_difference": 7.62939453125e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 2,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 2,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 2,
+      "quantity": "token_margins",
+      "absolute_difference": 2.09808349609375e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 3,
+      "quantity": "token_logprobs",
+      "absolute_difference": 2.6226043701171875e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 3,
+      "quantity": "token_entropies",
+      "absolute_difference": 6.377696990966797e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 3,
+      "quantity": "token_margins",
+      "absolute_difference": 3.814697265625e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 4,
+      "quantity": "token_logprobs",
+      "absolute_difference": 3.2410025596618652e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 4,
+      "quantity": "token_entropies",
+      "absolute_difference": 1.1995434761047363e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 4,
+      "quantity": "token_margins",
+      "absolute_difference": 0.00014495849609375,
+      "passed": true
+    },
+    {
+      "token_offset": 5,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 5,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 5,
+      "quantity": "token_margins",
+      "absolute_difference": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 6,
+      "quantity": "token_logprobs",
+      "absolute_difference": 4.202127456665039e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 6,
+      "quantity": "token_entropies",
+      "absolute_difference": 5.155801773071289e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 6,
+      "quantity": "token_margins",
+      "absolute_difference": 2.288818359375e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 7,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 7,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 7,
+      "quantity": "token_margins",
+      "absolute_difference": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 8,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 8,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 8,
+      "quantity": "token_margins",
+      "absolute_difference": 0.0001068115234375,
+      "passed": true
+    },
+    {
+      "token_offset": 9,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 9,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 9,
+      "quantity": "token_margins",
+      "absolute_difference": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 10,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 10,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 10,
+      "quantity": "token_margins",
+      "absolute_difference": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 11,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 11,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 11,
+      "quantity": "token_margins",
+      "absolute_difference": 3.814697265625e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 12,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 12,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 12,
+      "quantity": "token_margins",
+      "absolute_difference": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 13,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 13,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 13,
+      "quantity": "token_margins",
+      "absolute_difference": 7.62939453125e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 14,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 14,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 14,
+      "quantity": "token_margins",
+      "absolute_difference": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 15,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 15,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 15,
+      "quantity": "token_margins",
+      "absolute_difference": 6.866455078125e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 16,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 16,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 16,
+      "quantity": "token_margins",
+      "absolute_difference": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 17,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 17,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 17,
+      "quantity": "token_margins",
+      "absolute_difference": 8.392333984375e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 18,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 18,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 18,
+      "quantity": "token_margins",
+      "absolute_difference": 3.814697265625e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 19,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 19,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 19,
+      "quantity": "token_margins",
+      "absolute_difference": 9.918212890625e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 20,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 20,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 20,
+      "quantity": "token_margins",
+      "absolute_difference": 0.000102996826171875,
+      "passed": true
+    },
+    {
+      "token_offset": 21,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 21,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 21,
+      "quantity": "token_margins",
+      "absolute_difference": 0.00014495849609375,
+      "passed": true
+    },
+    {
+      "token_offset": 22,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 22,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 22,
+      "quantity": "token_margins",
+      "absolute_difference": 2.288818359375e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 23,
+      "quantity": "token_logprobs",
+      "absolute_difference": 7.569789886474609e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 23,
+      "quantity": "token_entropies",
+      "absolute_difference": 3.635883331298828e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 23,
+      "quantity": "token_margins",
+      "absolute_difference": 2.288818359375e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 24,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 24,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 24,
+      "quantity": "token_margins",
+      "absolute_difference": 3.814697265625e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 25,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 25,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 25,
+      "quantity": "token_margins",
+      "absolute_difference": 4.1961669921875e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 26,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 26,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 26,
+      "quantity": "token_margins",
+      "absolute_difference": 4.57763671875e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 27,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 27,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 27,
+      "quantity": "token_margins",
+      "absolute_difference": 7.62939453125e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 28,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 28,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 28,
+      "quantity": "token_margins",
+      "absolute_difference": 2.86102294921875e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 29,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 29,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 29,
+      "quantity": "token_margins",
+      "absolute_difference": 2.09808349609375e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 30,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 30,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 30,
+      "quantity": "token_margins",
+      "absolute_difference": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 31,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 31,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 31,
+      "quantity": "token_margins",
+      "absolute_difference": 5.340576171875e-05,
+      "passed": true
+    }
+  ],
+  "capture_benchmark": {
+    "tokens": 62,
+    "instrumented_seconds": 8.463253400000212,
+    "uninstrumented_seconds": 7.851355399999193,
+    "copy_seconds": 0.2922527999999147,
+    "limitation": "One technical pair; overhead estimate has substantial timing noise."
+  },
+  "updated_at": "2026-11-05T19:27:40.513504+00:00",
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "memory_total_mib": 6143.5,
+    "peak_allocated_mib": 3187.994140625,
+    "peak_reserved_mib": 3448.0,
+    "cuda": "12.6",
+    "driver_version": "576.52",
+    "weight_storage_dtype": "bfloat16",
+    "linear_compute_dtype": "float32"
+  }
+}

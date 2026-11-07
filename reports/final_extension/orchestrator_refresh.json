@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-04T13:29:06.478972+00:00",
+  "reason": "Refresh controller to include completed source-label audit, bank validation and publication checks before external freeze; current atomic collection is allowed to finish",
+  "previous_lock": {
+    "pid": 10060,
+    "started_at": "2026-11-04T13:14:46.589896+00:00"
+  },
+  "controller_source": "9644a0bdb246125f6231e12d8eb4485fe4f900d77232e53eae478a5a9758fb1a"
+}

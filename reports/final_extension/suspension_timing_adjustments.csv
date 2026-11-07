@@ -1,0 +1,2 @@
+task_id,attempt_id,record_path,record_sha256_unchanged,raw_generation_seconds,os_sleep_overlap_seconds,adjusted_generation_seconds,integrity_and_seed_checks_passed
+HumanEval/65,10,runs\final_extension\v1\deepseek\source\records\9a5c4ea2c95951f5_10.json,7abe6d3511e6eb16a819ae652da0d2324d937acacc20dc6825f70d808e7d8d97,34874.289160199995,34836.900193,37.3889671999932,True

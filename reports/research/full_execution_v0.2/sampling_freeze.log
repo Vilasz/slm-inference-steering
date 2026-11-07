@@ -1,0 +1,3 @@
+
+2026-10-14T15:45:30.299288+00:00 ["C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe", "-u", "C:\\Users\\joaof\\slm-inference-steering\\scripts\\prepare_sampling_freeze.py", "--pilot-dir", "C:\\Users\\joaof\\slm-inference-steering\\runs\\candidate_bank\\pilot_v0.2", "--config", "C:\\Users\\joaof\\slm-inference-steering\\configs\\protocol_v0.2.yaml"]
+Sampling record ready for versioning: C:\Users\joaof\slm-inference-steering\configs\sampling_freeze_v0.2.json

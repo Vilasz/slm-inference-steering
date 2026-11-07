@@ -1,0 +1,363 @@
+{
+  "qwen": {
+    "id": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+    "tokenizer_revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+    "files": {
+      "config.json": {
+        "sha256": "88f9a17863c05fb313515d2ff74b1098e0c35579f99068e32beda00618508ae0",
+        "contents": {
+          "architectures": [
+            "Qwen2ForCausalLM"
+          ],
+          "attention_dropout": 0.0,
+          "bos_token_id": 151643,
+          "eos_token_id": 151645,
+          "hidden_act": "silu",
+          "hidden_size": 1536,
+          "initializer_range": 0.02,
+          "intermediate_size": 8960,
+          "max_position_embeddings": 32768,
+          "max_window_layers": 28,
+          "model_type": "qwen2",
+          "num_attention_heads": 12,
+          "num_hidden_layers": 28,
+          "num_key_value_heads": 2,
+          "rms_norm_eps": 1e-06,
+          "rope_theta": 1000000.0,
+          "sliding_window": 32768,
+          "tie_word_embeddings": true,
+          "torch_dtype": "bfloat16",
+          "transformers_version": "4.44.0",
+          "use_cache": true,
+          "use_sliding_window": false,
+          "vocab_size": 151936
+        }
+      },
+      "tokenizer_config.json": {
+        "sha256": "959e7f1d9a1b7641a6d6ce05ca97b75c7894fcb66cbe5a040406458fb1128ee4",
+        "contents": {
+          "add_bos_token": false,
+          "add_prefix_space": false,
+          "added_tokens_decoder": {
+            "151643": {
+              "content": "<|endoftext|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": true
+            },
+            "151644": {
+              "content": "<|im_start|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": true
+            },
+            "151645": {
+              "content": "<|im_end|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": true
+            },
+            "151646": {
+              "content": "<|object_ref_start|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": true
+            },
+            "151647": {
+              "content": "<|object_ref_end|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": true
+            },
+            "151648": {
+              "content": "<|box_start|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": true
+            },
+            "151649": {
+              "content": "<|box_end|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": true
+            },
+            "151650": {
+              "content": "<|quad_start|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": true
+            },
+            "151651": {
+              "content": "<|quad_end|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": true
+            },
+            "151652": {
+              "content": "<|vision_start|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": true
+            },
+            "151653": {
+              "content": "<|vision_end|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": true
+            },
+            "151654": {
+              "content": "<|vision_pad|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": true
+            },
+            "151655": {
+              "content": "<|image_pad|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": true
+            },
+            "151656": {
+              "content": "<|video_pad|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": true
+            },
+            "151657": {
+              "content": "<tool_call>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": false
+            },
+            "151658": {
+              "content": "</tool_call>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": false
+            },
+            "151659": {
+              "content": "<|fim_prefix|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": false
+            },
+            "151660": {
+              "content": "<|fim_middle|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": false
+            },
+            "151661": {
+              "content": "<|fim_suffix|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": false
+            },
+            "151662": {
+              "content": "<|fim_pad|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": false
+            },
+            "151663": {
+              "content": "<|repo_name|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": false
+            },
+            "151664": {
+              "content": "<|file_sep|>",
+              "lstrip": false,
+              "normalized": false,
+              "rstrip": false,
+              "single_word": false,
+              "special": false
+            }
+          },
+          "additional_special_tokens": [
+            "<|im_start|>",
+            "<|im_end|>",
+            "<|object_ref_start|>",
+            "<|object_ref_end|>",
+            "<|box_start|>",
+            "<|box_end|>",
+            "<|quad_start|>",
+            "<|quad_end|>",
+            "<|vision_start|>",
+            "<|vision_end|>",
+            "<|vision_pad|>",
+            "<|image_pad|>",
+            "<|video_pad|>"
+          ],
+          "bos_token": null,
+          "chat_template": "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- messages[0]['content'] }}\n    {%- else %}\n        {{- 'You are Qwen, created by Alibaba Cloud. You are a helpful assistant.' }}\n    {%- endif %}\n    {{- \"\\n\\n# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0]['content'] + '<|im_end|>\\n' }}\n    {%- else %}\n        {{- '<|im_start|>system\\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- for message in messages %}\n    {%- if (message.role == \"user\") or (message.role == \"system\" and not loop.first) or (message.role == \"assistant\" and not message.tool_calls) %}\n        {{- '<|im_start|>' + message.role + '\\n' + message.content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {{- '<|im_start|>' + message.role }}\n        {%- if message.content %}\n            {{- '\\n' + message.content }}\n        {%- endif %}\n        {%- for tool_call in message.tool_calls %}\n            {%- if tool_call.function is defined %}\n                {%- set tool_call = tool_call.function %}\n            {%- endif %}\n            {{- '\\n<tool_call>\\n{\"name\": \"' }}\n            {{- tool_call.name }}\n            {{- '\", \"arguments\": ' }}\n            {{- tool_call.arguments | tojson }}\n            {{- '}\\n</tool_call>' }}\n        {%- endfor %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if (loop.index0 == 0) or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- message.content }}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n{%- endif %}\n",
+          "clean_up_tokenization_spaces": false,
+          "eos_token": "<|im_end|>",
+          "errors": "replace",
+          "model_max_length": 32768,
+          "pad_token": "<|endoftext|>",
+          "split_special_tokens": false,
+          "tokenizer_class": "Qwen2Tokenizer",
+          "unk_token": null
+        }
+      },
+      "generation_config.json": {
+        "sha256": "1a628a5775bc69cde01c6749a531150ca4d3189652c618a174f7077923acf3b1",
+        "contents": {
+          "bos_token_id": 151643,
+          "pad_token_id": 151643,
+          "do_sample": true,
+          "eos_token_id": [
+            151645,
+            151643
+          ],
+          "repetition_penalty": 1.1,
+          "temperature": 0.7,
+          "top_p": 0.8,
+          "top_k": 20,
+          "transformers_version": "4.44.0"
+        }
+      }
+    },
+    "tokenizer_class": "Qwen2TokenizerFast",
+    "bos_id": null,
+    "eos_id": 151645,
+    "pad_id": 151643,
+    "vocabulary": 151665,
+    "source": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct/tree/2e1fd397ee46e1388853d2af2c993145b0f1098a"
+  },
+  "deepseek": {
+    "id": "deepseek-ai/deepseek-coder-1.3b-instruct",
+    "revision": "e063262dac8366fc1f28a4da0ff3c50ea66259ca",
+    "tokenizer_revision": "e063262dac8366fc1f28a4da0ff3c50ea66259ca",
+    "files": {
+      "config.json": {
+        "sha256": "5e81a9fd94e640b412725ff4c6eef90b8862e526c93ca4f4c5179244bcf20550",
+        "contents": {
+          "architectures": [
+            "LlamaForCausalLM"
+          ],
+          "bos_token_id": 32013,
+          "eos_token_id": 32021,
+          "hidden_act": "silu",
+          "hidden_size": 2048,
+          "initializer_range": 0.02,
+          "intermediate_size": 5504,
+          "max_position_embeddings": 16384,
+          "model_type": "llama",
+          "num_attention_heads": 16,
+          "num_hidden_layers": 24,
+          "num_key_value_heads": 16,
+          "pretraining_tp": 1,
+          "rms_norm_eps": 1e-06,
+          "rope_scaling": {
+            "factor": 4.0,
+            "type": "linear"
+          },
+          "rope_theta": 100000,
+          "tie_word_embeddings": false,
+          "torch_dtype": "bfloat16",
+          "transformers_version": "4.33.1",
+          "use_cache": true,
+          "vocab_size": 32256
+        }
+      },
+      "tokenizer_config.json": {
+        "sha256": "775f116ff1130a5b5bfc3cfdb594f9fcb5a5dc61d5a11ba92b2a7c078d66b7b7",
+        "contents": {
+          "add_bos_token": true,
+          "add_eos_token": false,
+          "bos_token": {
+            "__type": "AddedToken",
+            "content": "<｜begin▁of▁sentence｜>",
+            "lstrip": false,
+            "normalized": true,
+            "rstrip": false,
+            "single_word": false
+          },
+          "clean_up_tokenization_spaces": false,
+          "eos_token": {
+            "__type": "AddedToken",
+            "content": "<|EOT|>",
+            "lstrip": false,
+            "normalized": true,
+            "rstrip": false,
+            "single_word": false
+          },
+          "legacy": true,
+          "model_max_length": 16384,
+          "pad_token": {
+            "__type": "AddedToken",
+            "content": "<｜end▁of▁sentence｜>",
+            "lstrip": false,
+            "normalized": true,
+            "rstrip": false,
+            "single_word": false
+          },
+          "sp_model_kwargs": {},
+          "unk_token": null,
+          "tokenizer_class": "LlamaTokenizerFast",
+          "chat_template": "{% if not add_generation_prompt is defined %}\n{% set add_generation_prompt = false %}\n{% endif %}\n{%- set ns = namespace(found=false) -%}\n{%- for message in messages -%}\n    {%- if message['role'] == 'system' -%}\n        {%- set ns.found = true -%}\n    {%- endif -%}\n{%- endfor -%}\n{{bos_token}}{%- if not ns.found -%}\n{{'You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science. For politically sensitive questions, security and privacy issues, and other non-computer science questions, you will refuse to answer\\n'}}\n{%- endif %}\n{%- for message in messages %}\n    {%- if message['role'] == 'system' %}\n{{ message['content'] }}\n    {%- else %}\n        {%- if message['role'] == 'user' %}\n{{'### Instruction:\\n' + message['content'] + '\\n'}}\n        {%- else %}\n{{'### Response:\\n' + message['content'] + '\\n<|EOT|>\\n'}}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{% if add_generation_prompt %}\n{{'### Response:'}}\n{% endif %}"
+        }
+      },
+      "generation_config.json": {
+        "sha256": "186a63b420f66a03e95a035c488373361bb04833a9b83f4bdbaba70c5c816002",
+        "contents": {
+          "_from_model_config": true,
+          "bos_token_id": 32013,
+          "eos_token_id": 32021,
+          "transformers_version": "4.34.1"
+        }
+      }
+    },
+    "tokenizer_class": "LlamaTokenizerFast",
+    "bos_id": 32013,
+    "eos_id": 32021,
+    "pad_id": 32014,
+    "vocabulary": 32022,
+    "source": "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct/tree/e063262dac8366fc1f28a4da0ff3c50ea66259ca"
+  }
+}

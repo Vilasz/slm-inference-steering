@@ -1,0 +1,787 @@
+{
+  "started_at": "2026-10-12T18:06:32.546036+00:00",
+  "command": [
+    "C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe",
+    "scripts/build_candidate_bank.py",
+    "--config",
+    "configs/protocol_v0.2.yaml",
+    "--phase",
+    "pilot",
+    "--output-dir",
+    "runs/candidate_bank/pilot_v0.2",
+    "--wsl-python",
+    "/home/joaof/.venvs/slm-evalplus-v031/bin/python",
+    "--time-budget-seconds",
+    "600"
+  ],
+  "git_commit": "73fce19fc9ff5f38f02ec0ac7c963460bfc81974",
+  "git_dirty": true,
+  "config_hash": "270c2715f46f0e5aee218962ffa688b367e033d15fe9d047d6c2950f3a3f4a6b",
+  "protocol_hash": "e5ce9af1f95a4bf91ada58a3a11495f92c24a2ae3bd6d9eaf9ddebe69139b04c",
+  "python": "3.12.8",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "torch": "2.12.0+cu126",
+    "transformers": "4.46.3",
+    "evalplus": "0.3.1",
+    "numpy": "1.26.4",
+    "scikit-learn": "1.5.2",
+    "statsmodels": "0.14.4",
+    "PyYAML": "6.0.2"
+  },
+  "source_hashes": {
+    "src/slm_steering/research/__init__.py": "cb434ed9d7904af8cf2f14d4518a465fa76987aabe0e6e0958e175b4ec54343a",
+    "src/slm_steering/research/bank.py": "d403ad2aacb4f45944641437eb199312f9db8fc2d4c6fbc56f9259b232438727",
+    "src/slm_steering/research/evaluation.py": "f5eb7901ed1c53063cc73383a8437d251da0e02849bb56760e3560d824b47abe",
+    "src/slm_steering/research/features.py": "bbe81fbab35a9d6dfa95f0f6893f05397ca461647c380401e4194fcff20426ac",
+    "src/slm_steering/research/generation.py": "99e17401a0d0448f050859324f85d6dac9f78001e2eec8970979adf2204148c4",
+    "src/slm_steering/research/policy.py": "893d1e7ae141dbdb572b693178460625eb63984753f82ef92a0794f243ee4dd5",
+    "src/slm_steering/research/probes.py": "f21e28ae466000604ec1a217f4f9cc058639edb7ecdd936b9ced8761066f7f24",
+    "src/slm_steering/research/protocol.py": "6875fb27b0dec6befc5db8fe3c2476987ea273a2327cceb7dbe73a606b7b9cd4",
+    "src/slm_steering/research/reporting.py": "e4e695e5ea0ca7963b903aa0116f4533945e31c16d44a9d7c23f17167dc47a9e",
+    "src/slm_steering/research/statistics.py": "56fd4865c810ac1ba5f64ffcb012be984c7a547d70d173e02702107fa3ee80f8"
+  },
+  "evalplus_worker_hash": "8d538f5d25c512e6d094286c1c38876822b903ad00a79e5342d1b8e65f77bf19",
+  "protocol_version": "0.2",
+  "run_id": "pilot_v0.2",
+  "phase": "pilot",
+  "status": "completed",
+  "config": {
+    "protocol_version": "0.2",
+    "model": {
+      "id": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+      "revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+      "tokenizer_revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+      "dtype": "bfloat16",
+      "linear_compute_dtype": "float32",
+      "attention_backend": "eager",
+      "device": "cuda"
+    },
+    "benchmark": {
+      "name": "humaneval",
+      "evalplus_version": "0.3.1"
+    },
+    "pilot": {
+      "tasks": 32,
+      "selection_prefix": "protocol-v0.1-pilot:",
+      "temperatures": [
+        0.6,
+        0.8,
+        1.0
+      ],
+      "attempts_per_task": 10,
+      "max_invalid_truncated_excess": 0.05
+    },
+    "decoding": {
+      "top_p": 0.95,
+      "top_k": 0,
+      "max_new_tokens": 512,
+      "do_sample": true
+    },
+    "candidate_bank": {
+      "attempts_per_task": 20,
+      "budgets": [
+        1,
+        5,
+        10,
+        20
+      ]
+    },
+    "activations": {
+      "checkpoints": [
+        0,
+        8,
+        16,
+        32,
+        64,
+        "final"
+      ],
+      "primary_checkpoint": 32,
+      "depth_fractions": [
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "storage_dtype": "float16",
+      "invariance_atol": 0.02,
+      "invariance_rtol": 0.01,
+      "invariance_metric": "per_layer_relative_l2_and_scaled_max"
+    },
+    "statistics": {
+      "outer_folds": 5,
+      "inner_folds": 3,
+      "regularization_c": [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ],
+      "bootstrap_replications": 2000,
+      "permutation_replications": 10000,
+      "seed": 20260921,
+      "calibration": "selection_cross_fitted_development",
+      "association_test": "outer_fold_permutation_bonferroni"
+    },
+    "policy": {
+      "minimum_correct_recall": 0.97,
+      "noninferiority_margin": 0.03,
+      "checkpoints": [
+        8,
+        16,
+        32,
+        64
+      ],
+      "tie_tolerance": 1e-09
+    },
+    "resources": {
+      "generation_batch_size": 1,
+      "cpu_threads": 4,
+      "verification_workers": 1,
+      "default_session_seconds": 600
+    },
+    "schema": {
+      "label": "evalplus_base_and_plus_pass",
+      "risk_set": "T>t",
+      "margin": "temperature_scaled_pre_top_p"
+    },
+    "robustness": {
+      "benchmark": "mbpp",
+      "tasks": 32,
+      "selection_prefix": "protocol-v0.2-mbpp-transfer:",
+      "attempts_per_task": 20,
+      "mode": "frozen_transfer"
+    }
+  },
+  "sessions": [
+    {
+      "started_at": "2026-10-12T18:06:32.794345+00:00",
+      "git_commit": "73fce19fc9ff5f38f02ec0ac7c963460bfc81974",
+      "git_dirty": true,
+      "time_budget_seconds": 600.0,
+      "new_attempts": 18,
+      "provenance": {
+        "started_at": "2026-10-12T18:06:32.546036+00:00",
+        "command": [
+          "C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe",
+          "scripts/build_candidate_bank.py",
+          "--config",
+          "configs/protocol_v0.2.yaml",
+          "--phase",
+          "pilot",
+          "--output-dir",
+          "runs/candidate_bank/pilot_v0.2",
+          "--wsl-python",
+          "/home/joaof/.venvs/slm-evalplus-v031/bin/python",
+          "--time-budget-seconds",
+          "600"
+        ],
+        "git_commit": "73fce19fc9ff5f38f02ec0ac7c963460bfc81974",
+        "git_dirty": true,
+        "config_hash": "270c2715f46f0e5aee218962ffa688b367e033d15fe9d047d6c2950f3a3f4a6b",
+        "protocol_hash": "e5ce9af1f95a4bf91ada58a3a11495f92c24a2ae3bd6d9eaf9ddebe69139b04c",
+        "python": "3.12.8",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "packages": {
+          "torch": "2.12.0+cu126",
+          "transformers": "4.46.3",
+          "evalplus": "0.3.1",
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "statsmodels": "0.14.4",
+          "PyYAML": "6.0.2"
+        },
+        "source_hashes": {
+          "src/slm_steering/research/__init__.py": "cb434ed9d7904af8cf2f14d4518a465fa76987aabe0e6e0958e175b4ec54343a",
+          "src/slm_steering/research/bank.py": "d403ad2aacb4f45944641437eb199312f9db8fc2d4c6fbc56f9259b232438727",
+          "src/slm_steering/research/evaluation.py": "f5eb7901ed1c53063cc73383a8437d251da0e02849bb56760e3560d824b47abe",
+          "src/slm_steering/research/features.py": "bbe81fbab35a9d6dfa95f0f6893f05397ca461647c380401e4194fcff20426ac",
+          "src/slm_steering/research/generation.py": "99e17401a0d0448f050859324f85d6dac9f78001e2eec8970979adf2204148c4",
+          "src/slm_steering/research/policy.py": "893d1e7ae141dbdb572b693178460625eb63984753f82ef92a0794f243ee4dd5",
+          "src/slm_steering/research/probes.py": "f21e28ae466000604ec1a217f4f9cc058639edb7ecdd936b9ced8761066f7f24",
+          "src/slm_steering/research/protocol.py": "6875fb27b0dec6befc5db8fe3c2476987ea273a2327cceb7dbe73a606b7b9cd4",
+          "src/slm_steering/research/reporting.py": "e4e695e5ea0ca7963b903aa0116f4533945e31c16d44a9d7c23f17167dc47a9e",
+          "src/slm_steering/research/statistics.py": "56fd4865c810ac1ba5f64ffcb012be984c7a547d70d173e02702107fa3ee80f8"
+        },
+        "evalplus_worker_hash": "8d538f5d25c512e6d094286c1c38876822b903ad00a79e5342d1b8e65f77bf19"
+      },
+      "ended_at": "2026-10-12T19:32:28.387567+00:00",
+      "wall_seconds": 5155.592999999877,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 4049.16796875,
+        "peak_reserved_mib": 4598.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "started_at": "2026-10-12T19:45:24.214072+00:00",
+      "git_commit": "73fce19fc9ff5f38f02ec0ac7c963460bfc81974",
+      "git_dirty": true,
+      "time_budget_seconds": 600.0,
+      "new_attempts": 3,
+      "provenance": {
+        "started_at": "2026-10-12T19:45:23.999158+00:00",
+        "command": [
+          "C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe",
+          "scripts/build_candidate_bank.py",
+          "--phase",
+          "pilot",
+          "--output-dir",
+          "runs/candidate_bank/pilot_v0.2",
+          "--wsl-python",
+          "/home/joaof/.venvs/slm-evalplus-v031/bin/python",
+          "--max-attempts",
+          "3",
+          "--time-budget-seconds",
+          "600"
+        ],
+        "git_commit": "73fce19fc9ff5f38f02ec0ac7c963460bfc81974",
+        "git_dirty": true,
+        "config_hash": "270c2715f46f0e5aee218962ffa688b367e033d15fe9d047d6c2950f3a3f4a6b",
+        "protocol_hash": "e5ce9af1f95a4bf91ada58a3a11495f92c24a2ae3bd6d9eaf9ddebe69139b04c",
+        "python": "3.12.8",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "packages": {
+          "torch": "2.12.0+cu126",
+          "transformers": "4.46.3",
+          "evalplus": "0.3.1",
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "statsmodels": "0.14.4",
+          "PyYAML": "6.0.2"
+        },
+        "source_hashes": {
+          "src/slm_steering/research/__init__.py": "cb434ed9d7904af8cf2f14d4518a465fa76987aabe0e6e0958e175b4ec54343a",
+          "src/slm_steering/research/bank.py": "12569a158c27fdcca22ae5eced495b3fefd6742a79a84107a5d3c85498880f9f",
+          "src/slm_steering/research/delivery.py": "35726ee79dc7aa0315b69893a6e11a34e67531ba66f4f0a8e06f973b7fc38456",
+          "src/slm_steering/research/evaluation.py": "f5eb7901ed1c53063cc73383a8437d251da0e02849bb56760e3560d824b47abe",
+          "src/slm_steering/research/features.py": "bbe81fbab35a9d6dfa95f0f6893f05397ca461647c380401e4194fcff20426ac",
+          "src/slm_steering/research/generation.py": "99e17401a0d0448f050859324f85d6dac9f78001e2eec8970979adf2204148c4",
+          "src/slm_steering/research/policy.py": "893d1e7ae141dbdb572b693178460625eb63984753f82ef92a0794f243ee4dd5",
+          "src/slm_steering/research/probes.py": "366a1dacdb8ca679dfeba006b03935878ab2dc9de3b8ccd83c4162f772b853b7",
+          "src/slm_steering/research/protocol.py": "6875fb27b0dec6befc5db8fe3c2476987ea273a2327cceb7dbe73a606b7b9cd4",
+          "src/slm_steering/research/reporting.py": "e4e695e5ea0ca7963b903aa0116f4533945e31c16d44a9d7c23f17167dc47a9e",
+          "src/slm_steering/research/statistics.py": "ff1afdf4e58e503e07f847c930226a6e8ebda12cfa3ced873937fdb73c78ddb5",
+          "src/slm_steering/research/transfer.py": "875e6777ca3414a9e15ae867388ff0daa0d452d7bc08e4626e8f9a3fac87ff85"
+        },
+        "evalplus_worker_hash": "8d538f5d25c512e6d094286c1c38876822b903ad00a79e5342d1b8e65f77bf19"
+      },
+      "ended_at": "2026-10-12T19:46:23.393194+00:00",
+      "wall_seconds": 59.188000000081956,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3939.5068359375,
+        "peak_reserved_mib": 4250.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "started_at": "2026-10-14T13:13:54.200963+00:00",
+      "git_commit": "73fce19fc9ff5f38f02ec0ac7c963460bfc81974",
+      "git_dirty": true,
+      "time_budget_seconds": 1000000.0,
+      "new_attempts": 939,
+      "provenance": {
+        "started_at": "2026-10-14T13:13:53.519879+00:00",
+        "command": [
+          "C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe",
+          "scripts/build_candidate_bank.py",
+          "--phase",
+          "pilot",
+          "--output-dir",
+          "runs/candidate_bank/pilot_v0.2",
+          "--wsl-python",
+          "/home/joaof/.venvs/slm-evalplus-v031/bin/python",
+          "--time-budget-seconds",
+          "1000000"
+        ],
+        "git_commit": "73fce19fc9ff5f38f02ec0ac7c963460bfc81974",
+        "git_dirty": true,
+        "config_hash": "270c2715f46f0e5aee218962ffa688b367e033d15fe9d047d6c2950f3a3f4a6b",
+        "protocol_hash": "e5ce9af1f95a4bf91ada58a3a11495f92c24a2ae3bd6d9eaf9ddebe69139b04c",
+        "python": "3.12.8",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "packages": {
+          "torch": "2.12.0+cu126",
+          "transformers": "4.46.3",
+          "evalplus": "0.3.1",
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "statsmodels": "0.14.4",
+          "PyYAML": "6.0.2"
+        },
+        "source_hashes": {
+          "src/slm_steering/research/__init__.py": "cb434ed9d7904af8cf2f14d4518a465fa76987aabe0e6e0958e175b4ec54343a",
+          "src/slm_steering/research/bank.py": "03aec8aa23efcd0b6bd916da47242919147f002904b1cf3d2513b29819e31c65",
+          "src/slm_steering/research/delivery.py": "35726ee79dc7aa0315b69893a6e11a34e67531ba66f4f0a8e06f973b7fc38456",
+          "src/slm_steering/research/evaluation.py": "f5eb7901ed1c53063cc73383a8437d251da0e02849bb56760e3560d824b47abe",
+          "src/slm_steering/research/features.py": "bbe81fbab35a9d6dfa95f0f6893f05397ca461647c380401e4194fcff20426ac",
+          "src/slm_steering/research/generation.py": "99e17401a0d0448f050859324f85d6dac9f78001e2eec8970979adf2204148c4",
+          "src/slm_steering/research/policy.py": "893d1e7ae141dbdb572b693178460625eb63984753f82ef92a0794f243ee4dd5",
+          "src/slm_steering/research/probes.py": "366a1dacdb8ca679dfeba006b03935878ab2dc9de3b8ccd83c4162f772b853b7",
+          "src/slm_steering/research/protocol.py": "6875fb27b0dec6befc5db8fe3c2476987ea273a2327cceb7dbe73a606b7b9cd4",
+          "src/slm_steering/research/reporting.py": "e4e695e5ea0ca7963b903aa0116f4533945e31c16d44a9d7c23f17167dc47a9e",
+          "src/slm_steering/research/statistics.py": "ff1afdf4e58e503e07f847c930226a6e8ebda12cfa3ced873937fdb73c78ddb5",
+          "src/slm_steering/research/transfer.py": "90290bcf50ab8edc1f53bb47963b7f40205866dc008705551329b1b636e8c26c"
+        },
+        "evalplus_worker_hash": "d7949a521fe6af7ff5ea54e26a448f80a478946c72b5cc135e8dbceca016b397"
+      },
+      "ended_at": "2026-10-14T15:44:51.977191+00:00",
+      "wall_seconds": 9057.780999999959,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 4129.169921875,
+        "peak_reserved_mib": 4996.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    }
+  ],
+  "benchmark": {
+    "benchmark": "humaneval",
+    "version": "v0.1.10",
+    "evalplus_version": "0.3.1",
+    "official_dataset_md5": "fe585eb4df8c88d844eeb463ea4d0302",
+    "dataset_sha256": "0df1afb91f430bcc71fc7a192daf39c3abe11897a7d6e9da66dee67470603fde",
+    "python": "3.12.3",
+    "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "checker": "evalplus.eval.untrusted_check",
+    "fast_check": true,
+    "mini": false,
+    "noextreme": false,
+    "minimum_time_limit": 1,
+    "groundtruth_time_factor": 4
+  },
+  "pilot_task_ids": [
+    "HumanEval/4",
+    "HumanEval/60",
+    "HumanEval/101",
+    "HumanEval/125",
+    "HumanEval/102",
+    "HumanEval/81",
+    "HumanEval/139",
+    "HumanEval/83",
+    "HumanEval/37",
+    "HumanEval/45",
+    "HumanEval/69",
+    "HumanEval/34",
+    "HumanEval/140",
+    "HumanEval/92",
+    "HumanEval/64",
+    "HumanEval/5",
+    "HumanEval/66",
+    "HumanEval/91",
+    "HumanEval/29",
+    "HumanEval/117",
+    "HumanEval/12",
+    "HumanEval/96",
+    "HumanEval/148",
+    "HumanEval/48",
+    "HumanEval/121",
+    "HumanEval/43",
+    "HumanEval/129",
+    "HumanEval/144",
+    "HumanEval/35",
+    "HumanEval/109",
+    "HumanEval/94",
+    "HumanEval/85"
+  ],
+  "task_ids": [
+    "HumanEval/4",
+    "HumanEval/60",
+    "HumanEval/101",
+    "HumanEval/125",
+    "HumanEval/102",
+    "HumanEval/81",
+    "HumanEval/139",
+    "HumanEval/83",
+    "HumanEval/37",
+    "HumanEval/45",
+    "HumanEval/69",
+    "HumanEval/34",
+    "HumanEval/140",
+    "HumanEval/92",
+    "HumanEval/64",
+    "HumanEval/5",
+    "HumanEval/66",
+    "HumanEval/91",
+    "HumanEval/29",
+    "HumanEval/117",
+    "HumanEval/12",
+    "HumanEval/96",
+    "HumanEval/148",
+    "HumanEval/48",
+    "HumanEval/121",
+    "HumanEval/43",
+    "HumanEval/129",
+    "HumanEval/144",
+    "HumanEval/35",
+    "HumanEval/109",
+    "HumanEval/94",
+    "HumanEval/85"
+  ],
+  "expected_attempts": 960,
+  "attempts_per_temperature": 10,
+  "development_only": true,
+  "layers": [
+    6,
+    13,
+    20,
+    27
+  ],
+  "prompt_template_hash": "17e16d36fb48f18d69cbb627f7e0f77ac09cb84383340b7c7248c7fba25f0e9f",
+  "verifier_controls": {
+    "positive": {
+      "passed": true,
+      "error_type": null,
+      "verifier_status": {
+        "base": "pass",
+        "plus": "pass"
+      },
+      "verification_time_seconds": 0.1925947520000051,
+      "test_counts": {
+        "base": 3,
+        "plus": 785
+      }
+    },
+    "negative": {
+      "passed": false,
+      "error_type": "evalplus_fail",
+      "verifier_status": {
+        "base": "fail",
+        "plus": "fail"
+      },
+      "verification_time_seconds": 0.030785529000006306,
+      "test_counts": {
+        "base": 3,
+        "plus": 785
+      }
+    }
+  },
+  "causal_invariance": {
+    "passed": true,
+    "checks": [
+      {
+        "checkpoint": 0,
+        "passed": true,
+        "comparisons": [
+          {
+            "comparison": "full_forward",
+            "passed": true,
+            "relative_l2_by_layer": [
+              8.237201996053045e-07,
+              8.341041279891215e-07,
+              1.372796987197944e-06,
+              1.4383670077222632e-06
+            ],
+            "max_absolute_difference_by_layer": [
+              2.2649765014648438e-06,
+              3.635883331298828e-06,
+              1.0251998901367188e-05,
+              2.8133392333984375e-05
+            ],
+            "maximum_limits": [
+              0.17645476758480072,
+              0.18721234798431396,
+              0.23599368333816528,
+              0.8855480551719666
+            ]
+          },
+          {
+            "comparison": "cached_generation",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.00019641588551022623,
+              0.0001543356065374979,
+              0.00022365842176454574,
+              0.00017831274638165917
+            ],
+            "max_absolute_difference_by_layer": [
+              0.0029592514038085938,
+              0.0024852752685546875,
+              0.005619049072265625,
+              0.014801025390625
+            ],
+            "maximum_limits": [
+              0.17645476758480072,
+              0.18721234798431396,
+              0.23599368333816528,
+              0.8855480551719666
+            ]
+          }
+        ]
+      },
+      {
+        "checkpoint": 8,
+        "passed": true,
+        "comparisons": [
+          {
+            "comparison": "full_forward",
+            "passed": true,
+            "relative_l2_by_layer": [
+              1.4441901612372021e-06,
+              9.657861710365978e-07,
+              9.223897450283403e-07,
+              1.0068260962725617e-06
+            ],
+            "max_absolute_difference_by_layer": [
+              5.424022674560547e-06,
+              4.76837158203125e-06,
+              7.033348083496094e-06,
+              6.103515625e-05
+            ],
+            "maximum_limits": [
+              0.15574155747890472,
+              0.2138250321149826,
+              0.2818372845649719,
+              0.8603844046592712
+            ]
+          },
+          {
+            "comparison": "cached_generation",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.00023066279784974964,
+              0.0002622956952742492,
+              0.00018812322340820023,
+              0.00021678501733622153
+            ],
+            "max_absolute_difference_by_layer": [
+              0.0038433074951171875,
+              0.007503509521484375,
+              0.0037708282470703125,
+              0.02405548095703125
+            ],
+            "maximum_limits": [
+              0.15574155747890472,
+              0.2138250321149826,
+              0.2818372845649719,
+              0.8603844046592712
+            ]
+          }
+        ]
+      },
+      {
+        "checkpoint": 16,
+        "passed": true,
+        "comparisons": [
+          {
+            "comparison": "full_forward",
+            "passed": true,
+            "relative_l2_by_layer": [
+              9.812679309106898e-07,
+              9.87693738352391e-07,
+              1.3888437706555123e-06,
+              1.3380164318732568e-06
+            ],
+            "max_absolute_difference_by_layer": [
+              3.814697265625e-06,
+              5.7220458984375e-06,
+              8.344650268554688e-06,
+              2.1457672119140625e-05
+            ],
+            "maximum_limits": [
+              0.1618879735469818,
+              0.1668272167444229,
+              0.19308099150657654,
+              0.9156628847122192
+            ]
+          },
+          {
+            "comparison": "cached_generation",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.00019398207250586808,
+              0.00019915842902015554,
+              0.0002349855055050699,
+              0.00018178612707443813
+            ],
+            "max_absolute_difference_by_layer": [
+              0.00205230712890625,
+              0.0030345916748046875,
+              0.0064716339111328125,
+              0.01883697509765625
+            ],
+            "maximum_limits": [
+              0.1618879735469818,
+              0.1668272167444229,
+              0.19308099150657654,
+              0.9156628847122192
+            ]
+          }
+        ]
+      },
+      {
+        "checkpoint": 32,
+        "passed": true,
+        "comparisons": [
+          {
+            "comparison": "full_forward",
+            "passed": true,
+            "relative_l2_by_layer": [
+              8.926691634769668e-07,
+              1.0515802841837285e-06,
+              9.308990343015466e-07,
+              1.072969439519511e-06
+            ],
+            "max_absolute_difference_by_layer": [
+              4.76837158203125e-06,
+              4.827976226806641e-06,
+              6.4373016357421875e-06,
+              6.866455078125e-05
+            ],
+            "maximum_limits": [
+              0.12424494326114655,
+              0.17528769373893738,
+              0.2315000593662262,
+              0.9343399405479431
+            ]
+          },
+          {
+            "comparison": "cached_generation",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.0002378858693803316,
+              0.0002024366300880898,
+              0.00020343570719864623,
+              0.00018028422283189452
+            ],
+            "max_absolute_difference_by_layer": [
+              0.0031766891479492188,
+              0.003894805908203125,
+              0.0062427520751953125,
+              0.01898193359375
+            ],
+            "maximum_limits": [
+              0.12424494326114655,
+              0.17528769373893738,
+              0.2315000593662262,
+              0.9343399405479431
+            ]
+          }
+        ]
+      },
+      {
+        "checkpoint": "final",
+        "passed": true,
+        "comparisons": [
+          {
+            "comparison": "full_forward",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "max_absolute_difference_by_layer": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_limits": [
+              0.10432082414627075,
+              0.15024536848068237,
+              0.2430122047662735,
+              0.2795740067958832
+            ]
+          },
+          {
+            "comparison": "cached_generation",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.00021627418131668,
+              0.00019452321431406538,
+              0.000197283359995619,
+              0.00021275885422711036
+            ],
+            "max_absolute_difference_by_layer": [
+              0.0032110214233398438,
+              0.002460479736328125,
+              0.0043468475341796875,
+              0.005954742431640625
+            ],
+            "maximum_limits": [
+              0.10432082414627075,
+              0.15024536848068237,
+              0.2430122047662735,
+              0.2795740067958832
+            ]
+          }
+        ]
+      }
+    ],
+    "atol": 0.02,
+    "rtol": 0.01,
+    "metric": "per_layer_relative_l2_and_scaled_max"
+  },
+  "seed_reproduction_passed": true,
+  "completed_attempts": 960,
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "memory_total_mib": 6143.5,
+    "peak_allocated_mib": 4129.169921875,
+    "peak_reserved_mib": 4996.0,
+    "cuda": "12.6",
+    "driver_version": "576.52",
+    "weight_storage_dtype": "bfloat16",
+    "linear_compute_dtype": "float32"
+  },
+  "bank_sha256": "9b241a61af270d7820e8dbfeeb8611f53071ac7755340ee2a0c0e5d455f11009",
+  "bank_frozen": false,
+  "complete": true,
+  "selected_temperature": 1.0,
+  "temperatures": [
+    {
+      "temperature": 0.6,
+      "attempts": 320,
+      "mixed_tasks": 14,
+      "pass_rate": 0.58125,
+      "invalid_truncated_rate": 0.003125,
+      "mean_tokens": 73.19375
+    },
+    {
+      "temperature": 0.8,
+      "attempts": 320,
+      "mixed_tasks": 18,
+      "pass_rate": 0.5625,
+      "invalid_truncated_rate": 0.0,
+      "mean_tokens": 71.703125
+    },
+    {
+      "temperature": 1.0,
+      "attempts": 320,
+      "mixed_tasks": 23,
+      "pass_rate": 0.534375,
+      "invalid_truncated_rate": 0.009375,
+      "mean_tokens": 78.103125
+    }
+  ],
+  "ended_at": "2026-10-14T15:44:52.003269+00:00",
+  "compatible_worker_updates": [
+    {
+      "at": "2026-10-13T02:16:22.970552+00:00",
+      "old_sha256": "8d538f5d25c512e6d094286c1c38876822b903ad00a79e5342d1b8e65f77bf19",
+      "new_sha256": "d7949a521fe6af7ff5ea54e26a448f80a478946c72b5cc135e8dbceca016b397",
+      "reason": "Typed complex/set serialization for MBPP dataset hashing; HumanEval hash and all stored labels reproduced",
+      "checked_trajectories": 21,
+      "dataset_sha256": "0df1afb91f430bcc71fc7a192daf39c3abe11897a7d6e9da66dee67470603fde",
+      "bank_sha256_unchanged": "b056738a06a942e369dcbe9541fc99cec88ec7abde025f1cb1859b5580a8027b",
+      "passed": true
+    }
+  ]
+}

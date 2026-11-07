@@ -1,0 +1,488 @@
+{
+  "created_at": "2026-10-18T16:13:35.470135+00:00",
+  "status": "partially_visually_inspected",
+  "pdfs": {
+    "manuscript": {
+      "path": "tcc/build/manuscrito.pdf",
+      "sha256": "02eef24e527b8d28d5ebbba2c4440c6a54899084c0e17401d57415c3bf59fe8d",
+      "pages": 67,
+      "text_spans_outside_page": [],
+      "text_spans_below_8pt": [
+        {
+          "page": 13,
+          "size": 6.0,
+          "text": "𝑖𝑗"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖𝑗"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖𝑗"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖𝑗ℓ𝑡"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖𝑗𝑡"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖𝑗𝑡"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 16,
+          "size": 6.0,
+          "text": "𝑖𝑗"
+        },
+        {
+          "page": 16,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 17,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 17,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 18,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 19,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 19,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 19,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 20,
+          "size": 6.0,
+          "text": "𝑁"
+        },
+        {
+          "page": 20,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 20,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 20,
+          "size": 6.0,
+          "text": "𝑁(𝜋𝑖)"
+        },
+        {
+          "page": 20,
+          "size": 6.0,
+          "text": "𝑁(𝜋𝑖𝑟𝑖)"
+        },
+        {
+          "page": 21,
+          "size": 6.0,
+          "text": "𝑋"
+        },
+        {
+          "page": 21,
+          "size": 6.0,
+          "text": "𝑁(𝜋𝑋𝑟𝑋)"
+        },
+        {
+          "page": 21,
+          "size": 6.0,
+          "text": "𝑋"
+        },
+        {
+          "page": 21,
+          "size": 6.0,
+          "text": "𝑋[𝜋𝑋]"
+        },
+        {
+          "page": 21,
+          "size": 6.0,
+          "text": "𝑋[𝑟𝑋]"
+        },
+        {
+          "page": 25,
+          "size": 6.0,
+          "text": "𝑢"
+        },
+        {
+          "page": 26,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 26,
+          "size": 6.0,
+          "text": "tr"
+        },
+        {
+          "page": 29,
+          "size": 6.0,
+          "text": "𝑏"
+        },
+        {
+          "page": 29,
+          "size": 6.0,
+          "text": "𝑏"
+        },
+        {
+          "page": 29,
+          "size": 6.0,
+          "text": "obs"
+        },
+        {
+          "page": 32,
+          "size": 6.0,
+          "text": "∗"
+        },
+        {
+          "page": 33,
+          "size": 6.0,
+          "text": "𝜋"
+        },
+        {
+          "page": 33,
+          "size": 6.0,
+          "text": "𝑉"
+        }
+      ],
+      "geometry_scope": "Text spans only; equations subscripts may be small; neither check certifies diagram legibility"
+    },
+    "summary": {
+      "path": "reports/excellence/materials/research_summary_en.pdf",
+      "sha256": "4c9d2861dfc469801698ae2ed1c04497380d737acc93fb221902a6d41e38d1fc",
+      "pages": 2,
+      "text_spans_outside_page": [],
+      "text_spans_below_8pt": [
+        {
+          "page": 2,
+          "size": 7.28000020980835,
+          "text": "𝑑"
+        },
+        {
+          "page": 2,
+          "size": 7.28000020980835,
+          "text": "𝐸[𝑇]"
+        }
+      ],
+      "geometry_scope": "Text spans only; equations subscripts may be small; neither check certifies diagram legibility"
+    },
+    "slides": {
+      "path": "reports/excellence/materials/defesa.pdf",
+      "sha256": "11354c8df7f649eedea027b395896e729f7304ef5d61d59cc901288f23c155d7",
+      "pages": 12,
+      "text_spans_outside_page": [],
+      "text_spans_below_8pt": [],
+      "geometry_scope": "Text spans only; equations subscripts may be small; neither check certifies diagram legibility"
+    }
+  },
+  "groups": {
+    "manuscript_001_004": {
+      "pdf": "manuscript",
+      "pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "image": "reports/excellence/visual_review/manuscript_001_004.jpg",
+      "image_sha256": "bcda16477090d327aea0c6063bba73cdfbf7188322c652d8985643bc4903461b",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:13:58.371506+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected covers, separate single-paragraph abstracts, contents, introduction, chronology and literature tables; margins and page numbering clear, no clipping."
+    },
+    "manuscript_005_008": {
+      "pdf": "manuscript",
+      "pages": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "image": "reports/excellence/visual_review/manuscript_005_008.jpg",
+      "image_sha256": "a84646fbc72d7a7ed3513d825e835832dec53b5454a8402b276dca3fa10d64d9",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:13:58.373965+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected covers, separate single-paragraph abstracts, contents, introduction, chronology and literature tables; margins and page numbering clear, no clipping."
+    },
+    "manuscript_009_012": {
+      "pdf": "manuscript",
+      "pages": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "image": "reports/excellence/visual_review/manuscript_009_012.jpg",
+      "image_sha256": "9ccf24cf53ff5953eb33617fe8f1818e26a344e232b112f14b7653c361df0c0b",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:13:58.376042+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected covers, separate single-paragraph abstracts, contents, introduction, chronology and literature tables; margins and page numbering clear, no clipping."
+    },
+    "manuscript_013_016": {
+      "pdf": "manuscript",
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "image": "reports/excellence/visual_review/manuscript_013_016.jpg",
+      "image_sha256": "6bf73789fe84d673dd368a4a32ed73c25243ce3129a46e7c37c698a0a6c100c5",
+      "reviewed": false
+    },
+    "manuscript_017_020": {
+      "pdf": "manuscript",
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "image": "reports/excellence/visual_review/manuscript_017_020.jpg",
+      "image_sha256": "562ec263383171005eed542667f5516d38155406c9d95e416b28709e19db08c3",
+      "reviewed": false
+    },
+    "manuscript_021_024": {
+      "pdf": "manuscript",
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "image": "reports/excellence/visual_review/manuscript_021_024.jpg",
+      "image_sha256": "24d27efd00b7a7f19e3c8449568a93d23c5a87f7e8b7c7baf1bc6e59a70fa1c2",
+      "reviewed": false
+    },
+    "manuscript_025_028": {
+      "pdf": "manuscript",
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "image": "reports/excellence/visual_review/manuscript_025_028.jpg",
+      "image_sha256": "d03d5ed4ace61edd4d90a75eedf02249987e2c365086f2b1bcce602568460b20",
+      "reviewed": false
+    },
+    "manuscript_029_032": {
+      "pdf": "manuscript",
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "image": "reports/excellence/visual_review/manuscript_029_032.jpg",
+      "image_sha256": "c8df1810dfec92d5fde434bd0ace734341801654f444de2492fc067ee7c55eec",
+      "reviewed": false
+    },
+    "manuscript_033_036": {
+      "pdf": "manuscript",
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ],
+      "image": "reports/excellence/visual_review/manuscript_033_036.jpg",
+      "image_sha256": "b30929e2ced02d90dd642b8ad9a791d0fef9b3fa169f98d110c93052198c397e",
+      "reviewed": false
+    },
+    "manuscript_037_040": {
+      "pdf": "manuscript",
+      "pages": [
+        37,
+        38,
+        39,
+        40
+      ],
+      "image": "reports/excellence/visual_review/manuscript_037_040.jpg",
+      "image_sha256": "0e4cf941bead7eb965c69339eaa35116e8c152aa8f1ea95782f45e192d964c8f",
+      "reviewed": false
+    },
+    "manuscript_041_044": {
+      "pdf": "manuscript",
+      "pages": [
+        41,
+        42,
+        43,
+        44
+      ],
+      "image": "reports/excellence/visual_review/manuscript_041_044.jpg",
+      "image_sha256": "ed5eea5600db278169352ec33735adac6e495970d491e5a90cb85027bb2093db",
+      "reviewed": false
+    },
+    "manuscript_045_048": {
+      "pdf": "manuscript",
+      "pages": [
+        45,
+        46,
+        47,
+        48
+      ],
+      "image": "reports/excellence/visual_review/manuscript_045_048.jpg",
+      "image_sha256": "4546955d72cf5ee620bade3022f06ab1c28d6b9f5c4f9fe047ff96501575554d",
+      "reviewed": false
+    },
+    "manuscript_049_052": {
+      "pdf": "manuscript",
+      "pages": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "image": "reports/excellence/visual_review/manuscript_049_052.jpg",
+      "image_sha256": "a6ddbbbb9c5c6bc3553102542629dd1ca8bee6661b0746761434d4ad6bb1c7e0",
+      "reviewed": false
+    },
+    "manuscript_053_056": {
+      "pdf": "manuscript",
+      "pages": [
+        53,
+        54,
+        55,
+        56
+      ],
+      "image": "reports/excellence/visual_review/manuscript_053_056.jpg",
+      "image_sha256": "5cdf44f8b6a6b3099b04f375d650e75001bb66bd040c38e78035167fd486a489",
+      "reviewed": false
+    },
+    "manuscript_057_060": {
+      "pdf": "manuscript",
+      "pages": [
+        57,
+        58,
+        59,
+        60
+      ],
+      "image": "reports/excellence/visual_review/manuscript_057_060.jpg",
+      "image_sha256": "e795c91eb9bc235b5fb99b8fdb18d268f3d43e5527cc24772832c9b86269213f",
+      "reviewed": false
+    },
+    "manuscript_061_064": {
+      "pdf": "manuscript",
+      "pages": [
+        61,
+        62,
+        63,
+        64
+      ],
+      "image": "reports/excellence/visual_review/manuscript_061_064.jpg",
+      "image_sha256": "29f5fb3b946ad7f1a4eae7f75ed68986d35678971f23cb4740e8e6b84a081fc3",
+      "reviewed": false
+    },
+    "manuscript_065_067": {
+      "pdf": "manuscript",
+      "pages": [
+        65,
+        66,
+        67
+      ],
+      "image": "reports/excellence/visual_review/manuscript_065_067.jpg",
+      "image_sha256": "14a388df2b7a3fa4bcc78efb440b6d0b0d29dfa0e3f197fa9388bfd69ce33f13",
+      "reviewed": false
+    },
+    "summary_001_002": {
+      "pdf": "summary",
+      "pages": [
+        1,
+        2
+      ],
+      "image": "reports/excellence/visual_review/summary_001_002.jpg",
+      "image_sha256": "a544dbdc79e783afd0813e5d9ff96d1b55b000357262e2047edf26645609ddf8",
+      "reviewed": false
+    },
+    "slides_001_004": {
+      "pdf": "slides",
+      "pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "image": "reports/excellence/visual_review/slides_001_004.jpg",
+      "image_sha256": "19ce4ae1d63688acf80f636c9190c70c2fd48e8c669dfc7f959c47468e003f5a",
+      "reviewed": false
+    },
+    "slides_005_008": {
+      "pdf": "slides",
+      "pages": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "image": "reports/excellence/visual_review/slides_005_008.jpg",
+      "image_sha256": "3df96cbfe355a812051527927ae36cddfd1b78f397d7c8960a4bc11fd64c13e4",
+      "reviewed": false
+    },
+    "slides_009_012": {
+      "pdf": "slides",
+      "pages": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "image": "reports/excellence/visual_review/slides_009_012.jpg",
+      "image_sha256": "92632d01e2c9a593653bb5cc087cbe3cdb0c6b16bbc86740f751f9c0854842de",
+      "reviewed": false
+    }
+  },
+  "updated_at": "2026-10-18T16:13:58.376042+00:00"
+}

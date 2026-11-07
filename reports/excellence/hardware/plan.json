@@ -1,0 +1,261 @@
+{
+  "created_at": "2026-10-17T06:09:25.655200+00:00",
+  "status": "technical_existing_pilot_only",
+  "pairs": 50,
+  "selection": "Five empirical length strata, ten SHA256-selected candidates per stratum; no correctness filtering",
+  "config_sha256": "270c2715f46f0e5aee218962ffa688b367e033d15fe9d047d6c2950f3a3f4a6b",
+  "identities": [
+    {
+      "task_id": "HumanEval/35",
+      "attempt_id": 27,
+      "seed": 4852815769992719093
+    },
+    {
+      "task_id": "HumanEval/45",
+      "attempt_id": 28,
+      "seed": 2806444969937500954
+    },
+    {
+      "task_id": "HumanEval/43",
+      "attempt_id": 26,
+      "seed": 3159136422339332813
+    },
+    {
+      "task_id": "HumanEval/66",
+      "attempt_id": 22,
+      "seed": 6184126890872199628
+    },
+    {
+      "task_id": "HumanEval/66",
+      "attempt_id": 25,
+      "seed": 5207069790473107159
+    },
+    {
+      "task_id": "HumanEval/35",
+      "attempt_id": 23,
+      "seed": 4944445567766946161
+    },
+    {
+      "task_id": "HumanEval/101",
+      "attempt_id": 22,
+      "seed": 2139511719371876473
+    },
+    {
+      "task_id": "HumanEval/101",
+      "attempt_id": 29,
+      "seed": 8005252983605288152
+    },
+    {
+      "task_id": "HumanEval/101",
+      "attempt_id": 20,
+      "seed": 9173226579626108697
+    },
+    {
+      "task_id": "HumanEval/29",
+      "attempt_id": 22,
+      "seed": 8498174172177636170
+    },
+    {
+      "task_id": "HumanEval/92",
+      "attempt_id": 29,
+      "seed": 5129061841670132653
+    },
+    {
+      "task_id": "HumanEval/125",
+      "attempt_id": 23,
+      "seed": 8196776466228440334
+    },
+    {
+      "task_id": "HumanEval/144",
+      "attempt_id": 28,
+      "seed": 7440560192501280389
+    },
+    {
+      "task_id": "HumanEval/139",
+      "attempt_id": 20,
+      "seed": 5361059550420025700
+    },
+    {
+      "task_id": "HumanEval/85",
+      "attempt_id": 28,
+      "seed": 4146814643855490490
+    },
+    {
+      "task_id": "HumanEval/43",
+      "attempt_id": 24,
+      "seed": 3302298465954592980
+    },
+    {
+      "task_id": "HumanEval/85",
+      "attempt_id": 23,
+      "seed": 8749634302065322420
+    },
+    {
+      "task_id": "HumanEval/85",
+      "attempt_id": 26,
+      "seed": 5252527933094404771
+    },
+    {
+      "task_id": "HumanEval/60",
+      "attempt_id": 20,
+      "seed": 2434960161122101359
+    },
+    {
+      "task_id": "HumanEval/43",
+      "attempt_id": 23,
+      "seed": 7961711489467963483
+    },
+    {
+      "task_id": "HumanEval/64",
+      "attempt_id": 27,
+      "seed": 2747221937914019562
+    },
+    {
+      "task_id": "HumanEval/102",
+      "attempt_id": 26,
+      "seed": 3043449346548416667
+    },
+    {
+      "task_id": "HumanEval/37",
+      "attempt_id": 23,
+      "seed": 7516566967258658657
+    },
+    {
+      "task_id": "HumanEval/5",
+      "attempt_id": 25,
+      "seed": 6011163402310128790
+    },
+    {
+      "task_id": "HumanEval/102",
+      "attempt_id": 24,
+      "seed": 4611960605821896771
+    },
+    {
+      "task_id": "HumanEval/12",
+      "attempt_id": 21,
+      "seed": 973894090610625654
+    },
+    {
+      "task_id": "HumanEval/37",
+      "attempt_id": 29,
+      "seed": 6152931282553222426
+    },
+    {
+      "task_id": "HumanEval/92",
+      "attempt_id": 28,
+      "seed": 6674616430000730273
+    },
+    {
+      "task_id": "HumanEval/43",
+      "attempt_id": 28,
+      "seed": 8064692984627071201
+    },
+    {
+      "task_id": "HumanEval/102",
+      "attempt_id": 25,
+      "seed": 59540775337057860
+    },
+    {
+      "task_id": "HumanEval/5",
+      "attempt_id": 28,
+      "seed": 505093102062062844
+    },
+    {
+      "task_id": "HumanEval/83",
+      "attempt_id": 28,
+      "seed": 2138446007387142296
+    },
+    {
+      "task_id": "HumanEval/48",
+      "attempt_id": 29,
+      "seed": 9207976265937083155
+    },
+    {
+      "task_id": "HumanEval/148",
+      "attempt_id": 29,
+      "seed": 7313533301943791373
+    },
+    {
+      "task_id": "HumanEval/69",
+      "attempt_id": 21,
+      "seed": 5932184737543868621
+    },
+    {
+      "task_id": "HumanEval/139",
+      "attempt_id": 27,
+      "seed": 2813785206116338548
+    },
+    {
+      "task_id": "HumanEval/144",
+      "attempt_id": 21,
+      "seed": 8340171073134571451
+    },
+    {
+      "task_id": "HumanEval/34",
+      "attempt_id": 24,
+      "seed": 5150434867564165672
+    },
+    {
+      "task_id": "HumanEval/35",
+      "attempt_id": 24,
+      "seed": 784877941053707036
+    },
+    {
+      "task_id": "HumanEval/109",
+      "attempt_id": 27,
+      "seed": 8019229353103237220
+    },
+    {
+      "task_id": "HumanEval/81",
+      "attempt_id": 27,
+      "seed": 1276768663830110272
+    },
+    {
+      "task_id": "HumanEval/37",
+      "attempt_id": 28,
+      "seed": 4026839827495509726
+    },
+    {
+      "task_id": "HumanEval/64",
+      "attempt_id": 29,
+      "seed": 6850436792041274640
+    },
+    {
+      "task_id": "HumanEval/64",
+      "attempt_id": 26,
+      "seed": 2220162796272861293
+    },
+    {
+      "task_id": "HumanEval/94",
+      "attempt_id": 27,
+      "seed": 2465594570572330272
+    },
+    {
+      "task_id": "HumanEval/4",
+      "attempt_id": 21,
+      "seed": 8742051696805211764
+    },
+    {
+      "task_id": "HumanEval/66",
+      "attempt_id": 29,
+      "seed": 1375955973556790825
+    },
+    {
+      "task_id": "HumanEval/148",
+      "attempt_id": 20,
+      "seed": 997834822939088244
+    },
+    {
+      "task_id": "HumanEval/102",
+      "attempt_id": 21,
+      "seed": 6074753002975284049
+    },
+    {
+      "task_id": "HumanEval/109",
+      "attempt_id": 28,
+      "seed": 3904211168887882953
+    }
+  ],
+  "source_sha256": "35abc5a4348b5f0d2ab15c7dabfb200d7c1b18cb8a3cc857203ae46a5fc88365",
+  "interpretation": "Instrumented paired capture implementation benchmark, not a claim of policy latency savings"
+}

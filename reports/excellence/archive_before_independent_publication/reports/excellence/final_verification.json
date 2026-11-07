@@ -1,0 +1,83 @@
+{
+  "created_at": "2026-10-17T07:08:10.398033+00:00",
+  "status": "authorized_work_completed_independent_study_awaiting_student_approval_and_advisor_review",
+  "historical_science": {
+    "protected_artifacts_unchanged": 16,
+    "execution_freeze_input_hashes_valid": 29,
+    "unchanged_scientific_stage_records": [
+      "pilot",
+      "pilot_audit",
+      "pilot_prefix_validation",
+      "sampling_freeze",
+      "main_bank",
+      "main_audit",
+      "main_prefix_validation",
+      "grouped_probes",
+      "online_validation",
+      "main_results",
+      "transfer_freeze",
+      "transfer_bank",
+      "transfer_audit",
+      "transfer_prefix_validation",
+      "transfer_results"
+    ],
+    "original_trajectories": 4240
+  },
+  "publication": {
+    "stages_verified": 19,
+    "delivery_manifest_sha256": "e522bc2a38f57fe4c0253c9d5ed2a9a6a0874217faf710ecec665daead5941b1",
+    "evidence_sha256": "5ca0c94a7a6de363d6f43d15d2b06e2da9a7bffb7286b56a395b1043842d64d3",
+    "pdfs": {
+      "tcc/build/manuscrito.pdf": {
+        "pages": 48,
+        "sha256": "c55e93f7fd82cf860450ad69cc54926af5e5d3cc22edc2684919d0670abeb524"
+      },
+      "reports/excellence/materials/research_summary_en.pdf": {
+        "pages": 2,
+        "sha256": "27dd8be7b5d6a98e07bed5c595d255f7d2e80972ead879857fd91d6d85b198fa"
+      },
+      "reports/excellence/materials/defesa.pdf": {
+        "pages": 12,
+        "sha256": "d341282b8c918df7803a2fcf6638c715e0d5b4e16b9104af84841d4c4967be31"
+      }
+    },
+    "notebook_executed_code_cells": 18,
+    "notebook_errors": 0,
+    "academic_questions": 33
+  },
+  "validation": {
+    "pytest_passed": 157,
+    "pytest_skipped": 0,
+    "pytest_failed": 0,
+    "torch_tests_enabled": true,
+    "junit_xml_sha256": "e6c22a25a28b8589923ba5c0b96db28f18c6982f9c7e86337f30de6790a6303a",
+    "ruff": "passed",
+    "mypy_source_files": 119,
+    "mypy": "passed"
+  },
+  "exploratory": {
+    "available": true,
+    "historical_science_preserved": true,
+    "model_units": 70,
+    "research_summary_pages": 2,
+    "defense_slides": 12,
+    "questions": 33,
+    "independent_collection_started": false
+  },
+  "independent_study": {
+    "student_approval": "pending",
+    "advisor_review": "pending",
+    "technical_tasks": 20,
+    "main_tasks": 120,
+    "attempts_per_task": 20,
+    "proposed_trajectories": 2800,
+    "generated_trajectories": 0,
+    "proposal_hashes_current": true,
+    "protocol_sha256": "191b5185d7e3d972a8011d709aa1d973c59a779b5f69bf25e1f65f88d162d22d"
+  },
+  "reproduction_commands": [
+    ".venv/Scripts/python.exe .tmp/monitor_full_research.py",
+    ".venv/Scripts/python.exe -m ruff check .",
+    ".venv/Scripts/python.exe -m mypy src scripts"
+  ]
+}

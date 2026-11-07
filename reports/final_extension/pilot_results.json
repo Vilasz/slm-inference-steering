@@ -1,0 +1,16 @@
+{
+  "tasks": 12,
+  "attempts": 240,
+  "all_success_tasks": 1,
+  "all_failure_tasks": 3,
+  "mixed_tasks": 8,
+  "success_rate": 0.4166666666666667,
+  "mean_tokens": 160.33333333333334,
+  "truncation_rate": 0.004166666666666667,
+  "parsing_error_rate": 0.008333333333333333,
+  "mean_seconds_deepseek": 20.559622466666664,
+  "mean_seconds_qwen": 11.344481008333332,
+  "tokens_per_second_deepseek": 7.798457077374934,
+  "mean_activation_copy_seconds": 0.2631521575000486,
+  "feasible": true
+}

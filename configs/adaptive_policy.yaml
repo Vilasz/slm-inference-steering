@@ -1,0 +1,49 @@
+{
+  "name": "adaptive_policy",
+  "output_dir": "runs/config_runs/adaptive_policy",
+  "description": "Minimal adaptive Best-of-N policy comparison.",
+  "steps": [
+    {
+      "name": "fixed_n_1",
+      "type": "command",
+      "command": [
+        "{python}",
+        "scripts/run_adaptive_bon.py",
+        "--policy",
+        "fixed_n_1",
+        "--directions-dir",
+        "runs/phase3/qwen_phase3_probe",
+        "--max-n",
+        "5",
+        "--limit",
+        "30",
+        "--output-dir",
+        "runs/phase5/adaptive_bon",
+        "--require-cuda"
+      ]
+    },
+    {
+      "name": "latent_adaptive",
+      "type": "command",
+      "command": [
+        "{python}",
+        "scripts/run_adaptive_bon.py",
+        "--policy",
+        "latent_adaptive",
+        "--directions-dir",
+        "runs/phase3/qwen_phase3_probe",
+        "--max-n",
+        "5",
+        "--limit",
+        "30",
+        "--output-dir",
+        "runs/phase5/adaptive_bon",
+        "--require-cuda"
+      ]
+    },
+    {
+      "name": "report",
+      "type": "report"
+    }
+  ]
+}

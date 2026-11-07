@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import unittest
 
-from slm_steering.benchmark_registry import get_benchmark, load_benchmark
+from slm_steering.benchmark_registry import get_benchmark, list_benchmarks, load_benchmark
 from slm_steering.benchmarks.stress import load_humaneval_stress
 
 
@@ -21,6 +21,12 @@ class StressBenchmarkTests(unittest.TestCase):
 
         self.assertEqual(spec.status, "implemented")
         self.assertEqual(len(problems), 1)
+
+    def test_core_benchmarks_are_registered_as_implemented(self) -> None:
+        statuses = {spec.key: spec.status for spec in list_benchmarks()}
+
+        for key in ["humaneval", "humaneval_plus", "mbpp", "humaneval_stress"]:
+            self.assertEqual(statuses[key], "implemented")
 
 
 if __name__ == "__main__":

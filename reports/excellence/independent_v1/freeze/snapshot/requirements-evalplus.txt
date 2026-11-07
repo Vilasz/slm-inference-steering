@@ -1,0 +1,11 @@
+# POSIX evaluation worker only. Install EvalPlus itself with --no-deps first.
+# The model/API-client dependencies of EvalPlus are not used by this worker.
+numpy==1.26.4
+datasets==2.21.0
+wget==3.2
+tempdir==0.7.1
+multipledispatch==1.0.0
+appdirs==1.4.4
+tqdm==4.66.5
+termcolor==2.5.0
+psutil==6.1.0

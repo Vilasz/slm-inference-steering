@@ -228,21 +228,53 @@ def build_policy(name: str, max_n: int):
     raise ValueError(f"policy desconhecida: {name}")
 
 
-def adaptive_metrics(records: list[dict[str, Any]], *, fixed_n: int) -> dict[str, Any]:
+def adaptive_metrics(
+    records: list[dict[str, Any]],
+    *,
+    fixed_n: int,
+    baseline_records: list[dict[str, Any]] | None = None,
+    value_success: float = 1000.0,
+    token_cost_weight: float = 1.0,
+) -> dict[str, Any]:
     tokens = [sum(attempt["generated_tokens"] for attempt in record["attempts"]) for record in records]
     attempts = [len(record["attempts"]) for record in records]
     successes = sum(1 for record in records if record["solved"])
     mean_tokens = sum(tokens) / len(tokens) if tokens else 0
+    success_rate = successes / len(records) if records else 0
+    baseline = policy_metric_snapshot(baseline_records) if baseline_records is not None else None
+    accuracy_delta = success_rate - baseline["success_rate"] if baseline is not None else None
+    cost_delta = mean_tokens - baseline["mean_tokens"] if baseline is not None else None
     return {
-        "success_rate": successes / len(records) if records else 0,
+        "success_rate": success_rate,
         "mean_tokens": mean_tokens,
         "median_tokens": sorted(tokens)[len(tokens) // 2] if tokens else 0,
         "tokens_per_success": sum(tokens) / successes if successes else None,
         "mean_attempts": sum(attempts) / len(attempts) if attempts else 0,
         "budget_saved_vs_fixed_n": 1 - (sum(attempts) / (len(records) * fixed_n)) if records and fixed_n else 0,
-        "accuracy_delta_vs_fixed_n": None,
-        "pareto_dominance": None,
+        "expected_utility": successes * value_success - sum(tokens) * token_cost_weight,
+        "accuracy_delta_vs_fixed_n": accuracy_delta,
+        "cost_delta_vs_fixed_n": cost_delta,
+        "pareto_dominance": policy_dominance_label(accuracy_delta, cost_delta),
     }
+
+
+def policy_metric_snapshot(records: list[dict[str, Any]]) -> dict[str, float]:
+    tokens = [sum(float(attempt.get("generated_tokens") or 0) for attempt in record.get("attempts", [])) for record in records]
+    successes = sum(1 for record in records if record.get("solved"))
+    return {
+        "success_rate": successes / len(records) if records else 0.0,
+        "mean_tokens": sum(tokens) / len(tokens) if tokens else 0.0,
+    }
+
+
+def policy_dominance_label(accuracy_delta: float | None, cost_delta: float | None) -> str | None:
+    if accuracy_delta is None or cost_delta is None:
+        return None
+    if accuracy_delta >= 0 and cost_delta <= 0 and (accuracy_delta > 0 or cost_delta < 0):
+        return "dominates_fixed_n"
+    if accuracy_delta <= 0 and cost_delta >= 0 and (accuracy_delta < 0 or cost_delta > 0):
+        return "dominated_by_fixed_n"
+    return "tradeoff"
 
 
 if __name__ == "__main__":

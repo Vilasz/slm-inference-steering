@@ -1,0 +1,83 @@
+{
+  "created_at": "2026-10-14T15:45:31.343234+00:00",
+  "protocol_version": "0.2",
+  "config_hash": "270c2715f46f0e5aee218962ffa688b367e033d15fe9d047d6c2950f3a3f4a6b",
+  "selected_temperature": 1.0,
+  "prompt_template_hash": "17e16d36fb48f18d69cbb627f7e0f77ac09cb84383340b7c7248c7fba25f0e9f",
+  "model": {
+    "id": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+    "tokenizer_revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+    "dtype": "bfloat16",
+    "linear_compute_dtype": "float32",
+    "attention_backend": "eager",
+    "device": "cuda"
+  },
+  "benchmark": {
+    "benchmark": "humaneval",
+    "version": "v0.1.10",
+    "evalplus_version": "0.3.1",
+    "official_dataset_md5": "fe585eb4df8c88d844eeb463ea4d0302",
+    "dataset_sha256": "0df1afb91f430bcc71fc7a192daf39c3abe11897a7d6e9da66dee67470603fde",
+    "python": "3.12.3",
+    "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "checker": "evalplus.eval.untrusted_check",
+    "fast_check": true,
+    "mini": false,
+    "noextreme": false,
+    "minimum_time_limit": 1,
+    "groundtruth_time_factor": 4
+  },
+  "packages": {
+    "torch": "2.12.0+cu126",
+    "transformers": "4.46.3",
+    "evalplus": "0.3.1",
+    "numpy": "1.26.4",
+    "scikit-learn": "1.5.2",
+    "statsmodels": "0.14.4",
+    "PyYAML": "6.0.2"
+  },
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "memory_total_mib": 6143.5,
+    "peak_allocated_mib": 4129.169921875,
+    "peak_reserved_mib": 4996.0,
+    "cuda": "12.6",
+    "driver_version": "576.52",
+    "weight_storage_dtype": "bfloat16",
+    "linear_compute_dtype": "float32"
+  },
+  "pilot_bank_sha256": "9b241a61af270d7820e8dbfeeb8611f53071ac7755340ee2a0c0e5d455f11009",
+  "pilot_manifest_sha256": "a8547a2f66765a6422b3d5ecf1c07fbcd698cd1d508c33b24f016c853fb36a1f",
+  "selection": {
+    "complete": true,
+    "selected_temperature": 1.0,
+    "temperatures": [
+      {
+        "temperature": 0.6,
+        "attempts": 320,
+        "mixed_tasks": 14,
+        "pass_rate": 0.58125,
+        "invalid_truncated_rate": 0.003125,
+        "mean_tokens": 73.19375
+      },
+      {
+        "temperature": 0.8,
+        "attempts": 320,
+        "mixed_tasks": 18,
+        "pass_rate": 0.5625,
+        "invalid_truncated_rate": 0.0,
+        "mean_tokens": 71.703125
+      },
+      {
+        "temperature": 1.0,
+        "attempts": 320,
+        "mixed_tasks": 23,
+        "pass_rate": 0.534375,
+        "invalid_truncated_rate": 0.009375,
+        "mean_tokens": 78.103125
+      }
+    ]
+  },
+  "approval_status": "Recorded in RESEARCH_PROTOCOL.md; not granted by this command"
+}

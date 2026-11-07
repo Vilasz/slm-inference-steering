@@ -1,0 +1,88 @@
+{
+  "created_at": "2026-10-17T06:56:56.995322+00:00",
+  "status": "completed_prefix_integrity_diagnostic",
+  "summaries": [
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "tasks": 132,
+      "mixed_tasks": 100,
+      "single_prefix_tasks": 16,
+      "mixed_single_prefix_tasks": 15,
+      "mean_fraction_unavoidably_tied_pairs": 0.638518283185253,
+      "constant_score_checks_passed": true
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "tasks": 132,
+      "mixed_tasks": 97,
+      "single_prefix_tasks": 0,
+      "mixed_single_prefix_tasks": 0,
+      "mean_fraction_unavoidably_tied_pairs": 0.15448283695680443,
+      "constant_score_checks_passed": true
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "tasks": 132,
+      "mixed_tasks": 92,
+      "single_prefix_tasks": 2,
+      "mixed_single_prefix_tasks": 0,
+      "mean_fraction_unavoidably_tied_pairs": 0.05323931191298518,
+      "constant_score_checks_passed": true
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "tasks": 122,
+      "mixed_tasks": 69,
+      "single_prefix_tasks": 13,
+      "mixed_single_prefix_tasks": 0,
+      "mean_fraction_unavoidably_tied_pairs": 0.060433349277836355,
+      "constant_score_checks_passed": true
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "tasks": 32,
+      "mixed_tasks": 24,
+      "single_prefix_tasks": 5,
+      "mixed_single_prefix_tasks": 3,
+      "mean_fraction_unavoidably_tied_pairs": 0.4245510818104181,
+      "constant_score_checks_passed": true
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "tasks": 32,
+      "mixed_tasks": 24,
+      "single_prefix_tasks": 0,
+      "mixed_single_prefix_tasks": 0,
+      "mean_fraction_unavoidably_tied_pairs": 0.04857168260660907,
+      "constant_score_checks_passed": true
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "tasks": 31,
+      "mixed_tasks": 18,
+      "single_prefix_tasks": 4,
+      "mixed_single_prefix_tasks": 0,
+      "mean_fraction_unavoidably_tied_pairs": 0.0,
+      "constant_score_checks_passed": true
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "tasks": 17,
+      "mixed_tasks": 6,
+      "single_prefix_tasks": 2,
+      "mixed_single_prefix_tasks": 0,
+      "mean_fraction_unavoidably_tied_pairs": 0.0,
+      "constant_score_checks_passed": true
+    }
+  ],
+  "scope": "Identical prompt and token prefix imply tied deterministic scores; partial collisions do not establish a causal explanation of transfer loss",
+  "primary_source_all_mixed_tasks_have_multiple_prefixes": true
+}

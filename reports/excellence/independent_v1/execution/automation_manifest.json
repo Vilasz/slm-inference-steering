@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-10-17T14:36:41.697592+00:00",
+  "status": "background_workflow_running_and_automatic_publication_ready",
+  "scientific_freeze_unchanged": true,
+  "sources": {
+    "scripts/run_approved_excellence.py": "f15ba909910109620bc935f57b8b87fda5d4f37362e4159dc1473682c2b037cd",
+    "scripts/analyze_excellence_independent.py": "c7a484e22987bff146bb23135f6fe53fb843f6748ed21d64001d498e41b90014",
+    "scripts/publish_excellence_independent.py": "230ece7cd454458b95e6f399b064595af2c0299e9e274517df534cc76b850f5a",
+    "src/slm_steering/excellence/independent_report.py": "d4a749cb3e04bb16060277f2f85e30ed4ebb5ce822dc25cf9e18944e0283e0ed",
+    "src/slm_steering/excellence/report.py": "fd0b026853549a1df47e36ecae235d9e3aa2b923ac6199ec930e382b18ddeb1c",
+    "scripts/build_final_notebook.py": "78070d205c8ca0bfb0c06f8c798a7192c7b5be6ad66fabbd1b38e8b5fb877a0c",
+    "scripts/build_excellence_materials.py": "0780b4147cd4449a384076ea1e30a70bfb05b784ef37bcd75c6beb737540429c",
+    "scripts/render_main_manuscript.py": "a0290961716420e5bcbb53755f04cb284e61147300b49b81b3282ec85b38ca1b",
+    "scripts/audit_research_delivery.py": "3a62d81d2f92b08cd362d8e82c12a14b2f942674335db71c5e6a6076418d0e91",
+    "scripts/update_execution_summary.py": "d0bb31d6aa968566be50ad238591373128eba0a7fbef13cc753c4afbaaa58fa0"
+  },
+  "validation": {
+    "full_tests_passed": 160,
+    "skipped": 0,
+    "ruff": "passed",
+    "mypy_sources": 123,
+    "layout_fixture_cases": [
+      "negative",
+      "crossing_zero",
+      "undefined"
+    ],
+    "integration_fixture": "evaluate, full activation audit, rescoring, policy summaries and Typst compiled; test-only historical records in .tmp; not scientific outcomes"
+  },
+  "next_steps": [
+    "Complete technical bank 400",
+    "Complete independent main bank 2400",
+    "Compute unchanged predeclared primary endpoint",
+    "Audit complete banks and rescore",
+    "Repeat full regression suite and code checks",
+    "Rebuild manuscript, executed notebook, two-page summary and twelve-slide defense",
+    "Verify all publication hashes and update final_verification.json"
+  ]
+}

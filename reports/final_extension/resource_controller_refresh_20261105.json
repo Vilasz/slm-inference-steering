@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-05T11:37:59.645084+00:00",
+  "previous_lock": {
+    "pid": 23380,
+    "started_at": "2026-11-04T13:29:12.389361+00:00"
+  },
+  "reason": "Controller refresh for OS-verified suspension accounting before external freeze; existing candidate writer is left active",
+  "workflow_sha256": "24099c485114168e300a3c8c331e0f4330682cd5145962dc7680052ffa575c4b"
+}

@@ -1,0 +1,32 @@
+
+2026-10-15T13:55:30.523609+00:00 ["C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe", "-u", "C:\\Users\\joaof\\slm-inference-steering\\scripts\\run_grouped_probes.py", "--bank-dir", "C:\\Users\\joaof\\slm-inference-steering\\runs\\candidate_bank\\definitive_v0.2", "--config", "C:\\Users\\joaof\\slm-inference-steering\\configs\\protocol_v0.2.yaml"]
+fold=1/5 checkpoint=0 completed
+fold=1/5 checkpoint=8 completed
+fold=1/5 checkpoint=16 completed
+fold=1/5 checkpoint=32 completed
+fold=1/5 checkpoint=64 completed
+fold=1/5 checkpoint=final completed
+fold=2/5 checkpoint=0 completed
+fold=2/5 checkpoint=8 completed
+fold=2/5 checkpoint=16 completed
+fold=2/5 checkpoint=32 completed
+fold=2/5 checkpoint=64 completed
+fold=2/5 checkpoint=final completed
+fold=3/5 checkpoint=0 completed
+fold=3/5 checkpoint=8 completed
+fold=3/5 checkpoint=16 completed
+fold=3/5 checkpoint=32 completed
+fold=3/5 checkpoint=64 completed
+fold=3/5 checkpoint=final completed
+fold=4/5 checkpoint=0 completed
+fold=4/5 checkpoint=8 completed
+fold=4/5 checkpoint=16 completed
+fold=4/5 checkpoint=32 completed
+fold=4/5 checkpoint=64 completed
+fold=4/5 checkpoint=final completed
+fold=5/5 checkpoint=0 completed
+fold=5/5 checkpoint=8 completed
+fold=5/5 checkpoint=16 completed
+fold=5/5 checkpoint=32 completed
+fold=5/5 checkpoint=64 completed
+fold=5/5 checkpoint=final completed

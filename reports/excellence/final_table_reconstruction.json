@@ -1,0 +1,1043 @@
+{
+  "created_at": "2026-10-18T16:22:21.592116+00:00",
+  "status": "completed_independent_arithmetic_reconstruction",
+  "primary_wt_effect": {
+    "estimate": -0.04702865751183576,
+    "ci95": [
+      -0.09937495818447421,
+      0.005583498622638404
+    ]
+  },
+  "primary_loss_effect": {
+    "estimate": 0.03785060488521885,
+    "ci95": [
+      0.006657260077646494,
+      0.0706158375881566
+    ]
+  },
+  "table_rows_verified": [
+    {
+      "table": "primary_predictors",
+      "family": "prior",
+      "roc_auc": 0.43015216595603933,
+      "within_task_auc": 0.5,
+      "log_loss": 0.6980002332843159,
+      "brier": 0.2524231737200486
+    },
+    {
+      "table": "primary_predictors",
+      "family": "B1",
+      "roc_auc": 0.6034374875341846,
+      "within_task_auc": 0.5,
+      "log_loss": 0.6741456536300791,
+      "brier": 0.24080398048672944
+    },
+    {
+      "table": "primary_predictors",
+      "family": "B2",
+      "roc_auc": 0.5858226464829028,
+      "within_task_auc": 0.5,
+      "log_loss": 0.6851177086360862,
+      "brier": 0.2458982543160637
+    },
+    {
+      "table": "primary_predictors",
+      "family": "B3",
+      "roc_auc": 0.6970981765327816,
+      "within_task_auc": 0.6241843533362517,
+      "log_loss": 0.6315583017171995,
+      "brier": 0.22069928860551039
+    },
+    {
+      "table": "primary_predictors",
+      "family": "B",
+      "roc_auc": 0.7005388050669169,
+      "within_task_auc": 0.628155136147495,
+      "log_loss": 0.6302167257514909,
+      "brier": 0.2199336736569267
+    },
+    {
+      "table": "primary_predictors",
+      "family": "H",
+      "roc_auc": 0.592358982760993,
+      "within_task_auc": 0.5681088021901577,
+      "log_loss": 0.6868662856354759,
+      "brier": 0.24600698064937676
+    },
+    {
+      "table": "primary_predictors",
+      "family": "HB",
+      "roc_auc": 0.64564961821897,
+      "within_task_auc": 0.5811264786356591,
+      "log_loss": 0.6680673306367096,
+      "brier": 0.23621441410182073
+    },
+    {
+      "table": "primary_predictors",
+      "family": "random_direction",
+      "roc_auc": 0.4356020909592959,
+      "within_task_auc": 0.4961973203634788,
+      "log_loss": 0.6977722972643662,
+      "brier": 0.2523092250098374
+    },
+    {
+      "table": "primary_predictors",
+      "family": "shuffled_training_labels",
+      "roc_auc": 0.604835566015338,
+      "within_task_auc": 0.5338061787616215,
+      "log_loss": 0.6924114701287215,
+      "brier": 0.24800743386577073
+    },
+    {
+      "table": "primary_predictors",
+      "family": "length_stopping",
+      "roc_auc": 0.43015216595603933,
+      "within_task_auc": 0.5,
+      "log_loss": 0.697994489733113,
+      "brier": 0.2524203026198756
+    },
+    {
+      "table": "exploratory_readouts",
+      "family": "B_original",
+      "roc_auc": 0.7005388050669166,
+      "within_task_auc": 0.628155136147495,
+      "log_loss": 0.6302167257514909,
+      "brier": 0.2199336736569267,
+      "delta_wt_vs_B": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "delta_loss_vs_B": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "table": "exploratory_readouts",
+      "family": "B_reproduced",
+      "roc_auc": 0.7005388050669166,
+      "within_task_auc": 0.628155136147495,
+      "log_loss": 0.6302167257514909,
+      "brier": 0.2199336736569267,
+      "delta_wt_vs_B": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "delta_loss_vs_B": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "table": "exploratory_readouts",
+      "family": "HB_original",
+      "roc_auc": 0.6456496182189702,
+      "within_task_auc": 0.5811264786356591,
+      "log_loss": 0.6680673306367096,
+      "brier": 0.23621441410182073,
+      "delta_wt_vs_B": {
+        "estimate": -0.04702865751183576,
+        "ci95": [
+          -0.09937495818447421,
+          0.005583498622638404
+        ]
+      },
+      "delta_loss_vs_B": {
+        "estimate": 0.03785060488521885,
+        "ci95": [
+          0.006657260077646494,
+          0.0706158375881566
+        ]
+      }
+    },
+    {
+      "table": "exploratory_readouts",
+      "family": "HB_pca16",
+      "roc_auc": 0.698752709881579,
+      "within_task_auc": 0.6239844799131778,
+      "log_loss": 0.633376993564418,
+      "brier": 0.22088877744586843,
+      "delta_wt_vs_B": {
+        "estimate": -0.004170656234317218,
+        "ci95": [
+          -0.037622512768647726,
+          0.03186541506014756
+        ]
+      },
+      "delta_loss_vs_B": {
+        "estimate": 0.003160267812927152,
+        "ci95": [
+          -0.010242319176899382,
+          0.01668002158978382
+        ]
+      }
+    },
+    {
+      "table": "exploratory_readouts",
+      "family": "HB_pca64",
+      "roc_auc": 0.696167273233486,
+      "within_task_auc": 0.6297510360488953,
+      "log_loss": 0.6317965122919855,
+      "brier": 0.2208257569820351,
+      "delta_wt_vs_B": {
+        "estimate": 0.0015958999014003025,
+        "ci95": [
+          -0.030137470973808082,
+          0.03376978697749545
+        ]
+      },
+      "delta_loss_vs_B": {
+        "estimate": 0.0015797865404947146,
+        "ci95": [
+          -0.012065387035356145,
+          0.01567032000947525
+        ]
+      }
+    },
+    {
+      "table": "exploratory_readouts",
+      "family": "HB_stronger",
+      "roc_auc": 0.6052319573217988,
+      "within_task_auc": 0.5475799061372805,
+      "log_loss": 0.6763807840731246,
+      "brier": 0.2411425133983635,
+      "delta_wt_vs_B": {
+        "estimate": -0.08057523001021452,
+        "ci95": [
+          -0.1443477732244579,
+          -0.015341724675926491
+        ]
+      },
+      "delta_loss_vs_B": {
+        "estimate": 0.04616405832163387,
+        "ci95": [
+          0.013284542208386787,
+          0.0809243282284501
+        ]
+      }
+    },
+    {
+      "table": "exploratory_readouts",
+      "family": "H_original",
+      "roc_auc": 0.5923589827609932,
+      "within_task_auc": 0.5681088021901577,
+      "log_loss": 0.6868662856354759,
+      "brier": 0.24600698064937676,
+      "delta_wt_vs_B": {
+        "estimate": -0.06004633395733729,
+        "ci95": [
+          -0.1143251150204028,
+          -0.003948685130266651
+        ]
+      },
+      "delta_loss_vs_B": {
+        "estimate": 0.05664955988398495,
+        "ci95": [
+          0.02413480348888345,
+          0.09017440318771779
+        ]
+      }
+    },
+    {
+      "table": "exploratory_readouts",
+      "family": "H_residual_B",
+      "roc_auc": 0.7020077287618895,
+      "within_task_auc": 0.6345276078497134,
+      "log_loss": 0.6289479022110083,
+      "brier": 0.21943465293440786,
+      "delta_wt_vs_B": {
+        "estimate": 0.0063724717022183045,
+        "ci95": [
+          -0.008739513442666836,
+          0.024383281584238126
+        ]
+      },
+      "delta_loss_vs_B": {
+        "estimate": -0.001268823540482441,
+        "ci95": [
+          -0.005748723655173855,
+          0.0031586043378817427
+        ]
+      }
+    },
+    {
+      "table": "exploratory_readouts",
+      "family": "confidence_only",
+      "roc_auc": 0.6970981765327814,
+      "within_task_auc": 0.6241843533362517,
+      "log_loss": 0.6315583017171995,
+      "brier": 0.22069928860551039,
+      "delta_wt_vs_B": {
+        "estimate": -0.003970782811243342,
+        "ci95": [
+          -0.00820940700291997,
+          -2.398444790538245e-05
+        ]
+      },
+      "delta_loss_vs_B": {
+        "estimate": 0.0013415759657086962,
+        "ci95": [
+          -0.01671351011400069,
+          0.01930927437222373
+        ]
+      }
+    },
+    {
+      "table": "exploratory_readouts",
+      "family": "entropy_pair",
+      "roc_auc": 0.6999240323017277,
+      "within_task_auc": 0.6035608102306071,
+      "log_loss": 0.630671487782005,
+      "brier": 0.2201270989538777,
+      "delta_wt_vs_B": {
+        "estimate": -0.024594325916887837,
+        "ci95": [
+          -0.04604817223891492,
+          -0.005615447794845062
+        ]
+      },
+      "delta_loss_vs_B": {
+        "estimate": 0.0004547620305143057,
+        "ci95": [
+          -0.019538957685730562,
+          0.02000210200430478
+        ]
+      }
+    },
+    {
+      "table": "exploratory_readouts",
+      "family": "last_nll",
+      "roc_auc": 0.4287772507587952,
+      "within_task_auc": 0.5023091556817391,
+      "log_loss": 0.6997112960067684,
+      "brier": 0.25324536841515627,
+      "delta_wt_vs_B": {
+        "estimate": -0.12584598046575599,
+        "ci95": [
+          -0.17721325411545535,
+          -0.07427000346143915
+        ]
+      },
+      "delta_loss_vs_B": {
+        "estimate": 0.06949457025527755,
+        "ci95": [
+          0.03470885507677048,
+          0.10350925898757216
+        ]
+      }
+    },
+    {
+      "table": "exploratory_readouts",
+      "family": "logit_margin",
+      "roc_auc": 0.6716818807082691,
+      "within_task_auc": 0.631081133641928,
+      "log_loss": 0.6563520495666577,
+      "brier": 0.23042753144684625,
+      "delta_wt_vs_B": {
+        "estimate": 0.0029259974944328524,
+        "ci95": [
+          -0.023088891141496957,
+          0.03221393060675822
+        ]
+      },
+      "delta_loss_vs_B": {
+        "estimate": 0.026135323815166804,
+        "ci95": [
+          0.0019508786372801983,
+          0.04852160770834358
+        ]
+      }
+    },
+    {
+      "table": "exploratory_readouts",
+      "family": "max_entropy",
+      "roc_auc": 0.6672044108925849,
+      "within_task_auc": 0.5146268810109839,
+      "log_loss": 0.6561786111095437,
+      "brier": 0.2308735579548727,
+      "delta_wt_vs_B": {
+        "estimate": -0.1135282551365112,
+        "ci95": [
+          -0.16127468206000367,
+          -0.0682564450843714
+        ]
+      },
+      "delta_loss_vs_B": {
+        "estimate": 0.025961885358052897,
+        "ci95": [
+          -0.00395327459348182,
+          0.06014445669949917
+        ]
+      }
+    },
+    {
+      "table": "exploratory_readouts",
+      "family": "mean_entropy",
+      "roc_auc": 0.6865990719404402,
+      "within_task_auc": 0.6128056362435675,
+      "log_loss": 0.638418310988557,
+      "brier": 0.2231831441509759,
+      "delta_wt_vs_B": {
+        "estimate": -0.015349499903927654,
+        "ci95": [
+          -0.03516791309601633,
+          0.0026559605671957723
+        ]
+      },
+      "delta_loss_vs_B": {
+        "estimate": 0.008201585237066052,
+        "ci95": [
+          -0.010472092910745238,
+          0.025658801731702402
+        ]
+      }
+    },
+    {
+      "table": "exploratory_readouts",
+      "family": "mean_nll",
+      "roc_auc": 0.6532420992953398,
+      "within_task_auc": 0.6377652847023199,
+      "log_loss": 0.6564102443920236,
+      "brier": 0.23157482089879503,
+      "delta_wt_vs_B": {
+        "estimate": 0.009610148554824826,
+        "ci95": [
+          -0.017752818942536813,
+          0.037618806124908144
+        ]
+      },
+      "delta_loss_vs_B": {
+        "estimate": 0.02619351864053277,
+        "ci95": [
+          0.001122570107703544,
+          0.0501409806166903
+        ]
+      }
+    },
+    {
+      "table": "exploratory_readouts",
+      "family": "nll_pair",
+      "roc_auc": 0.6524955640973837,
+      "within_task_auc": 0.6403735122945629,
+      "log_loss": 0.6564904461418026,
+      "brier": 0.2316655256152691,
+      "delta_wt_vs_B": {
+        "estimate": 0.012218376147067759,
+        "ci95": [
+          -0.015664881185487187,
+          0.04086397623470665
+        ]
+      },
+      "delta_loss_vs_B": {
+        "estimate": 0.026273720390311704,
+        "ci95": [
+          0.0008829671471291826,
+          0.05045863137420962
+        ]
+      }
+    },
+    {
+      "table": "exploratory_readouts",
+      "family": "prompt_only",
+      "roc_auc": 0.6034374875341847,
+      "within_task_auc": 0.5,
+      "log_loss": 0.6741456536300791,
+      "brier": 0.24080398048672944,
+      "delta_wt_vs_B": {
+        "estimate": -0.12815513614749505,
+        "ci95": [
+          -0.17453084820099168,
+          -0.08333509338014888
+        ]
+      },
+      "delta_loss_vs_B": {
+        "estimate": 0.04392892787858818,
+        "ci95": [
+          0.0184998282654557,
+          0.06869557528727431
+        ]
+      }
+    },
+    {
+      "table": "frozen_transfer",
+      "checkpoint": 8,
+      "family": "B",
+      "roc_auc": 0.47004008615531867,
+      "within_task_auc": 0.5448769374375266,
+      "log_loss": 0.7181154697914993,
+      "brier": 0.26218605460534794
+    },
+    {
+      "table": "frozen_transfer",
+      "checkpoint": 8,
+      "family": "H",
+      "roc_auc": 0.3724522356507517,
+      "within_task_auc": 0.5015832906084212,
+      "log_loss": 0.8800458480853084,
+      "brier": 0.33114694673104494
+    },
+    {
+      "table": "frozen_transfer",
+      "checkpoint": 8,
+      "family": "HB",
+      "roc_auc": 0.363612340951697,
+      "within_task_auc": 0.4940143677120022,
+      "log_loss": 0.8828089214616917,
+      "brier": 0.3313852600225383
+    },
+    {
+      "table": "frozen_transfer",
+      "checkpoint": 16,
+      "family": "B",
+      "roc_auc": 0.7253500059830079,
+      "within_task_auc": 0.7151262281982579,
+      "log_loss": 0.6587838596150686,
+      "brier": 0.2333543093885685
+    },
+    {
+      "table": "frozen_transfer",
+      "checkpoint": 16,
+      "family": "H",
+      "roc_auc": 0.6099278050337041,
+      "within_task_auc": 0.5376499578279764,
+      "log_loss": 0.6731984182505961,
+      "brier": 0.24025227269919974
+    },
+    {
+      "table": "frozen_transfer",
+      "checkpoint": 16,
+      "family": "HB",
+      "roc_auc": 0.6441107255394677,
+      "within_task_auc": 0.6181338417505696,
+      "log_loss": 0.6629397585313621,
+      "brier": 0.23539340987733648
+    },
+    {
+      "table": "frozen_transfer",
+      "checkpoint": 32,
+      "family": "B",
+      "roc_auc": 0.7561646268289786,
+      "within_task_auc": 0.6422636731460261,
+      "log_loss": 0.647831227399416,
+      "brier": 0.22570082336386876
+    },
+    {
+      "table": "frozen_transfer",
+      "checkpoint": 32,
+      "family": "H",
+      "roc_auc": 0.7064464014096856,
+      "within_task_auc": 0.6260564326740797,
+      "log_loss": 0.6579236977799003,
+      "brier": 0.23242839684353542
+    },
+    {
+      "table": "frozen_transfer",
+      "checkpoint": 32,
+      "family": "HB",
+      "roc_auc": 0.7330216923698517,
+      "within_task_auc": 0.6426702246555187,
+      "log_loss": 0.6398175627417473,
+      "brier": 0.22285024953004737
+    },
+    {
+      "table": "frozen_transfer",
+      "checkpoint": 64,
+      "family": "B",
+      "roc_auc": 0.9151731150258383,
+      "within_task_auc": 0.8472222222222223,
+      "log_loss": 0.5899113431201031,
+      "brier": 0.19941419900677773
+    },
+    {
+      "table": "frozen_transfer",
+      "checkpoint": 64,
+      "family": "H",
+      "roc_auc": 0.6138660445557986,
+      "within_task_auc": 0.5291666666666667,
+      "log_loss": 0.6887067686559437,
+      "brier": 0.2477717115026247
+    },
+    {
+      "table": "frozen_transfer",
+      "checkpoint": 64,
+      "family": "HB",
+      "roc_auc": 0.7411535059609334,
+      "within_task_auc": 0.5416666666666666,
+      "log_loss": 0.6442118465312963,
+      "brier": 0.22603602248639812
+    }
+  ],
+  "selected_policy_retention": [
+    {
+      "dataset": "HumanEval+ OOF",
+      "policy": "B",
+      "retained_correct": 1158,
+      "active_correct": 1219,
+      "recall": 0.9499589827727646,
+      "ci95": [
+        0.9074776873520638,
+        0.9825192220714608
+      ]
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "policy": "HB",
+      "retained_correct": 1056,
+      "active_correct": 1079,
+      "recall": 0.9786839666357738,
+      "ci95": [
+        0.9605702925607335,
+        0.9925324855117886
+      ]
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "policy": "B",
+      "retained_correct": 356,
+      "active_correct": 366,
+      "recall": 0.9726775956284153,
+      "ci95": [
+        0.9550554366565602,
+        0.9887656142112862
+      ]
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "policy": "HB",
+      "retained_correct": 276,
+      "active_correct": 366,
+      "recall": 0.7540983606557377,
+      "ci95": [
+        0.6186639175257732,
+        0.8773604614495191
+      ]
+    }
+  ],
+  "independent_replay_rows_verified": 14432,
+  "functional_status_records_verified": 3280,
+  "oracle_table_N20": [
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 20,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 103.99242424242425,
+      "attempts_started": 5.5606060606060606,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.7774805881113327,
+        "ci95": [
+          0.7052840677675859,
+          0.823394097971278
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -363.3484848484849,
+        "ci95": [
+          -491.83333333333337,
+          -240.0969696969697
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 20,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 141.58333333333334,
+      "attempts_started": 5.5606060606060606,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.6970448540258393,
+        "ci95": [
+          0.6170230135529927,
+          0.7500926870263265
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -325.75757575757575,
+        "ci95": [
+          -448.3501893939394,
+          -211.09829545454548
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 20,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 212.75,
+      "attempts_started": 5.5606060606060606,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.544764868939357,
+        "ci95": [
+          0.4461435114311304,
+          0.6165460547992383
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -254.5909090909091,
+        "ci95": [
+          -365.4850378787879,
+          -152.7073863636364
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 20,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 307.9469696969697,
+      "attempts_started": 5.5606060606060606,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.34106566810938743,
+        "ci95": [
+          0.23430692047097026,
+          0.42796678824580414
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -159.3939393939394,
+        "ci95": [
+          -250.1371212121212,
+          -82.86306818181818
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 20,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 66.46875,
+      "attempts_started": 4.78125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.7625320978006029,
+        "ci95": [
+          0.5735909278019898,
+          0.8356507529157584
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -213.4375,
+        "ci95": [
+          -397.94609375,
+          -74.42265625000007
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 20,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 97.96875,
+      "attempts_started": 4.78125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.6499944177738082,
+        "ci95": [
+          0.45991099417037373,
+          0.7391665078761067
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -181.9375,
+        "ci95": [
+          -348.19765625,
+          -59.43437500000019
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 20,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 156.03125,
+      "attempts_started": 4.78125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.4425588924863235,
+        "ci95": [
+          0.23889198868663575,
+          0.5624801776125397
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -123.875,
+        "ci95": [
+          -260.04375,
+          -32.614843750000055
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 20,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 227.40625,
+      "attempts_started": 4.78125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.18756280004465786,
+        "ci95": [
+          0.05678818479007483,
+          0.30211995112745765
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -52.5,
+        "ci95": [
+          -129.0625,
+          -7.999218750000004
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    }
+  ],
+  "historical_files_unchanged": true,
+  "approved_extension_reconstruction": {
+    "estimate": -0.16359060402684564,
+    "ci95": [
+      -0.2402298061170319,
+      -0.0942741120201171
+    ],
+    "counts_HB_B_active": [
+      986,
+      1181,
+      1192
+    ],
+    "replay_rows_verified": 2400,
+    "undefined_bootstrap_draws": 0,
+    "method": "Direct candidate-count and replay loops; independent NumPy task bootstrap; no simulate call"
+  },
+  "transfer_csv_precision": {
+    "reader": "round_trip, matching full-precision scores used to write the frozen transfer metrics",
+    "max_probability_change_vs_default_parser": 8.326672684688674e-17
+  },
+  "scope": "Pair-count AUC, task-mean proper losses, vectorized paired bootstrap and direct loop replay; no original simulate call",
+  "inputs": {
+    "runs/probes/protocol_v0.2/outer_predictions.csv": "96f941052ef85e6778c3a993596ab841573262169ba7d9adee12f803a26f6a8d",
+    "reports/protocol_v0.2/results.json": "0cc3d457fe59a656418dae2df02e69a38ce424703ee78e036b1a31d9561d2949",
+    "reports/transfer_v0.2/predictions.csv": "58fb6b419c6bd4a80d23e75044597341d069b9fcd534e4c23eb247cad78f06c1",
+    "reports/transfer_v0.2/results.json": "841bec2240af6d56f120ed72ad7ae9d34561c6694e5d6937f911b1f31c860910",
+    "reports/excellence/models/results.json": "39683ce7cace055a2cd0d527b5523f5451fba82d8c525eb11b3db91511c5ba8b",
+    "reports/excellence/models/predictions.csv": "f0e0a92b35ae418a20fff94aa4d9ec0511496adf814dd617723064ddabd3aa92",
+    "reports/excellence/economics/per_task.csv": "f28fc8c85dc8ab67de53fcb1d8ab92a794f7a4abe98b8be9d5dc225e48d56e59",
+    "reports/excellence/economics/original_selected_policies.csv": "a2e0ee8cc7e1f1bd972ffd3cc616fd022b3a5849a5a88bd21c2ee6ccb34ff76c",
+    "reports/excellence/economics/results.json": "504d4ba408307a09fe52db4e2295b9b2569a61ca9d12d41b73474d5ffcddba6d",
+    "reports/excellence/final_primary_reconstruction.json": "78ef097257d90b5777a2ce25c3f49618cb85288f99c473e18359837802ce4dda",
+    "src/slm_steering/excellence/final_audit.py": "2fc767f736c51d25610b0932cee1b8d75fa9c427c8fa923d993a9d1708630c30",
+    "reports/excellence/proposal_design.json": "577d757406972660d6022d6285ef180b903036659481c36a1f23ef4e6b458c9e",
+    "reports/excellence/independent_v1/results.json": "21f08ea0fffdec3f1153b02b9e8068bbbc347ca432aa4dc6f473149d2cd76528",
+    "reports/excellence/independent_v1/predictions.csv": "6710c691d7f39d31851557dfc5d7d051820353c5f03e6f2293646de4814b1681",
+    "reports/excellence/independent_v1/policy_per_task.csv": "40c57d56696a58a2510fef8772ac4dea32ec7dfa86dce4112e61acec38644f29",
+    "runs/excellence/independent_v1/main/trajectories.jsonl": "d81ddde6214c3fd5c142180269ddf77e3c2e4e5d351d26a19a7d51e7b918ee0a"
+  },
+  "full_statistical_reruns": {
+    "main_statistics": {
+      "exact_json_equality": true,
+      "original_sha256": "0cc3d457fe59a656418dae2df02e69a38ce424703ee78e036b1a31d9561d2949",
+      "rerun_sha256": "0cc3d457fe59a656418dae2df02e69a38ce424703ee78e036b1a31d9561d2949",
+      "rerun": "reports/excellence/final_main_reconstruction/results.json"
+    },
+    "transfer_statistics": {
+      "exact_json_equality": true,
+      "original_sha256": "841bec2240af6d56f120ed72ad7ae9d34561c6694e5d6937f911b1f31c860910",
+      "rerun_sha256": "841bec2240af6d56f120ed72ad7ae9d34561c6694e5d6937f911b1f31c860910",
+      "rerun": "reports/excellence/final_transfer_reconstruction/results.json"
+    },
+    "transfer_policy_replay": {
+      "exact_json_equality": true,
+      "original_sha256": "a212b53f1b94074a325f343175fb3bfc99ada5d95d4b3f5365d397d8ecfc37f2",
+      "rerun_sha256": "a212b53f1b94074a325f343175fb3bfc99ada5d95d4b3f5365d397d8ecfc37f2",
+      "rerun": "reports/excellence/final_transfer_reconstruction/policy_replay.json"
+    }
+  }
+}

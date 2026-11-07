@@ -1,0 +1,89 @@
+protocol_version: '0.2'
+model:
+  id: Qwen/Qwen2.5-Coder-1.5B-Instruct
+  revision: 2e1fd397ee46e1388853d2af2c993145b0f1098a
+  tokenizer_revision: 2e1fd397ee46e1388853d2af2c993145b0f1098a
+  dtype: bfloat16
+  linear_compute_dtype: float32
+  attention_backend: eager
+  device: cuda
+benchmark:
+  name: humaneval
+  evalplus_version: 0.3.1
+pilot:
+  tasks: 32
+  selection_prefix: 'protocol-v0.1-pilot:'
+  temperatures:
+  - 0.6
+  - 0.8
+  - 1.0
+  attempts_per_task: 10
+  max_invalid_truncated_excess: 0.05
+decoding:
+  top_p: 0.95
+  top_k: 0
+  max_new_tokens: 512
+  do_sample: true
+candidate_bank:
+  attempts_per_task: 20
+  budgets:
+  - 1
+  - 5
+  - 10
+  - 20
+activations:
+  checkpoints:
+  - 0
+  - 8
+  - 16
+  - 32
+  - 64
+  - final
+  primary_checkpoint: 32
+  depth_fractions:
+  - 0.25
+  - 0.5
+  - 0.75
+  - 1.0
+  storage_dtype: float16
+  invariance_atol: 0.02
+  invariance_rtol: 0.01
+  invariance_metric: per_layer_relative_l2_and_scaled_max
+statistics:
+  outer_folds: 5
+  inner_folds: 3
+  regularization_c:
+  - 0.001
+  - 0.01
+  - 0.1
+  - 1.0
+  - 10.0
+  bootstrap_replications: 2000
+  permutation_replications: 10000
+  seed: 20260921
+  calibration: selection_cross_fitted_development
+  association_test: outer_fold_permutation_bonferroni
+policy:
+  minimum_correct_recall: 0.97
+  noninferiority_margin: 0.03
+  checkpoints:
+  - 8
+  - 16
+  - 32
+  - 64
+  tie_tolerance: 1.0e-09
+resources:
+  generation_batch_size: 1
+  cpu_threads: 4
+  verification_workers: 1
+  default_session_seconds: 600
+schema:
+  label: evalplus_base_and_plus_pass
+  risk_set: T>t
+  margin: temperature_scaled_pre_top_p
+robustness:
+  benchmark: mbpp
+  tasks: 32
+  selection_prefix: 'protocol-v0.2-mbpp-transfer:'
+  attempts_per_task: 20
+  mode: frozen_transfer

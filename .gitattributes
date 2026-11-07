@@ -1,0 +1,8 @@
+# Preserve the bytes covered by the scientific SHA256 manifests.
+* -text
+*.pdf binary
+*.png binary
+*.joblib binary
+*.npz binary
+RESEARCH_PROTOCOL.md text eol=lf whitespace=-blank-at-eol
+configs/protocol_v0.1.yaml text eol=lf

@@ -1,0 +1,318 @@
+{
+  "historical_tasks": 132,
+  "mixed_tasks": 92,
+  "mixed_fraction": 0.696969696969697,
+  "paired_delta_sd": 0.2663866754107369,
+  "predictor_correlation": 0.5408841205801583,
+  "recommendation_tasks": 100,
+  "planning_rows": [
+    {
+      "effect": 0.02,
+      "tasks": 100,
+      "training_sd_assumed": 0.0,
+      "power_two_sided": 0.1105,
+      "positive_detection": 0.10325,
+      "mean_interval_width": 0.12389560315186418,
+      "mean_mixed_tasks": 69.71175,
+      "mixed_q025": 61.0,
+      "mixed_q975": 78.0,
+      "valid_fraction": 1.0,
+      "residual_scale": 1.0,
+      "mixed_fraction_assumed": 0.696969696969697
+    },
+    {
+      "effect": 0.03,
+      "tasks": 100,
+      "training_sd_assumed": 0.0,
+      "power_two_sided": 0.1585,
+      "positive_detection": 0.156,
+      "mean_interval_width": 0.12405388552005948,
+      "mean_mixed_tasks": 69.734,
+      "mixed_q025": 60.0,
+      "mixed_q975": 79.0,
+      "valid_fraction": 1.0,
+      "residual_scale": 1.0,
+      "mixed_fraction_assumed": 0.696969696969697
+    },
+    {
+      "effect": 0.05,
+      "tasks": 100,
+      "training_sd_assumed": 0.0,
+      "power_two_sided": 0.3615,
+      "positive_detection": 0.36125,
+      "mean_interval_width": 0.12386425973065525,
+      "mean_mixed_tasks": 69.73675,
+      "mixed_q025": 60.0,
+      "mixed_q975": 78.0,
+      "valid_fraction": 1.0,
+      "residual_scale": 1.0,
+      "mixed_fraction_assumed": 0.696969696969697
+    },
+    {
+      "effect": 0.075,
+      "tasks": 100,
+      "training_sd_assumed": 0.0,
+      "power_two_sided": 0.64875,
+      "positive_detection": 0.64875,
+      "mean_interval_width": 0.12403835557802766,
+      "mean_mixed_tasks": 69.59275,
+      "mixed_q025": 60.0,
+      "mixed_q975": 79.0,
+      "valid_fraction": 1.0,
+      "residual_scale": 1.0,
+      "mixed_fraction_assumed": 0.696969696969697
+    }
+  ],
+  "normal_approx_tasks_for_80pct_power": {
+    "0.02": 1998,
+    "0.03": 888,
+    "0.05": 320,
+    "0.075": 143
+  },
+  "repeated_source_fitting": {
+    "model": "qwen",
+    "repetitions": 8,
+    "source_contract": {
+      "source_bank": "8e55c7f8905254029d6ef3e92a17a77f01727f7ba206c5e73098613b26b856fb",
+      "layer": 20,
+      "checkpoint": 32
+    },
+    "audit_task_ids": [
+      "HumanEval/10",
+      "HumanEval/100",
+      "HumanEval/104",
+      "HumanEval/106",
+      "HumanEval/108",
+      "HumanEval/11",
+      "HumanEval/123",
+      "HumanEval/124",
+      "HumanEval/131",
+      "HumanEval/133",
+      "HumanEval/136",
+      "HumanEval/137",
+      "HumanEval/146",
+      "HumanEval/15",
+      "HumanEval/150",
+      "HumanEval/155",
+      "HumanEval/20",
+      "HumanEval/28",
+      "HumanEval/30",
+      "HumanEval/38",
+      "HumanEval/39",
+      "HumanEval/54",
+      "HumanEval/6",
+      "HumanEval/70",
+      "HumanEval/77",
+      "HumanEval/79"
+    ],
+    "training_pool_tasks": 106,
+    "tasks_per_perturbation": 84,
+    "training_sensitivity_sd": {
+      "linear": 0.036047209321222295,
+      "MLP": 0.04501014059821455
+    },
+    "selection_frequencies": [
+      {
+        "repetition": 0,
+        "family": "B_linear",
+        "parameter": 0.01,
+        "epochs": null
+      },
+      {
+        "repetition": 0,
+        "family": "HB_linear",
+        "parameter": 0.01,
+        "epochs": null
+      },
+      {
+        "repetition": 0,
+        "family": "B_MLP",
+        "parameter": 16,
+        "epochs": 177
+      },
+      {
+        "repetition": 0,
+        "family": "HB_MLP",
+        "parameter": 32,
+        "epochs": 84
+      },
+      {
+        "repetition": 1,
+        "family": "B_linear",
+        "parameter": 0.01,
+        "epochs": null
+      },
+      {
+        "repetition": 1,
+        "family": "HB_linear",
+        "parameter": 0.01,
+        "epochs": null
+      },
+      {
+        "repetition": 1,
+        "family": "B_MLP",
+        "parameter": 32,
+        "epochs": 85
+      },
+      {
+        "repetition": 1,
+        "family": "HB_MLP",
+        "parameter": 32,
+        "epochs": 74
+      },
+      {
+        "repetition": 2,
+        "family": "B_linear",
+        "parameter": 0.01,
+        "epochs": null
+      },
+      {
+        "repetition": 2,
+        "family": "HB_linear",
+        "parameter": 0.001,
+        "epochs": null
+      },
+      {
+        "repetition": 2,
+        "family": "B_MLP",
+        "parameter": 16,
+        "epochs": 125
+      },
+      {
+        "repetition": 2,
+        "family": "HB_MLP",
+        "parameter": 32,
+        "epochs": 96
+      },
+      {
+        "repetition": 3,
+        "family": "B_linear",
+        "parameter": 0.01,
+        "epochs": null
+      },
+      {
+        "repetition": 3,
+        "family": "HB_linear",
+        "parameter": 0.01,
+        "epochs": null
+      },
+      {
+        "repetition": 3,
+        "family": "B_MLP",
+        "parameter": 32,
+        "epochs": 128
+      },
+      {
+        "repetition": 3,
+        "family": "HB_MLP",
+        "parameter": 32,
+        "epochs": 69
+      },
+      {
+        "repetition": 4,
+        "family": "B_linear",
+        "parameter": 0.01,
+        "epochs": null
+      },
+      {
+        "repetition": 4,
+        "family": "HB_linear",
+        "parameter": 0.01,
+        "epochs": null
+      },
+      {
+        "repetition": 4,
+        "family": "B_MLP",
+        "parameter": 32,
+        "epochs": 119
+      },
+      {
+        "repetition": 4,
+        "family": "HB_MLP",
+        "parameter": 32,
+        "epochs": 93
+      },
+      {
+        "repetition": 5,
+        "family": "B_linear",
+        "parameter": 0.01,
+        "epochs": null
+      },
+      {
+        "repetition": 5,
+        "family": "HB_linear",
+        "parameter": 0.01,
+        "epochs": null
+      },
+      {
+        "repetition": 5,
+        "family": "B_MLP",
+        "parameter": 16,
+        "epochs": 112
+      },
+      {
+        "repetition": 5,
+        "family": "HB_MLP",
+        "parameter": 32,
+        "epochs": 69
+      },
+      {
+        "repetition": 6,
+        "family": "B_linear",
+        "parameter": 0.01,
+        "epochs": null
+      },
+      {
+        "repetition": 6,
+        "family": "HB_linear",
+        "parameter": 0.01,
+        "epochs": null
+      },
+      {
+        "repetition": 6,
+        "family": "B_MLP",
+        "parameter": 16,
+        "epochs": 124
+      },
+      {
+        "repetition": 6,
+        "family": "HB_MLP",
+        "parameter": 32,
+        "epochs": 101
+      },
+      {
+        "repetition": 7,
+        "family": "B_linear",
+        "parameter": 0.01,
+        "epochs": null
+      },
+      {
+        "repetition": 7,
+        "family": "HB_linear",
+        "parameter": 0.01,
+        "epochs": null
+      },
+      {
+        "repetition": 7,
+        "family": "B_MLP",
+        "parameter": 32,
+        "epochs": 119
+      },
+      {
+        "repetition": 7,
+        "family": "HB_MLP",
+        "parameter": 32,
+        "epochs": 64
+      }
+    ],
+    "scope": "Repeated task subsampling and complete source selection/refit/calibration, scored on fixed disjoint source tasks.",
+    "limits": "Eight overlapping subsamples and a small fixed audit cohort do not yield a full-procedure confidence interval or an unbiased training variance estimate.",
+    "no_external_labels": true,
+    "output_sha256": "4122f0baeacbcb88f8b6677e631d3d1141a657a576a9c6bc17e44e73f11c527f"
+  },
+  "simulations_per_cell": 4000,
+  "seed": 20261104,
+  "approximation": "Empirical centered task effects with binomial mixed counts; normal two-sided planning intervals, not the final percentile bootstrap.",
+  "training_uncertainty": "SD 0/.01/.02 are sensitivity assumptions. No claim of full-procedure frequentist coverage.",
+  "transport_limit": "Historical Qwen HumanEval heterogeneity is a planning proxy, not a measured DeepSeek MBPP effect."
+}

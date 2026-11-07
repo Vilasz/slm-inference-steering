@@ -1,0 +1,7051 @@
+{
+  "created_at": "2026-10-17T06:13:36.854710+00:00",
+  "status": "completed_retrospective_oracle",
+  "summaries": [
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 1,
+      "policy": "B",
+      "tasks": 132,
+      "resolution": 0.4696969696969697,
+      "tokens_per_task": 69.52272727272727,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 0.9841269841269841,
+      "false_abort_rate_started_active_correct": 0.015873015873015872,
+      "saving_vs_verifier": {
+        "estimate": 0.03734396307563215,
+        "ci95": [
+          0.0,
+          0.09652244065002236
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -2.696969696969697,
+        "ci95": [
+          -7.204545454545454,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.007575757575757576,
+        "ci95": [
+          -0.022727272727272728,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 29.015151515151516
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 1,
+      "policy": "HB",
+      "tasks": 132,
+      "resolution": 0.4696969696969697,
+      "tokens_per_task": 70.71212121212122,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 0.9841269841269841,
+      "false_abort_rate_started_active_correct": 0.015873015873015872,
+      "saving_vs_verifier": {
+        "estimate": 0.02087485576418746,
+        "ci95": [
+          0.0,
+          0.04960431108815533
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -1.5075757575757576,
+        "ci95": [
+          -3.4857954545454546,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.007575757575757576,
+        "ci95": [
+          -0.022727272727272728,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 30.204545454545453
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 1,
+      "policy": "fixed",
+      "tasks": 132,
+      "resolution": 0.4772727272727273,
+      "tokens_per_task": 72.21969696969697,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 31.71212121212121
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 1,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.4772727272727273,
+      "tokens_per_task": 40.50757575757576,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.43910626245672923,
+        "ci95": [
+          0.34404584756755635,
+          0.5320039862379021
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -31.71212121212121,
+        "ci95": [
+          -39.82727272727273,
+          -24.362878787878792
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 1,
+      "policy": "verifier",
+      "tasks": 132,
+      "resolution": 0.4772727272727273,
+      "tokens_per_task": 72.21969696969697,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 31.71212121212121
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 5,
+      "policy": "B",
+      "tasks": 132,
+      "resolution": 0.6742424242424242,
+      "tokens_per_task": 190.45454545454547,
+      "attempts_started": 2.6742424242424243,
+      "active_correct_retention_all_candidates": 0.9620253164556962,
+      "false_abort_rate_started_active_correct": 0.09183673469387756,
+      "saving_vs_verifier": {
+        "estimate": 0.047438617762958435,
+        "ci95": [
+          0.008111044697163668,
+          0.11477595144258511
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -9.484848484848484,
+        "ci95": [
+          -23.42443181818182,
+          -1.57537878787879
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.022727272727272728,
+        "ci95": [
+          -0.05303030303030303,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 121.5
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 5,
+      "policy": "HB",
+      "tasks": 132,
+      "resolution": 0.6742424242424242,
+      "tokens_per_task": 193.6818181818182,
+      "attempts_started": 2.6666666666666665,
+      "active_correct_retention_all_candidates": 0.9715189873417721,
+      "false_abort_rate_started_active_correct": 0.07291666666666667,
+      "saving_vs_verifier": {
+        "estimate": 0.0312973628372234,
+        "ci95": [
+          -0.0050912509718016195,
+          0.08147687795553847
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -6.257575757575758,
+        "ci95": [
+          -16.849431818181817,
+          1.0075757575757576
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.022727272727272728,
+        "ci95": [
+          -0.05303030303030303,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 124.72727272727273
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 5,
+      "policy": "fixed",
+      "tasks": 132,
+      "resolution": 0.696969696969697,
+      "tokens_per_task": 372.4318181818182,
+      "attempts_started": 5.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -0.8627235525916945,
+        "ci95": [
+          -1.150581384378742,
+          -0.6511467682828698
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 172.49242424242425,
+        "ci95": [
+          145.50530303030303,
+          201.40681818181815
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 303.47727272727275
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 5,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.696969696969697,
+      "tokens_per_task": 68.95454545454545,
+      "attempts_started": 2.621212121212121,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.6551227644740831,
+        "ci95": [
+          0.578092583203384,
+          0.7150489272727295
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -130.9848484848485,
+        "ci95": [
+          -165.3869318181818,
+          -98.16571969696975
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 5,
+      "policy": "verifier",
+      "tasks": 132,
+      "resolution": 0.696969696969697,
+      "tokens_per_task": 199.93939393939394,
+      "attempts_started": 2.621212121212121,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 130.9848484848485
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 10,
+      "policy": "B",
+      "tasks": 132,
+      "resolution": 0.7727272727272727,
+      "tokens_per_task": 291.8333333333333,
+      "attempts_started": 3.992424242424242,
+      "active_correct_retention_all_candidates": 0.9679878048780488,
+      "false_abort_rate_started_active_correct": 0.1206896551724138,
+      "saving_vs_verifier": {
+        "estimate": 0.06025565964090562,
+        "ci95": [
+          0.002681207177066777,
+          0.15845002876185837
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -18.71212121212121,
+        "ci95": [
+          -50.93958333333333,
+          -0.7871212121212162
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.022727272727272728,
+        "ci95": [
+          -0.05303030303030303,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 206.6818181818182
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 10,
+      "policy": "HB",
+      "tasks": 132,
+      "resolution": 0.7727272727272727,
+      "tokens_per_task": 303.9621212121212,
+      "attempts_started": 3.9545454545454546,
+      "active_correct_retention_all_candidates": 0.9771341463414634,
+      "false_abort_rate_started_active_correct": 0.08108108108108109,
+      "saving_vs_verifier": {
+        "estimate": 0.021199258391881415,
+        "ci95": [
+          -0.0051901932308733465,
+          0.06489894175530388
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -6.583333333333333,
+        "ci95": [
+          -19.977272727272727,
+          1.546022727272724
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.022727272727272728,
+        "ci95": [
+          -0.05303030303030303,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 218.81060606060606
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 10,
+      "policy": "fixed",
+      "tasks": 132,
+      "resolution": 0.7954545454545454,
+      "tokens_per_task": 770.310606060606,
+      "attempts_started": 10.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -1.4805083918813424,
+        "ci95": [
+          -2.0693713698064737,
+          -1.0918283562648634
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 459.7651515151515,
+        "ci95": [
+          399.77878787878785,
+          521.3291666666667
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 685.1590909090909
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 10,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.7954545454545454,
+      "tokens_per_task": 85.15151515151516,
+      "attempts_started": 3.8257575757575757,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.725800156128025,
+        "ci95": [
+          0.6519292731214276,
+          0.7772716601171313
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -225.3939393939394,
+        "ci95": [
+          -294.713446969697,
+          -159.68295454545458
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 10,
+      "policy": "verifier",
+      "tasks": 132,
+      "resolution": 0.7954545454545454,
+      "tokens_per_task": 310.54545454545456,
+      "attempts_started": 3.8257575757575757,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 225.3939393939394
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 20,
+      "policy": "B",
+      "tasks": 132,
+      "resolution": 0.8333333333333334,
+      "tokens_per_task": 436.030303030303,
+      "attempts_started": 5.886363636363637,
+      "active_correct_retention_all_candidates": 0.9676425269645609,
+      "false_abort_rate_started_active_correct": 0.21428571428571427,
+      "saving_vs_verifier": {
+        "estimate": 0.06699735771369286,
+        "ci95": [
+          0.002496833248772881,
+          0.17834590687411514
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -31.310606060606062,
+        "ci95": [
+          -86.67064393939394,
+          -0.9848484848484849
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.015151515151515152,
+        "ci95": [
+          -0.03787878787878788,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 332.0378787878788
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 20,
+      "policy": "HB",
+      "tasks": 132,
+      "resolution": 0.8333333333333334,
+      "tokens_per_task": 465.0378787878788,
+      "attempts_started": 5.863636363636363,
+      "active_correct_retention_all_candidates": 0.9830508474576272,
+      "false_abort_rate_started_active_correct": 0.09836065573770492,
+      "saving_vs_verifier": {
+        "estimate": 0.004927945014508106,
+        "ci95": [
+          -0.007258866883338921,
+          0.023556888289484976
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -2.303030303030303,
+        "ci95": [
+          -10.848484848484848,
+          3.022727272727273
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.015151515151515152,
+        "ci95": [
+          -0.03787878787878788,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 361.04545454545456
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 20,
+      "policy": "fixed",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 1534.030303030303,
+      "attempts_started": 20.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -2.2824652693348897,
+        "ci95": [
+          -3.3771425077421444,
+          -1.6391228181694282
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 1066.689393939394,
+        "ci95": [
+          945.348106060606,
+          1189.570265151515
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 1430.0378787878788
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 20,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 103.99242424242425,
+      "attempts_started": 5.5606060606060606,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.7774805881113327,
+        "ci95": [
+          0.7052840677675859,
+          0.823394097971278
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -363.3484848484849,
+        "ci95": [
+          -491.83333333333337,
+          -240.0969696969697
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 8,
+      "budget": 20,
+      "policy": "verifier",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 467.34090909090907,
+      "attempts_started": 5.5606060606060606,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 363.3484848484849
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 1,
+      "policy": "B",
+      "tasks": 132,
+      "resolution": 0.45454545454545453,
+      "tokens_per_task": 66.17424242424242,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 0.9516129032258065,
+      "false_abort_rate_started_active_correct": 0.04838709677419355,
+      "saving_vs_verifier": {
+        "estimate": 0.08370922060211894,
+        "ci95": [
+          0.034644846830510265,
+          0.14474030548517805
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -6.045454545454546,
+        "ci95": [
+          -10.765151515151516,
+          -2.462121212121212
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.022727272727272728,
+        "ci95": [
+          -0.05303030303030303,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 21.484848484848484
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 1,
+      "policy": "HB",
+      "tasks": 132,
+      "resolution": 0.4772727272727273,
+      "tokens_per_task": 71.97727272727273,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0033567607258994103,
+        "ci95": [
+          0.0,
+          0.010959468226135473
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -0.24242424242424243,
+        "ci95": [
+          -0.7272727272727273,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 27.28787878787879
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 1,
+      "policy": "fixed",
+      "tasks": 132,
+      "resolution": 0.4772727272727273,
+      "tokens_per_task": 72.21969696969697,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 27.53030303030303
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 1,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.4772727272727273,
+      "tokens_per_task": 44.68939393939394,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.38120213993496277,
+        "ci95": [
+          0.29257368909780695,
+          0.46994893198385834
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -27.53030303030303,
+        "ci95": [
+          -35.15170454545454,
+          -20.499621212121212
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 1,
+      "policy": "verifier",
+      "tasks": 132,
+      "resolution": 0.4772727272727273,
+      "tokens_per_task": 72.21969696969697,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 27.53030303030303
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 5,
+      "policy": "B",
+      "tasks": 132,
+      "resolution": 0.6515151515151515,
+      "tokens_per_task": 180.12121212121212,
+      "attempts_started": 2.75,
+      "active_correct_retention_all_candidates": 0.922077922077922,
+      "false_abort_rate_started_active_correct": 0.16666666666666666,
+      "saving_vs_verifier": {
+        "estimate": 0.09912094574113361,
+        "ci95": [
+          0.03444868927534683,
+          0.17314481572740273
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -19.818181818181817,
+        "ci95": [
+          -36.38674242424242,
+          -6.484090909090913
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.045454545454545456,
+        "ci95": [
+          -0.08333333333333333,
+          -0.015151515151515152
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 95.83333333333333
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 5,
+      "policy": "HB",
+      "tasks": 132,
+      "resolution": 0.696969696969697,
+      "tokens_per_task": 196.0151515151515,
+      "attempts_started": 2.628787878787879,
+      "active_correct_retention_all_candidates": 0.9935064935064936,
+      "false_abort_rate_started_active_correct": 0.010869565217391304,
+      "saving_vs_verifier": {
+        "estimate": 0.01962715974537743,
+        "ci95": [
+          0.0035464479878181856,
+          0.03933053391366502
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -3.9242424242424243,
+        "ci95": [
+          -8.167045454545454,
+          -0.7102272727272831
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 111.72727272727273
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 5,
+      "policy": "fixed",
+      "tasks": 132,
+      "resolution": 0.696969696969697,
+      "tokens_per_task": 372.4318181818182,
+      "attempts_started": 5.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -0.8627235525916945,
+        "ci95": [
+          -1.150581384378742,
+          -0.6511467682828698
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 172.49242424242425,
+        "ci95": [
+          145.50530303030303,
+          201.40681818181815
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 288.1439393939394
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 5,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.696969696969697,
+      "tokens_per_task": 84.28787878787878,
+      "attempts_started": 2.621212121212121,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.5784328584419521,
+        "ci95": [
+          0.5054347618986506,
+          0.635702380190361
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -115.65151515151516,
+        "ci95": [
+          -147.5494318181818,
+          -85.1761363636364
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 5,
+      "policy": "verifier",
+      "tasks": 132,
+      "resolution": 0.696969696969697,
+      "tokens_per_task": 199.93939393939394,
+      "attempts_started": 2.621212121212121,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 115.65151515151516
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 10,
+      "policy": "B",
+      "tasks": 132,
+      "resolution": 0.75,
+      "tokens_per_task": 275.6666666666667,
+      "attempts_started": 4.212121212121212,
+      "active_correct_retention_all_candidates": 0.9315707620528771,
+      "false_abort_rate_started_active_correct": 0.24615384615384617,
+      "saving_vs_verifier": {
+        "estimate": 0.1123145979703356,
+        "ci95": [
+          0.01581541470868624,
+          0.2235476117091873
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -34.878787878787875,
+        "ci95": [
+          -77.94337121212122,
+          -4.082765151515154
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.045454545454545456,
+        "ci95": [
+          -0.08333333333333333,
+          -0.015151515151515152
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 166.37878787878788
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 10,
+      "policy": "HB",
+      "tasks": 132,
+      "resolution": 0.7954545454545454,
+      "tokens_per_task": 305.2651515151515,
+      "attempts_started": 3.8484848484848486,
+      "active_correct_retention_all_candidates": 0.9891135303265941,
+      "false_abort_rate_started_active_correct": 0.028037383177570093,
+      "saving_vs_verifier": {
+        "estimate": 0.017003317720530875,
+        "ci95": [
+          0.0023522009549469896,
+          0.0346189906973295
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -5.28030303030303,
+        "ci95": [
+          -11.394318181818182,
+          -0.681250000000003
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 195.97727272727272
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 10,
+      "policy": "fixed",
+      "tasks": 132,
+      "resolution": 0.7954545454545454,
+      "tokens_per_task": 770.310606060606,
+      "attempts_started": 10.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -1.4805083918813424,
+        "ci95": [
+          -2.0693713698064737,
+          -1.0918283562648634
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 459.7651515151515,
+        "ci95": [
+          399.77878787878785,
+          521.3291666666667
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 661.0227272727273
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 10,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.7954545454545454,
+      "tokens_per_task": 109.28787878787878,
+      "attempts_started": 3.8257575757575757,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.6480776736924279,
+        "ci95": [
+          0.5700068862106639,
+          0.7037312726789275
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -201.25757575757575,
+        "ci95": [
+          -266.1405303030303,
+          -139.5767045454546
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 10,
+      "policy": "verifier",
+      "tasks": 132,
+      "resolution": 0.7954545454545454,
+      "tokens_per_task": 310.54545454545456,
+      "attempts_started": 3.8257575757575757,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 201.25757575757575
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 20,
+      "policy": "B",
+      "tasks": 132,
+      "resolution": 0.803030303030303,
+      "tokens_per_task": 411.17424242424244,
+      "attempts_started": 6.401515151515151,
+      "active_correct_retention_all_candidates": 0.9265050820953871,
+      "false_abort_rate_started_active_correct": 0.3712574850299401,
+      "saving_vs_verifier": {
+        "estimate": 0.12018350111040854,
+        "ci95": [
+          0.00032805658706940027,
+          0.24757185328305503
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -56.166666666666664,
+        "ci95": [
+          -130.9554924242424,
+          -0.12859848484848588
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.045454545454545456,
+        "ci95": [
+          -0.08333333333333333,
+          -0.015151515151515152
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 269.59090909090907
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 20,
+      "policy": "HB",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 459.1666666666667,
+      "attempts_started": 5.583333333333333,
+      "active_correct_retention_all_candidates": 0.9867083659108679,
+      "false_abort_rate_started_active_correct": 0.02631578947368421,
+      "saving_vs_verifier": {
+        "estimate": 0.017490962732415682,
+        "ci95": [
+          0.0027416186911353112,
+          0.036558360272588644
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -8.174242424242424,
+        "ci95": [
+          -18.080113636363635,
+          -1.2651515151515151
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 317.5833333333333
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 20,
+      "policy": "fixed",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 1534.030303030303,
+      "attempts_started": 20.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -2.2824652693348897,
+        "ci95": [
+          -3.3771425077421444,
+          -1.6391228181694282
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 1066.689393939394,
+        "ci95": [
+          945.348106060606,
+          1189.570265151515
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 1392.4469696969697
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 20,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 141.58333333333334,
+      "attempts_started": 5.5606060606060606,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.6970448540258393,
+        "ci95": [
+          0.6170230135529927,
+          0.7500926870263265
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -325.75757575757575,
+        "ci95": [
+          -448.3501893939394,
+          -211.09829545454548
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 16,
+      "budget": 20,
+      "policy": "verifier",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 467.34090909090907,
+      "attempts_started": 5.5606060606060606,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 325.75757575757575
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 1,
+      "policy": "B",
+      "tasks": 132,
+      "resolution": 0.4696969696969697,
+      "tokens_per_task": 69.04545454545455,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 0.9803921568627451,
+      "false_abort_rate_started_active_correct": 0.0196078431372549,
+      "saving_vs_verifier": {
+        "estimate": 0.04395258575474659,
+        "ci95": [
+          0.008835319992049067,
+          0.09544254270539629
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -3.1742424242424243,
+        "ci95": [
+          -7.242613636363636,
+          -0.6361742424242435
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.007575757575757576,
+        "ci95": [
+          -0.022727272727272728,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 16.477272727272727
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 1,
+      "policy": "HB",
+      "tasks": 132,
+      "resolution": 0.4621212121212121,
+      "tokens_per_task": 69.70454545454545,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 0.9607843137254902,
+      "false_abort_rate_started_active_correct": 0.0392156862745098,
+      "saving_vs_verifier": {
+        "estimate": 0.03482639253120734,
+        "ci95": [
+          0.012181035191687412,
+          0.06299100791546842
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -2.515151515151515,
+        "ci95": [
+          -4.553030303030303,
+          -0.8939393939393939
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.015151515151515152,
+        "ci95": [
+          -0.03787878787878788,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 17.136363636363637
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 1,
+      "policy": "fixed",
+      "tasks": 132,
+      "resolution": 0.4772727272727273,
+      "tokens_per_task": 72.21969696969697,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 19.651515151515152
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 1,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.4772727272727273,
+      "tokens_per_task": 52.56818181818182,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.27210741634322877,
+        "ci95": [
+          0.19481384589965306,
+          0.35229099627134597
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -19.651515151515152,
+        "ci95": [
+          -26.76590909090909,
+          -13.475946969696976
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 1,
+      "policy": "verifier",
+      "tasks": 132,
+      "resolution": 0.4772727272727273,
+      "tokens_per_task": 72.21969696969697,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 19.651515151515152
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 5,
+      "policy": "B",
+      "tasks": 132,
+      "resolution": 0.6742424242424242,
+      "tokens_per_task": 189.24242424242425,
+      "attempts_started": 2.6893939393939394,
+      "active_correct_retention_all_candidates": 0.9568627450980393,
+      "false_abort_rate_started_active_correct": 0.08860759493670886,
+      "saving_vs_verifier": {
+        "estimate": 0.0535010609275538,
+        "ci95": [
+          0.014778458239043774,
+          0.10039011748282722
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -10.696969696969697,
+        "ci95": [
+          -21.09242424242424,
+          -2.741287878787885
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.022727272727272728,
+        "ci95": [
+          -0.05303030303030303,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 75.87121212121212
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 5,
+      "policy": "HB",
+      "tasks": 132,
+      "resolution": 0.6893939393939394,
+      "tokens_per_task": 194.42424242424244,
+      "attempts_started": 2.6666666666666665,
+      "active_correct_retention_all_candidates": 0.9647058823529412,
+      "false_abort_rate_started_active_correct": 0.05128205128205128,
+      "saving_vs_verifier": {
+        "estimate": 0.027584116398908676,
+        "ci95": [
+          -0.006578893612049996,
+          0.05978502220673666
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -5.515151515151516,
+        "ci95": [
+          -12.614393939393938,
+          1.303030303030303
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.007575757575757576,
+        "ci95": [
+          -0.022727272727272728,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 81.0530303030303
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 5,
+      "policy": "fixed",
+      "tasks": 132,
+      "resolution": 0.696969696969697,
+      "tokens_per_task": 372.4318181818182,
+      "attempts_started": 5.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -0.8627235525916945,
+        "ci95": [
+          -1.150581384378742,
+          -0.6511467682828698
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 172.49242424242425,
+        "ci95": [
+          145.50530303030303,
+          201.40681818181815
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 259.06060606060606
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 5,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.696969696969697,
+      "tokens_per_task": 113.37121212121212,
+      "attempts_started": 2.621212121212121,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.4329721127614429,
+        "ci95": [
+          0.35715656229958836,
+          0.4917190257419995
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -86.56818181818181,
+        "ci95": [
+          -113.2375,
+          -60.6797348484849
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 5,
+      "policy": "verifier",
+      "tasks": 132,
+      "resolution": 0.696969696969697,
+      "tokens_per_task": 199.93939393939394,
+      "attempts_started": 2.621212121212121,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 86.56818181818181
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 10,
+      "policy": "B",
+      "tasks": 132,
+      "resolution": 0.7575757575757576,
+      "tokens_per_task": 295.7121212121212,
+      "attempts_started": 4.068181818181818,
+      "active_correct_retention_all_candidates": 0.9580152671755725,
+      "false_abort_rate_started_active_correct": 0.15463917525773196,
+      "saving_vs_verifier": {
+        "estimate": 0.04776541764246689,
+        "ci95": [
+          -0.01113223582748547,
+          0.11479211346216156
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -14.833333333333334,
+        "ci95": [
+          -39.52613636363636,
+          3.189772727272725
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.03787878787878788,
+        "ci95": [
+          -0.07575757575757576,
+          -0.007575757575757576
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 140.63636363636363
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 10,
+      "policy": "HB",
+      "tasks": 132,
+      "resolution": 0.7878787878787878,
+      "tokens_per_task": 303.8030303030303,
+      "attempts_started": 3.909090909090909,
+      "active_correct_retention_all_candidates": 0.9599236641221374,
+      "false_abort_rate_started_active_correct": 0.044444444444444446,
+      "saving_vs_verifier": {
+        "estimate": 0.021711553473848566,
+        "ci95": [
+          -0.020375969272320778,
+          0.05623847009555229
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -6.742424242424242,
+        "ci95": [
+          -18.947348484848483,
+          5.773674242424237
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.007575757575757576,
+        "ci95": [
+          -0.022727272727272728,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 148.72727272727272
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 10,
+      "policy": "fixed",
+      "tasks": 132,
+      "resolution": 0.7954545454545454,
+      "tokens_per_task": 770.310606060606,
+      "attempts_started": 10.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -1.4805083918813424,
+        "ci95": [
+          -2.0693713698064737,
+          -1.0918283562648634
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 459.7651515151515,
+        "ci95": [
+          399.77878787878785,
+          521.3291666666667
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 615.2348484848485
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 10,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.7954545454545454,
+      "tokens_per_task": 155.07575757575756,
+      "attempts_started": 3.8257575757575757,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.5006342701014832,
+        "ci95": [
+          0.41350179294890527,
+          0.5665026618457294
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -155.46969696969697,
+        "ci95": [
+          -213.2846590909091,
+          -100.54583333333336
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 10,
+      "policy": "verifier",
+      "tasks": 132,
+      "resolution": 0.7954545454545454,
+      "tokens_per_task": 310.54545454545456,
+      "attempts_started": 3.8257575757575757,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 155.46969696969697
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 20,
+      "policy": "B",
+      "tasks": 132,
+      "resolution": 0.8181818181818182,
+      "tokens_per_task": 456.1969696969697,
+      "attempts_started": 6.136363636363637,
+      "active_correct_retention_all_candidates": 0.9602327837051406,
+      "false_abort_rate_started_active_correct": 0.1891891891891892,
+      "saving_vs_verifier": {
+        "estimate": 0.02384541814586061,
+        "ci95": [
+          -0.047750704886683946,
+          0.08587090287034424
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -11.143939393939394,
+        "ci95": [
+          -45.70625,
+          18.89412878787879
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.030303030303030304,
+        "ci95": [
+          -0.06060606060606061,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 243.4469696969697
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 20,
+      "policy": "HB",
+      "tasks": 132,
+      "resolution": 0.8333333333333334,
+      "tokens_per_task": 463.780303030303,
+      "attempts_started": 5.825757575757576,
+      "active_correct_retention_all_candidates": 0.9573229873908826,
+      "false_abort_rate_started_active_correct": 0.061224489795918366,
+      "saving_vs_verifier": {
+        "estimate": 0.007618862357956835,
+        "ci95": [
+          -0.048984404267521646,
+          0.05071344877219897
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -3.5606060606060606,
+        "ci95": [
+          -24.42007575757576,
+          19.825946969696968
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.015151515151515152,
+        "ci95": [
+          -0.03787878787878788,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 251.03030303030303
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 20,
+      "policy": "fixed",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 1534.030303030303,
+      "attempts_started": 20.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -2.2824652693348897,
+        "ci95": [
+          -3.3771425077421444,
+          -1.6391228181694282
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 1066.689393939394,
+        "ci95": [
+          945.348106060606,
+          1189.570265151515
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 1321.280303030303
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 20,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 212.75,
+      "attempts_started": 5.5606060606060606,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.544764868939357,
+        "ci95": [
+          0.4461435114311304,
+          0.6165460547992383
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -254.5909090909091,
+        "ci95": [
+          -365.4850378787879,
+          -152.7073863636364
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 32,
+      "budget": 20,
+      "policy": "verifier",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 467.34090909090907,
+      "attempts_started": 5.5606060606060606,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 254.5909090909091
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 1,
+      "policy": "B",
+      "tasks": 132,
+      "resolution": 0.4696969696969697,
+      "tokens_per_task": 71.47727272727273,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 0.9722222222222222,
+      "false_abort_rate_started_active_correct": 0.027777777777777776,
+      "saving_vs_verifier": {
+        "estimate": 0.010280079723067104,
+        "ci95": [
+          0.00022051224568108986,
+          0.024866734483314605
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -0.7424242424242424,
+        "ci95": [
+          -1.7954545454545454,
+          -0.015151515151515152
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.007575757575757576,
+        "ci95": [
+          -0.022727272727272728,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 9.628787878787879
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 1,
+      "policy": "HB",
+      "tasks": 132,
+      "resolution": 0.4772727272727273,
+      "tokens_per_task": 72.21969696969697,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 10.371212121212121
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 1,
+      "policy": "fixed",
+      "tasks": 132,
+      "resolution": 0.4772727272727273,
+      "tokens_per_task": 72.21969696969697,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 10.371212121212121
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 1,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.4772727272727273,
+      "tokens_per_task": 61.84848484848485,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.1436064198048882,
+        "ci95": [
+          0.0860692800966828,
+          0.20649924529907374
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -10.371212121212121,
+        "ci95": [
+          -15.864204545454545,
+          -5.856060606060606
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 1,
+      "policy": "verifier",
+      "tasks": 132,
+      "resolution": 0.4772727272727273,
+      "tokens_per_task": 72.21969696969697,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 10.371212121212121
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 5,
+      "policy": "B",
+      "tasks": 132,
+      "resolution": 0.696969696969697,
+      "tokens_per_task": 196.5909090909091,
+      "attempts_started": 2.643939393939394,
+      "active_correct_retention_all_candidates": 0.9811320754716981,
+      "false_abort_rate_started_active_correct": 0.04081632653061224,
+      "saving_vs_verifier": {
+        "estimate": 0.01674749924219454,
+        "ci95": [
+          0.003701617948874894,
+          0.03007185220724815
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -3.3484848484848486,
+        "ci95": [
+          -6.296022727272728,
+          -0.7196969696969697
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 45.878787878787875
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 5,
+      "policy": "HB",
+      "tasks": 132,
+      "resolution": 0.696969696969697,
+      "tokens_per_task": 199.7348484848485,
+      "attempts_started": 2.6363636363636362,
+      "active_correct_retention_all_candidates": 0.9748427672955975,
+      "false_abort_rate_started_active_correct": 0.020833333333333332,
+      "saving_vs_verifier": {
+        "estimate": 0.0010230372840254187,
+        "ci95": [
+          -0.0005731565337250888,
+          0.003597171775730066
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -0.20454545454545456,
+        "ci95": [
+          -0.7196969696969697,
+          0.10606060606060606
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 49.02272727272727
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 5,
+      "policy": "fixed",
+      "tasks": 132,
+      "resolution": 0.696969696969697,
+      "tokens_per_task": 372.4318181818182,
+      "attempts_started": 5.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -0.8627235525916945,
+        "ci95": [
+          -1.150581384378742,
+          -0.6511467682828698
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 172.49242424242425,
+        "ci95": [
+          145.50530303030303,
+          201.40681818181815
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 221.71969696969697
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 5,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.696969696969697,
+      "tokens_per_task": 150.71212121212122,
+      "attempts_started": 2.621212121212121,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.2462109730221279,
+        "ci95": [
+          0.18016980440956784,
+          0.30419499327774596
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -49.22727272727273,
+        "ci95": [
+          -69.00833333333333,
+          -31.058901515151526
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 5,
+      "policy": "verifier",
+      "tasks": 132,
+      "resolution": 0.696969696969697,
+      "tokens_per_task": 199.93939393939394,
+      "attempts_started": 2.621212121212121,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 49.22727272727273
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 10,
+      "policy": "B",
+      "tasks": 132,
+      "resolution": 0.7954545454545454,
+      "tokens_per_task": 301.0833333333333,
+      "attempts_started": 3.8484848484848486,
+      "active_correct_retention_all_candidates": 0.975975975975976,
+      "false_abort_rate_started_active_correct": 0.03508771929824561,
+      "saving_vs_verifier": {
+        "estimate": 0.03046935987509769,
+        "ci95": [
+          0.006493609371770348,
+          0.06016825217689148
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -9.462121212121213,
+        "ci95": [
+          -20.46306818181818,
+          -1.803030303030303
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 84.88636363636364
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 10,
+      "policy": "HB",
+      "tasks": 132,
+      "resolution": 0.7954545454545454,
+      "tokens_per_task": 307.1515151515151,
+      "attempts_started": 3.840909090909091,
+      "active_correct_retention_all_candidates": 0.978978978978979,
+      "false_abort_rate_started_active_correct": 0.017857142857142856,
+      "saving_vs_verifier": {
+        "estimate": 0.010928961748634003,
+        "ci95": [
+          0.0014541871574601324,
+          0.023298299236625523
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -3.393939393939394,
+        "ci95": [
+          -7.447348484848485,
+          -0.4393939393939394
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 90.95454545454545
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 10,
+      "policy": "fixed",
+      "tasks": 132,
+      "resolution": 0.7954545454545454,
+      "tokens_per_task": 770.310606060606,
+      "attempts_started": 10.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -1.4805083918813424,
+        "ci95": [
+          -2.0693713698064737,
+          -1.0918283562648634
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 459.7651515151515,
+        "ci95": [
+          399.77878787878785,
+          521.3291666666667
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 554.1136363636364
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 10,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.7954545454545454,
+      "tokens_per_task": 216.1969696969697,
+      "attempts_started": 3.8257575757575757,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.3038153786104606,
+        "ci95": [
+          0.2163657625304669,
+          0.3783877881737714
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -94.34848484848484,
+        "ci95": [
+          -139.57878787878786,
+          -53.605871212121215
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 10,
+      "policy": "verifier",
+      "tasks": 132,
+      "resolution": 0.7954545454545454,
+      "tokens_per_task": 310.54545454545456,
+      "attempts_started": 3.8257575757575757,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 94.34848484848484
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 20,
+      "policy": "B",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 452.1060606060606,
+      "attempts_started": 5.583333333333333,
+      "active_correct_retention_all_candidates": 0.9721362229102167,
+      "false_abort_rate_started_active_correct": 0.03225806451612903,
+      "saving_vs_verifier": {
+        "estimate": 0.03259900468478971,
+        "ci95": [
+          0.006629289155627591,
+          0.0611263978950577
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -15.234848484848484,
+        "ci95": [
+          -31.850568181818183,
+          -2.696590909090911
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 144.1590909090909
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 20,
+      "policy": "HB",
+      "tasks": 132,
+      "resolution": 0.8409090909090909,
+      "tokens_per_task": 461.24242424242425,
+      "attempts_started": 5.575757575757576,
+      "active_correct_retention_all_candidates": 0.9736842105263158,
+      "false_abort_rate_started_active_correct": 0.03278688524590164,
+      "saving_vs_verifier": {
+        "estimate": 0.01304932808118131,
+        "ci95": [
+          0.002504104329627202,
+          0.027119949003136398
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -6.098484848484849,
+        "ci95": [
+          -13.267045454545455,
+          -1.0833333333333333
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.007575757575757576,
+        "ci95": [
+          -0.022727272727272728,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 153.29545454545453
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 20,
+      "policy": "fixed",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 1534.030303030303,
+      "attempts_started": 20.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -2.2824652693348897,
+        "ci95": [
+          -3.3771425077421444,
+          -1.6391228181694282
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 1066.689393939394,
+        "ci95": [
+          945.348106060606,
+          1189.570265151515
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 1226.0833333333333
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 20,
+      "policy": "oracle",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 307.9469696969697,
+      "attempts_started": 5.5606060606060606,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.34106566810938743,
+        "ci95": [
+          0.23430692047097026,
+          0.42796678824580414
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -159.3939393939394,
+        "ci95": [
+          -250.1371212121212,
+          -82.86306818181818
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "HumanEval+",
+      "checkpoint": 64,
+      "budget": 20,
+      "policy": "verifier",
+      "tasks": 132,
+      "resolution": 0.8484848484848485,
+      "tokens_per_task": 467.34090909090907,
+      "attempts_started": 5.5606060606060606,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 159.3939393939394
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 1,
+      "policy": "B",
+      "tasks": 32,
+      "resolution": 0.5,
+      "tokens_per_task": 47.03125,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 0.9411764705882353,
+      "false_abort_rate_started_active_correct": 0.058823529411764705,
+      "saving_vs_verifier": {
+        "estimate": 0.0066006600660065695,
+        "ci95": [
+          0.0,
+          0.022592067666436077
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -0.3125,
+        "ci95": [
+          -0.9375,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.03125,
+        "ci95": [
+          -0.09375,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 21.40625
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 1,
+      "policy": "HB",
+      "tasks": 32,
+      "resolution": 0.4375,
+      "tokens_per_task": 43.90625,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 0.8235294117647058,
+      "false_abort_rate_started_active_correct": 0.17647058823529413,
+      "saving_vs_verifier": {
+        "estimate": 0.0726072607260726,
+        "ci95": [
+          0.007014876514021773,
+          0.15882856508825233
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -3.4375,
+        "ci95": [
+          -7.1875,
+          -0.3125
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.09375,
+        "ci95": [
+          -0.21875,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 18.28125
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 1,
+      "policy": "fixed",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 47.34375,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 21.71875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 1,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 25.625,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.45874587458745875,
+        "ci95": [
+          0.2618532374564121,
+          0.6387243510743479
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -21.71875,
+        "ci95": [
+          -35.4375,
+          -11.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 1,
+      "policy": "verifier",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 47.34375,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 21.71875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 5,
+      "policy": "B",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 128.96875,
+      "attempts_started": 2.34375,
+      "active_correct_retention_all_candidates": 0.9883720930232558,
+      "false_abort_rate_started_active_correct": 0.038461538461538464,
+      "saving_vs_verifier": {
+        "estimate": -0.0021855269548325396,
+        "ci95": [
+          -0.008463889655861817,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.28125,
+        "ci95": [
+          0.0,
+          0.84375
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 84.84375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 5,
+      "policy": "HB",
+      "tasks": 32,
+      "resolution": 0.71875,
+      "tokens_per_task": 126.34375,
+      "attempts_started": 2.625,
+      "active_correct_retention_all_candidates": 0.7674418604651163,
+      "false_abort_rate_started_active_correct": 0.28125,
+      "saving_vs_verifier": {
+        "estimate": 0.018212724623603682,
+        "ci95": [
+          -0.046291103770250426,
+          0.0909407331454073
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -2.34375,
+        "ci95": [
+          -12.34375,
+          4.90625
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.0625,
+        "ci95": [
+          -0.15625,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 82.21875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 5,
+      "policy": "fixed",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 245.28125,
+      "attempts_started": 5.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -0.906022340942205,
+        "ci95": [
+          -1.7031290105236139,
+          -0.4842406382503884
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 116.59375,
+        "ci95": [
+          83.90625,
+          152.87890624999997
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 201.15625
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 5,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 44.125,
+      "attempts_started": 2.3125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.6571151044196212,
+        "ci95": [
+          0.4575244575944856,
+          0.7652261906692424
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -84.5625,
+        "ci95": [
+          -141.75,
+          -38.34062500000002
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 5,
+      "policy": "verifier",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 128.6875,
+      "attempts_started": 2.3125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 84.5625
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 10,
+      "policy": "B",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 178.71875,
+      "attempts_started": 3.25,
+      "active_correct_retention_all_candidates": 0.994535519125683,
+      "false_abort_rate_started_active_correct": 0.03571428571428571,
+      "saving_vs_verifier": {
+        "estimate": -0.0015761821366024886,
+        "ci95": [
+          -0.006539025465977577,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.28125,
+        "ci95": [
+          0.0,
+          0.84375
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 124.75
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 10,
+      "policy": "HB",
+      "tasks": 32,
+      "resolution": 0.75,
+      "tokens_per_task": 176.4375,
+      "attempts_started": 3.90625,
+      "active_correct_retention_all_candidates": 0.7431693989071039,
+      "false_abort_rate_started_active_correct": 0.4146341463414634,
+      "saving_vs_verifier": {
+        "estimate": 0.011208406304728524,
+        "ci95": [
+          -0.07291972650047641,
+          0.09343783297027648
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -2.0,
+        "ci95": [
+          -17.5625,
+          10.125
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.09375,
+        "ci95": [
+          -0.21875,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 122.46875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 10,
+      "policy": "fixed",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 488.46875,
+      "attempts_started": 10.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -1.7374781085814361,
+        "ci95": [
+          -3.6732745586670648,
+          -0.9292129732960275
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 310.03125,
+        "ci95": [
+          239.95078125,
+          391.50312499999995
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 434.5
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 10,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 53.96875,
+      "attempts_started": 3.21875,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.6975481611208406,
+        "ci95": [
+          0.5050365125594664,
+          0.7903861156829266
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -124.46875,
+        "ci95": [
+          -218.02109375,
+          -48.90468750000001
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 10,
+      "policy": "verifier",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 178.4375,
+      "attempts_started": 3.21875,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 124.46875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 20,
+      "policy": "B",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 280.1875,
+      "attempts_started": 4.8125,
+      "active_correct_retention_all_candidates": 0.994535519125683,
+      "false_abort_rate_started_active_correct": 0.03571428571428571,
+      "saving_vs_verifier": {
+        "estimate": -0.0010048007145249116,
+        "ci95": [
+          -0.0045782905927842345,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.28125,
+        "ci95": [
+          0.0,
+          0.84375
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 213.71875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 20,
+      "policy": "HB",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 292.625,
+      "attempts_started": 6.3125,
+      "active_correct_retention_all_candidates": 0.7540983606557377,
+      "false_abort_rate_started_active_correct": 0.4791666666666667,
+      "saving_vs_verifier": {
+        "estimate": -0.045439321201295124,
+        "ci95": [
+          -0.1713773323497404,
+          0.0021283223373896377
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 12.71875,
+        "ci95": [
+          -0.59453125,
+          34.53125
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.0625,
+        "ci95": [
+          -0.15625,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 226.15625
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 20,
+      "policy": "fixed",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 949.875,
+      "attempts_started": 20.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -2.393546946522273,
+        "ci95": [
+          -6.040852585337979,
+          -1.1749083118201504
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 669.96875,
+        "ci95": [
+          521.39921875,
+          838.0734374999997
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 883.40625
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 20,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 66.46875,
+      "attempts_started": 4.78125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.7625320978006029,
+        "ci95": [
+          0.5735909278019898,
+          0.8356507529157584
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -213.4375,
+        "ci95": [
+          -397.94609375,
+          -74.42265625000007
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 8,
+      "budget": 20,
+      "policy": "verifier",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 279.90625,
+      "attempts_started": 4.78125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 213.4375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 1,
+      "policy": "B",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 44.6875,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.05610561056105612,
+        "ci95": [
+          0.0,
+          0.15821448156704632
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -2.65625,
+        "ci95": [
+          -7.75,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 15.3125
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 1,
+      "policy": "HB",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 43.65625,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.07788778877887792,
+        "ci95": [
+          0.0,
+          0.22767846905456252
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -3.6875,
+        "ci95": [
+          -11.0625,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 14.28125
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 1,
+      "policy": "fixed",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 47.34375,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 17.96875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 1,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 29.375,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.3795379537953796,
+        "ci95": [
+          0.19995195861049517,
+          0.5436776730219653
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -17.96875,
+        "ci95": [
+          -30.59453125,
+          -8.311718750000004
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 1,
+      "policy": "verifier",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 47.34375,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 17.96875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 5,
+      "policy": "B",
+      "tasks": 32,
+      "resolution": 0.75,
+      "tokens_per_task": 111.75,
+      "attempts_started": 2.34375,
+      "active_correct_retention_all_candidates": 0.9767441860465116,
+      "false_abort_rate_started_active_correct": 0.07692307692307693,
+      "saving_vs_verifier": {
+        "estimate": 0.13161728994657595,
+        "ci95": [
+          0.045713349326394856,
+          0.19267420782626296
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -16.9375,
+        "ci95": [
+          -33.0640625,
+          -4.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": -0.03125,
+        "ci95": [
+          -0.09375,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 55.375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 5,
+      "policy": "HB",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 123.15625,
+      "attempts_started": 2.3125,
+      "active_correct_retention_all_candidates": 0.9767441860465116,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.04298203011170476,
+        "ci95": [
+          0.0,
+          0.13448831493115687
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -5.53125,
+        "ci95": [
+          -16.59375,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 66.78125
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 5,
+      "policy": "fixed",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 245.28125,
+      "attempts_started": 5.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -0.906022340942205,
+        "ci95": [
+          -1.7031290105236139,
+          -0.4842406382503884
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 116.59375,
+        "ci95": [
+          83.90625,
+          152.87890624999997
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 188.90625
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 5,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 56.375,
+      "attempts_started": 2.3125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.5619232637202525,
+        "ci95": [
+          0.37261513433035565,
+          0.6726855339341069
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -72.3125,
+        "ci95": [
+          -123.76875,
+          -31.24453125000003
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 5,
+      "policy": "verifier",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 128.6875,
+      "attempts_started": 2.3125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 72.3125
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 10,
+      "policy": "B",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 162.34375,
+      "attempts_started": 3.28125,
+      "active_correct_retention_all_candidates": 0.9672131147540983,
+      "false_abort_rate_started_active_correct": 0.06896551724137931,
+      "saving_vs_verifier": {
+        "estimate": 0.0901926444833625,
+        "ci95": [
+          0.03574472103779057,
+          0.12613744289285542
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -16.09375,
+        "ci95": [
+          -32.00078125,
+          -3.96875
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 89.375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 10,
+      "policy": "HB",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 172.5625,
+      "attempts_started": 3.21875,
+      "active_correct_retention_all_candidates": 0.9726775956284153,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.03292469352014016,
+        "ci95": [
+          0.0,
+          0.1093082962109791
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -5.875,
+        "ci95": [
+          -17.625,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 99.59375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 10,
+      "policy": "fixed",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 488.46875,
+      "attempts_started": 10.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -1.7374781085814361,
+        "ci95": [
+          -3.6732745586670648,
+          -0.9292129732960275
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 310.03125,
+        "ci95": [
+          239.95078125,
+          391.50312499999995
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 415.5
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 10,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 72.96875,
+      "attempts_started": 3.21875,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.5910683012259195,
+        "ci95": [
+          0.40025595365097083,
+          0.6935964210956858
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -105.46875,
+        "ci95": [
+          -191.40078125,
+          -39.339062500000026
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 10,
+      "policy": "verifier",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 178.4375,
+      "attempts_started": 3.21875,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 105.46875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 20,
+      "policy": "B",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 256.96875,
+      "attempts_started": 4.84375,
+      "active_correct_retention_all_candidates": 0.9726775956284153,
+      "false_abort_rate_started_active_correct": 0.06896551724137931,
+      "saving_vs_verifier": {
+        "estimate": 0.08194708049570165,
+        "ci95": [
+          0.040853539583945185,
+          0.13519132825673003
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -22.9375,
+        "ci95": [
+          -45.2546875,
+          -6.0625
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 159.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 20,
+      "policy": "HB",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 272.34375,
+      "attempts_started": 4.78125,
+      "active_correct_retention_all_candidates": 0.9699453551912568,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.02701797476833756,
+        "ci95": [
+          0.0,
+          0.08529223108490111
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -7.5625,
+        "ci95": [
+          -20.15625,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 174.375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 20,
+      "policy": "fixed",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 949.875,
+      "attempts_started": 20.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -2.393546946522273,
+        "ci95": [
+          -6.040852585337979,
+          -1.1749083118201504
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 669.96875,
+        "ci95": [
+          521.39921875,
+          838.0734374999997
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 851.90625
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 20,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 97.96875,
+      "attempts_started": 4.78125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.6499944177738082,
+        "ci95": [
+          0.45991099417037373,
+          0.7391665078761067
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -181.9375,
+        "ci95": [
+          -348.19765625,
+          -59.43437500000019
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 16,
+      "budget": 20,
+      "policy": "verifier",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 279.90625,
+      "attempts_started": 4.78125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 181.9375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 1,
+      "policy": "B",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 44.875,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.052145214521452155,
+        "ci95": [
+          0.0,
+          0.1313371282330335
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -2.46875,
+        "ci95": [
+          -6.375,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 9.21875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 1,
+      "policy": "HB",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 45.90625,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.030363036303630353,
+        "ci95": [
+          0.0,
+          0.10074100434531326
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -1.4375,
+        "ci95": [
+          -4.3125,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 10.25
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 1,
+      "policy": "fixed",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 47.34375,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 11.6875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 1,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 35.65625,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.2468646864686469,
+        "ci95": [
+          0.08991603067153608,
+          0.3967278296224355
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -11.6875,
+        "ci95": [
+          -22.37578125,
+          -3.7179687500000043
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 1,
+      "policy": "verifier",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 47.34375,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 11.6875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 5,
+      "policy": "B",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 125.34375,
+      "attempts_started": 2.3125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.025983487129674576,
+        "ci95": [
+          0.0,
+          0.06651640851346827
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -3.34375,
+        "ci95": [
+          -9.25,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 46.4375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 5,
+      "policy": "HB",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 125.09375,
+      "attempts_started": 2.3125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.027926177756192327,
+        "ci95": [
+          0.0,
+          0.06717258225152822
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -3.59375,
+        "ci95": [
+          -9.09375,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 46.1875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 5,
+      "policy": "fixed",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 245.28125,
+      "attempts_started": 5.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -0.906022340942205,
+        "ci95": [
+          -1.7031290105236139,
+          -0.4842406382503884
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 116.59375,
+        "ci95": [
+          83.90625,
+          152.87890624999997
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 166.375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 5,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 78.90625,
+      "attempts_started": 2.3125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.3868382710053424,
+        "ci95": [
+          0.21241563208197856,
+          0.5072092501759884
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -49.78125,
+        "ci95": [
+          -91.94140625,
+          -17.778125000000017
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 5,
+      "policy": "verifier",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 128.6875,
+      "attempts_started": 2.3125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 49.78125
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 10,
+      "policy": "B",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 174.96875,
+      "attempts_started": 3.21875,
+      "active_correct_retention_all_candidates": 0.9578947368421052,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.01943957968476362,
+        "ci95": [
+          0.0,
+          0.05288398962667469
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -3.46875,
+        "ci95": [
+          -9.75,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 67.34375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 10,
+      "policy": "HB",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 174.75,
+      "attempts_started": 3.21875,
+      "active_correct_retention_all_candidates": 0.9578947368421052,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.020665499124343234,
+        "ci95": [
+          0.0,
+          0.05050631956795553
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -3.6875,
+        "ci95": [
+          -9.1875,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 67.125
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 10,
+      "policy": "fixed",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 488.46875,
+      "attempts_started": 10.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -1.7374781085814361,
+        "ci95": [
+          -3.6732745586670648,
+          -0.9292129732960275
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 310.03125,
+        "ci95": [
+          239.95078125,
+          391.50312499999995
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 380.84375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 10,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 107.625,
+      "attempts_started": 3.21875,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.39684763572679504,
+        "ci95": [
+          0.2126413735738495,
+          0.5227202924962281
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -70.8125,
+        "ci95": [
+          -140.4453125,
+          -21.21718750000001
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 10,
+      "policy": "verifier",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 178.4375,
+      "attempts_started": 3.21875,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 70.8125
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 20,
+      "policy": "B",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 268.53125,
+      "attempts_started": 4.78125,
+      "active_correct_retention_all_candidates": 0.9774011299435028,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.04063860667634256,
+        "ci95": [
+          0.0,
+          0.09981135891090931
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -11.375,
+        "ci95": [
+          -29.21875,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 112.5
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 20,
+      "policy": "HB",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 268.71875,
+      "attempts_started": 4.78125,
+      "active_correct_retention_all_candidates": 0.9717514124293786,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.039968739533325914,
+        "ci95": [
+          0.011732961242434253,
+          0.07256997231529021
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -11.1875,
+        "ci95": [
+          -23.43984375,
+          -2.03125
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 112.6875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 20,
+      "policy": "fixed",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 949.875,
+      "attempts_started": 20.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -2.393546946522273,
+        "ci95": [
+          -6.040852585337979,
+          -1.1749083118201504
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 669.96875,
+        "ci95": [
+          521.39921875,
+          838.0734374999997
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 793.84375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 20,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 156.03125,
+      "attempts_started": 4.78125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.4425588924863235,
+        "ci95": [
+          0.23889198868663575,
+          0.5624801776125397
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -123.875,
+        "ci95": [
+          -260.04375,
+          -32.614843750000055
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 32,
+      "budget": 20,
+      "policy": "verifier",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 279.90625,
+      "attempts_started": 4.78125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 123.875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 1,
+      "policy": "B",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 45.15625,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.04620462046204621,
+        "ci95": [
+          0.0,
+          0.13506349859168962
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -2.1875,
+        "ci95": [
+          -6.5625,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 3.21875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 1,
+      "policy": "HB",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 45.15625,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.04620462046204621,
+        "ci95": [
+          0.0,
+          0.13506349859168962
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -2.1875,
+        "ci95": [
+          -6.5625,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 3.21875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 1,
+      "policy": "fixed",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 47.34375,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 5.40625
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 1,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 41.9375,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.11419141914191422,
+        "ci95": [
+          0.011460703613510242,
+          0.2244549286587178
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -5.40625,
+        "ci95": [
+          -12.50078125,
+          -0.46875
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 1,
+      "policy": "verifier",
+      "tasks": 32,
+      "resolution": 0.53125,
+      "tokens_per_task": 47.34375,
+      "attempts_started": 1.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 5.40625
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 5,
+      "policy": "B",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 126.5,
+      "attempts_started": 2.3125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.016998542982030074,
+        "ci95": [
+          0.0,
+          0.05318746918181343
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -2.1875,
+        "ci95": [
+          -6.5625,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 20.59375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 5,
+      "policy": "HB",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 126.5,
+      "attempts_started": 2.3125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.016998542982030074,
+        "ci95": [
+          0.0,
+          0.05318746918181343
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -2.1875,
+        "ci95": [
+          -6.5625,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 20.59375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 5,
+      "policy": "fixed",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 245.28125,
+      "attempts_started": 5.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -0.906022340942205,
+        "ci95": [
+          -1.7031290105236139,
+          -0.4842406382503884
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 116.59375,
+        "ci95": [
+          83.90625,
+          152.87890624999997
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 139.375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 5,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 105.90625,
+      "attempts_started": 2.3125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.17702768334142793,
+        "ci95": [
+          0.06029431278477439,
+          0.2884544608260762
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -22.78125,
+        "ci95": [
+          -50.0359375,
+          -5.153906250000013
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 5,
+      "policy": "verifier",
+      "tasks": 32,
+      "resolution": 0.78125,
+      "tokens_per_task": 128.6875,
+      "attempts_started": 2.3125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 22.78125
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 10,
+      "policy": "B",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 176.25,
+      "attempts_started": 3.21875,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.012259194395796813,
+        "ci95": [
+          0.0,
+          0.040699897525364535
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -2.1875,
+        "ci95": [
+          -6.5625,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 28.375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 10,
+      "policy": "HB",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 176.25,
+      "attempts_started": 3.21875,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.012259194395796813,
+        "ci95": [
+          0.0,
+          0.040699897525364535
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -2.1875,
+        "ci95": [
+          -6.5625,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 28.375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 10,
+      "policy": "fixed",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 488.46875,
+      "attempts_started": 10.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -1.7374781085814361,
+        "ci95": [
+          -3.6732745586670648,
+          -0.9292129732960275
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 310.03125,
+        "ci95": [
+          239.95078125,
+          391.50312499999995
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 340.59375
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 10,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 147.875,
+      "attempts_started": 3.21875,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.17127845884413306,
+        "ci95": [
+          0.051873116204928627,
+          0.2793899791294827
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -30.5625,
+        "ci95": [
+          -72.0,
+          -5.46875
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 10,
+      "policy": "verifier",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 178.4375,
+      "attempts_started": 3.21875,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 30.5625
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 20,
+      "policy": "B",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 276.96875,
+      "attempts_started": 4.78125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.01049458524059399,
+        "ci95": [
+          0.0,
+          0.032943763967600743
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -2.9375,
+        "ci95": [
+          -8.0625,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 49.5625
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 20,
+      "policy": "HB",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 277.71875,
+      "attempts_started": 4.78125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.007815116668527411,
+        "ci95": [
+          0.0,
+          0.02946246614842086
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -2.1875,
+        "ci95": [
+          -6.5625,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 50.3125
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 20,
+      "policy": "fixed",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 949.875,
+      "attempts_started": 20.0,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": -2.393546946522273,
+        "ci95": [
+          -6.040852585337979,
+          -1.1749083118201504
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 669.96875,
+        "ci95": [
+          521.39921875,
+          838.0734374999997
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 722.46875
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 20,
+      "policy": "oracle",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 227.40625,
+      "attempts_started": 4.78125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.18756280004465786,
+        "ci95": [
+          0.05678818479007483,
+          0.30211995112745765
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": -52.5,
+        "ci95": [
+          -129.0625,
+          -7.999218750000004
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 0.0
+    },
+    {
+      "dataset": "MBPP+",
+      "checkpoint": 64,
+      "budget": 20,
+      "policy": "verifier",
+      "tasks": 32,
+      "resolution": 0.84375,
+      "tokens_per_task": 279.90625,
+      "attempts_started": 4.78125,
+      "active_correct_retention_all_candidates": 1.0,
+      "false_abort_rate_started_active_correct": 0.0,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "unit": "ratio of task-average costs"
+      },
+      "delta_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "delta_resolution_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      },
+      "tokens_minus_oracle": 52.5
+    }
+  ],
+  "independent_original_replay_matches": true,
+  "oracle_scope": "Idealized label-aware lower cost for fixed-t policies preserving every correct candidate on the same ordered stream; not a universal lower bound for policies allowed to discard successes",
+  "threshold_scope": "Every t-specific threshold chosen from archived admissible SOURCE-development options only",
+  "token_scope": "Completion tokens; excludes prompt, probe, verification, latency, FLOPs and energy",
+  "iid_scope": "Economic formulas condition on a task; attempts must be i.i.d. across attempts, but within-attempt cost and success may depend"
+}

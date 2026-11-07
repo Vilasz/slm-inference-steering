@@ -1,0 +1,67 @@
+{
+  "updated_at": "2026-11-06T08:50:52.054825+00:00",
+  "historical_audit": true,
+  "tests": {
+    "tests": 399,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0
+  },
+  "pilot": {
+    "tasks": 12,
+    "attempts": 240,
+    "all_success_tasks": 1,
+    "all_failure_tasks": 3,
+    "mixed_tasks": 8,
+    "success_rate": 0.4166666666666667,
+    "mean_tokens": 160.33333333333334,
+    "truncation_rate": 0.004166666666666667,
+    "parsing_error_rate": 0.008333333333333333,
+    "mean_seconds_deepseek": 20.559622466666664,
+    "mean_seconds_qwen": 11.344481008333332,
+    "tokens_per_second_deepseek": 7.798457077374934,
+    "mean_activation_copy_seconds": 0.2631521575000486,
+    "feasible": true
+  },
+  "final_frozen": true,
+  "external_results_complete": true,
+  "charged_gpu_session_hours": 33.492472446388874,
+  "resource_accounting": {
+    "raw_session_wall_hours": 43.169389166666654,
+    "excluded_os_suspension_hours": 9.676916720277777,
+    "charged_active_session_hours": 33.492472446388874,
+    "scope": "Active session wall time including loading/verification; not CUDA kernel profiling"
+  },
+  "collections": [
+    {
+      "path": "runs\\final_extension\\v1\\deepseek\\external\\manifest.json",
+      "status": "completed",
+      "completed": 2000,
+      "expected": 2000
+    },
+    {
+      "path": "runs\\final_extension\\v1\\deepseek\\pilot\\manifest.json",
+      "status": "completed",
+      "completed": 240,
+      "expected": 240
+    },
+    {
+      "path": "runs\\final_extension\\v1\\deepseek\\source\\manifest.json",
+      "status": "completed",
+      "completed": 2640,
+      "expected": 2640
+    },
+    {
+      "path": "runs\\final_extension\\v1\\qwen\\external\\manifest.json",
+      "status": "completed",
+      "completed": 2000,
+      "expected": 2000
+    },
+    {
+      "path": "runs\\final_extension\\v1\\qwen\\technical\\manifest.json",
+      "status": "completed",
+      "completed": 12,
+      "expected": 12
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "created_at": "2026-10-18T16:23:48.472068+00:00",
+  "scope": "Saved numerical results, layout only; no fit or new statistical selection",
+  "inputs": {
+    "src/slm_steering/excellence/print_figures.py": "2533c6de25a5c3f163a85db2400ee25270fbbde725db6d1f313211be46a3b924",
+    "reports/protocol_v0.2/results.json": "0cc3d457fe59a656418dae2df02e69a38ce424703ee78e036b1a31d9561d2949",
+    "runs/probes/protocol_v0.2/outer_predictions.csv": "96f941052ef85e6778c3a993596ab841573262169ba7d9adee12f803a26f6a8d",
+    "reports/transfer_v0.2/results.json": "841bec2240af6d56f120ed72ad7ae9d34561c6694e5d6937f911b1f31c860910",
+    "reports/excellence/geometry/results.json": "f35ceb594f7087538460e74f3762c0aa26d66e30934f4af526aadeba648a518b",
+    "reports/excellence/economics/results.json": "504d4ba408307a09fe52db4e2295b9b2569a61ca9d12d41b73474d5ffcddba6d",
+    "reports/excellence/models/results.json": "39683ce7cace055a2cd0d527b5523f5451fba82d8c525eb11b3db91511c5ba8b",
+    "reports/excellence/transfer/score_distributions.csv": "a924d9f370ba9af8405fd9d1a84da3033dc80c967f71c102503fc1a386e5989f",
+    "reports/excellence/transfer/retention_threshold_curves.csv": "b0ba40d33d8fd9836e2fbfa5b971b7e2e1272b3829f09aaa3a96b6e60de24885"
+  },
+  "supplemental_semantic_sha256": "02c67b883d049e5991ea4e5806efe4f50b13f310ebc35ea4e591a2ea2f1cf10a",
+  "replacements": {
+    "reports/protocol_v0.2/figures/calibration_32.png": "reports/excellence/print_ready/core/figures/calibration_32.png",
+    "reports/protocol_v0.2/figures/calibration_32.svg": "reports/excellence/print_ready/core/figures/calibration_32.svg",
+    "reports/protocol_v0.2/figures/compute_resolution.png": "reports/excellence/print_ready/core/figures/compute_resolution.png",
+    "reports/protocol_v0.2/figures/compute_resolution.svg": "reports/excellence/print_ready/core/figures/compute_resolution.svg",
+    "reports/protocol_v0.2/figures/paired_policy_effects.pdf": "reports/excellence/print_ready/core/figures/paired_policy_effects.pdf",
+    "reports/protocol_v0.2/figures/paired_policy_effects.png": "reports/excellence/print_ready/core/figures/paired_policy_effects.png",
+    "reports/protocol_v0.2/figures/paired_policy_effects.svg": "reports/excellence/print_ready/core/figures/paired_policy_effects.svg",
+    "reports/protocol_v0.2/figures/policy_cost_and_false_aborts.pdf": "reports/excellence/print_ready/core/figures/policy_cost_and_false_aborts.pdf",
+    "reports/protocol_v0.2/figures/policy_cost_and_false_aborts.png": "reports/excellence/print_ready/core/figures/policy_cost_and_false_aborts.png",
+    "reports/protocol_v0.2/figures/policy_cost_and_false_aborts.svg": "reports/excellence/print_ready/core/figures/policy_cost_and_false_aborts.svg",
+    "reports/protocol_v0.2/figures/primary_predictor_comparison.pdf": "reports/excellence/print_ready/core/figures/primary_predictor_comparison.pdf",
+    "reports/protocol_v0.2/figures/primary_predictor_comparison.png": "reports/excellence/print_ready/core/figures/primary_predictor_comparison.png",
+    "reports/protocol_v0.2/figures/primary_predictor_comparison.svg": "reports/excellence/print_ready/core/figures/primary_predictor_comparison.svg",
+    "reports/protocol_v0.2/figures/primary_roc_pr.pdf": "reports/excellence/print_ready/core/figures/primary_roc_pr.pdf",
+    "reports/protocol_v0.2/figures/primary_roc_pr.png": "reports/excellence/print_ready/core/figures/primary_roc_pr.png",
+    "reports/protocol_v0.2/figures/primary_roc_pr.svg": "reports/excellence/print_ready/core/figures/primary_roc_pr.svg",
+    "reports/protocol_v0.2/figures/primary_task_deltas.pdf": "reports/excellence/print_ready/core/figures/primary_task_deltas.pdf",
+    "reports/protocol_v0.2/figures/primary_task_deltas.png": "reports/excellence/print_ready/core/figures/primary_task_deltas.png",
+    "reports/protocol_v0.2/figures/primary_task_deltas.svg": "reports/excellence/print_ready/core/figures/primary_task_deltas.svg",
+    "reports/protocol_v0.2/figures/risk_set_attrition.pdf": "reports/excellence/print_ready/core/figures/risk_set_attrition.pdf",
+    "reports/protocol_v0.2/figures/risk_set_attrition.png": "reports/excellence/print_ready/core/figures/risk_set_attrition.png",
+    "reports/protocol_v0.2/figures/risk_set_attrition.svg": "reports/excellence/print_ready/core/figures/risk_set_attrition.svg",
+    "reports/protocol_v0.2/figures/temporal_prediction.png": "reports/excellence/print_ready/core/figures/temporal_prediction.png",
+    "reports/protocol_v0.2/figures/temporal_prediction.svg": "reports/excellence/print_ready/core/figures/temporal_prediction.svg",
+    "reports/protocol_v0.2/figures/within_task_discrimination.png": "reports/excellence/print_ready/core/figures/within_task_discrimination.png",
+    "reports/protocol_v0.2/figures/within_task_discrimination.svg": "reports/excellence/print_ready/core/figures/within_task_discrimination.svg",
+    "reports/transfer_v0.2/figures/frozen_transfer_signal.pdf": "reports/excellence/print_ready/frozen_transfer/frozen_transfer_signal.pdf",
+    "reports/transfer_v0.2/figures/frozen_transfer_signal.png": "reports/excellence/print_ready/frozen_transfer/frozen_transfer_signal.png",
+    "reports/transfer_v0.2/figures/frozen_transfer_signal.svg": "reports/excellence/print_ready/frozen_transfer/frozen_transfer_signal.svg",
+    "reports/excellence/geometry/geometry_learning.pdf": "reports/excellence/print_ready/geometry/geometry_learning.pdf",
+    "reports/excellence/geometry/geometry_learning.png": "reports/excellence/print_ready/geometry/geometry_learning.png",
+    "reports/excellence/geometry/geometry_learning.svg": "reports/excellence/print_ready/geometry/geometry_learning.svg",
+    "reports/excellence/transfer/conditional_scores.pdf": "reports/excellence/print_ready/transfer/conditional_scores.pdf",
+    "reports/excellence/transfer/conditional_scores.png": "reports/excellence/print_ready/transfer/conditional_scores.png",
+    "reports/excellence/transfer/conditional_scores.svg": "reports/excellence/print_ready/transfer/conditional_scores.svg",
+    "reports/excellence/transfer/retention_curves.pdf": "reports/excellence/print_ready/transfer/retention_curves.pdf",
+    "reports/excellence/transfer/retention_curves.png": "reports/excellence/print_ready/transfer/retention_curves.png",
+    "reports/excellence/transfer/retention_curves.svg": "reports/excellence/print_ready/transfer/retention_curves.svg",
+    "reports/excellence/economics/oracle_frontier.pdf": "reports/excellence/print_ready/economics/oracle_frontier.pdf",
+    "reports/excellence/economics/oracle_frontier.png": "reports/excellence/print_ready/economics/oracle_frontier.png",
+    "reports/excellence/economics/oracle_frontier.svg": "reports/excellence/print_ready/economics/oracle_frontier.svg",
+    "reports/excellence/figures/model_ablation.pdf": "reports/excellence/print_ready/models/figures/model_ablation.pdf",
+    "reports/excellence/figures/model_ablation.png": "reports/excellence/print_ready/models/figures/model_ablation.png",
+    "reports/excellence/figures/model_ablation.svg": "reports/excellence/print_ready/models/figures/model_ablation.svg",
+    "reports/final_review/supplemental/figures/calibration_transfer.pdf": "reports/excellence/print_ready/supplemental/figures/calibration_transfer.pdf",
+    "reports/final_review/supplemental/figures/calibration_transfer.png": "reports/excellence/print_ready/supplemental/figures/calibration_transfer.png",
+    "reports/final_review/supplemental/figures/calibration_transfer.svg": "reports/excellence/print_ready/supplemental/figures/calibration_transfer.svg",
+    "reports/final_review/supplemental/figures/common_cohort.pdf": "reports/excellence/print_ready/supplemental/figures/common_cohort.pdf",
+    "reports/final_review/supplemental/figures/common_cohort.png": "reports/excellence/print_ready/supplemental/figures/common_cohort.png",
+    "reports/final_review/supplemental/figures/common_cohort.svg": "reports/excellence/print_ready/supplemental/figures/common_cohort.svg",
+    "reports/final_review/supplemental/figures/correct_retention.pdf": "reports/excellence/print_ready/supplemental/figures/correct_retention.pdf",
+    "reports/final_review/supplemental/figures/correct_retention.png": "reports/excellence/print_ready/supplemental/figures/correct_retention.png",
+    "reports/final_review/supplemental/figures/correct_retention.svg": "reports/excellence/print_ready/supplemental/figures/correct_retention.svg",
+    "reports/final_review/supplemental/figures/fold_stability.pdf": "reports/excellence/print_ready/supplemental/figures/fold_stability.pdf",
+    "reports/final_review/supplemental/figures/fold_stability.png": "reports/excellence/print_ready/supplemental/figures/fold_stability.png",
+    "reports/final_review/supplemental/figures/fold_stability.svg": "reports/excellence/print_ready/supplemental/figures/fold_stability.svg",
+    "reports/final_review/figures/legacy_incremental_by_task.pdf": "reports/excellence/print_ready/descriptive/figures/legacy_incremental_by_task.pdf",
+    "reports/final_review/figures/legacy_incremental_by_task.png": "reports/excellence/print_ready/descriptive/figures/legacy_incremental_by_task.png",
+    "reports/final_review/figures/legacy_incremental_by_task.svg": "reports/excellence/print_ready/descriptive/figures/legacy_incremental_by_task.svg",
+    "reports/final_review/figures/pilot_lengths_and_verifier.pdf": "reports/excellence/print_ready/descriptive/figures/pilot_lengths_and_verifier.pdf",
+    "reports/final_review/figures/pilot_lengths_and_verifier.png": "reports/excellence/print_ready/descriptive/figures/pilot_lengths_and_verifier.png",
+    "reports/final_review/figures/pilot_lengths_and_verifier.svg": "reports/excellence/print_ready/descriptive/figures/pilot_lengths_and_verifier.svg",
+    "reports/final_review/figures/pilot_task_temperature_grid.pdf": "reports/excellence/print_ready/descriptive/figures/pilot_task_temperature_grid.pdf",
+    "reports/final_review/figures/pilot_task_temperature_grid.png": "reports/excellence/print_ready/descriptive/figures/pilot_task_temperature_grid.png",
+    "reports/final_review/figures/pilot_task_temperature_grid.svg": "reports/excellence/print_ready/descriptive/figures/pilot_task_temperature_grid.svg"
+  },
+  "layouts": [
+    {
+      "stem": "temporal_prediction",
+      "width_inches": 6.2,
+      "height_inches": 4.0,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "within_task_discrimination",
+      "width_inches": 6.2,
+      "height_inches": 4.0,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "calibration_32",
+      "width_inches": 5.0,
+      "height_inches": 4.0,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "compute_resolution",
+      "width_inches": 6.0,
+      "height_inches": 4.0,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "risk_set_attrition",
+      "width_inches": 6.2,
+      "height_inches": 3.8,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "primary_predictor_comparison",
+      "width_inches": 6.2,
+      "height_inches": 5.0,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "primary_task_deltas",
+      "width_inches": 6.2,
+      "height_inches": 4.0,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "primary_roc_pr",
+      "width_inches": 6.2,
+      "height_inches": 4.0,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "paired_policy_effects",
+      "width_inches": 6.2,
+      "height_inches": 4.8,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "policy_cost_and_false_aborts",
+      "width_inches": 6.2,
+      "height_inches": 3.8,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "frozen_transfer_signal",
+      "width_inches": 6.2,
+      "height_inches": 3.8,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "geometry_learning",
+      "width_inches": 6.2,
+      "height_inches": 4.0,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "retention_curves",
+      "width_inches": 6.2,
+      "height_inches": 4.0,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "conditional_scores",
+      "width_inches": 6.2,
+      "height_inches": 7.15,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "oracle_frontier",
+      "width_inches": 6.2,
+      "height_inches": 4.0,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "model_ablation",
+      "width_inches": 6.2,
+      "height_inches": 6.0,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "common_cohort",
+      "width_inches": 6.2,
+      "height_inches": 4.0,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "fold_stability",
+      "width_inches": 6.2,
+      "height_inches": 4.0,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "calibration_transfer",
+      "width_inches": 6.2,
+      "height_inches": 4.0,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "correct_retention",
+      "width_inches": 6.2,
+      "height_inches": 4.0,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "pilot_task_temperature_grid",
+      "width_inches": 5.8,
+      "height_inches": 7.15,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "pilot_lengths_and_verifier",
+      "width_inches": 6.2,
+      "height_inches": 3.8,
+      "minimum_font_pt": 10.5
+    },
+    {
+      "stem": "legacy_incremental_by_task",
+      "width_inches": 6.2,
+      "height_inches": 4.0,
+      "minimum_font_pt": 10.5
+    }
+  ],
+  "artifacts": {
+    "reports/excellence/print_ready/economics/oracle_frontier.pdf": "85d93950475095f2df1ebe5b6c5347f62428ccbeae81dad3f2bd682215216d68",
+    "reports/excellence/print_ready/economics/oracle_frontier.png": "4609839ec7088d3eb0d2ce184b0ca47529c71202185ba261f511e90f3f906174",
+    "reports/excellence/print_ready/economics/oracle_frontier.svg": "f41db99ed0bb43533f92856bcf517af64342cefd67c156549f4f62a6d744196c",
+    "reports/excellence/print_ready/frozen_transfer/frozen_transfer_signal.pdf": "5b29721597697fbd04dcda8c4ef6b9e1d8478ae54d660c5a376fd75af60e723e",
+    "reports/excellence/print_ready/frozen_transfer/frozen_transfer_signal.png": "293ff138db16652281223fdcd8962ab3439e3debfa03f8be04b94a149688f266",
+    "reports/excellence/print_ready/frozen_transfer/frozen_transfer_signal.svg": "e2c5374722d537fa5251de179187b891d5f74c5ded23ca4b219982224d6afad8",
+    "reports/excellence/print_ready/geometry/geometry_learning.pdf": "898f047dba749db47cf230bfbc7c3f6b3882f4280b3e85aedd6104d7801a010e",
+    "reports/excellence/print_ready/geometry/geometry_learning.png": "2a912bdc064a28380f7a56945e86af0e6d0b61d2672b7f752ab0c93d6bf6af10",
+    "reports/excellence/print_ready/geometry/geometry_learning.svg": "3d9fca58a1f8e7c1f5dd468ffeafe377a388544ec54f1b03ec2cf788bb3d9e5a",
+    "reports/excellence/print_ready/transfer/conditional_scores.pdf": "6adef032d3a09ebd6324ac0fff6bfaf8ca73a62497da183ca08bfeb6af05342b",
+    "reports/excellence/print_ready/transfer/conditional_scores.png": "5d7c04b5af32dc3e03e3c9f9ed51060910afaff22a941083f878fd4b096725c5",
+    "reports/excellence/print_ready/transfer/conditional_scores.svg": "81ed3275d67b5ccc980657f75f31e03c308d19eabb45fe5f11fa7fc2fe82a2cb",
+    "reports/excellence/print_ready/transfer/retention_curves.pdf": "37e6f914b6abdb83467cc59ad0afeeb67e186bdd0a3d3d02f46b58952d6d269b",
+    "reports/excellence/print_ready/transfer/retention_curves.png": "df0b12aa5109e8821743f081edaae6d5c5f22bf57901e1dea7baf9a65de75219",
+    "reports/excellence/print_ready/transfer/retention_curves.svg": "53e63ab5608716082e6b6094b298d4a27d1c429694b2ca18db8c91a23abc1d04",
+    "reports/excellence/print_ready/core/figures/calibration_32.png": "4c586a90d5f6af101d1759eea07b4bddaed53d3d55a92d83125d457018893eee",
+    "reports/excellence/print_ready/core/figures/calibration_32.svg": "54b68d68fd6193ad76d94d1ccf5efd979a26a2a26bab715af7216eb8bb6d2b7b",
+    "reports/excellence/print_ready/core/figures/compute_resolution.png": "4a2bda85b78f0f8e1eaccddfd2439397d0c5fd84c955f299f8beb746cf3a2c77",
+    "reports/excellence/print_ready/core/figures/compute_resolution.svg": "9ed74163681504bbb09beaad4fc9552733391663ca79a442174209cbc58e8345",
+    "reports/excellence/print_ready/core/figures/paired_policy_effects.pdf": "6a6e8159620d533dc8c3f28d498425be73d166ab387c890199c12898a9fbe980",
+    "reports/excellence/print_ready/core/figures/paired_policy_effects.png": "8b3d8c9bcb5e35a94da1ef87ced6d59c0dc8ac5bcdf0d22eeeba839b17c8057b",
+    "reports/excellence/print_ready/core/figures/paired_policy_effects.svg": "e77974ca866cacc68969686b82cba987d6656ce679284278c182d35aa454efc5",
+    "reports/excellence/print_ready/core/figures/policy_cost_and_false_aborts.pdf": "0fb1ac938a91b9209519e1b28a94102ad26ec5bc9d4de121735fe8573747e785",
+    "reports/excellence/print_ready/core/figures/policy_cost_and_false_aborts.png": "e034114e7377fff5a156cad47a7637002767e454c24b13b70ce54658ff88de7e",
+    "reports/excellence/print_ready/core/figures/policy_cost_and_false_aborts.svg": "5fae08811b8d39cf2df2b5ae420643c6bb1172294ad5a544f68869f447e72287",
+    "reports/excellence/print_ready/core/figures/primary_predictor_comparison.pdf": "6255fd94f0f016ae461b5e3160606def5300cefc19a0e4f3093c79654edc206b",
+    "reports/excellence/print_ready/core/figures/primary_predictor_comparison.png": "2bad6fb1b0d5fa42531c576acd80e8e7c45629d3e35eefa2afe7c2191516caa1",
+    "reports/excellence/print_ready/core/figures/primary_predictor_comparison.svg": "ff46fc76da936a98ab18cb620c54896b862725876d8de8fc11190011b0a0384c",
+    "reports/excellence/print_ready/core/figures/primary_roc_pr.pdf": "44006935ad276ac0c27380648afc2a64b358282726bb5b637bfd84fbd1ec2b30",
+    "reports/excellence/print_ready/core/figures/primary_roc_pr.png": "03ef714d0b6a332a2df4b5fb54e7c656a781763cbb708387069946362f152501",
+    "reports/excellence/print_ready/core/figures/primary_roc_pr.svg": "552427dfed9d9dbbc25f991e786b58baaf5736cf716b51dce2b7c5147b7bf0d7",
+    "reports/excellence/print_ready/core/figures/primary_task_deltas.pdf": "9983b69eb141c15e1d957f2460dc220af88336d7b3c86641369708a3f156aadd",
+    "reports/excellence/print_ready/core/figures/primary_task_deltas.png": "760419d587f08ad0d3b95af0147c5d39287edb04e15b4bcca0878c9586143018",
+    "reports/excellence/print_ready/core/figures/primary_task_deltas.svg": "eea96b3272f6856a887baf10aa3785ba46aacca906c29cc38e8d110456a5be38",
+    "reports/excellence/print_ready/core/figures/risk_set_attrition.pdf": "d351031d17bf5f61345bad253404feb85b9c76cc061d7692223f483d80857356",
+    "reports/excellence/print_ready/core/figures/risk_set_attrition.png": "dc49c511cbfc6dcdba76e6050fa368c6bad4867137883777a6209ac637538fd8",
+    "reports/excellence/print_ready/core/figures/risk_set_attrition.svg": "07d7111a4d9702765fe72433ecf10d428f3c9226748a384b23234e7fb87435be",
+    "reports/excellence/print_ready/core/figures/temporal_prediction.png": "25a9b8eabe1115b3c759526599d6119e545ddda9b43db6a7270de6f7d94501c1",
+    "reports/excellence/print_ready/core/figures/temporal_prediction.svg": "5344c920f9c7225c571099ed9ec2ff7254cdf8c733703d87c5240a681f563a47",
+    "reports/excellence/print_ready/core/figures/within_task_discrimination.png": "c4358ca2fdbc5c09697168e57cd3a368230646e19fa6a2b4c561ddb5ae1fb667",
+    "reports/excellence/print_ready/core/figures/within_task_discrimination.svg": "e7f6c8b90993e8c2763fb3fc3a55e0f40614bd48518cb49d114bdcb9b2cd3bae",
+    "reports/excellence/print_ready/descriptive/figures/legacy_incremental_by_task.pdf": "9bc01a9a5c9624df72b98138f645324ee3420ef3a58bf814fd40e64697850d4c",
+    "reports/excellence/print_ready/descriptive/figures/legacy_incremental_by_task.png": "961c32d88b8d077d56cc668dd6990a22c54c4c2dc6438633ffceacca4e1fb7fa",
+    "reports/excellence/print_ready/descriptive/figures/legacy_incremental_by_task.svg": "0a7a238ead763bf0481de73173e6cf48d8091fe37a497660612ea05549064d5a",
+    "reports/excellence/print_ready/descriptive/figures/pilot_lengths_and_verifier.pdf": "fe7f423a9ad722fa3faf3f09d0bb4e4955897f581b9726b75911bc6ee43edb18",
+    "reports/excellence/print_ready/descriptive/figures/pilot_lengths_and_verifier.png": "6277c83cd39e72b03a0f51c58dc47935ab16696b5f13d3e1e5374dadade6f849",
+    "reports/excellence/print_ready/descriptive/figures/pilot_lengths_and_verifier.svg": "aa643ee8c29cca574737da2bfd86f9d8c8fde16b6dbab53f3b5f0ed660d5e8b7",
+    "reports/excellence/print_ready/descriptive/figures/pilot_task_temperature_grid.pdf": "17f9956c51471e59d13488be14ecbada8b839fe89ad84d3a3d190f54607282c1",
+    "reports/excellence/print_ready/descriptive/figures/pilot_task_temperature_grid.png": "3d6f1f22cdf2ce74a81c5faa975b9309249af8949127594e05e485aadf15afa1",
+    "reports/excellence/print_ready/descriptive/figures/pilot_task_temperature_grid.svg": "c1938067ce0c45271e3ad19dcc6d3012de646c4d35cd331461d9a57b1ae27ec8",
+    "reports/excellence/print_ready/models/figures/model_ablation.pdf": "8e6a1052f53accb4c2e75fd4a9dc97a206cd5e72fc375a77b677180d457fb109",
+    "reports/excellence/print_ready/models/figures/model_ablation.png": "1b956fcbdca4cd67f416e4c984d729c73cecc7559625f840b40fcc797fbe8c3a",
+    "reports/excellence/print_ready/models/figures/model_ablation.svg": "7bba839802b70f3ccdbdcdd5bf37ff4ccecdb687f0c40c3ece505a7c5abc42f3",
+    "reports/excellence/print_ready/supplemental/figures/calibration_transfer.pdf": "3138b7524e87d5f6c343657abb1e1fffe35edc35ea9c9d51256356fd3080c2fb",
+    "reports/excellence/print_ready/supplemental/figures/calibration_transfer.png": "d50de223537b3590ba6983af53872aa6ae4276cc9d88a79c7762714ce0c7fbea",
+    "reports/excellence/print_ready/supplemental/figures/calibration_transfer.svg": "a74f9d57a7f352c6e96160ef79166532ad853c0d859a4ed2f18700a019741286",
+    "reports/excellence/print_ready/supplemental/figures/common_cohort.pdf": "751b34e8bae3c2d6689d607061997773d870f210b72e91867d951662ee32ad67",
+    "reports/excellence/print_ready/supplemental/figures/common_cohort.png": "0b569f809d3110702e6e15688ea2a36d6ef6051429575fcae030be8cd719ee35",
+    "reports/excellence/print_ready/supplemental/figures/common_cohort.svg": "3bd1b17146b0495aa955d5c9ddfd09655b8eb7543429ea88ecefbc91c98e60ac",
+    "reports/excellence/print_ready/supplemental/figures/correct_retention.pdf": "79ed0f9128f67c033f5fee0ec379116d6d6457435fdf924d147c6a4deba994ab",
+    "reports/excellence/print_ready/supplemental/figures/correct_retention.png": "13532ba993c3107e3bf0701689a51a3bea5f505e4fd679767886d19dead1c050",
+    "reports/excellence/print_ready/supplemental/figures/correct_retention.svg": "7f1bb5426e4e35f4b2fa86c12871eb377b68e6e7bd18a7bbf9f8e38df2c083b9",
+    "reports/excellence/print_ready/supplemental/figures/fold_stability.pdf": "9346d9211ff59f762914db9b6d87d8bda57d691eb0608e4d121ddcae4d0c8ea5",
+    "reports/excellence/print_ready/supplemental/figures/fold_stability.png": "cf38182fab2428a05cf2dabc93bd50df9a3cbfcb1eb16f253da7ccc19a5a1aed",
+    "reports/excellence/print_ready/supplemental/figures/fold_stability.svg": "b10c9fec3a036a82bd69f58ef57470757769b4ffce5eb9f03d01a304ed9077ea"
+  }
+}

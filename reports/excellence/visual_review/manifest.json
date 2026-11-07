@@ -1,0 +1,618 @@
+{
+  "created_at": "2026-10-18T16:27:19.231922+00:00",
+  "status": "all_pages_explicitly_visually_inspected",
+  "pdfs": {
+    "manuscript": {
+      "path": "tcc/build/manuscrito.pdf",
+      "sha256": "18dda56f94b17bf51d1f43da8df3cc2c46113d524d6ac70611a15521985df57f",
+      "pages": 69,
+      "text_spans_outside_page": [],
+      "text_spans_below_8pt": [
+        {
+          "page": 13,
+          "size": 6.0,
+          "text": "𝑖𝑗"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖𝑗"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖𝑗"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖𝑗ℓ𝑡"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖𝑗𝑡"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖𝑗𝑡"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 16,
+          "size": 6.0,
+          "text": "𝑖𝑗"
+        },
+        {
+          "page": 16,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 17,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 17,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 18,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 19,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 19,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 19,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 20,
+          "size": 6.0,
+          "text": "𝑁"
+        },
+        {
+          "page": 20,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 20,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 20,
+          "size": 6.0,
+          "text": "𝑁(𝜋𝑖)"
+        },
+        {
+          "page": 20,
+          "size": 6.0,
+          "text": "𝑁(𝜋𝑖𝑟𝑖)"
+        },
+        {
+          "page": 21,
+          "size": 6.0,
+          "text": "𝑋"
+        },
+        {
+          "page": 21,
+          "size": 6.0,
+          "text": "𝑁(𝜋𝑋𝑟𝑋)"
+        },
+        {
+          "page": 21,
+          "size": 6.0,
+          "text": "𝑋"
+        },
+        {
+          "page": 21,
+          "size": 6.0,
+          "text": "𝑋[𝜋𝑋]"
+        },
+        {
+          "page": 21,
+          "size": 6.0,
+          "text": "𝑋[𝑟𝑋]"
+        },
+        {
+          "page": 25,
+          "size": 6.0,
+          "text": "𝑢"
+        },
+        {
+          "page": 26,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 26,
+          "size": 6.0,
+          "text": "tr"
+        },
+        {
+          "page": 29,
+          "size": 6.0,
+          "text": "𝑏"
+        },
+        {
+          "page": 29,
+          "size": 6.0,
+          "text": "𝑏"
+        },
+        {
+          "page": 29,
+          "size": 6.0,
+          "text": "obs"
+        },
+        {
+          "page": 32,
+          "size": 6.0,
+          "text": "∗"
+        },
+        {
+          "page": 33,
+          "size": 6.0,
+          "text": "𝜋"
+        },
+        {
+          "page": 33,
+          "size": 6.0,
+          "text": "𝑉"
+        }
+      ],
+      "geometry_scope": "Text spans only; equations subscripts may be small; neither check certifies diagram legibility"
+    },
+    "summary": {
+      "path": "reports/excellence/materials/research_summary_en.pdf",
+      "sha256": "5b8c5a389adbadbb7f9e08be713cced0d93d1c69de501a3c8a9951de6b24bf39",
+      "pages": 2,
+      "text_spans_outside_page": [],
+      "text_spans_below_8pt": [
+        {
+          "page": 2,
+          "size": 7.28000020980835,
+          "text": "𝑑"
+        },
+        {
+          "page": 2,
+          "size": 7.28000020980835,
+          "text": "𝐸[𝑇]"
+        }
+      ],
+      "geometry_scope": "Text spans only; equations subscripts may be small; neither check certifies diagram legibility"
+    },
+    "slides": {
+      "path": "reports/excellence/materials/defesa.pdf",
+      "sha256": "aae14a774da795b315d05f4aa6f95a8d378c4c65979d55a3d6a9b65a4b350d21",
+      "pages": 12,
+      "text_spans_outside_page": [],
+      "text_spans_below_8pt": [],
+      "geometry_scope": "Text spans only; equations subscripts may be small; neither check certifies diagram legibility"
+    }
+  },
+  "groups": {
+    "manuscript_001_004": {
+      "pdf": "manuscript",
+      "pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "image": "reports/excellence/visual_review/manuscript_001_004.jpg",
+      "image_sha256": "bcda16477090d327aea0c6063bba73cdfbf7188322c652d8985643bc4903461b",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:27:43.221909+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "This exact rendered image was explicitly visually inspected earlier in this session. JPEG SHA256 matches archive_visual_source_pass/visual_review; current PDF hash verified. Reuse is based on identical visible content, not geometry alone."
+    },
+    "manuscript_005_008": {
+      "pdf": "manuscript",
+      "pages": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "image": "reports/excellence/visual_review/manuscript_005_008.jpg",
+      "image_sha256": "a3db842837dca272a3741d11079e247341936a4791dc6c4ffe7592f2fd33f47e",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:27:52.883722+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected final contents and revised page numbers, introduction, method table with attached source, original result tables and primary forest plot. All labels and sources inside margins; no separated source lines."
+    },
+    "manuscript_009_012": {
+      "pdf": "manuscript",
+      "pages": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "image": "reports/excellence/visual_review/manuscript_009_012.jpg",
+      "image_sha256": "24dc4e41baa4e3c43bdcace325933f9a192b6a6302460db5422100a74874c45e",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:27:43.226743+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "This exact rendered image was explicitly visually inspected earlier in this session. JPEG SHA256 matches archive_visual_source_pass/visual_review; current PDF hash verified. Reuse is based on identical visible content, not geometry alone."
+    },
+    "manuscript_013_016": {
+      "pdf": "manuscript",
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "image": "reports/excellence/visual_review/manuscript_013_016.jpg",
+      "image_sha256": "213b9158aca3bb59c364ecd3d01007fd41eb2632a317e2afada3eae9c6c87424",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:27:43.231449+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "This exact rendered image was explicitly visually inspected earlier in this session. JPEG SHA256 matches archive_visual_source_pass/visual_review; current PDF hash verified. Reuse is based on identical visible content, not geometry alone."
+    },
+    "manuscript_017_020": {
+      "pdf": "manuscript",
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "image": "reports/excellence/visual_review/manuscript_017_020.jpg",
+      "image_sha256": "562ec263383171005eed542667f5516d38155406c9d95e416b28709e19db08c3",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:27:43.233739+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "This exact rendered image was explicitly visually inspected earlier in this session. JPEG SHA256 matches archive_visual_source_pass/visual_review; current PDF hash verified. Reuse is based on identical visible content, not geometry alone."
+    },
+    "manuscript_021_024": {
+      "pdf": "manuscript",
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "image": "reports/excellence/visual_review/manuscript_021_024.jpg",
+      "image_sha256": "eb925f8ca42e61b21d23ae77f2e0babb62506dcb05184fd79aff4f28301c0c24",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:27:52.885826+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected final contents and revised page numbers, introduction, method table with attached source, original result tables and primary forest plot. All labels and sources inside margins; no separated source lines."
+    },
+    "manuscript_025_028": {
+      "pdf": "manuscript",
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "image": "reports/excellence/visual_review/manuscript_025_028.jpg",
+      "image_sha256": "d41fa478f15b1cbb613bdbb3c1140c4617e39b6f3e5f6f96cb2f13b55a70b9a2",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:27:43.233739+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "This exact rendered image was explicitly visually inspected earlier in this session. JPEG SHA256 matches archive_visual_source_pass/visual_review; current PDF hash verified. Reuse is based on identical visible content, not geometry alone."
+    },
+    "manuscript_029_032": {
+      "pdf": "manuscript",
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "image": "reports/excellence/visual_review/manuscript_029_032.jpg",
+      "image_sha256": "771a54f0732924000a1ad73df73c183ca201b01667acf38ae86d4ace80c01d85",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:27:43.241539+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "This exact rendered image was explicitly visually inspected earlier in this session. JPEG SHA256 matches archive_visual_source_pass/visual_review; current PDF hash verified. Reuse is based on identical visible content, not geometry alone."
+    },
+    "manuscript_033_036": {
+      "pdf": "manuscript",
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ],
+      "image": "reports/excellence/visual_review/manuscript_033_036.jpg",
+      "image_sha256": "8d483434a76e844ee633984ebcffddd6f84faa34b5475585bfa7543907d6e04a",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:27:52.885826+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected final contents and revised page numbers, introduction, method table with attached source, original result tables and primary forest plot. All labels and sources inside margins; no separated source lines."
+    },
+    "manuscript_037_040": {
+      "pdf": "manuscript",
+      "pages": [
+        37,
+        38,
+        39,
+        40
+      ],
+      "image": "reports/excellence/visual_review/manuscript_037_040.jpg",
+      "image_sha256": "d45d35ca9eed30738fc2870ce3b15f1e0582242741a03fc618fd3ae4a071a19a",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:28:08.534207+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected final original/transfer plots, calibration, retention, criterion tables, ablation forest plot and geometry. Figure 9 now retains its source on the same page. Complete axes, legends, table rows and captions; no clipping."
+    },
+    "manuscript_041_044": {
+      "pdf": "manuscript",
+      "pages": [
+        41,
+        42,
+        43,
+        44
+      ],
+      "image": "reports/excellence/visual_review/manuscript_041_044.jpg",
+      "image_sha256": "5281abc7a730f350daff612e53b2ac2edeb51aee115554d96c5b0e308b2eb4f8",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:28:08.534207+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected final original/transfer plots, calibration, retention, criterion tables, ablation forest plot and geometry. Figure 9 now retains its source on the same page. Complete axes, legends, table rows and captions; no clipping."
+    },
+    "manuscript_045_048": {
+      "pdf": "manuscript",
+      "pages": [
+        45,
+        46,
+        47,
+        48
+      ],
+      "image": "reports/excellence/visual_review/manuscript_045_048.jpg",
+      "image_sha256": "053b8b4e08acd5ec9660225ad33a9ebfb73b71d609eb705f2399f5ba29a5fb9d",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:28:08.534207+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected final original/transfer plots, calibration, retention, criterion tables, ablation forest plot and geometry. Figure 9 now retains its source on the same page. Complete axes, legends, table rows and captions; no clipping."
+    },
+    "manuscript_049_052": {
+      "pdf": "manuscript",
+      "pages": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "image": "reports/excellence/visual_review/manuscript_049_052.jpg",
+      "image_sha256": "8e173c69991691598de9fb0861bd492d3320b0efb684f4987362863613b29aa0",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:28:08.544286+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected final original/transfer plots, calibration, retention, criterion tables, ablation forest plot and geometry. Figure 9 now retains its source on the same page. Complete axes, legends, table rows and captions; no clipping."
+    },
+    "manuscript_053_056": {
+      "pdf": "manuscript",
+      "pages": [
+        53,
+        54,
+        55,
+        56
+      ],
+      "image": "reports/excellence/visual_review/manuscript_053_056.jpg",
+      "image_sha256": "995e14764d536adfe67abd4c64bfcdb4ae08485b0ad686f7c0a09a1ba4938d1d",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:29:13.613275+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected final threshold/conditional-density/oracle figures, actual operational table, new independent endpoint/calibration/replay, discussion, conclusion, references and reproduction. All content present and inside margins. Short chapter-ending continuation on page 60 is complete; no missing text or detached figure source."
+    },
+    "manuscript_057_060": {
+      "pdf": "manuscript",
+      "pages": [
+        57,
+        58,
+        59,
+        60
+      ],
+      "image": "reports/excellence/visual_review/manuscript_057_060.jpg",
+      "image_sha256": "a6c16885f9e2c6996680f1acabca27f6504e3fe1fe22b77f100614981e02ce08",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:29:13.617281+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected final threshold/conditional-density/oracle figures, actual operational table, new independent endpoint/calibration/replay, discussion, conclusion, references and reproduction. All content present and inside margins. Short chapter-ending continuation on page 60 is complete; no missing text or detached figure source."
+    },
+    "manuscript_061_064": {
+      "pdf": "manuscript",
+      "pages": [
+        61,
+        62,
+        63,
+        64
+      ],
+      "image": "reports/excellence/visual_review/manuscript_061_064.jpg",
+      "image_sha256": "db39e249dd34f5e708d918411648188ec41f9f08f68a7a9a92dbb513f3c1b298",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:29:13.618049+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected final threshold/conditional-density/oracle figures, actual operational table, new independent endpoint/calibration/replay, discussion, conclusion, references and reproduction. All content present and inside margins. Short chapter-ending continuation on page 60 is complete; no missing text or detached figure source."
+    },
+    "manuscript_065_068": {
+      "pdf": "manuscript",
+      "pages": [
+        65,
+        66,
+        67,
+        68
+      ],
+      "image": "reports/excellence/visual_review/manuscript_065_068.jpg",
+      "image_sha256": "c2011ebea6eeb4b63128dd9661af94b2c133830184baca0efcc6d18c5c50a89c",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:29:13.618049+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected final threshold/conditional-density/oracle figures, actual operational table, new independent endpoint/calibration/replay, discussion, conclusion, references and reproduction. All content present and inside margins. Short chapter-ending continuation on page 60 is complete; no missing text or detached figure source."
+    },
+    "manuscript_069_069": {
+      "pdf": "manuscript",
+      "pages": [
+        69
+      ],
+      "image": "reports/excellence/visual_review/manuscript_069_069.jpg",
+      "image_sha256": "2cac2cb5634cec65e50ffb9efa0d264353720ce66a204f9f7e2a79079be424df",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:30:51.654898+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected final manuscript continuation and all final defense slides: mathematical cost formula, oracle plots, 72 operational runs and independent result. Complete text/axes and readable layout; no clipping or slide overflow."
+    },
+    "summary_001_002": {
+      "pdf": "summary",
+      "pages": [
+        1,
+        2
+      ],
+      "image": "reports/excellence/visual_review/summary_001_002.jpg",
+      "image_sha256": "a544dbdc79e783afd0813e5d9ff96d1b55b000357262e2047edf26645609ddf8",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:27:43.244538+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "This exact rendered image was explicitly visually inspected earlier in this session. JPEG SHA256 matches archive_visual_source_pass/visual_review; current PDF hash verified. Reuse is based on identical visible content, not geometry alone."
+    },
+    "slides_001_004": {
+      "pdf": "slides",
+      "pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "image": "reports/excellence/visual_review/slides_001_004.jpg",
+      "image_sha256": "19ce4ae1d63688acf80f636c9190c70c2fd48e8c669dfc7f959c47468e003f5a",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:27:43.246823+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "This exact rendered image was explicitly visually inspected earlier in this session. JPEG SHA256 matches archive_visual_source_pass/visual_review; current PDF hash verified. Reuse is based on identical visible content, not geometry alone."
+    },
+    "slides_005_008": {
+      "pdf": "slides",
+      "pages": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "image": "reports/excellence/visual_review/slides_005_008.jpg",
+      "image_sha256": "3df96cbfe355a812051527927ae36cddfd1b78f397d7c8960a4bc11fd64c13e4",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:27:43.246823+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "This exact rendered image was explicitly visually inspected earlier in this session. JPEG SHA256 matches archive_visual_source_pass/visual_review; current PDF hash verified. Reuse is based on identical visible content, not geometry alone."
+    },
+    "slides_009_012": {
+      "pdf": "slides",
+      "pages": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "image": "reports/excellence/visual_review/slides_009_012.jpg",
+      "image_sha256": "8e99a8b5cf8075e585a41823931f9ba51d73a504cf373ad981b8dc26af8bdd49",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:30:51.670386+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected final manuscript continuation and all final defense slides: mathematical cost formula, oracle plots, 72 operational runs and independent result. Complete text/axes and readable layout; no clipping or slide overflow."
+    }
+  },
+  "render_comparison": {
+    "path": "reports/excellence/visual_review/render_comparison.json",
+    "sha256": "fbaafbac855192f8c76f673f6fa53d1737ca9a035f3fbecfc811b80d34f3141d",
+    "method": "Exact JPEG SHA256 equality with images explicitly viewed earlier in this session; changed images require a new visual inspection"
+  },
+  "updated_at": "2026-10-18T16:30:51.670386+00:00",
+  "closeup_inspections": {
+    "reports/excellence/visual_review/closeups/manuscript_20.png": {
+      "sha256": "3fb0239ea5bb5bc883dd993d0369426c177af26bba1885056c6c974f0c8059e0",
+      "reviewed_at": "2026-10-18T16:30:52.929702+00:00",
+      "notes": "Explicit enlarged-page visual inspection: formulas, axes, legends, table values and source lines complete and legible"
+    },
+    "reports/excellence/visual_review/closeups/manuscript_35.png": {
+      "sha256": "5a5c186703925c27cf45a7f06fbc7fa9ab0d4b22f0d086934d31da75c07c6f12",
+      "reviewed_at": "2026-10-18T16:30:52.930702+00:00",
+      "notes": "Explicit enlarged-page visual inspection: formulas, axes, legends, table values and source lines complete and legible"
+    },
+    "reports/excellence/visual_review/closeups/manuscript_51.png": {
+      "sha256": "eb85bea52c8da21cbecbd84479668e70d790623e7a231776d8e5023318e09c88",
+      "reviewed_at": "2026-10-18T16:30:52.931716+00:00",
+      "notes": "Explicit enlarged-page visual inspection: formulas, axes, legends, table values and source lines complete and legible"
+    },
+    "reports/excellence/visual_review/closeups/manuscript_54.png": {
+      "sha256": "0ae58e982e898af3a6e0684ddbf8aabe391ecc41f9356d2588e8a5e3ab20a58e",
+      "reviewed_at": "2026-10-18T16:30:52.932700+00:00",
+      "notes": "Explicit enlarged-page visual inspection: formulas, axes, legends, table values and source lines complete and legible"
+    },
+    "reports/excellence/visual_review/closeups/manuscript_55.png": {
+      "sha256": "76d6c238b2d7a967376dd982b23263df0dbfe7d674ece5f502fcf7b9d22cd494",
+      "reviewed_at": "2026-10-18T16:30:52.933699+00:00",
+      "notes": "Explicit enlarged-page visual inspection: formulas, axes, legends, table values and source lines complete and legible"
+    },
+    "reports/excellence/visual_review/closeups/manuscript_56.png": {
+      "sha256": "766f7de025dc9fe9b25b2ee4f055940e69ab67d1d61e09b4125910e09c0e318e",
+      "reviewed_at": "2026-10-18T16:30:52.933699+00:00",
+      "notes": "Explicit enlarged-page visual inspection: formulas, axes, legends, table values and source lines complete and legible"
+    },
+    "reports/excellence/visual_review/closeups/manuscript_57.png": {
+      "sha256": "ab2d9926b32922f7105f82d1a742faa708e462aa91fea69039fd10748f43f721",
+      "reviewed_at": "2026-10-18T16:30:52.933699+00:00",
+      "notes": "Explicit enlarged-page visual inspection: formulas, axes, legends, table values and source lines complete and legible"
+    },
+    "reports/excellence/visual_review/closeups/manuscript_58.png": {
+      "sha256": "a6ac6dbd0ab7d9268771d6de91db58fc27d3a77ebada06c07632cc26b69c6eec",
+      "reviewed_at": "2026-10-18T16:30:52.933699+00:00",
+      "notes": "Explicit enlarged-page visual inspection: formulas, axes, legends, table values and source lines complete and legible"
+    },
+    "reports/excellence/visual_review/closeups/manuscript_59.png": {
+      "sha256": "14e4e581fad14b68b3208fa216085f03d0334a44f44b6ff5783e8e3f75d51203",
+      "reviewed_at": "2026-10-18T16:30:52.933699+00:00",
+      "notes": "Explicit enlarged-page visual inspection: formulas, axes, legends, table values and source lines complete and legible"
+    },
+    "reports/excellence/visual_review/closeups/summary_1.png": {
+      "sha256": "7b376d1b4883890046214cb172b0eaac5ee81ddca2359ce8f17cdaed709ce839",
+      "reviewed_at": "2026-10-18T16:30:52.938485+00:00",
+      "notes": "Explicit enlarged-page visual inspection: formulas, axes, legends, table values and source lines complete and legible"
+    },
+    "reports/excellence/visual_review/closeups/summary_2.png": {
+      "sha256": "202dd9036fc3220ab353d93dd0a6d5f5262f746431a98cd89ff2bca8572189ca",
+      "reviewed_at": "2026-10-18T16:30:52.939463+00:00",
+      "notes": "Explicit enlarged-page visual inspection: formulas, axes, legends, table values and source lines complete and legible"
+    }
+  },
+  "source_only_page_starts": []
+}

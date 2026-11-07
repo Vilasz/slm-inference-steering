@@ -1,0 +1,17 @@
+{
+  "name": "smoke",
+  "output_dir": "runs/smoke",
+  "description": "Fast CPU-only smoke pipeline: benchmark registry sanity plus report artifact generation.",
+  "steps": [
+    {
+      "name": "benchmark_registry",
+      "type": "benchmark_smoke",
+      "benchmarks": ["humaneval_stress"],
+      "limit": 1
+    },
+    {
+      "name": "report",
+      "type": "report"
+    }
+  ]
+}

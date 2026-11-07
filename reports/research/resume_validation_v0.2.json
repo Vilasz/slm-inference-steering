@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "original_trajectories": 18,
+  "current_trajectories": 21,
+  "preserved_prefix_sha256": "7de3218e6cc911ef715a0c4c18f148c59f98a424753b61d1b8f2e1ad22036140",
+  "original_hash_source": "audit_candidate_bank.py output before the resumed session",
+  "validated_at": "2026-10-14T12:56:49.570936+00:00"
+}

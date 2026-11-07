@@ -1,0 +1,23 @@
+{
+  "recorded_at": "2026-10-17T14:16:37.307352+00:00",
+  "student_approved": true,
+  "advisor_review_completed": true,
+  "approval_source": "explicit_user_reply_to_review_question",
+  "student_statement": "Aprovo como estudante; orientador j\u00e1 revisou esta proposta",
+  "advisor_review_evidence": "Student explicitly reports advisor has reviewed this exact proposal; no advisor signature or independent attestation is asserted",
+  "approved_sample": {
+    "technical_tasks": 20,
+    "main_tasks": 120,
+    "attempts_per_task": 20
+  },
+  "approved_budget_reference_hours": {
+    "expected": 4.44,
+    "with_buffer": 6.66
+  },
+  "protocol_sha256": "191b5185d7e3d972a8011d709aa1d973c59a779b5f69bf25e1f65f88d162d22d",
+  "design_sha256": "577d757406972660d6022d6285ef180b903036659481c36a1f23ef4e6b458c9e",
+  "collector_sha256": "8ca9e6c5e2477761594e3a13567acce2fe6c7fc71e4a43b39224c252d8ee3061",
+  "capture_sha256": "f66d2f8e2afb7675b36326939863099ec30dcf95731d7481141bb74b53c68131",
+  "inference_config_sha256": "270c2715f46f0e5aee218962ffa688b367e033d15fe9d047d6c2950f3a3f4a6b",
+  "bundle_sha256": "1adfc6660ed8748c58dc47dbce7e34b2d086d62a076b990bab6934d155f8df83"
+}

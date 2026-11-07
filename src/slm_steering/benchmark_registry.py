@@ -3,7 +3,15 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from slm_steering.benchmarks.stress import load_humaneval_stress
-from slm_steering.datasets import DEFAULT_HUMANEVAL_DATASET, CodingProblem, load_humaneval
+from slm_steering.datasets import (
+    DEFAULT_HUMANEVAL_DATASET,
+    DEFAULT_HUMANEVAL_PLUS_DATASET,
+    DEFAULT_MBPP_DATASET,
+    CodingProblem,
+    load_humaneval,
+    load_humaneval_plus,
+    load_mbpp,
+)
 
 
 @dataclass(frozen=True)
@@ -30,11 +38,11 @@ BENCHMARKS: dict[str, BenchmarkSpec] = {
     "humaneval_plus": BenchmarkSpec(
         key="humaneval_plus",
         name="HumanEval+",
-        dataset_id="evalplus/humanevalplus",
+        dataset_id=DEFAULT_HUMANEVAL_PLUS_DATASET,
         split="test",
-        loader="not_implemented",
-        status="planned",
-        notes="EvalPlus adds stronger tests; adapter is planned because schemas differ.",
+        loader="humaneval_plus",
+        status="implemented",
+        notes="EvalPlus/HumanEval+ style adapter with schema fallbacks for stronger tests.",
     ),
     "humaneval_stress": BenchmarkSpec(
         key="humaneval_stress",
@@ -51,11 +59,11 @@ BENCHMARKS: dict[str, BenchmarkSpec] = {
     "mbpp": BenchmarkSpec(
         key="mbpp",
         name="MBPP",
-        dataset_id="google-research-datasets/mbpp",
+        dataset_id=DEFAULT_MBPP_DATASET,
         split="test",
-        loader="not_implemented",
-        status="planned",
-        notes="Requires translating MBPP prompts/tests into the CodingProblem schema.",
+        loader="mbpp",
+        status="implemented",
+        notes="MBPP/MBPP Sanitized style adapter that wraps assertion tests in check(candidate).",
     ),
     "ds1000": BenchmarkSpec(
         key="ds1000",
@@ -91,9 +99,13 @@ def load_benchmark(
     spec = get_benchmark(key)
     resolved_dataset_id = dataset_id or spec.dataset_id
     if spec.loader == "humaneval":
-        return load_humaneval(limit=limit, offset=offset, dataset_id=resolved_dataset_id)
+        return load_humaneval(limit=limit, offset=offset, dataset_id=resolved_dataset_id, split=spec.split)
+    if spec.loader == "humaneval_plus":
+        return load_humaneval_plus(limit=limit, offset=offset, dataset_id=resolved_dataset_id, split=spec.split)
     if spec.loader == "humaneval_stress":
         return load_humaneval_stress(limit=limit, offset=offset)
+    if spec.loader == "mbpp":
+        return load_mbpp(limit=limit, offset=offset, dataset_id=resolved_dataset_id, split=spec.split)
     raise NotImplementedError(
         f"Benchmark '{key}' esta registrado, mas ainda nao tem loader implementado. "
         "Adicione um adaptador que retorne uma lista de CodingProblem."

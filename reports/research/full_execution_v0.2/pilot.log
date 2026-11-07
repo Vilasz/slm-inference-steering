@@ -1,0 +1,18 @@
+
+2026-10-14T15:45:02.318189+00:00 ["C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe", "-u", "C:\\Users\\joaof\\slm-inference-steering\\scripts\\build_candidate_bank.py", "--phase", "pilot", "--output-dir", "C:\\Users\\joaof\\slm-inference-steering\\runs\\candidate_bank\\pilot_v0.2", "--config", "C:\\Users\\joaof\\slm-inference-steering\\configs\\protocol_v0.2.yaml", "--wsl-python", "/home/joaof/.venvs/slm-evalplus-v031/bin/python", "--time-budget-seconds", "1000000"]
+{
+  "status": "completed",
+  "completed_attempts": 960,
+  "expected_attempts": 960,
+  "selected_temperature": 1.0,
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "memory_total_mib": 6143.5,
+    "peak_allocated_mib": 4129.169921875,
+    "peak_reserved_mib": 4996.0,
+    "cuda": "12.6",
+    "driver_version": "576.52",
+    "weight_storage_dtype": "bfloat16",
+    "linear_compute_dtype": "float32"
+  }
+}

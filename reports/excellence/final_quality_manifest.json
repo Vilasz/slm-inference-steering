@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-10-18T16:30:55.556886+00:00",
+  "status": "technical_work_complete_external_review_explicit",
+  "inputs_and_report": {
+    "reports/excellence/final_verification.json": "c4d9fc5a66d2bdd4ebdb903185686338c729b3a0a7ef80ff0e896ec1a77ebc9a",
+    "reports/final_review/delivery_manifest.json": "a231b634173d6ebaa65ac58db6ca22c9ce76a12b3739b5cdc9929cae70eb978a",
+    "reports/excellence/independent_v1/analysis.json": "f33f2977377a5b5b581570a97a012950da37e941e2e79513959e84aead83d84b",
+    "reports/excellence/final_scientific_audit.md": "8c602d01dd5347bf27310cf9009dc7f2599d355b01ab36f71db17917b1fb9af6",
+    "reports/excellence/visual_review/manifest.json": "78f031d454839abe74eef1fc55f4e3e050ea9af33748094d27df982386cab9ae",
+    "reports/excellence/final_quality_report.md": "17536f6ac9d23fafa4dac8aaf644aa7ede09ce602a0e236723dca10545f665da",
+    "scripts/finalize_quality_report.py": "f21c4d81dfef6e9bbf637c6d94b0adba6c54be6a02094aab21ee30e8371e6ee2"
+  }
+}

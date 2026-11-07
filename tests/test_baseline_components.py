@@ -13,7 +13,7 @@ from slm_steering.analysis import (
     matrix_frame,
     tasks_frame,
 )
-from slm_steering.datasets import DEFAULT_HUMANEVAL_DATASET, CodingProblem, load_humaneval
+from slm_steering.datasets import DEFAULT_HUMANEVAL_DATASET, CodingProblem, load_humaneval, load_humaneval_plus, load_mbpp
 from slm_steering.experiment_registry import decoding_specs, model_specs, preset_keys, run_label
 from slm_steering.metrics import estimate_pass_at_k, summarize
 from slm_steering.reporting import write_run_artifacts
@@ -45,6 +45,63 @@ class VerifierTests(unittest.TestCase):
         result = check_correctness(problem, "    return x", timeout_seconds=2)
 
         self.assertFalse(result.passed)
+        self.assertEqual(result.error_type, "wrong_answer")
+        self.assertEqual(result.failure_stage, "test")
+
+    def test_verifier_classifies_syntax_error(self) -> None:
+        problem = CodingProblem(
+            task_id="sample/syntax",
+            prompt="def f():\n",
+            test="def check(candidate):\n    assert candidate() == 1",
+            entry_point="f",
+        )
+
+        result = check_correctness(problem, "    return (", timeout_seconds=2)
+
+        self.assertFalse(result.passed)
+        self.assertEqual(result.error_type, "syntax_error")
+        self.assertEqual(result.failure_stage, "compile")
+
+    def test_verifier_classifies_runtime_error(self) -> None:
+        problem = CodingProblem(
+            task_id="sample/runtime",
+            prompt="def f():\n",
+            test="def check(candidate):\n    candidate()",
+            entry_point="f",
+        )
+
+        result = check_correctness(problem, "    raise ValueError('boom')", timeout_seconds=2)
+
+        self.assertFalse(result.passed)
+        self.assertEqual(result.error_type, "runtime_error")
+        self.assertEqual(result.failure_stage, "execution")
+
+    def test_verifier_classifies_timeout(self) -> None:
+        problem = CodingProblem(
+            task_id="sample/timeout",
+            prompt="def f():\n",
+            test="def check(candidate):\n    candidate()",
+            entry_point="f",
+        )
+
+        result = check_correctness(problem, "    while True:\n        pass", timeout_seconds=0.5)
+
+        self.assertFalse(result.passed)
+        self.assertEqual(result.error_type, "timeout")
+
+    def test_verifier_rejects_unsafe_code(self) -> None:
+        problem = CodingProblem(
+            task_id="sample/unsafe",
+            prompt="def f():\n",
+            test="def check(candidate):\n    candidate()",
+            entry_point="f",
+        )
+
+        result = check_correctness(problem, "    import os\n    os.system('echo nope')", timeout_seconds=2)
+
+        self.assertFalse(result.passed)
+        self.assertEqual(result.error_type, "unsafe_code")
+        self.assertEqual(result.failure_stage, "preflight")
 
     def test_normalize_markdown_code_fence(self) -> None:
         completion = "Claro:\n```python\n    return x + 1\n```\n"
@@ -94,6 +151,38 @@ class DatasetTests(unittest.TestCase):
 
         load_dataset.assert_called_once_with(DEFAULT_HUMANEVAL_DATASET, split="test")
         self.assertEqual(problems[0].task_id, "HumanEval/0")
+        self.assertEqual(problems[0].benchmark, "humaneval")
+
+    def test_humaneval_plus_loader_accepts_humaneval_style_rows(self) -> None:
+        row = {
+            "task_id": "HumanEvalPlus/0",
+            "prompt": "def f():\n",
+            "test": "def check(candidate):\n    assert candidate() == 1",
+            "entry_point": "f",
+        }
+
+        with patch("datasets.load_dataset", return_value=[row]):
+            problems = load_humaneval_plus(limit=1)
+
+        self.assertEqual(problems[0].task_id, "HumanEvalPlus/0")
+        self.assertEqual(problems[0].benchmark, "humaneval_plus")
+        self.assertIn("def check", problems[0].test)
+
+    def test_mbpp_loader_wraps_assertions(self) -> None:
+        row = {
+            "task_id": 11,
+            "text": "Write a function to add one.",
+            "test_list": ["assert add_one(1) == 2"],
+        }
+
+        with patch("datasets.load_dataset", return_value=[row]):
+            problems = load_mbpp(limit=1)
+
+        problem = problems[0]
+        self.assertEqual(problem.task_id, "11")
+        self.assertEqual(problem.entry_point, "add_one")
+        self.assertEqual(problem.benchmark, "mbpp")
+        self.assertIn("add_one = candidate", problem.test)
 
 
 class RunProblemTests(unittest.TestCase):

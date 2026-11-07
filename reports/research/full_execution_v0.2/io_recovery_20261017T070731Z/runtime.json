@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-10-17T07:07:31.369363+00:00",
+  "supervisor_pid": 26220,
+  "command": [
+    "C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe",
+    "-u",
+    "C:\\Users\\joaof\\slm-inference-steering\\scripts\\run_complete_research.py",
+    "--wsl-python",
+    "/home/joaof/.venvs/slm-evalplus-v031/bin/python"
+  ],
+  "runtime_support": {
+    "scripts/run_research_safely.py": "1c77ab7519d13114be0c8f8cc10f4c4aeb3f1fee740fe66485dfd4fe49fb03cc",
+    "scripts/research_runtime/sitecustomize.py": "4b7077390eada5571c4964c5661befaf16e465afe67147d94fc30eeb14ded42c",
+    "scripts/research_runtime/slm_windows_atomic_io.py": "ee5278a54c5bb7c79d4d274f04297f873cc7e6e92ce5df5d0cc8d644c371ea77"
+  },
+  "scope": "Bounded retries for Windows errors 5/32/33 replacing repository .json.tmp files; no changes to JSON content, numerical computation, seeds, labels or design",
+  "frozen_execution_manifest_sha256": "4340a00cdc3cc5dd9676276ef70a3a8f7d3cae331d00a4c030340809c4e2497a"
+}

@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-10-18T16:13:17.947869+00:00",
+  "as_of": "2026-10-18",
+  "evidence_status": "fixed_design_main_analysis",
+  "notebook_code_cells_executed": 21,
+  "notebook_errors": 0,
+  "pdf_pages": 67,
+  "checks": "All publication input hashes match; notebook cells executed; PDF compiled",
+  "supplemental": {
+    "available": true,
+    "status": "post_hoc_exploratory_frozen_predictions",
+    "primary_contrasts_reproduced": true,
+    "original_decisions_preserved": true,
+    "artifacts_verified": 20
+  },
+  "excellence": {
+    "available": true,
+    "historical_science_preserved": true,
+    "model_units": 70,
+    "research_summary_pages": 2,
+    "defense_slides": 12,
+    "questions": 44,
+    "independent_collection_started": true,
+    "independent_main_attempts": 2400,
+    "independent_primary": {
+      "estimate": -0.16359060402684564,
+      "ci95": [
+        -0.2402298061170319,
+        -0.0942741120201171
+      ],
+      "tasks": 120,
+      "replications": 10000,
+      "seed": 20261017,
+      "undefined_draws": 0,
+      "identified": true,
+      "directional_hypothesis_supported": true
+    }
+  },
+  "tests": [
+    {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "171",
+      "time": "38.513",
+      "timestamp": "2026-10-18T13:10:25.493470-03:00",
+      "hostname": "Legion_do_Vilas"
+    }
+  ],
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "scikit-learn": "1.5.2",
+    "matplotlib": "3.9.2",
+    "torch": "2.12.0+cu126",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "nbconvert": "7.17.2",
+    "ipykernel": "7.4.0",
+    "typst": "0.15.0",
+    "PyMuPDF": "1.28.2",
+    "requests": "2.34.2"
+  },
+  "artifacts": {
+    "notebooks/final_research_summary.ipynb": "d929e9c975bda82a76fe6e87b87e26b515ca1f8fe094e56a36d1f82d1e209e8c",
+    "reports/final_review/notebook.html": "aa67981b8ccbf798772c328870b72fd1e46b1d16add89fdf7868da69848984cd",
+    "reports/final_review/evidence.json": "081516bfd3f2bc66ad35587113ce8024ebd823f70cc4c307ffd7497c833106ea",
+    "tcc/build/manuscrito.pdf": "02eef24e527b8d28d5ebbba2c4440c6a54899084c0e17401d57415c3bf59fe8d",
+    "tcc/referencias.bib": "35f911777dd9d4855ca13bc2788959709015bd8189b012115162bd3146877da9",
+    "RESULTS.md": "69aed249b13228666384420a92e533c3974f324e653690d1ed35c39d519e542a",
+    "tcc/main.typ": "05ce77a3d217226ae9c9ec0b497c0083f5ff2151318253f250d8f2515664646f",
+    "tcc/lib.typ": "f9d03193a14834be3c3542848ffd762f4083cfdbeac8999731f33baddce4c7ae",
+    "tcc/chapters/01_introducao.typ": "fc6b7ad81550efbb0e7fff533ab177fa698c496d02910845adce02672921ae28",
+    "tcc/chapters/02_relacionados.typ": "227650f8590d0b918adb2db21a98dedb4c9761ba6de4be26bba64bd814053725",
+    "tcc/chapters/03_fundamentacao.typ": "40d86d8dcdce55fa74a72a0a072ec70eba0aa4a2a32b8069a87899bb5eab9c09",
+    "tcc/chapters/04_metodologia.typ": "02d8d2c8f902069e92638f854efb148a79177de3cd33b8d1c2ba6c20ab42c134",
+    "tcc/chapters/06_discussao.typ": "30ce9452e1e0f89876adb6adda8ddd1e2ac260b7d466a3424bbe73acc6565bb4",
+    "tcc/chapters/08_reprodutibilidade.typ": "e6be34368fba8b1780dcab56838cb69f32744b8a58d72aa04b1a2b4e3cddbbaf",
+    "tcc/generated/conclusao.typ": "51918af2a7ec7e6c54ae213ab16a670e1ec7d2adf2e570378d55ae5f0e6e873b",
+    "tcc/generated/discussion_findings.typ": "ee082675a47057bc69cc0c5e22f2d33fe45d6804a19a5d67013d91e2b35030df",
+    "tcc/generated/excellence.typ": "73f86f27251e661ea22ecc1f810ba5e2a5c785b012d4d6fb2fe70fcd81dc48c7",
+    "tcc/generated/resultados.typ": "4a7ee21e85d749a15c6b060f9847fa5275658b28c142b254ad22b9d92f2c3534",
+    "tcc/generated/resumo.typ": "a3c9befb1bf372029772e5bb2f4f3e579cf5b1d40490f166b6a2d4c2409ea49d",
+    "reports/excellence/materials/research_summary_en.pdf": "4c9d2861dfc469801698ae2ed1c04497380d737acc93fb221902a6d41e38d1fc",
+    "reports/excellence/materials/defesa.pdf": "11354c8df7f649eedea027b395896e729f7304ef5d61d59cc901288f23c155d7",
+    "docs/excellence_defense.md": "a4ee344e6b6eafec314e63af4cd6bd51ee8195c2c113eafdcf079ab32d0ec8da"
+  }
+}

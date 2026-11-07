@@ -1,0 +1,55 @@
+{
+  "verified_at": "2026-10-16T03:20:36.824359+00:00",
+  "passed": true,
+  "frozen_sources_validated": true,
+  "all_15_scientific_stage_records_unchanged": true,
+  "all_19_stages_verified": true,
+  "protected_inputs": {
+    "runs/candidate_bank/pilot_v0.2/trajectories.jsonl": {
+      "before": "9b241a61af270d7820e8dbfeeb8611f53071ac7755340ee2a0c0e5d455f11009",
+      "after": "9b241a61af270d7820e8dbfeeb8611f53071ac7755340ee2a0c0e5d455f11009"
+    },
+    "runs/candidate_bank/definitive_v0.2/trajectories.jsonl": {
+      "before": "8e55c7f8905254029d6ef3e92a17a77f01727f7ba206c5e73098613b26b856fb",
+      "after": "8e55c7f8905254029d6ef3e92a17a77f01727f7ba206c5e73098613b26b856fb"
+    },
+    "runs/candidate_bank/transfer_v0.2/trajectories.jsonl": {
+      "before": "625b24e8abec429892fc7bbe2b9624aafb5b5d8a0f227893ff5bf96c5892a576",
+      "after": "625b24e8abec429892fc7bbe2b9624aafb5b5d8a0f227893ff5bf96c5892a576"
+    },
+    "runs/probes/protocol_v0.2/outer_predictions.csv": {
+      "before": "96f941052ef85e6778c3a993596ab841573262169ba7d9adee12f803a26f6a8d",
+      "after": "96f941052ef85e6778c3a993596ab841573262169ba7d9adee12f803a26f6a8d"
+    },
+    "runs/probes/protocol_v0.2/selection_audit.json": {
+      "before": "60fa7a0aede1abf3df1772482810835c95a3e39c158da3fe93ed0c33e54ae070",
+      "after": "60fa7a0aede1abf3df1772482810835c95a3e39c158da3fe93ed0c33e54ae070"
+    },
+    "runs/transfer/protocol_v0.2/models.joblib": {
+      "before": "1adfc6660ed8748c58dc47dbce7e34b2d086d62a076b990bab6934d155f8df83",
+      "after": "1adfc6660ed8748c58dc47dbce7e34b2d086d62a076b990bab6934d155f8df83"
+    },
+    "runs/transfer/protocol_v0.2/models.json": {
+      "before": "c336453eb4bd1d5e09d9db30b8b65a6d43aa3135658f9449f43ee427133680e8",
+      "after": "c336453eb4bd1d5e09d9db30b8b65a6d43aa3135658f9449f43ee427133680e8"
+    },
+    "reports/protocol_v0.2/results.json": {
+      "before": "0cc3d457fe59a656418dae2df02e69a38ce424703ee78e036b1a31d9561d2949",
+      "after": "0cc3d457fe59a656418dae2df02e69a38ce424703ee78e036b1a31d9561d2949"
+    },
+    "reports/transfer_v0.2/results.json": {
+      "before": "841bec2240af6d56f120ed72ad7ae9d34561c6694e5d6937f911b1f31c860910",
+      "after": "841bec2240af6d56f120ed72ad7ae9d34561c6694e5d6937f911b1f31c860910"
+    },
+    "reports/transfer_v0.2/predictions.csv": {
+      "before": "58fb6b419c6bd4a80d23e75044597341d069b9fcd534e4c23eb247cad78f06c1",
+      "after": "58fb6b419c6bd4a80d23e75044597341d069b9fcd534e4c23eb247cad78f06c1"
+    },
+    "reports/research/execution_freeze_v0.2/manifest.json": {
+      "before": "4340a00cdc3cc5dd9676276ef70a3a8f7d3cae331d00a4c030340809c4e2497a",
+      "after": "4340a00cdc3cc5dd9676276ef70a3a8f7d3cae331d00a4c030340809c4e2497a"
+    }
+  },
+  "publication_manifest_sha256": "e962eb6bb1e075dff2f1f642dbdd192938077b790de589649afcd036b15e0516",
+  "scope": "Only publication stages rerun; explicitly exploratory post-hoc diagnostics; original scientific banks, scores, models, selection and results preserved"
+}

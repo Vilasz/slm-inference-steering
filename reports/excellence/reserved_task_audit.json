@@ -1,0 +1,68 @@
+{
+  "created_at": "2026-10-17T16:31:01.051877+00:00",
+  "status": "completed_label_blind_post_start_diagnostic",
+  "timing": "Performed after collection began under the already approved reservation; no exclusions or changes to the endpoint",
+  "collection_phase_at_audit": "main",
+  "dataset": {
+    "version": "v0.2.0",
+    "evalplus": "0.3.1",
+    "official_md5": "ee43ecabebf20deef4bb776a405ac5b1",
+    "dataset_sha256": "0c19f3417188883596e73f035a364958d4c92210efb8304990f72199f6526541"
+  },
+  "technical_tasks": 20,
+  "main_tasks": 120,
+  "id_sets_disjoint": true,
+  "contents_versioned_by_sha256": true,
+  "similar_pairs_ge_070": [
+    {
+      "task_id": "Mbpp/120",
+      "group": "main",
+      "neighbor": "Mbpp/409",
+      "neighbor_group": "main",
+      "character_tfidf_cosine": 0.737946277985875,
+      "exact_prompt": false,
+      "same_normalized_canonical_structure": false
+    },
+    {
+      "task_id": "Mbpp/294",
+      "group": "main",
+      "neighbor": "Mbpp/410",
+      "neighbor_group": "main",
+      "character_tfidf_cosine": 0.797751426062695,
+      "exact_prompt": false,
+      "same_normalized_canonical_structure": false
+    },
+    {
+      "task_id": "Mbpp/409",
+      "group": "main",
+      "neighbor": "Mbpp/120",
+      "neighbor_group": "main",
+      "character_tfidf_cosine": 0.737946277985875,
+      "exact_prompt": false,
+      "same_normalized_canonical_structure": false
+    },
+    {
+      "task_id": "Mbpp/410",
+      "group": "main",
+      "neighbor": "Mbpp/294",
+      "neighbor_group": "main",
+      "character_tfidf_cosine": 0.797751426062695,
+      "exact_prompt": false,
+      "same_normalized_canonical_structure": false
+    }
+  ],
+  "prompt_or_structure_duplicates": [],
+  "method": "Character-within-word TF-IDF 3–5 grams over public prompts; normalized canonical AST is a syntax heuristic, not semantic equivalence",
+  "limitations": [
+    "Cannot certify absence of pretraining exposure or all semantic overlap",
+    "Shared templates and simple algorithms can inflate resemblance",
+    "No task was removed; the predeclared task-bootstrap result remains the primary analysis"
+  ],
+  "inputs": {
+    "reports/excellence/proposal_design.json": "577d757406972660d6022d6285ef180b903036659481c36a1f23ef4e6b458c9e",
+    "reports/excellence/target_exposure_audit.json": "d9001bb24bf37d5d1bed812ea5c39659b3ce975a75ef0386b8938d384551ba0c",
+    "reports/excellence/reserved_task_contents.json": "e0a8f26880af9adb6cb8f030ad290b9dfaac9a8a30f7e3a458946217a7bf0cfd",
+    "scripts/audit_reserved_tasks.py": "7cf556cfa59537eb6e31edb01c1f6b186b4eff43a18d75e6eccc692ea79e3ec2",
+    "scripts/audit_reserved_tasks_worker.py": "83174cd50a4fed5cc8f855ec1ef1a8e0a513f8b8de2101ddbfe553460398a497"
+  }
+}

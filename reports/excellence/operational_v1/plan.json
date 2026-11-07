@@ -1,0 +1,133 @@
+{
+  "created_at": "2026-10-18T15:35:11.180031+00:00",
+  "source_sha256": "a77112f578b6caf34b9142b972632d000cdce8a315bb2d03b98c553e7bb59be6",
+  "task_ids": [
+    "HumanEval/140",
+    "HumanEval/45",
+    "HumanEval/12",
+    "HumanEval/139",
+    "HumanEval/96",
+    "HumanEval/129"
+  ],
+  "selection": "Two SHA256-selected tasks in each of three pilot median-length strata, no correctness filtering",
+  "modes": [
+    "verifier_plain",
+    "verifier_selective",
+    "B",
+    "HB"
+  ],
+  "repetitions": 3,
+  "maximum_attempts": 3,
+  "checkpoint": 8,
+  "policies": {
+    "B": {
+      "checkpoint": 8,
+      "threshold": 0.3166734153299228
+    },
+    "HB": {
+      "checkpoint": 8,
+      "threshold": 0.26953905544150975
+    }
+  },
+  "maximum_measured_seconds": 1800,
+  "identities": [
+    {
+      "task_id": "HumanEval/140",
+      "attempt_id": 20,
+      "seed": 8625370026974394592
+    },
+    {
+      "task_id": "HumanEval/140",
+      "attempt_id": 21,
+      "seed": 2246035901296559661
+    },
+    {
+      "task_id": "HumanEval/140",
+      "attempt_id": 22,
+      "seed": 4817416593934857325
+    },
+    {
+      "task_id": "HumanEval/45",
+      "attempt_id": 20,
+      "seed": 1950236774824002176
+    },
+    {
+      "task_id": "HumanEval/45",
+      "attempt_id": 21,
+      "seed": 1758347614785309646
+    },
+    {
+      "task_id": "HumanEval/45",
+      "attempt_id": 22,
+      "seed": 2918731666147916129
+    },
+    {
+      "task_id": "HumanEval/12",
+      "attempt_id": 20,
+      "seed": 4868332527960783042
+    },
+    {
+      "task_id": "HumanEval/12",
+      "attempt_id": 21,
+      "seed": 973894090610625654
+    },
+    {
+      "task_id": "HumanEval/12",
+      "attempt_id": 22,
+      "seed": 350127497877486108
+    },
+    {
+      "task_id": "HumanEval/139",
+      "attempt_id": 20,
+      "seed": 5361059550420025700
+    },
+    {
+      "task_id": "HumanEval/139",
+      "attempt_id": 21,
+      "seed": 7435192790667459736
+    },
+    {
+      "task_id": "HumanEval/139",
+      "attempt_id": 22,
+      "seed": 3761122544492908996
+    },
+    {
+      "task_id": "HumanEval/96",
+      "attempt_id": 20,
+      "seed": 6627620868162073093
+    },
+    {
+      "task_id": "HumanEval/96",
+      "attempt_id": 21,
+      "seed": 2004420455361400461
+    },
+    {
+      "task_id": "HumanEval/96",
+      "attempt_id": 22,
+      "seed": 601099500081546450
+    },
+    {
+      "task_id": "HumanEval/129",
+      "attempt_id": 20,
+      "seed": 6535137170492384538
+    },
+    {
+      "task_id": "HumanEval/129",
+      "attempt_id": 21,
+      "seed": 5929715899218338246
+    },
+    {
+      "task_id": "HumanEval/129",
+      "attempt_id": 22,
+      "seed": 3157149582002328755
+    }
+  ],
+  "inputs": {
+    "runs/candidate_bank/pilot_v0.2/trajectories.jsonl": "9b241a61af270d7820e8dbfeeb8611f53071ac7755340ee2a0c0e5d455f11009",
+    "runs/transfer/protocol_v0.2/models.joblib": "1adfc6660ed8748c58dc47dbce7e34b2d086d62a076b990bab6934d155f8df83",
+    "configs/protocol_v0.2.yaml": "270c2715f46f0e5aee218962ffa688b367e033d15fe9d047d6c2950f3a3f4a6b",
+    "src/slm_steering/verifier.py": "db029cefe4145e0c60e28a824a05775642f7f37233cf620faae9663b147323a9",
+    "src/slm_steering/research/generation.py": "99e17401a0d0448f050859324f85d6dac9f78001e2eec8970979adf2204148c4"
+  },
+  "interpretation": "Descriptive known-task end-to-end measurements, N=3; no new primary hypothesis or robust acceleration claim"
+}

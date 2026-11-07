@@ -1,0 +1,3628 @@
+{
+  "status": "completed",
+  "primary": {
+    "estimate": -0.004154543386254437,
+    "ci95": [
+      -0.06482843904920742,
+      0.05481918495922528
+    ],
+    "tasks": 58,
+    "replications": 10000,
+    "seed": 20261104,
+    "unit": "task_id",
+    "per_task": {
+      "Mbpp/102": 0.1388888888888889,
+      "Mbpp/105": 0.3214285714285714,
+      "Mbpp/109": -0.4444444444444444,
+      "Mbpp/12": 0.7777777777777778,
+      "Mbpp/128": 0.02777777777777779,
+      "Mbpp/133": -0.16483516483516475,
+      "Mbpp/160": -0.5277777777777778,
+      "Mbpp/162": -0.2300000000000001,
+      "Mbpp/167": -0.11111111111111105,
+      "Mbpp/171": -0.1333333333333333,
+      "Mbpp/226": -0.03125,
+      "Mbpp/242": 0.20833333333333337,
+      "Mbpp/261": -0.3157894736842105,
+      "Mbpp/262": 0.26315789473684215,
+      "Mbpp/272": -0.28787878787878785,
+      "Mbpp/280": 0.03125,
+      "Mbpp/281": 0.125,
+      "Mbpp/394": 0.11111111111111105,
+      "Mbpp/406": -0.4117647058823529,
+      "Mbpp/429": -0.06593406593406603,
+      "Mbpp/433": -0.05263157894736836,
+      "Mbpp/454": -0.09333333333333327,
+      "Mbpp/455": 0.0505050505050505,
+      "Mbpp/475": -0.03125,
+      "Mbpp/478": 0.3500000000000001,
+      "Mbpp/555": -0.09890109890109888,
+      "Mbpp/558": 0.09375000000000006,
+      "Mbpp/560": 0.1648351648351648,
+      "Mbpp/563": -0.06666666666666671,
+      "Mbpp/567": -0.03571428571428559,
+      "Mbpp/57": 0.026666666666666727,
+      "Mbpp/583": 0.21428571428571436,
+      "Mbpp/585": 0.3684210526315789,
+      "Mbpp/587": -0.6,
+      "Mbpp/599": -0.07291666666666669,
+      "Mbpp/604": -0.16666666666666663,
+      "Mbpp/607": -0.16666666666666669,
+      "Mbpp/608": -0.09375,
+      "Mbpp/619": 0.08333333333333326,
+      "Mbpp/623": 0.0888888888888889,
+      "Mbpp/629": 0.17307692307692296,
+      "Mbpp/631": -0.23076923076923073,
+      "Mbpp/726": -0.26315789473684204,
+      "Mbpp/730": 0.1372549019607843,
+      "Mbpp/732": 0.2549019607843138,
+      "Mbpp/742": -0.26315789473684215,
+      "Mbpp/75": 0.027777777777777735,
+      "Mbpp/751": -0.05555555555555547,
+      "Mbpp/755": 0.0,
+      "Mbpp/762": 0.15625000000000006,
+      "Mbpp/766": 0.03125,
+      "Mbpp/777": 0.2533333333333334,
+      "Mbpp/794": 0.015625,
+      "Mbpp/800": 0.0,
+      "Mbpp/803": -0.0980392156862746,
+      "Mbpp/809": 0.08333333333333315,
+      "Mbpp/82": 5.551115123125783e-17,
+      "Mbpp/85": 0.2941176470588235
+    },
+    "interpretation": "inconclusive",
+    "scope": "Task bootstrap conditional on frozen fitted source probes and observed mixed risk set",
+    "delta_log_loss": {
+      "estimate": -0.007544065812517729,
+      "ci95": [
+        -0.013827600335612391,
+        -0.0013617736161793239
+      ],
+      "tasks": 100,
+      "replications": 10000,
+      "seed": 20261104,
+      "unit": "task_id"
+    },
+    "delta_brier": {
+      "estimate": -0.0036159996746261257,
+      "ci95": [
+        -0.006610036114232199,
+        -0.0006719345345249213
+      ],
+      "tasks": 100,
+      "replications": 10000,
+      "seed": 20261104,
+      "unit": "task_id"
+    }
+  },
+  "contrasts": {
+    "deepseek": {
+      "linear": {
+        "estimate": -0.0038226483217208727,
+        "ci95": [
+          -0.06680441186121033,
+          0.05540406531355639
+        ],
+        "tasks": 58,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id",
+        "per_task": {
+          "Mbpp/102": 0.1111111111111111,
+          "Mbpp/105": 0.17857142857142855,
+          "Mbpp/109": -0.4444444444444444,
+          "Mbpp/12": 0.8333333333333334,
+          "Mbpp/128": 0.19444444444444442,
+          "Mbpp/133": -0.20879120879120872,
+          "Mbpp/160": -0.5,
+          "Mbpp/162": -0.27000000000000013,
+          "Mbpp/167": -0.08333333333333331,
+          "Mbpp/171": -0.10000000000000009,
+          "Mbpp/226": -0.03125,
+          "Mbpp/242": 0.20833333333333337,
+          "Mbpp/261": -0.05263157894736842,
+          "Mbpp/262": 0.42105263157894735,
+          "Mbpp/272": -0.3787878787878787,
+          "Mbpp/280": 0.0,
+          "Mbpp/281": 0.04166666666666666,
+          "Mbpp/394": 0.11111111111111105,
+          "Mbpp/406": -0.4117647058823529,
+          "Mbpp/429": -0.043956043956043966,
+          "Mbpp/433": -0.05263157894736836,
+          "Mbpp/454": -0.12,
+          "Mbpp/455": 0.12121212121212122,
+          "Mbpp/475": -0.125,
+          "Mbpp/478": 0.33999999999999997,
+          "Mbpp/555": -0.09890109890109888,
+          "Mbpp/558": 0.16666666666666674,
+          "Mbpp/560": 0.13186813186813184,
+          "Mbpp/563": -0.016666666666666663,
+          "Mbpp/567": -0.035714285714285754,
+          "Mbpp/57": 0.013333333333333308,
+          "Mbpp/583": 0.1785714285714286,
+          "Mbpp/585": 0.05263157894736842,
+          "Mbpp/587": -0.2666666666666667,
+          "Mbpp/599": -0.13541666666666669,
+          "Mbpp/604": -0.23333333333333317,
+          "Mbpp/607": -0.22619047619047616,
+          "Mbpp/608": -0.109375,
+          "Mbpp/619": 0.08333333333333326,
+          "Mbpp/623": 0.0444444444444444,
+          "Mbpp/629": 0.05769230769230771,
+          "Mbpp/631": -0.21794871794871795,
+          "Mbpp/726": -0.7894736842105263,
+          "Mbpp/730": 0.0392156862745098,
+          "Mbpp/732": 0.21568627450980393,
+          "Mbpp/742": 0.10526315789473673,
+          "Mbpp/75": 0.027777777777777735,
+          "Mbpp/751": 0.022222222222222143,
+          "Mbpp/755": 0.15686274509803916,
+          "Mbpp/762": 0.15625,
+          "Mbpp/766": -0.015625,
+          "Mbpp/777": 0.27999999999999997,
+          "Mbpp/794": 0.015625,
+          "Mbpp/800": 0.0,
+          "Mbpp/803": -0.019607843137254943,
+          "Mbpp/809": 0.2222222222222222,
+          "Mbpp/82": -0.03921568627450983,
+          "Mbpp/85": 0.27450980392156865
+        },
+        "interpretation": "inconclusive",
+        "scope": "Task bootstrap conditional on frozen fitted source probes and observed mixed risk set",
+        "delta_log_loss": {
+          "estimate": -0.004719154427338433,
+          "ci95": [
+            -0.008001197413581707,
+            -0.001555765263734094
+          ],
+          "tasks": 100,
+          "replications": 10000,
+          "seed": 20261104,
+          "unit": "task_id"
+        },
+        "delta_brier": {
+          "estimate": -0.0022696463814515845,
+          "ci95": [
+            -0.003845225140926348,
+            -0.0007547399947315606
+          ],
+          "tasks": 100,
+          "replications": 10000,
+          "seed": 20261104,
+          "unit": "task_id"
+        }
+      },
+      "MLP": {
+        "estimate": -0.004154543386254437,
+        "ci95": [
+          -0.06482843904920742,
+          0.05481918495922528
+        ],
+        "tasks": 58,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id",
+        "per_task": {
+          "Mbpp/102": 0.1388888888888889,
+          "Mbpp/105": 0.3214285714285714,
+          "Mbpp/109": -0.4444444444444444,
+          "Mbpp/12": 0.7777777777777778,
+          "Mbpp/128": 0.02777777777777779,
+          "Mbpp/133": -0.16483516483516475,
+          "Mbpp/160": -0.5277777777777778,
+          "Mbpp/162": -0.2300000000000001,
+          "Mbpp/167": -0.11111111111111105,
+          "Mbpp/171": -0.1333333333333333,
+          "Mbpp/226": -0.03125,
+          "Mbpp/242": 0.20833333333333337,
+          "Mbpp/261": -0.3157894736842105,
+          "Mbpp/262": 0.26315789473684215,
+          "Mbpp/272": -0.28787878787878785,
+          "Mbpp/280": 0.03125,
+          "Mbpp/281": 0.125,
+          "Mbpp/394": 0.11111111111111105,
+          "Mbpp/406": -0.4117647058823529,
+          "Mbpp/429": -0.06593406593406603,
+          "Mbpp/433": -0.05263157894736836,
+          "Mbpp/454": -0.09333333333333327,
+          "Mbpp/455": 0.0505050505050505,
+          "Mbpp/475": -0.03125,
+          "Mbpp/478": 0.3500000000000001,
+          "Mbpp/555": -0.09890109890109888,
+          "Mbpp/558": 0.09375000000000006,
+          "Mbpp/560": 0.1648351648351648,
+          "Mbpp/563": -0.06666666666666671,
+          "Mbpp/567": -0.03571428571428559,
+          "Mbpp/57": 0.026666666666666727,
+          "Mbpp/583": 0.21428571428571436,
+          "Mbpp/585": 0.3684210526315789,
+          "Mbpp/587": -0.6,
+          "Mbpp/599": -0.07291666666666669,
+          "Mbpp/604": -0.16666666666666663,
+          "Mbpp/607": -0.16666666666666669,
+          "Mbpp/608": -0.09375,
+          "Mbpp/619": 0.08333333333333326,
+          "Mbpp/623": 0.0888888888888889,
+          "Mbpp/629": 0.17307692307692296,
+          "Mbpp/631": -0.23076923076923073,
+          "Mbpp/726": -0.26315789473684204,
+          "Mbpp/730": 0.1372549019607843,
+          "Mbpp/732": 0.2549019607843138,
+          "Mbpp/742": -0.26315789473684215,
+          "Mbpp/75": 0.027777777777777735,
+          "Mbpp/751": -0.05555555555555547,
+          "Mbpp/755": 0.0,
+          "Mbpp/762": 0.15625000000000006,
+          "Mbpp/766": 0.03125,
+          "Mbpp/777": 0.2533333333333334,
+          "Mbpp/794": 0.015625,
+          "Mbpp/800": 0.0,
+          "Mbpp/803": -0.0980392156862746,
+          "Mbpp/809": 0.08333333333333315,
+          "Mbpp/82": 5.551115123125783e-17,
+          "Mbpp/85": 0.2941176470588235
+        },
+        "interpretation": "inconclusive",
+        "scope": "Task bootstrap conditional on frozen fitted source probes and observed mixed risk set",
+        "delta_log_loss": {
+          "estimate": -0.007544065812517729,
+          "ci95": [
+            -0.013827600335612391,
+            -0.0013617736161793239
+          ],
+          "tasks": 100,
+          "replications": 10000,
+          "seed": 20261104,
+          "unit": "task_id"
+        },
+        "delta_brier": {
+          "estimate": -0.0036159996746261257,
+          "ci95": [
+            -0.006610036114232199,
+            -0.0006719345345249213
+          ],
+          "tasks": 100,
+          "replications": 10000,
+          "seed": 20261104,
+          "unit": "task_id"
+        }
+      },
+      "Gamma": {
+        "estimate": -0.00033189506453357165,
+        "ci95": [
+          -0.03130824069217497,
+          0.03234489743574413
+        ],
+        "tasks": 58,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    "qwen": {
+      "linear": {
+        "estimate": -0.05523163233547388,
+        "ci95": [
+          -0.1347276558059121,
+          0.020604491827255902
+        ],
+        "tasks": 35,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id",
+        "per_task": {
+          "Mbpp/109": -0.16666666666666674,
+          "Mbpp/160": 0.059523809523809534,
+          "Mbpp/162": -0.4444444444444444,
+          "Mbpp/167": -0.02499999999999991,
+          "Mbpp/226": -0.11111111111111116,
+          "Mbpp/280": 0.16666666666666674,
+          "Mbpp/432": -0.0625,
+          "Mbpp/454": -0.20000000000000007,
+          "Mbpp/455": -0.13725490196078427,
+          "Mbpp/475": 0.0,
+          "Mbpp/555": -0.06153846153846165,
+          "Mbpp/558": -0.2142857142857143,
+          "Mbpp/559": 0.11111111111111105,
+          "Mbpp/560": -0.6666666666666667,
+          "Mbpp/57": -0.6666666666666666,
+          "Mbpp/583": -0.11428571428571427,
+          "Mbpp/599": 0.17142857142857137,
+          "Mbpp/607": 0.033333333333333326,
+          "Mbpp/619": -0.0357142857142857,
+          "Mbpp/633": -0.038461538461538436,
+          "Mbpp/726": 0.0,
+          "Mbpp/730": -0.08163265306122452,
+          "Mbpp/732": 0.0,
+          "Mbpp/742": 0.3125,
+          "Mbpp/75": -0.011904761904761862,
+          "Mbpp/751": -0.011111111111111183,
+          "Mbpp/755": 0.4375,
+          "Mbpp/762": 0.08333333333333326,
+          "Mbpp/777": -0.25,
+          "Mbpp/785": -0.5,
+          "Mbpp/793": 0.0,
+          "Mbpp/794": 0.0,
+          "Mbpp/799": 0.07407407407407418,
+          "Mbpp/803": 0.05555555555555547,
+          "Mbpp/84": 0.36111111111111105
+        },
+        "interpretation": "inconclusive",
+        "scope": "Task bootstrap conditional on frozen fitted source probes and observed mixed risk set",
+        "delta_log_loss": {
+          "estimate": 0.003686233177088143,
+          "ci95": [
+            -0.008396337785080431,
+            0.015625202129893965
+          ],
+          "tasks": 81,
+          "replications": 10000,
+          "seed": 20261104,
+          "unit": "task_id"
+        },
+        "delta_brier": {
+          "estimate": 0.0018505380014836375,
+          "ci95": [
+            -0.004090119154323215,
+            0.007695358968484624
+          ],
+          "tasks": 81,
+          "replications": 10000,
+          "seed": 20261104,
+          "unit": "task_id"
+        }
+      },
+      "MLP": {
+        "estimate": -0.007410911250947264,
+        "ci95": [
+          -0.09441536871158719,
+          0.07664883673249517
+        ],
+        "tasks": 35,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id",
+        "per_task": {
+          "Mbpp/109": -0.12499999999999994,
+          "Mbpp/160": 0.09523809523809534,
+          "Mbpp/162": -0.4444444444444444,
+          "Mbpp/167": -0.07499999999999996,
+          "Mbpp/226": -0.11111111111111116,
+          "Mbpp/280": 0.33333333333333337,
+          "Mbpp/432": 0.0625,
+          "Mbpp/454": -0.20000000000000007,
+          "Mbpp/455": -0.19607843137254888,
+          "Mbpp/475": 0.125,
+          "Mbpp/555": -0.03076923076923077,
+          "Mbpp/558": -0.3571428571428572,
+          "Mbpp/559": 0.2222222222222222,
+          "Mbpp/560": -0.5000000000000001,
+          "Mbpp/57": -0.7333333333333334,
+          "Mbpp/583": -0.15714285714285708,
+          "Mbpp/599": 0.17142857142857137,
+          "Mbpp/607": -0.016666666666666607,
+          "Mbpp/619": 5.551115123125783e-17,
+          "Mbpp/633": -0.012820512820512886,
+          "Mbpp/726": 0.0,
+          "Mbpp/730": 0.26530612244897955,
+          "Mbpp/732": 0.0,
+          "Mbpp/742": 0.40625,
+          "Mbpp/75": 0.011904761904761862,
+          "Mbpp/751": 0.05555555555555558,
+          "Mbpp/755": 0.4375,
+          "Mbpp/762": 0.20833333333333337,
+          "Mbpp/777": 0.0,
+          "Mbpp/785": -0.5,
+          "Mbpp/793": 0.1111111111111111,
+          "Mbpp/794": 0.0,
+          "Mbpp/799": 0.11111111111111105,
+          "Mbpp/803": 0.22222222222222215,
+          "Mbpp/84": 0.36111111111111116
+        },
+        "interpretation": "inconclusive",
+        "scope": "Task bootstrap conditional on frozen fitted source probes and observed mixed risk set",
+        "delta_log_loss": {
+          "estimate": 0.027791445287633835,
+          "ci95": [
+            0.008451616108359188,
+            0.04682139718226569
+          ],
+          "tasks": 81,
+          "replications": 10000,
+          "seed": 20261104,
+          "unit": "task_id"
+        },
+        "delta_brier": {
+          "estimate": 0.01319953423445901,
+          "ci95": [
+            0.0037512228363734343,
+            0.022482326447633007
+          ],
+          "tasks": 81,
+          "replications": 10000,
+          "seed": 20261104,
+          "unit": "task_id"
+        }
+      },
+      "Gamma": {
+        "estimate": 0.04782072108452662,
+        "ci95": [
+          0.01780129721302441,
+          0.08102414773907121
+        ],
+        "tasks": 35,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    }
+  },
+  "metrics": [
+    {
+      "model": "deepseek",
+      "family": "B_linear",
+      "active_candidates": 1943,
+      "total_generated_candidates": 2000,
+      "total_tasks": 100,
+      "active_tasks": 100,
+      "mixed_active_tasks": 58,
+      "zero_active_tasks": 0,
+      "roc_auc": 0.5316932436729755,
+      "pr_auc": 0.512230068742657,
+      "log_loss": 0.7277454916886412,
+      "brier": 0.2669462609012439,
+      "within_task_auc": 0.5157337305771137
+    },
+    {
+      "model": "deepseek",
+      "family": "HB_linear",
+      "active_candidates": 1943,
+      "total_generated_candidates": 2000,
+      "total_tasks": 100,
+      "active_tasks": 100,
+      "mixed_active_tasks": 58,
+      "zero_active_tasks": 0,
+      "roc_auc": 0.5419394790374505,
+      "pr_auc": 0.5081335166015934,
+      "log_loss": 0.7230263372613028,
+      "brier": 0.26467661451979235,
+      "within_task_auc": 0.5119110822553928
+    },
+    {
+      "model": "deepseek",
+      "family": "B_MLP",
+      "active_candidates": 1943,
+      "total_generated_candidates": 2000,
+      "total_tasks": 100,
+      "active_tasks": 100,
+      "mixed_active_tasks": 58,
+      "zero_active_tasks": 0,
+      "roc_auc": 0.5679862088037615,
+      "pr_auc": 0.5538832706346686,
+      "log_loss": 0.7255490177034002,
+      "brier": 0.2658776907624597,
+      "within_task_auc": 0.5224745755609259
+    },
+    {
+      "model": "deepseek",
+      "family": "HB_MLP",
+      "active_candidates": 1943,
+      "total_generated_candidates": 2000,
+      "total_tasks": 100,
+      "active_tasks": 100,
+      "mixed_active_tasks": 58,
+      "zero_active_tasks": 0,
+      "roc_auc": 0.5742250070866799,
+      "pr_auc": 0.5397047212970032,
+      "log_loss": 0.7180049518908825,
+      "brier": 0.2622616910878336,
+      "within_task_auc": 0.5183200321746715
+    },
+    {
+      "model": "qwen",
+      "family": "B_linear",
+      "active_candidates": 863,
+      "total_generated_candidates": 2000,
+      "total_tasks": 100,
+      "active_tasks": 81,
+      "mixed_active_tasks": 35,
+      "zero_active_tasks": 19,
+      "roc_auc": 0.7348409408659959,
+      "pr_auc": 0.6866929611623246,
+      "log_loss": 0.6375045298583035,
+      "brier": 0.2228604413567276,
+      "within_task_auc": 0.6596001886713172
+    },
+    {
+      "model": "qwen",
+      "family": "HB_linear",
+      "active_candidates": 863,
+      "total_generated_candidates": 2000,
+      "total_tasks": 100,
+      "active_tasks": 81,
+      "mixed_active_tasks": 35,
+      "zero_active_tasks": 19,
+      "roc_auc": 0.7207816657932747,
+      "pr_auc": 0.6838945533025464,
+      "log_loss": 0.6411907630353917,
+      "brier": 0.22471097935821124,
+      "within_task_auc": 0.6043685563358433
+    },
+    {
+      "model": "qwen",
+      "family": "B_MLP",
+      "active_candidates": 863,
+      "total_generated_candidates": 2000,
+      "total_tasks": 100,
+      "active_tasks": 81,
+      "mixed_active_tasks": 35,
+      "zero_active_tasks": 19,
+      "roc_auc": 0.7459255386483408,
+      "pr_auc": 0.7130592407312193,
+      "log_loss": 0.6244791465360217,
+      "brier": 0.21663662519988097,
+      "within_task_auc": 0.6395665903724126
+    },
+    {
+      "model": "qwen",
+      "family": "HB_MLP",
+      "active_candidates": 863,
+      "total_generated_candidates": 2000,
+      "total_tasks": 100,
+      "active_tasks": 81,
+      "mixed_active_tasks": 35,
+      "zero_active_tasks": 19,
+      "roc_auc": 0.7113797309757397,
+      "pr_auc": 0.6730177366369993,
+      "log_loss": 0.6522705918236554,
+      "brier": 0.22983615943433996,
+      "within_task_auc": 0.6321556791214654
+    }
+  ],
+  "operational": [
+    {
+      "model": "deepseek",
+      "budget": 1,
+      "policy": "B_MLP",
+      "resolved_tasks": 50,
+      "mean_completion_tokens": 135.48,
+      "aggregate_tokens_per_resolved_task": 270.96,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 270.96,
+        "ci95": [
+          206.9094376566416,
+          365.29925239234444
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 1,
+      "policy": "B_linear",
+      "resolved_tasks": 50,
+      "mean_completion_tokens": 135.48,
+      "aggregate_tokens_per_resolved_task": 270.96,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 270.96,
+        "ci95": [
+          206.9094376566416,
+          365.29925239234444
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 1,
+      "policy": "HB_MLP",
+      "resolved_tasks": 50,
+      "mean_completion_tokens": 135.48,
+      "aggregate_tokens_per_resolved_task": 270.96,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 270.96,
+        "ci95": [
+          206.9094376566416,
+          365.29925239234444
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 1,
+      "policy": "HB_linear",
+      "resolved_tasks": 50,
+      "mean_completion_tokens": 135.48,
+      "aggregate_tokens_per_resolved_task": 270.96,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 270.96,
+        "ci95": [
+          206.9094376566416,
+          365.29925239234444
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 1,
+      "policy": "fixed",
+      "resolved_tasks": 50,
+      "mean_completion_tokens": 135.48,
+      "aggregate_tokens_per_resolved_task": 270.96,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 270.96,
+        "ci95": [
+          206.9094376566416,
+          365.29925239234444
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 1,
+      "policy": "oracle",
+      "resolved_tasks": 50,
+      "mean_completion_tokens": 67.62,
+      "aggregate_tokens_per_resolved_task": 135.24,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 135.24,
+        "ci95": [
+          116.7188939144737,
+          159.23940217391302
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -67.86,
+        "ci95": [
+          -89.95025,
+          -48.16975000000001
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 1,
+      "policy": "verifier",
+      "resolved_tasks": 50,
+      "mean_completion_tokens": 135.48,
+      "aggregate_tokens_per_resolved_task": 270.96,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 270.96,
+        "ci95": [
+          206.9094376566416,
+          365.29925239234444
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 5,
+      "policy": "B_MLP",
+      "resolved_tasks": 63,
+      "mean_completion_tokens": 426.54,
+      "aggregate_tokens_per_resolved_task": 677.047619047619,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 677.047619047619,
+        "ci95": [
+          484.8355593607306,
+          943.3416691888619
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 5,
+      "policy": "B_linear",
+      "resolved_tasks": 63,
+      "mean_completion_tokens": 426.54,
+      "aggregate_tokens_per_resolved_task": 677.047619047619,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 677.047619047619,
+        "ci95": [
+          484.8355593607306,
+          943.3416691888619
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 5,
+      "policy": "HB_MLP",
+      "resolved_tasks": 63,
+      "mean_completion_tokens": 419.1,
+      "aggregate_tokens_per_resolved_task": 665.2380952380952,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 0.9908675799086758,
+      "retention_interval": {
+        "estimate": 0.9908675799086758,
+        "ci95": [
+          0.9770642201834863,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 665.2380952380952,
+        "ci95": [
+          477.97078767123287,
+          923.9128537735849
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -7.44,
+        "ci95": [
+          -16.96,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 5,
+      "policy": "HB_linear",
+      "resolved_tasks": 63,
+      "mean_completion_tokens": 426.54,
+      "aggregate_tokens_per_resolved_task": 677.047619047619,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 677.047619047619,
+        "ci95": [
+          484.8355593607306,
+          943.3416691888619
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 5,
+      "policy": "fixed",
+      "resolved_tasks": 63,
+      "mean_completion_tokens": 678.0,
+      "aggregate_tokens_per_resolved_task": 1076.1904761904761,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 1076.1904761904761,
+        "ci95": [
+          882.7679577464788,
+          1344.3548737373737
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 251.46,
+        "ci95": [
+          200.86825000000002,
+          304.1105
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 5,
+      "policy": "oracle",
+      "resolved_tasks": 63,
+      "mean_completion_tokens": 139.48,
+      "aggregate_tokens_per_resolved_task": 221.3968253968254,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 221.3968253968254,
+        "ci95": [
+          182.07131884057972,
+          272.8041552197802
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -287.06,
+        "ci95": [
+          -367.47025,
+          -211.28925
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 5,
+      "policy": "verifier",
+      "resolved_tasks": 63,
+      "mean_completion_tokens": 426.54,
+      "aggregate_tokens_per_resolved_task": 677.047619047619,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 677.047619047619,
+        "ci95": [
+          484.8355593607306,
+          943.3416691888619
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 10,
+      "policy": "B_MLP",
+      "resolved_tasks": 68,
+      "mean_completion_tokens": 735.98,
+      "aggregate_tokens_per_resolved_task": 1082.3235294117646,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 1082.3235294117646,
+        "ci95": [
+          750.878927927928,
+          1528.6674081920903
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 10,
+      "policy": "B_linear",
+      "resolved_tasks": 68,
+      "mean_completion_tokens": 735.98,
+      "aggregate_tokens_per_resolved_task": 1082.3235294117646,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 1082.3235294117646,
+        "ci95": [
+          750.878927927928,
+          1528.6674081920903
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 10,
+      "policy": "HB_MLP",
+      "resolved_tasks": 67,
+      "mean_completion_tokens": 719.62,
+      "aggregate_tokens_per_resolved_task": 1074.0597014925372,
+      "false_aborts_started": 1,
+      "retention_all_active_correct": 0.993103448275862,
+      "retention_interval": {
+        "estimate": 0.993103448275862,
+        "ci95": [
+          0.9842105263157894,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 1074.0597014925372,
+        "ci95": [
+          744.4144224196856,
+          1519.4647475369457
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 1,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -16.36,
+        "ci95": [
+          -32.781,
+          -4.06
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": -0.01,
+        "ci95": [
+          -0.03,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 10,
+      "policy": "HB_linear",
+      "resolved_tasks": 68,
+      "mean_completion_tokens": 735.98,
+      "aggregate_tokens_per_resolved_task": 1082.3235294117646,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 1082.3235294117646,
+        "ci95": [
+          750.878927927928,
+          1528.6674081920903
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 10,
+      "policy": "fixed",
+      "resolved_tasks": 68,
+      "mean_completion_tokens": 1364.72,
+      "aggregate_tokens_per_resolved_task": 2006.9411764705883,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 2006.9411764705883,
+        "ci95": [
+          1671.9460000000001,
+          2451.351904388715
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 628.74,
+        "ci95": [
+          523.04675,
+          738.5812500000001
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 10,
+      "policy": "oracle",
+      "resolved_tasks": 68,
+      "mean_completion_tokens": 204.25,
+      "aggregate_tokens_per_resolved_task": 300.36764705882354,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 300.36764705882354,
+        "ci95": [
+          238.11330003248864,
+          381.98415322580644
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -531.73,
+        "ci95": [
+          -686.21225,
+          -387.16825000000006
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 10,
+      "policy": "verifier",
+      "resolved_tasks": 68,
+      "mean_completion_tokens": 735.98,
+      "aggregate_tokens_per_resolved_task": 1082.3235294117646,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 1082.3235294117646,
+        "ci95": [
+          750.878927927928,
+          1528.6674081920903
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 20,
+      "policy": "B_MLP",
+      "resolved_tasks": 71,
+      "mean_completion_tokens": 1260.38,
+      "aggregate_tokens_per_resolved_task": 1775.1830985915492,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 1775.1830985915492,
+        "ci95": [
+          1189.1384375,
+          2553.1440181902976
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 20,
+      "policy": "B_linear",
+      "resolved_tasks": 71,
+      "mean_completion_tokens": 1260.38,
+      "aggregate_tokens_per_resolved_task": 1775.1830985915492,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 1775.1830985915492,
+        "ci95": [
+          1189.1384375,
+          2553.1440181902976
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 20,
+      "policy": "HB_MLP",
+      "resolved_tasks": 71,
+      "mean_completion_tokens": 1243.65,
+      "aggregate_tokens_per_resolved_task": 1751.619718309859,
+      "false_aborts_started": 1,
+      "retention_all_active_correct": 0.9944873208379272,
+      "retention_interval": {
+        "estimate": 0.9944873208379272,
+        "ci95": [
+          0.9878318584070797,
+          0.9989827060020345
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 1751.619718309859,
+        "ci95": [
+          1174.0217434210526,
+          2519.880334272541
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -16.73,
+        "ci95": [
+          -35.47025,
+          -3.34
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 20,
+      "policy": "HB_linear",
+      "resolved_tasks": 71,
+      "mean_completion_tokens": 1256.94,
+      "aggregate_tokens_per_resolved_task": 1770.338028169014,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 1770.338028169014,
+        "ci95": [
+          1186.1850560897435,
+          2545.2126658860266
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -3.44,
+        "ci95": [
+          -10.32,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 20,
+      "policy": "fixed",
+      "resolved_tasks": 71,
+      "mean_completion_tokens": 2709.31,
+      "aggregate_tokens_per_resolved_task": 3815.9295774647885,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 3815.9295774647885,
+        "ci95": [
+          3210.719395711501,
+          4610.793455843469
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 1448.93,
+        "ci95": [
+          1220.8970000000002,
+          1675.137
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 20,
+      "policy": "oracle",
+      "resolved_tasks": 71,
+      "mean_completion_tokens": 304.37,
+      "aggregate_tokens_per_resolved_task": 428.6901408450704,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 428.6901408450704,
+        "ci95": [
+          323.67299841772154,
+          565.675489159175
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -956.01,
+        "ci95": [
+          -1256.84025,
+          -675.7692499999999
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "deepseek",
+      "budget": 20,
+      "policy": "verifier",
+      "resolved_tasks": 71,
+      "mean_completion_tokens": 1260.38,
+      "aggregate_tokens_per_resolved_task": 1775.1830985915492,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 1775.1830985915492,
+        "ci95": [
+          1189.1384375,
+          2553.1440181902976
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 1,
+      "policy": "B_MLP",
+      "resolved_tasks": 57,
+      "mean_completion_tokens": 37.99,
+      "aggregate_tokens_per_resolved_task": 66.64912280701755,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 66.64912280701755,
+        "ci95": [
+          54.39648641588297,
+          83.32687798523664
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -3.4,
+        "ci95": [
+          -6.800249999999999,
+          -0.79
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 1,
+      "policy": "B_linear",
+      "resolved_tasks": 57,
+      "mean_completion_tokens": 39.4,
+      "aggregate_tokens_per_resolved_task": 69.12280701754386,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 69.12280701754386,
+        "ci95": [
+          55.74184863523573,
+          87.22185294117644
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -1.99,
+        "ci95": [
+          -4.32,
+          -0.3
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 1,
+      "policy": "HB_MLP",
+      "resolved_tasks": 57,
+      "mean_completion_tokens": 41.39,
+      "aggregate_tokens_per_resolved_task": 72.6140350877193,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 72.6140350877193,
+        "ci95": [
+          58.09970588235294,
+          92.10513392857142
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 1,
+      "policy": "HB_linear",
+      "resolved_tasks": 57,
+      "mean_completion_tokens": 39.66,
+      "aggregate_tokens_per_resolved_task": 69.57894736842105,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 69.57894736842105,
+        "ci95": [
+          56.030878586065576,
+          87.90923597678916
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -1.73,
+        "ci95": [
+          -4.03,
+          -0.04
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 1,
+      "policy": "fixed",
+      "resolved_tasks": 57,
+      "mean_completion_tokens": 41.39,
+      "aggregate_tokens_per_resolved_task": 72.6140350877193,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 72.6140350877193,
+        "ci95": [
+          58.09970588235294,
+          92.10513392857142
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 1,
+      "policy": "oracle",
+      "resolved_tasks": 57,
+      "mean_completion_tokens": 33.61,
+      "aggregate_tokens_per_resolved_task": 58.96491228070175,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 58.96491228070175,
+        "ci95": [
+          49.68722426470588,
+          71.55336170212766
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -7.78,
+        "ci95": [
+          -12.07,
+          -4.11
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 1,
+      "policy": "verifier",
+      "resolved_tasks": 57,
+      "mean_completion_tokens": 41.39,
+      "aggregate_tokens_per_resolved_task": 72.6140350877193,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 72.6140350877193,
+        "ci95": [
+          58.09970588235294,
+          92.10513392857142
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 5,
+      "policy": "B_MLP",
+      "resolved_tasks": 69,
+      "mean_completion_tokens": 100.6,
+      "aggregate_tokens_per_resolved_task": 145.79710144927537,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 0.9883720930232558,
+      "retention_interval": {
+        "estimate": 0.9883720930232558,
+        "ci95": [
+          0.958904109589041,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 145.79710144927537,
+        "ci95": [
+          106.50481081081081,
+          197.532375529661
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -13.5,
+        "ci95": [
+          -24.72025,
+          -5.02
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 5,
+      "policy": "B_linear",
+      "resolved_tasks": 69,
+      "mean_completion_tokens": 105.76,
+      "aggregate_tokens_per_resolved_task": 153.2753623188406,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 153.2753623188406,
+        "ci95": [
+          110.7891447368421,
+          209.65692238729508
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -8.34,
+        "ci95": [
+          -18.7505,
+          -1.62
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 5,
+      "policy": "HB_MLP",
+      "resolved_tasks": 69,
+      "mean_completion_tokens": 108.0,
+      "aggregate_tokens_per_resolved_task": 156.52173913043478,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 0.9883720930232558,
+      "retention_interval": {
+        "estimate": 0.9883720930232558,
+        "ci95": [
+          0.9591836734693877,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 156.52173913043478,
+        "ci95": [
+          112.70075341325341,
+          214.11732142857142
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -6.1,
+        "ci95": [
+          -14.86,
+          -0.78
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 5,
+      "policy": "HB_linear",
+      "resolved_tasks": 69,
+      "mean_completion_tokens": 104.19,
+      "aggregate_tokens_per_resolved_task": 151.0,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 0.9883720930232558,
+      "retention_interval": {
+        "estimate": 0.9883720930232558,
+        "ci95": [
+          0.9625,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 151.0,
+        "ci95": [
+          109.31454030646235,
+          206.25071721311474
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -9.91,
+        "ci95": [
+          -20.50025,
+          -2.7395000000000076
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 5,
+      "policy": "fixed",
+      "resolved_tasks": 69,
+      "mean_completion_tokens": 196.55,
+      "aggregate_tokens_per_resolved_task": 284.8550724637681,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 284.8550724637681,
+        "ci95": [
+          234.6567807017544,
+          349.04929742388754
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 82.45,
+        "ci95": [
+          67.9495,
+          98.17025
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 5,
+      "policy": "oracle",
+      "resolved_tasks": 69,
+      "mean_completion_tokens": 78.94,
+      "aggregate_tokens_per_resolved_task": 114.40579710144928,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 114.40579710144928,
+        "ci95": [
+          88.2075974025974,
+          148.1479508196721
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -35.16,
+        "ci95": [
+          -52.71,
+          -20.05975
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 5,
+      "policy": "verifier",
+      "resolved_tasks": 69,
+      "mean_completion_tokens": 114.1,
+      "aggregate_tokens_per_resolved_task": 165.36231884057972,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 165.36231884057972,
+        "ci95": [
+          117.98322368421054,
+          227.67287172850158
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 10,
+      "policy": "B_MLP",
+      "resolved_tasks": 73,
+      "mean_completion_tokens": 160.51,
+      "aggregate_tokens_per_resolved_task": 219.87671232876713,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 0.9668874172185431,
+      "retention_interval": {
+        "estimate": 0.9668874172185431,
+        "ci95": [
+          0.9333333333333333,
+          0.9928057553956835
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 219.87671232876713,
+        "ci95": [
+          153.82791158536585,
+          305.1940971372645
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -23.38,
+        "ci95": [
+          -45.670500000000004,
+          -8.029750000000003
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 10,
+      "policy": "B_linear",
+      "resolved_tasks": 73,
+      "mean_completion_tokens": 166.84,
+      "aggregate_tokens_per_resolved_task": 228.54794520547946,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 0.9867549668874173,
+      "retention_interval": {
+        "estimate": 0.9867549668874173,
+        "ci95": [
+          0.9652173913043478,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 228.54794520547946,
+        "ci95": [
+          158.99878048780488,
+          319.95421875
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -17.05,
+        "ci95": [
+          -39.001,
+          -3.22
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 10,
+      "policy": "HB_MLP",
+      "resolved_tasks": 73,
+      "mean_completion_tokens": 172.43,
+      "aggregate_tokens_per_resolved_task": 236.2054794520548,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 0.9867549668874173,
+      "retention_interval": {
+        "estimate": 0.9867549668874173,
+        "ci95": [
+          0.9646017699115044,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 236.2054794520548,
+        "ci95": [
+          163.1384703370444,
+          330.3100746268656
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -11.46,
+        "ci95": [
+          -26.57075,
+          -2.2
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 10,
+      "policy": "HB_linear",
+      "resolved_tasks": 73,
+      "mean_completion_tokens": 163.54,
+      "aggregate_tokens_per_resolved_task": 224.02739726027397,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 0.9735099337748344,
+      "retention_interval": {
+        "estimate": 0.9735099337748344,
+        "ci95": [
+          0.9464285714285714,
+          0.9940484995773458
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 224.02739726027397,
+        "ci95": [
+          156.0493827160494,
+          313.11266129032254
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -20.35,
+        "ci95": [
+          -42.180749999999996,
+          -6.2
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 10,
+      "policy": "fixed",
+      "resolved_tasks": 73,
+      "mean_completion_tokens": 393.22,
+      "aggregate_tokens_per_resolved_task": 538.6575342465753,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 538.6575342465753,
+        "ci95": [
+          451.82951807228915,
+          649.1155913978494
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 209.33,
+        "ci95": [
+          175.088,
+          245.49025
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 10,
+      "policy": "oracle",
+      "resolved_tasks": 73,
+      "mean_completion_tokens": 122.36,
+      "aggregate_tokens_per_resolved_task": 167.6164383561644,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 167.6164383561644,
+        "ci95": [
+          123.10914634146341,
+          224.96924242424242
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -61.53,
+        "ci95": [
+          -93.37075,
+          -34.31
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 10,
+      "policy": "verifier",
+      "resolved_tasks": 73,
+      "mean_completion_tokens": 183.89,
+      "aggregate_tokens_per_resolved_task": 251.9041095890411,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 251.9041095890411,
+        "ci95": [
+          171.34126016260163,
+          356.7080327868852
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 20,
+      "policy": "B_MLP",
+      "resolved_tasks": 75,
+      "mean_completion_tokens": 271.76,
+      "aggregate_tokens_per_resolved_task": 362.3466666666667,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 0.9622641509433962,
+      "retention_interval": {
+        "estimate": 0.9622641509433962,
+        "ci95": [
+          0.9340641206977841,
+          0.9841772151898734
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 362.3466666666667,
+        "ci95": [
+          240.0809114015977,
+          523.2865424430643
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -46.95,
+        "ci95": [
+          -93.10249999999999,
+          -16.32975
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 20,
+      "policy": "B_linear",
+      "resolved_tasks": 75,
+      "mean_completion_tokens": 282.8,
+      "aggregate_tokens_per_resolved_task": 377.06666666666666,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 0.9779874213836478,
+      "retention_interval": {
+        "estimate": 0.9779874213836478,
+        "ci95": [
+          0.9583333333333334,
+          0.9935691318327974
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 377.06666666666666,
+        "ci95": [
+          248.03493975903612,
+          546.6686567164179
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -35.91,
+        "ci95": [
+          -76.12075,
+          -9.789750000000003
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 20,
+      "policy": "HB_MLP",
+      "resolved_tasks": 75,
+      "mean_completion_tokens": 300.05,
+      "aggregate_tokens_per_resolved_task": 400.06666666666666,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 0.9905660377358491,
+      "retention_interval": {
+        "estimate": 0.9905660377358491,
+        "ci95": [
+          0.9738562091503268,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 400.06666666666666,
+        "ci95": [
+          260.06622098148694,
+          582.5720428388746
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -18.66,
+        "ci95": [
+          -40.580749999999995,
+          -4.529500000000008
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 20,
+      "policy": "HB_linear",
+      "resolved_tasks": 75,
+      "mean_completion_tokens": 282.09,
+      "aggregate_tokens_per_resolved_task": 376.12,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 0.9748427672955975,
+      "retention_interval": {
+        "estimate": 0.9748427672955975,
+        "ci95": [
+          0.9523809523809523,
+          0.9927274928461368
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 376.12,
+        "ci95": [
+          246.25643631436316,
+          546.676119402985
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -36.62,
+        "ci95": [
+          -75.0905,
+          -11.34
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 20,
+      "policy": "fixed",
+      "resolved_tasks": 75,
+      "mean_completion_tokens": 791.88,
+      "aggregate_tokens_per_resolved_task": 1055.84,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 1055.84,
+        "ci95": [
+          887.779100609756,
+          1267.9304347826085
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 473.17,
+        "ci95": [
+          399.259,
+          551.5482499999998
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 20,
+      "policy": "oracle",
+      "resolved_tasks": 75,
+      "mean_completion_tokens": 200.37,
+      "aggregate_tokens_per_resolved_task": 267.16,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 267.16,
+        "ci95": [
+          185.6306420805172,
+          373.4568181818181
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": -118.34,
+        "ci95": [
+          -182.502,
+          -62.70975000000001
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    },
+    {
+      "model": "qwen",
+      "budget": 20,
+      "policy": "verifier",
+      "resolved_tasks": 75,
+      "mean_completion_tokens": 318.71,
+      "aggregate_tokens_per_resolved_task": 424.94666666666666,
+      "false_aborts_started": 0,
+      "retention_all_active_correct": 1.0,
+      "retention_interval": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "tokens_per_resolved_interval": {
+        "estimate": 424.94666666666666,
+        "ci95": [
+          272.25863095238094,
+          622.2080769230769
+        ],
+        "undefined_draws": 0,
+        "unit": "paired task ratio",
+        "replications": 10000
+      },
+      "lost_tasks": 0,
+      "delta_mean_tokens_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      },
+      "delta_coverage_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 10000,
+        "seed": 20261104,
+        "unit": "task_id"
+      }
+    }
+  ],
+  "scoring_timing": [
+    {
+      "model": "deepseek",
+      "family": "B_linear",
+      "seconds": 0.003718199994182214,
+      "candidates": 1943,
+      "scope": "Batched CPU scoring including preprocessing, excludes model generation"
+    },
+    {
+      "model": "deepseek",
+      "family": "HB_linear",
+      "seconds": 0.03306009998777881,
+      "candidates": 1943,
+      "scope": "Batched CPU scoring including preprocessing, excludes model generation"
+    },
+    {
+      "model": "deepseek",
+      "family": "B_MLP",
+      "seconds": 0.007294699986232445,
+      "candidates": 1943,
+      "scope": "Batched CPU scoring including preprocessing, excludes model generation"
+    },
+    {
+      "model": "deepseek",
+      "family": "HB_MLP",
+      "seconds": 0.03566950000822544,
+      "candidates": 1943,
+      "scope": "Batched CPU scoring including preprocessing, excludes model generation"
+    },
+    {
+      "model": "qwen",
+      "family": "B_linear",
+      "seconds": 0.0006251999875530601,
+      "candidates": 863,
+      "scope": "Batched CPU scoring including preprocessing, excludes model generation"
+    },
+    {
+      "model": "qwen",
+      "family": "HB_linear",
+      "seconds": 0.011884999985340983,
+      "candidates": 863,
+      "scope": "Batched CPU scoring including preprocessing, excludes model generation"
+    },
+    {
+      "model": "qwen",
+      "family": "B_MLP",
+      "seconds": 0.002608400012832135,
+      "candidates": 863,
+      "scope": "Batched CPU scoring including preprocessing, excludes model generation"
+    },
+    {
+      "model": "qwen",
+      "family": "HB_MLP",
+      "seconds": 0.01299799999105744,
+      "candidates": 863,
+      "scope": "Batched CPU scoring including preprocessing, excludes model generation"
+    }
+  ],
+  "secondary_cross_model_common_mixed": {
+    "estimate": -0.012970564986295617,
+    "ci95": [
+      -0.13549205441047482,
+      0.11250551837651586
+    ],
+    "tasks": 28,
+    "replications": 10000,
+    "seed": 20261104,
+    "unit": "task_id"
+  },
+  "secondary_scope": "Descriptive pointwise 95% intervals; no multiplicity-adjusted confirmatory claims",
+  "limitations": [
+    "Conditional fitted-probe uncertainty",
+    "Tokenizer-specific t=32 risk sets",
+    "Token savings are not latency savings",
+    "Pretraining contamination not ruled out"
+  ]
+}

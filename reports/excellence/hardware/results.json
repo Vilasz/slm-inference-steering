@@ -1,0 +1,28 @@
+{
+  "status": "completed",
+  "created_at": "2026-10-17T06:27:55.204931+00:00",
+  "pairs": 50,
+  "trajectories_generated": 100,
+  "tasks": 26,
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "memory_total_mib": 6143.5,
+    "peak_allocated_mib": 4085.0,
+    "peak_reserved_mib": 4978.0,
+    "cuda": "12.6",
+    "driver_version": "576.52",
+    "weight_storage_dtype": "bfloat16",
+    "linear_compute_dtype": "float32",
+    "python": "3.12.8",
+    "torch": "2.12.0+cu126",
+    "bf16_supported": true,
+    "requested_gpu": "RTX 4060",
+    "requested_gpu_present": false
+  },
+  "all_exact_tokens_and_states": true,
+  "timing_scope": "Instrumented paired capture implementation benchmark, not a claim of policy latency savings",
+  "mean_original_seconds": 8.764331248002708,
+  "mean_selective_seconds": 8.47500416399911,
+  "mean_tokens": 74.36,
+  "mean_historical_verification_seconds": 0.10516764319998799
+}

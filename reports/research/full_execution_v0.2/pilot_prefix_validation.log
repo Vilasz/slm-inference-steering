@@ -1,0 +1,3 @@
+
+2026-10-14T15:45:15.616594+00:00 ["C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe", "-u", "C:\\Users\\joaof\\slm-inference-steering\\scripts\\validate_bank_prefixes.py", "--bank-dir", "C:\\Users\\joaof\\slm-inference-steering\\runs\\candidate_bank\\pilot_v0.2", "--config", "C:\\Users\\joaof\\slm-inference-steering\\configs\\protocol_v0.2.yaml"]
+All available prefix checkpoints validated: ['0', '16', '32', '64', '8', 'final']

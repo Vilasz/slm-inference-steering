@@ -1,0 +1,44 @@
+[
+  {
+    "identifier": "2610.11300v1",
+    "url": "https://arxiv.org/pdf/2610.11300v1",
+    "file": "arxiv_2610_11300v1.pdf",
+    "sha256": "34baf8b469a5bd3781a12eaa6eccf36bc27b7e82183970c559d6ac75e42cb48b",
+    "retrieved_at": "2026-10-17T16:53:25.086073+00:00"
+  },
+  {
+    "identifier": "2606.14530v3",
+    "url": "https://arxiv.org/pdf/2606.14530v3",
+    "file": "arxiv_2606_14530v3.pdf",
+    "sha256": "cdeaf3b67442c9c59c1d6f6c034c1f3cfff1af5d36ea2110b630875d57e950ad",
+    "retrieved_at": "2026-10-17T16:53:24.953020+00:00"
+  },
+  {
+    "identifier": "2609.13975v1",
+    "url": "https://arxiv.org/pdf/2609.13975v1",
+    "file": "arxiv_2609_13975v1.pdf",
+    "sha256": "b0eac33d4e1399c2506972c6e6a6564144483971997a4e68489cdd23e1a8bd5e",
+    "retrieved_at": "2026-10-17T16:53:25.420659+00:00"
+  },
+  {
+    "identifier": "2607.06503v2",
+    "url": "https://arxiv.org/pdf/2607.06503v2",
+    "file": "arxiv_2607_06503v2.pdf",
+    "sha256": "ae2a2d307373c145392fa7381d9d0523b37c4b5b3a85b9c7b460e89e0e1408fc",
+    "retrieved_at": "2026-10-17T16:53:24.943032+00:00"
+  },
+  {
+    "identifier": "2509.12886v1",
+    "url": "https://arxiv.org/pdf/2509.12886v1",
+    "file": "arxiv_2509_12886v1.pdf",
+    "sha256": "0e9eb519756c92758badbaa74f7f33227908795d20b783a26175ce0cdbf2dccb",
+    "retrieved_at": "2026-10-17T17:29:37.819853+00:00"
+  },
+  {
+    "identifier": "2503.01422v3",
+    "url": "https://arxiv.org/pdf/2503.01422v3",
+    "file": "arxiv_2503_01422v3.pdf",
+    "sha256": "1bd9492e7f80ac83d6b8a6cd9c8baa41ea42013c513bea95141205d05ff1a8b7",
+    "retrieved_at": "2026-10-17T17:29:37.664299+00:00"
+  }
+]

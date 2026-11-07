@@ -1,0 +1,15 @@
+{
+  "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "memory_total_mib": 6143.5,
+  "peak_allocated_mib": 4085.0,
+  "peak_reserved_mib": 4978.0,
+  "cuda": "12.6",
+  "driver_version": "576.52",
+  "weight_storage_dtype": "bfloat16",
+  "linear_compute_dtype": "float32",
+  "python": "3.12.8",
+  "torch": "2.12.0+cu126",
+  "bf16_supported": true,
+  "requested_gpu": "RTX 4060",
+  "requested_gpu_present": false
+}

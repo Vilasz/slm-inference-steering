@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-11-05T11:37:58.853157+00:00",
+  "reason": "Exclude verified OS suspension from active GPU-session budget; preserve all raw timings and scientific records",
+  "evidence_file": "windows_power_events_20261105.json",
+  "evidence_sha256": "57544e01c7f3c8900e5cc0fada2998d1c9b7d98b06ccf055c86ea2525f0d3d51",
+  "intervals": [
+    {
+      "start_utc": "2026-11-05T01:19:03.2301052Z",
+      "end_utc": "2026-11-05T10:59:40.1302982Z",
+      "provider": "Microsoft-Windows-Power-Troubleshooter",
+      "event_record_id": 80627
+    }
+  ],
+  "external_outcomes_inspected": false,
+  "amendment": "docs/protocols/FINAL_CROSS_MODEL_EXTENSION_v1_RESOURCE_ACCOUNTING.md"
+}

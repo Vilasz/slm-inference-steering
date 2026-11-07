@@ -70,7 +70,11 @@ def generate_artifacts(root: Path = ROOT) -> dict[str, Any]:
     stats_path = tables_dir / "statistical_tests.csv"
     stats.to_csv(stats_path, index=False)
 
-    figure_paths = write_figures(summary_frame, figures_dir)
+    paired = paired_comparisons_frame(root, summary_frame)
+    paired_path = tables_dir / "paired_comparisons.csv"
+    paired.to_csv(paired_path, index=False)
+
+    figure_paths = write_figures(summary_frame, figures_dir, root)
     final_summary = {
         "created_at": datetime.now(timezone.utc).isoformat(),
         "num_result_rows": int(len(summary_frame)),
@@ -84,6 +88,7 @@ def generate_artifacts(root: Path = ROOT) -> dict[str, Any]:
             "robustness_results": str(robustness_path),
             "cross_model_results": str(cross_model_path),
             "statistical_tests": str(stats_path),
+            "paired_comparisons": str(paired_path),
         },
         "figures": {path.stem: str(path) for path in figure_paths},
         "notes": [
@@ -366,10 +371,114 @@ def phase35_statistical_rows(frame: pd.DataFrame) -> list[dict[str, Any]]:
     return rows
 
 
-def write_figures(frame: pd.DataFrame, figures_dir: Path) -> list[Path]:
+def paired_comparisons_frame(root: Path, frame: pd.DataFrame, *, max_pairs: int = 100) -> pd.DataFrame:
+    columns = [
+        "left_run",
+        "right_run",
+        "benchmark",
+        "n_tasks",
+        "accuracy_delta",
+        "accuracy_ci_low",
+        "accuracy_ci_high",
+        "accuracy_p_value",
+        "token_delta",
+        "token_ci_low",
+        "token_ci_high",
+        "dominance",
+    ]
+    if frame.empty or "summary_path" not in frame:
+        return pd.DataFrame(columns=columns)
+
+    records_by_label = {}
+    for _, row in frame.iterrows():
+        jsonl_path = jsonl_path_for_summary(root, row.get("summary_path"))
+        if jsonl_path is None or not jsonl_path.exists():
+            continue
+        try:
+            from slm_steering.reporting import read_jsonl
+
+            records = read_jsonl(jsonl_path)
+        except Exception:
+            continue
+        if records:
+            records_by_label[str(row["run_label"])] = {
+                "records": records,
+                "benchmark": row.get("benchmark") or "unknown",
+            }
+
+    labels = sorted(records_by_label)
+    rows = []
+    for left_index, left_label in enumerate(labels):
+        for right_label in labels[left_index + 1 :]:
+            left = records_by_label[left_label]
+            right = records_by_label[right_label]
+            if left["benchmark"] != right["benchmark"]:
+                continue
+            left_tasks = {record.get("task_id") for record in left["records"]}
+            right_tasks = {record.get("task_id") for record in right["records"]}
+            if not left_tasks.intersection(right_tasks):
+                continue
+            rows.append(paired_comparison_row(left_label, right_label, left, right))
+            if len(rows) >= max_pairs:
+                return pd.DataFrame(rows, columns=columns)
+    return pd.DataFrame(rows, columns=columns)
+
+
+def jsonl_path_for_summary(root: Path, summary_path: Any) -> Path | None:
+    if not isinstance(summary_path, str) or not summary_path:
+        return None
+    path = Path(summary_path)
+    if not path.is_absolute() and not path.exists():
+        path = root / path
+    name = path.name
+    if not name.endswith("_summary.json"):
+        return None
+    return path.with_name(name.replace("_summary.json", ".jsonl"))
+
+
+def paired_comparison_row(
+    left_label: str,
+    right_label: str,
+    left: dict[str, Any],
+    right: dict[str, Any],
+) -> dict[str, Any]:
+    from slm_steering.statistics.paired_tests import paired_bootstrap_test
+
+    accuracy = paired_bootstrap_test(left["records"], right["records"], metric="success", n_bootstrap=200)
+    tokens = paired_bootstrap_test(left["records"], right["records"], metric="tokens", n_bootstrap=200)
+    return {
+        "left_run": left_label,
+        "right_run": right_label,
+        "benchmark": left["benchmark"],
+        "n_tasks": accuracy.n_tasks,
+        "accuracy_delta": accuracy.mean_difference,
+        "accuracy_ci_low": accuracy.ci_low,
+        "accuracy_ci_high": accuracy.ci_high,
+        "accuracy_p_value": accuracy.p_value_if_available,
+        "token_delta": tokens.mean_difference,
+        "token_ci_low": tokens.ci_low,
+        "token_ci_high": tokens.ci_high,
+        "dominance": dominance_label(accuracy.mean_difference, tokens.mean_difference),
+    }
+
+
+def dominance_label(accuracy_delta: float, token_delta: float) -> str:
+    if pd.isna(accuracy_delta) or pd.isna(token_delta):
+        return "insufficient_overlap"
+    if accuracy_delta >= 0 and token_delta <= 0 and (accuracy_delta > 0 or token_delta < 0):
+        return "right_dominates"
+    if accuracy_delta <= 0 and token_delta >= 0 and (accuracy_delta < 0 or token_delta > 0):
+        return "left_dominates"
+    return "tradeoff"
+
+
+def write_figures(frame: pd.DataFrame, figures_dir: Path, root: Path) -> list[Path]:
     paths = [
         write_accuracy_cost_plot(frame, figures_dir / "accuracy_cost_scatter.png"),
         write_phase_coverage_plot(frame, figures_dir / "phase_coverage.png"),
+        write_probe_auc_plot(root, figures_dir / "probe_auc_by_layer.png"),
+        write_steering_alpha_plot(frame, figures_dir / "steering_alpha_sweep.png"),
+        write_adaptive_policy_plot(frame, figures_dir / "adaptive_budget_accuracy.png"),
     ]
     return paths
 
@@ -411,6 +520,92 @@ def write_phase_coverage_plot(frame: pd.DataFrame, path: Path) -> Path:
     plt.xlabel("Fase")
     plt.ylabel("Runs consolidadas")
     plt.title("Cobertura experimental")
+    plt.tight_layout()
+    plt.savefig(path, dpi=160)
+    plt.close()
+    return path
+
+
+def write_probe_auc_plot(root: Path, path: Path) -> Path:
+    frames = []
+    for csv_path in sorted((root / "runs" / "phase35").rglob("probe_results.csv")):
+        try:
+            frame = pd.read_csv(csv_path)
+        except Exception:
+            continue
+        if {"layer", "auc"}.issubset(frame.columns):
+            frame["source"] = csv_path.parent.name
+            frames.append(frame)
+    plt.figure(figsize=(7, 4.5))
+    if frames:
+        data = pd.concat(frames, ignore_index=True)
+        data["layer"] = pd.to_numeric(data["layer"], errors="coerce")
+        data["auc"] = pd.to_numeric(data["auc"], errors="coerce")
+        data = data.dropna(subset=["layer", "auc"])
+        if not data.empty:
+            for source, group in data.groupby("source"):
+                plt.plot(group["layer"], group["auc"], marker="o", label=source)
+            plt.legend()
+        else:
+            plt.text(0.5, 0.5, "Sem resultados suficientes", ha="center", va="center")
+    else:
+        plt.text(0.5, 0.5, "Sem resultados suficientes", ha="center", va="center")
+    plt.xlabel("Camada")
+    plt.ylabel("Probe AUC")
+    plt.title("Separabilidade latente por camada")
+    plt.tight_layout()
+    plt.savefig(path, dpi=160)
+    plt.close()
+    return path
+
+
+def write_steering_alpha_plot(frame: pd.DataFrame, path: Path) -> Path:
+    plt.figure(figsize=(7, 4.5))
+    required = {"phase", "alpha", "observed_best_of_n", "direction_type"}
+    if required.issubset(frame.columns):
+        data = frame[frame["phase"].eq("phase4")].copy()
+        data["alpha"] = pd.to_numeric(data["alpha"], errors="coerce")
+        data["observed_best_of_n"] = pd.to_numeric(data["observed_best_of_n"], errors="coerce")
+        data = data.dropna(subset=["alpha", "observed_best_of_n"])
+        if not data.empty:
+            for label, group in data.groupby(["direction_type", "layer"], dropna=False):
+                plt.plot(group["alpha"], group["observed_best_of_n"], marker="o", label=str(label))
+            plt.legend(fontsize=8)
+        else:
+            plt.text(0.5, 0.5, "Sem resultados suficientes", ha="center", va="center")
+    else:
+        plt.text(0.5, 0.5, "Sem resultados suficientes", ha="center", va="center")
+    plt.xlabel("Alpha")
+    plt.ylabel("Acuracia Best-of-N observada")
+    plt.title("Sweep causal de activation steering")
+    plt.tight_layout()
+    plt.savefig(path, dpi=160)
+    plt.close()
+    return path
+
+
+def write_adaptive_policy_plot(frame: pd.DataFrame, path: Path) -> Path:
+    plt.figure(figsize=(7, 4.5))
+    required = {"phase", "policy", "mean_tokens_until_success_or_budget", "observed_best_of_n"}
+    if required.issubset(frame.columns):
+        data = frame[frame["phase"].eq("phase5")].copy()
+        data["mean_tokens_until_success_or_budget"] = pd.to_numeric(
+            data["mean_tokens_until_success_or_budget"],
+            errors="coerce",
+        )
+        data["observed_best_of_n"] = pd.to_numeric(data["observed_best_of_n"], errors="coerce")
+        data = data.dropna(subset=["mean_tokens_until_success_or_budget", "observed_best_of_n"])
+        if not data.empty:
+            plt.scatter(data["mean_tokens_until_success_or_budget"], data["observed_best_of_n"], s=55)
+            for _, row in data.iterrows():
+                plt.annotate(str(row.get("policy") or row.get("run_label")), (row["mean_tokens_until_success_or_budget"], row["observed_best_of_n"]))
+        else:
+            plt.text(0.5, 0.5, "Sem resultados suficientes", ha="center", va="center")
+    else:
+        plt.text(0.5, 0.5, "Sem resultados suficientes", ha="center", va="center")
+    plt.xlabel("Tokens ate sucesso ou orcamento")
+    plt.ylabel("Acuracia")
+    plt.title("Politicas adaptativas: custo vs acuracia")
     plt.tight_layout()
     plt.savefig(path, dpi=160)
     plt.close()

@@ -151,10 +151,74 @@ class FinalReportingTests(unittest.TestCase):
         finally:
             shutil.rmtree(root, ignore_errors=True)
 
+    def test_generate_artifacts_writes_paired_comparisons(self) -> None:
+        root = Path("runs/tmp_tests/final_reporting_paired")
+        shutil.rmtree(root, ignore_errors=True)
+        phase2 = root / "runs/phase2"
+        phase2.mkdir(parents=True, exist_ok=True)
+        left_records = [
+            sample_record("task/0", solved=True, tokens=10),
+            sample_record("task/1", solved=False, tokens=20),
+        ]
+        right_records = [
+            sample_record("task/0", solved=True, tokens=8),
+            sample_record("task/1", solved=True, tokens=15),
+        ]
+        write_run(phase2, "left", left_records, observed=0.5, tokens=15)
+        write_run(phase2, "right", right_records, observed=1.0, tokens=11.5)
+        try:
+            generate_artifacts(root)
+
+            rows = read_csv(root / "reports/tables/paired_comparisons.csv")
+            self.assertEqual(len(rows), 1)
+            self.assertEqual(rows[0]["left_run"], "left")
+            self.assertEqual(rows[0]["right_run"], "right")
+            self.assertEqual(rows[0]["dominance"], "right_dominates")
+        finally:
+            shutil.rmtree(root, ignore_errors=True)
+
 
 def read_csv(path: Path) -> list[dict[str, str]]:
     with path.open(newline="", encoding="utf-8") as file:
         return list(csv.DictReader(file))
+
+
+def sample_record(task_id: str, *, solved: bool, tokens: int) -> dict:
+    return {
+        "task_id": task_id,
+        "entry_point": "f",
+        "solved": solved,
+        "first_success_attempt": 1 if solved else None,
+        "problem_wall_seconds": 0.1,
+        "attempts": [
+            {
+                "attempt": 1,
+                "passed": solved,
+                "generated_tokens": tokens,
+                "generation_seconds": 0.1,
+                "verification_seconds": 0.01,
+            }
+        ],
+    }
+
+
+def write_run(path: Path, label: str, records: list[dict], *, observed: float, tokens: float) -> None:
+    (path / f"{label}.jsonl").write_text(
+        "".join(json.dumps(record) + "\n" for record in records),
+        encoding="utf-8",
+    )
+    (path / f"{label}_summary.json").write_text(
+        json.dumps(
+            {
+                "num_tasks": len(records),
+                "requested_n": 1,
+                "observed_best_of_n": observed,
+                "mean_tokens_until_success_or_budget": tokens,
+                "phase2": {"benchmark": "humaneval_stress"},
+            }
+        ),
+        encoding="utf-8",
+    )
 
 
 if __name__ == "__main__":

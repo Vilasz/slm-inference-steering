@@ -1,0 +1,457 @@
+{
+  "status": "completed_exploratory_geometry",
+  "created_at": "2026-10-17T06:19:03.021554+00:00",
+  "training_spectra": [
+    {
+      "fold": 0,
+      "layer": 6,
+      "dimension": 1536,
+      "training_tasks": 105,
+      "training_candidates": 1706,
+      "variance_top16": 0.38969065405876957,
+      "variance_top64": 0.6999718492005974,
+      "variance_top128": 0.8461247308992582
+    },
+    {
+      "fold": 0,
+      "layer": 13,
+      "dimension": 1536,
+      "training_tasks": 105,
+      "training_candidates": 1706,
+      "variance_top16": 0.36940017442186834,
+      "variance_top64": 0.6593932037159895,
+      "variance_top128": 0.80726353712992
+    },
+    {
+      "fold": 0,
+      "layer": 20,
+      "dimension": 1536,
+      "training_tasks": 105,
+      "training_candidates": 1706,
+      "variance_top16": 0.3668147580898029,
+      "variance_top64": 0.6371055374436614,
+      "variance_top128": 0.7819960902641697
+    },
+    {
+      "fold": 0,
+      "layer": 27,
+      "dimension": 1536,
+      "training_tasks": 105,
+      "training_candidates": 1706,
+      "variance_top16": 0.41298737173704303,
+      "variance_top64": 0.6581670179462918,
+      "variance_top128": 0.7885975051345105
+    },
+    {
+      "fold": 1,
+      "layer": 6,
+      "dimension": 1536,
+      "training_tasks": 105,
+      "training_candidates": 1694,
+      "variance_top16": 0.39917343795742155,
+      "variance_top64": 0.7091859381403597,
+      "variance_top128": 0.8519240788149511
+    },
+    {
+      "fold": 1,
+      "layer": 13,
+      "dimension": 1536,
+      "training_tasks": 105,
+      "training_candidates": 1694,
+      "variance_top16": 0.3789900205644541,
+      "variance_top64": 0.670683699571607,
+      "variance_top128": 0.8141793331838831
+    },
+    {
+      "fold": 1,
+      "layer": 20,
+      "dimension": 1536,
+      "training_tasks": 105,
+      "training_candidates": 1694,
+      "variance_top16": 0.37050637972329303,
+      "variance_top64": 0.6434258713580945,
+      "variance_top128": 0.7868021384807674
+    },
+    {
+      "fold": 1,
+      "layer": 27,
+      "dimension": 1536,
+      "training_tasks": 105,
+      "training_candidates": 1694,
+      "variance_top16": 0.41662456661073877,
+      "variance_top64": 0.6621316184289896,
+      "variance_top128": 0.7927799847573812
+    },
+    {
+      "fold": 2,
+      "layer": 6,
+      "dimension": 1536,
+      "training_tasks": 106,
+      "training_candidates": 1776,
+      "variance_top16": 0.39372215046380155,
+      "variance_top64": 0.7010808489562288,
+      "variance_top128": 0.8445615585030728
+    },
+    {
+      "fold": 2,
+      "layer": 13,
+      "dimension": 1536,
+      "training_tasks": 106,
+      "training_candidates": 1776,
+      "variance_top16": 0.3725279068632932,
+      "variance_top64": 0.6620648519577024,
+      "variance_top128": 0.806720068459733
+    },
+    {
+      "fold": 2,
+      "layer": 20,
+      "dimension": 1536,
+      "training_tasks": 106,
+      "training_candidates": 1776,
+      "variance_top16": 0.3643783395103181,
+      "variance_top64": 0.6331357614348576,
+      "variance_top128": 0.7771852626805038
+    },
+    {
+      "fold": 2,
+      "layer": 27,
+      "dimension": 1536,
+      "training_tasks": 106,
+      "training_candidates": 1776,
+      "variance_top16": 0.41492080400749454,
+      "variance_top64": 0.6546501269092952,
+      "variance_top128": 0.7852566811633751
+    },
+    {
+      "fold": 3,
+      "layer": 6,
+      "dimension": 1536,
+      "training_tasks": 106,
+      "training_candidates": 1710,
+      "variance_top16": 0.39473080909845226,
+      "variance_top64": 0.7038193461389477,
+      "variance_top128": 0.8468602951306174
+    },
+    {
+      "fold": 3,
+      "layer": 13,
+      "dimension": 1536,
+      "training_tasks": 106,
+      "training_candidates": 1710,
+      "variance_top16": 0.37222371809454,
+      "variance_top64": 0.6607390805090196,
+      "variance_top128": 0.8058467963843039
+    },
+    {
+      "fold": 3,
+      "layer": 20,
+      "dimension": 1536,
+      "training_tasks": 106,
+      "training_candidates": 1710,
+      "variance_top16": 0.36997721029353875,
+      "variance_top64": 0.6362641467028728,
+      "variance_top128": 0.7793388476695711
+    },
+    {
+      "fold": 3,
+      "layer": 27,
+      "dimension": 1536,
+      "training_tasks": 106,
+      "training_candidates": 1710,
+      "variance_top16": 0.4204150842729427,
+      "variance_top64": 0.6598171597977915,
+      "variance_top128": 0.788623591501354
+    },
+    {
+      "fold": 4,
+      "layer": 6,
+      "dimension": 1536,
+      "training_tasks": 106,
+      "training_candidates": 1746,
+      "variance_top16": 0.3902857963080286,
+      "variance_top64": 0.7022009627567631,
+      "variance_top128": 0.8452923664601586
+    },
+    {
+      "fold": 4,
+      "layer": 13,
+      "dimension": 1536,
+      "training_tasks": 106,
+      "training_candidates": 1746,
+      "variance_top16": 0.36840019040781224,
+      "variance_top64": 0.6585702223345384,
+      "variance_top128": 0.8044753396500097
+    },
+    {
+      "fold": 4,
+      "layer": 20,
+      "dimension": 1536,
+      "training_tasks": 106,
+      "training_candidates": 1746,
+      "variance_top16": 0.3636947746094878,
+      "variance_top64": 0.6330768823732056,
+      "variance_top128": 0.7774525013551646
+    },
+    {
+      "fold": 4,
+      "layer": 27,
+      "dimension": 1536,
+      "training_tasks": 106,
+      "training_candidates": 1746,
+      "variance_top16": 0.41708591495600156,
+      "variance_top64": 0.657739074253191,
+      "variance_top128": 0.7873901236006196
+    }
+  ],
+  "same_layer_direction_cosines": [
+    {
+      "fold_a": 0,
+      "fold_b": 1,
+      "layer": 13,
+      "cosine_raw_coordinates": 0.7157556340793246,
+      "scope": "Same layer only; overlapping training tasks; no independent stability inference"
+    },
+    {
+      "fold_a": 0,
+      "fold_b": 3,
+      "layer": 13,
+      "cosine_raw_coordinates": 0.7242464503540181,
+      "scope": "Same layer only; overlapping training tasks; no independent stability inference"
+    },
+    {
+      "fold_a": 1,
+      "fold_b": 3,
+      "layer": 13,
+      "cosine_raw_coordinates": 0.7454699555652741,
+      "scope": "Same layer only; overlapping training tasks; no independent stability inference"
+    }
+  ],
+  "block_contributions": [
+    {
+      "fold": 0,
+      "layer": 13,
+      "hidden_coefficient_l2": 0.48460907558355176,
+      "observable_coefficient_l2": 0.16014701525513014,
+      "held_out_hidden_logit_sd": 0.837939644847058,
+      "held_out_observable_logit_sd": 0.2732011063533458,
+      "calibrator_slope": 0.9398600667095566
+    },
+    {
+      "fold": 1,
+      "layer": 13,
+      "hidden_coefficient_l2": 0.48292174353632783,
+      "observable_coefficient_l2": 0.15823560486668722,
+      "held_out_hidden_logit_sd": 0.7562428540340451,
+      "held_out_observable_logit_sd": 0.3061005583280134,
+      "calibrator_slope": 0.4474137044899562
+    },
+    {
+      "fold": 2,
+      "layer": 20,
+      "hidden_coefficient_l2": 0.4970007928127053,
+      "observable_coefficient_l2": 0.1754718820976739,
+      "held_out_hidden_logit_sd": 0.7251470169460196,
+      "held_out_observable_logit_sd": 0.3673164362699307,
+      "calibrator_slope": 0.6727288920228628
+    },
+    {
+      "fold": 3,
+      "layer": 13,
+      "hidden_coefficient_l2": 0.48035098803821097,
+      "observable_coefficient_l2": 0.16136485969196246,
+      "held_out_hidden_logit_sd": 0.7067419220416129,
+      "held_out_observable_logit_sd": 0.2947485098117659,
+      "calibrator_slope": 0.3963530116945048
+    },
+    {
+      "fold": 4,
+      "layer": 27,
+      "hidden_coefficient_l2": 0.4675155612827331,
+      "observable_coefficient_l2": 0.18874317814425826,
+      "held_out_hidden_logit_sd": 0.6307869607021361,
+      "held_out_observable_logit_sd": 0.3229692717889564,
+      "calibrator_slope": 0.5794989405596348
+    }
+  ],
+  "redundancy_R2": [
+    {
+      "fold": 0,
+      "hidden_contribution_prediction_R2_from_B": -0.01607118265709362,
+      "scope": "Fixed alpha=1 descriptive score predictability; not a test of conditional correctness information"
+    },
+    {
+      "fold": 1,
+      "hidden_contribution_prediction_R2_from_B": 0.07980329441903133,
+      "scope": "Fixed alpha=1 descriptive score predictability; not a test of conditional correctness information"
+    },
+    {
+      "fold": 2,
+      "hidden_contribution_prediction_R2_from_B": 0.09160246268055805,
+      "scope": "Fixed alpha=1 descriptive score predictability; not a test of conditional correctness information"
+    },
+    {
+      "fold": 3,
+      "hidden_contribution_prediction_R2_from_B": 0.005955417577408362,
+      "scope": "Fixed alpha=1 descriptive score predictability; not a test of conditional correctness information"
+    },
+    {
+      "fold": 4,
+      "hidden_contribution_prediction_R2_from_B": -0.2709895867173837,
+      "scope": "Fixed alpha=1 descriptive score predictability; not a test of conditional correctness information"
+    }
+  ],
+  "within_task_score_correlation_B_H": 0.16954582716733063,
+  "within_task_score_correlation_B_HB": 0.3505740432548657,
+  "learning_curves": [
+    {
+      "fraction": 0.3,
+      "family": "B_fixed_C01",
+      "training_task_range": [
+        32,
+        32
+      ],
+      "roc_auc": 0.6962868482592226,
+      "pr_auc": 0.7156416020982246,
+      "log_loss": 0.6409050904352389,
+      "brier": 0.2242767376897475,
+      "within_task_auc": 0.6307995596677936,
+      "within_task_auc_interval": {
+        "estimate": 0.6307995596677936,
+        "ci95": [
+          0.5859971560104001,
+          0.6770089196504525
+        ],
+        "tasks": 92,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fraction": 0.3,
+      "family": "HB_PCA16_fixed_layer13_C01",
+      "training_task_range": [
+        32,
+        32
+      ],
+      "roc_auc": 0.6903191380305815,
+      "pr_auc": 0.7154800860257488,
+      "log_loss": 0.6476748863073428,
+      "brier": 0.2271661405795583,
+      "within_task_auc": 0.6368389395034447,
+      "within_task_auc_interval": {
+        "estimate": 0.6368389395034447,
+        "ci95": [
+          0.5912487363420763,
+          0.6826870754342135
+        ],
+        "tasks": 92,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fraction": 0.6,
+      "family": "B_fixed_C01",
+      "training_task_range": [
+        63,
+        64
+      ],
+      "roc_auc": 0.6744022498322749,
+      "pr_auc": 0.6800650088039577,
+      "log_loss": 0.6453940328536821,
+      "brier": 0.2268595291075667,
+      "within_task_auc": 0.6271377886153702,
+      "within_task_auc_interval": {
+        "estimate": 0.6271377886153702,
+        "ci95": [
+          0.5828153465454359,
+          0.673130664830704
+        ],
+        "tasks": 92,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fraction": 0.6,
+      "family": "HB_PCA16_fixed_layer13_C01",
+      "training_task_range": [
+        63,
+        64
+      ],
+      "roc_auc": 0.6842754058520311,
+      "pr_auc": 0.6887073897476085,
+      "log_loss": 0.6419440963012092,
+      "brier": 0.22497308055580326,
+      "within_task_auc": 0.6394961744663189,
+      "within_task_auc_interval": {
+        "estimate": 0.6394961744663189,
+        "ci95": [
+          0.5933269956315371,
+          0.6831401730729944
+        ],
+        "tasks": 92,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fraction": 1.0,
+      "family": "B_fixed_C01",
+      "training_task_range": [
+        105,
+        106
+      ],
+      "roc_auc": 0.6981660918017255,
+      "pr_auc": 0.7091130035216564,
+      "log_loss": 0.6320461006321366,
+      "brier": 0.22089311815195756,
+      "within_task_auc": 0.626194624782349,
+      "within_task_auc_interval": {
+        "estimate": 0.626194624782349,
+        "ci95": [
+          0.5816436059291273,
+          0.671320996596798
+        ],
+        "tasks": 92,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fraction": 1.0,
+      "family": "HB_PCA16_fixed_layer13_C01",
+      "training_task_range": [
+        105,
+        106
+      ],
+      "roc_auc": 0.701065706293961,
+      "pr_auc": 0.714611004722082,
+      "log_loss": 0.6306019155274647,
+      "brier": 0.22037816987673925,
+      "within_task_auc": 0.6214456231265463,
+      "within_task_auc_interval": {
+        "estimate": 0.6214456231265463,
+        "ci95": [
+          0.574999978170244,
+          0.6661784053022819
+        ],
+        "tasks": 92,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    }
+  ],
+  "learning_curve_scope": "Fixed C=.01, fixed layer13 and PCA16; deterministic task subsets; not the original selected algorithm or a claim about optimal sample efficiency",
+  "limitations": [
+    "PCA variance is a training-only descriptive property, not correctness information",
+    "Direction angles depend on coordinates; only raw-space directions in the same layer compared",
+    "No new causal mechanism or conditional independence is identified"
+  ]
+}

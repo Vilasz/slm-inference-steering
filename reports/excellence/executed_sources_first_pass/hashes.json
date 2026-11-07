@@ -1,0 +1,12 @@
+{
+  "src/slm_steering/excellence/approvals.py": "cf8b48e481162d56e61657131d2d5d53840e2962c9d598a3dbfbacce4bcfba2d",
+  "src/slm_steering/excellence/audit.py": "e7b95f1e486934cfe6624c2a40b7ee4f10689bfd466c655db0f7fbfc75f8d78d",
+  "src/slm_steering/excellence/benchmark.py": "35abc5a4348b5f0d2ab15c7dabfb200d7c1b18cb8a3cc857203ae46a5fc88365",
+  "src/slm_steering/excellence/economics.py": "2080c3ae27dc8e0c562fd1f577d6c37b82b14fbc91a4a62390650fdf10ba7fb5",
+  "src/slm_steering/excellence/geometry.py": "92890772ca1d53abaded1488754310bb1e0302a1a442efe2b4579e5e68a466f3",
+  "src/slm_steering/excellence/hardware_metrics.py": "43d65e7e6fa50045c3a0f55fd88aaea9bec2a11c8c629d78bd81ef566f12aaec",
+  "src/slm_steering/excellence/independent.py": "2c2908f1d9cc5120b5d21bfe9b6c628669dac2d2646abece29f2d103d8434d16",
+  "src/slm_steering/excellence/models.py": "a648c52d968e1221ea06a72a2164350848f12b2788ea8b6f2feef6c4420dac0f",
+  "src/slm_steering/excellence/transfer.py": "d0103cd31d9fb8f3bb71a2b4b4aff48dda915ef4b77931f1d13b29281dae4430",
+  "src/slm_steering/excellence/__init__.py": "766be75bb4d366722f733c93d934c8ad23e325dedd569a0015bdc0309e7e03cf"
+}

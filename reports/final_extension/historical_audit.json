@@ -1,0 +1,23 @@
+{
+  "completed_at": "2026-11-05T11:39:31.927471+00:00",
+  "attempts": 2640,
+  "tasks": 132,
+  "active_attempts_t32": 2158,
+  "mixed_tasks_t32": 92,
+  "reproduced_contrast": {
+    "estimate": -0.04702865751183576,
+    "ci95": [
+      -0.09937495818447424,
+      0.005583498622638421
+    ],
+    "tasks": 92,
+    "replications": 2000,
+    "seed": 20260921,
+    "unit": "task_id"
+  },
+  "predictor_correlation": 0.5408841205801583,
+  "label_seed_identity_checks": true,
+  "historical_files_unchanged": true,
+  "sandbox_finding": "Historical worker has EvalPlus guards/timeouts but no OS filesystem/network namespace; new evaluations require bubblewrap.",
+  "scope": "Historical labels are checked against recorded base/plus statuses, not rerun in this audit."
+}

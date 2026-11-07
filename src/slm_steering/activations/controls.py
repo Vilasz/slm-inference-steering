@@ -12,8 +12,12 @@ DIRECTION_TYPES = {
     "correctness_direction",
     "negative_correctness_direction",
     "random_direction",
+    "random_same_norm_direction",
+    "random_orthogonal_direction",
     "shuffled_label_direction",
     "length_direction",
+    "orthogonalized_correctness_direction",
+    "layer_shuffled_direction",
 }
 
 
@@ -32,11 +36,20 @@ def load_direction_map(
         return random_direction_map(layers, hidden_size=hidden_size, seed=seed)
 
     base = _load_base_directions(directions_dir, hidden_size=hidden_size)
+    if direction_type == "random_same_norm_direction":
+        return random_same_norm_direction_map(layers, base=base, hidden_size=hidden_size, seed=seed)
+    if direction_type == "random_orthogonal_direction":
+        return random_orthogonal_direction_map(layers, base=base, hidden_size=hidden_size, seed=seed)
     if direction_type == "shuffled_label_direction":
         base = _shuffled_label_directions(directions_dir, seed=seed) or base
     if direction_type == "length_direction":
         length = _length_directions(directions_dir)
         base = length or base
+    if direction_type == "orthogonalized_correctness_direction":
+        length = _length_directions(directions_dir)
+        base = orthogonalize_direction_map(base, length)
+    if direction_type == "layer_shuffled_direction":
+        base = layer_shuffled_direction_map(base, seed=seed)
     if direction_type == "negative_correctness_direction":
         base = {layer: -vector for layer, vector in base.items()}
 
@@ -54,6 +67,69 @@ def load_direction_map(
 def random_direction_map(layers: list[int], *, hidden_size: int, seed: int = 1234) -> dict[int, np.ndarray]:
     rng = np.random.default_rng(seed)
     return {layer: normalize(rng.normal(size=hidden_size).astype(np.float32)) for layer in layers}
+
+
+def random_same_norm_direction_map(
+    layers: list[int],
+    *,
+    base: dict[int, np.ndarray],
+    hidden_size: int,
+    seed: int = 1234,
+) -> dict[int, np.ndarray]:
+    rng = np.random.default_rng(seed)
+    result = {}
+    for layer in layers:
+        random = normalize(rng.normal(size=hidden_size).astype(np.float32))
+        norm = float(np.linalg.norm(base.get(layer, random)))
+        result[layer] = (random * norm).astype(np.float32)
+    return result
+
+
+def random_orthogonal_direction_map(
+    layers: list[int],
+    *,
+    base: dict[int, np.ndarray],
+    hidden_size: int,
+    seed: int = 1234,
+) -> dict[int, np.ndarray]:
+    rng = np.random.default_rng(seed)
+    result = {}
+    for layer in layers:
+        random = rng.normal(size=hidden_size).astype(np.float32)
+        reference = base.get(layer)
+        if reference is not None:
+            random = orthogonalize(random, reference)
+        result[layer] = normalize(random)
+    return result
+
+
+def orthogonalize_direction_map(
+    base: dict[int, np.ndarray],
+    controls: dict[int, np.ndarray],
+) -> dict[int, np.ndarray]:
+    return {
+        layer: normalize(orthogonalize(vector, controls[layer]) if layer in controls else vector)
+        for layer, vector in base.items()
+    }
+
+
+def layer_shuffled_direction_map(base: dict[int, np.ndarray], *, seed: int = 1234) -> dict[int, np.ndarray]:
+    if len(base) < 2:
+        return base
+    rng = np.random.default_rng(seed)
+    layers = list(base)
+    shuffled = layers.copy()
+    rng.shuffle(shuffled)
+    if shuffled == layers:
+        shuffled = shuffled[1:] + shuffled[:1]
+    return {layer: base[source_layer] for layer, source_layer in zip(layers, shuffled)}
+
+
+def orthogonalize(vector: np.ndarray, reference: np.ndarray) -> np.ndarray:
+    ref = normalize(reference.astype(np.float32))
+    if not ref.any():
+        return vector.astype(np.float32)
+    return (vector - np.dot(vector, ref) * ref).astype(np.float32)
 
 
 def normalize(vector: np.ndarray) -> np.ndarray:

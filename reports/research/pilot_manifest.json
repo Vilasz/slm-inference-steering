@@ -1,0 +1,676 @@
+{
+  "started_at": "2026-10-03T18:08:16.054808+00:00",
+  "command": [
+    "C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe",
+    "scripts/build_candidate_bank.py",
+    "--phase",
+    "pilot",
+    "--output-dir",
+    "runs/candidate_bank/pilot_v0.1",
+    "--wsl-python",
+    "/home/joaof/.venvs/slm-evalplus-v031/bin/python",
+    "--time-budget-seconds",
+    "600",
+    "--max-attempts",
+    "36"
+  ],
+  "git_commit": "73fce19fc9ff5f38f02ec0ac7c963460bfc81974",
+  "git_dirty": true,
+  "config_hash": "3a59025ed01f39e1bd3b26171bf3ac37454e8f239c62440ef1af17abd8683f64",
+  "protocol_hash": "b1a1b8c1e1fd6a658e6e3bac78f76076c0e716ca1f41a70e52d737c75d2c0f98",
+  "python": "3.12.8",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "torch": "2.12.0+cu126",
+    "transformers": "4.46.3",
+    "evalplus": "0.3.1",
+    "numpy": "1.26.4",
+    "scikit-learn": "1.5.2",
+    "statsmodels": "0.14.4",
+    "PyYAML": "6.0.2"
+  },
+  "source_hashes": {
+    "src/slm_steering/research/__init__.py": "cb434ed9d7904af8cf2f14d4518a465fa76987aabe0e6e0958e175b4ec54343a",
+    "src/slm_steering/research/bank.py": "e1d6a5261078fb4e29392420a7e34b64d8579a94992a7951aff74a7dfd16cb8f",
+    "src/slm_steering/research/evaluation.py": "f5eb7901ed1c53063cc73383a8437d251da0e02849bb56760e3560d824b47abe",
+    "src/slm_steering/research/features.py": "bbe81fbab35a9d6dfa95f0f6893f05397ca461647c380401e4194fcff20426ac",
+    "src/slm_steering/research/generation.py": "e330988df59244df1f98d1e52cc6d0eaf184f2eed587457af7f103c1c30a448f",
+    "src/slm_steering/research/policy.py": "8cee4ebd729e7941c82652ad41b8feeceeb457bfff75ecc05c17f4828ffc31ad",
+    "src/slm_steering/research/probes.py": "08734e5e96eee027bcd3b75e12449435b7591c50811852f010ccc2a1b0cb2e3e",
+    "src/slm_steering/research/protocol.py": "1c88ed2a73daf4a13bc210f45a1fd30aeb5043fb9974ec3137ab8c3b477a35b8",
+    "src/slm_steering/research/reporting.py": "d3caeaca11babf26661a23cf751388fd9f90dd7105f125fc538bb82c37e51ece",
+    "src/slm_steering/research/statistics.py": "0afcc287f253a9a8b566eb36353e8d78155bcf52d7ecf99c39fcc85dcc472d7e"
+  },
+  "evalplus_worker_hash": "8d538f5d25c512e6d094286c1c38876822b903ad00a79e5342d1b8e65f77bf19",
+  "protocol_version": "0.1",
+  "run_id": "pilot_v0.1",
+  "phase": "pilot",
+  "status": "partial",
+  "config": {
+    "protocol_version": "0.1",
+    "model": {
+      "id": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+      "revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+      "tokenizer_revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+      "dtype": "bfloat16",
+      "linear_compute_dtype": "float32",
+      "attention_backend": "eager",
+      "device": "cuda"
+    },
+    "benchmark": {
+      "name": "humaneval",
+      "evalplus_version": "0.3.1"
+    },
+    "pilot": {
+      "tasks": 32,
+      "selection_prefix": "protocol-v0.1-pilot:",
+      "temperatures": [
+        0.6,
+        0.8,
+        1.0
+      ],
+      "attempts_per_task": 10,
+      "max_invalid_truncated_excess": 0.05
+    },
+    "decoding": {
+      "top_p": 0.95,
+      "top_k": 0,
+      "max_new_tokens": 512,
+      "do_sample": true
+    },
+    "candidate_bank": {
+      "attempts_per_task": 20,
+      "budgets": [
+        1,
+        5,
+        10,
+        20
+      ]
+    },
+    "activations": {
+      "checkpoints": [
+        0,
+        8,
+        16,
+        32,
+        64,
+        "final"
+      ],
+      "primary_checkpoint": 32,
+      "depth_fractions": [
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "storage_dtype": "float16",
+      "invariance_atol": 0.02,
+      "invariance_rtol": 0.01,
+      "invariance_metric": "per_layer_relative_l2_and_scaled_max"
+    },
+    "statistics": {
+      "outer_folds": 5,
+      "inner_folds": 3,
+      "regularization_c": [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ],
+      "bootstrap_replications": 2000,
+      "permutation_replications": 10000,
+      "seed": 20260921
+    },
+    "policy": {
+      "minimum_correct_recall": 0.97,
+      "noninferiority_margin": 0.03,
+      "checkpoints": [
+        8,
+        16,
+        32,
+        64
+      ]
+    },
+    "resources": {
+      "generation_batch_size": 1,
+      "cpu_threads": 4,
+      "verification_workers": 1,
+      "default_session_seconds": 600
+    }
+  },
+  "sessions": [
+    {
+      "started_at": "2026-10-03T18:08:16.358692+00:00",
+      "git_commit": "73fce19fc9ff5f38f02ec0ac7c963460bfc81974",
+      "git_dirty": true,
+      "time_budget_seconds": 600.0,
+      "new_attempts": 36,
+      "ended_at": "2026-10-03T18:15:55.357752+00:00",
+      "wall_seconds": 458.98399999993853
+    },
+    {
+      "started_at": "2026-10-03T18:19:50.921742+00:00",
+      "git_commit": "73fce19fc9ff5f38f02ec0ac7c963460bfc81974",
+      "git_dirty": true,
+      "time_budget_seconds": 120.0,
+      "new_attempts": 3,
+      "provenance": {
+        "started_at": "2026-10-03T18:19:50.744673+00:00",
+        "command": [
+          "C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe",
+          "scripts/build_candidate_bank.py",
+          "--phase",
+          "pilot",
+          "--output-dir",
+          "runs/candidate_bank/pilot_v0.1",
+          "--wsl-python",
+          "/home/joaof/.venvs/slm-evalplus-v031/bin/python",
+          "--time-budget-seconds",
+          "120",
+          "--max-attempts",
+          "3"
+        ],
+        "git_commit": "73fce19fc9ff5f38f02ec0ac7c963460bfc81974",
+        "git_dirty": true,
+        "config_hash": "3a59025ed01f39e1bd3b26171bf3ac37454e8f239c62440ef1af17abd8683f64",
+        "protocol_hash": "b1a1b8c1e1fd6a658e6e3bac78f76076c0e716ca1f41a70e52d737c75d2c0f98",
+        "python": "3.12.8",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "packages": {
+          "torch": "2.12.0+cu126",
+          "transformers": "4.46.3",
+          "evalplus": "0.3.1",
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "statsmodels": "0.14.4",
+          "PyYAML": "6.0.2"
+        },
+        "source_hashes": {
+          "src/slm_steering/research/__init__.py": "cb434ed9d7904af8cf2f14d4518a465fa76987aabe0e6e0958e175b4ec54343a",
+          "src/slm_steering/research/bank.py": "da75b9e70e6124cd717ba22b2aff1ff3cc40e416d73136f3e317f58a3941a7f4",
+          "src/slm_steering/research/evaluation.py": "f5eb7901ed1c53063cc73383a8437d251da0e02849bb56760e3560d824b47abe",
+          "src/slm_steering/research/features.py": "bbe81fbab35a9d6dfa95f0f6893f05397ca461647c380401e4194fcff20426ac",
+          "src/slm_steering/research/generation.py": "e330988df59244df1f98d1e52cc6d0eaf184f2eed587457af7f103c1c30a448f",
+          "src/slm_steering/research/policy.py": "8cee4ebd729e7941c82652ad41b8feeceeb457bfff75ecc05c17f4828ffc31ad",
+          "src/slm_steering/research/probes.py": "08734e5e96eee027bcd3b75e12449435b7591c50811852f010ccc2a1b0cb2e3e",
+          "src/slm_steering/research/protocol.py": "489cd1dddff53341bba41bd0a99e5032edc48f833d7241b8be5f76020b73b24d",
+          "src/slm_steering/research/reporting.py": "9f6b1885d8634307f42e038a5bb8d51da2d5ad89ca4a54f0f0cc9696c3293104",
+          "src/slm_steering/research/statistics.py": "0afcc287f253a9a8b566eb36353e8d78155bcf52d7ecf99c39fcc85dcc472d7e"
+        },
+        "evalplus_worker_hash": "8d538f5d25c512e6d094286c1c38876822b903ad00a79e5342d1b8e65f77bf19"
+      },
+      "ended_at": "2026-10-03T18:20:33.208133+00:00",
+      "wall_seconds": 42.28100000019185
+    }
+  ],
+  "benchmark": {
+    "benchmark": "humaneval",
+    "version": "v0.1.10",
+    "evalplus_version": "0.3.1",
+    "official_dataset_md5": "fe585eb4df8c88d844eeb463ea4d0302",
+    "dataset_sha256": "0df1afb91f430bcc71fc7a192daf39c3abe11897a7d6e9da66dee67470603fde",
+    "python": "3.12.3",
+    "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "checker": "evalplus.eval.untrusted_check",
+    "fast_check": true,
+    "mini": false,
+    "noextreme": false,
+    "minimum_time_limit": 1,
+    "groundtruth_time_factor": 4
+  },
+  "pilot_task_ids": [
+    "HumanEval/4",
+    "HumanEval/60",
+    "HumanEval/101",
+    "HumanEval/125",
+    "HumanEval/102",
+    "HumanEval/81",
+    "HumanEval/139",
+    "HumanEval/83",
+    "HumanEval/37",
+    "HumanEval/45",
+    "HumanEval/69",
+    "HumanEval/34",
+    "HumanEval/140",
+    "HumanEval/92",
+    "HumanEval/64",
+    "HumanEval/5",
+    "HumanEval/66",
+    "HumanEval/91",
+    "HumanEval/29",
+    "HumanEval/117",
+    "HumanEval/12",
+    "HumanEval/96",
+    "HumanEval/148",
+    "HumanEval/48",
+    "HumanEval/121",
+    "HumanEval/43",
+    "HumanEval/129",
+    "HumanEval/144",
+    "HumanEval/35",
+    "HumanEval/109",
+    "HumanEval/94",
+    "HumanEval/85"
+  ],
+  "task_ids": [
+    "HumanEval/4",
+    "HumanEval/60",
+    "HumanEval/101",
+    "HumanEval/125",
+    "HumanEval/102",
+    "HumanEval/81",
+    "HumanEval/139",
+    "HumanEval/83",
+    "HumanEval/37",
+    "HumanEval/45",
+    "HumanEval/69",
+    "HumanEval/34",
+    "HumanEval/140",
+    "HumanEval/92",
+    "HumanEval/64",
+    "HumanEval/5",
+    "HumanEval/66",
+    "HumanEval/91",
+    "HumanEval/29",
+    "HumanEval/117",
+    "HumanEval/12",
+    "HumanEval/96",
+    "HumanEval/148",
+    "HumanEval/48",
+    "HumanEval/121",
+    "HumanEval/43",
+    "HumanEval/129",
+    "HumanEval/144",
+    "HumanEval/35",
+    "HumanEval/109",
+    "HumanEval/94",
+    "HumanEval/85"
+  ],
+  "expected_attempts": 960,
+  "attempts_per_temperature": 10,
+  "development_only": true,
+  "layers": [
+    6,
+    13,
+    20,
+    27
+  ],
+  "prompt_template_hash": "17e16d36fb48f18d69cbb627f7e0f77ac09cb84383340b7c7248c7fba25f0e9f",
+  "verifier_controls": {
+    "positive": {
+      "passed": true,
+      "error_type": null,
+      "verifier_status": {
+        "base": "pass",
+        "plus": "pass"
+      },
+      "verification_time_seconds": 0.09167046299999981,
+      "test_counts": {
+        "base": 3,
+        "plus": 785
+      }
+    },
+    "negative": {
+      "passed": false,
+      "error_type": "evalplus_fail",
+      "verifier_status": {
+        "base": "fail",
+        "plus": "fail"
+      },
+      "verification_time_seconds": 0.014205866999997596,
+      "test_counts": {
+        "base": 3,
+        "plus": 785
+      }
+    }
+  },
+  "causal_invariance": {
+    "passed": true,
+    "checks": [
+      {
+        "checkpoint": 0,
+        "passed": true,
+        "comparisons": [
+          {
+            "comparison": "full_forward",
+            "passed": true,
+            "relative_l2_by_layer": [
+              1.0066365803140798e-06,
+              8.418138577326317e-07,
+              1.3062991683909786e-06,
+              1.4938132153474726e-06
+            ],
+            "max_absolute_difference_by_layer": [
+              3.3974647521972656e-06,
+              3.3974647521972656e-06,
+              6.67572021484375e-06,
+              7.62939453125e-05
+            ],
+            "maximum_limits": [
+              0.17645476758480072,
+              0.18721234798431396,
+              0.23599368333816528,
+              0.8855480551719666
+            ]
+          },
+          {
+            "comparison": "cached_generation",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.00019641588551022623,
+              0.0001543356065374979,
+              0.00022365842176454574,
+              0.00017831274638165917
+            ],
+            "max_absolute_difference_by_layer": [
+              0.0029592514038085938,
+              0.0024852752685546875,
+              0.005619049072265625,
+              0.014801025390625
+            ],
+            "maximum_limits": [
+              0.17645476758480072,
+              0.18721234798431396,
+              0.23599368333816528,
+              0.8855480551719666
+            ]
+          }
+        ]
+      },
+      {
+        "checkpoint": 8,
+        "passed": true,
+        "comparisons": [
+          {
+            "comparison": "full_forward",
+            "passed": true,
+            "relative_l2_by_layer": [
+              1.5132189901123638e-06,
+              9.893053629639326e-07,
+              9.097624911191815e-07,
+              8.824336532597954e-07
+            ],
+            "max_absolute_difference_by_layer": [
+              5.245208740234375e-06,
+              8.58306884765625e-06,
+              9.5367431640625e-06,
+              5.340576171875e-05
+            ],
+            "maximum_limits": [
+              0.15574155747890472,
+              0.2138250321149826,
+              0.2818372845649719,
+              0.8603844046592712
+            ]
+          },
+          {
+            "comparison": "cached_generation",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.00023066279784974964,
+              0.0002622956952742492,
+              0.00018812322340820023,
+              0.00021678501733622153
+            ],
+            "max_absolute_difference_by_layer": [
+              0.0038433074951171875,
+              0.007503509521484375,
+              0.0037708282470703125,
+              0.02405548095703125
+            ],
+            "maximum_limits": [
+              0.15574155747890472,
+              0.2138250321149826,
+              0.2818372845649719,
+              0.8603844046592712
+            ]
+          }
+        ]
+      },
+      {
+        "checkpoint": 16,
+        "passed": true,
+        "comparisons": [
+          {
+            "comparison": "full_forward",
+            "passed": true,
+            "relative_l2_by_layer": [
+              9.573261650075438e-07,
+              8.518071012986184e-07,
+              1.111296910494275e-06,
+              1.0556364031799603e-06
+            ],
+            "max_absolute_difference_by_layer": [
+              3.337860107421875e-06,
+              4.76837158203125e-06,
+              6.4373016357421875e-06,
+              2.288818359375e-05
+            ],
+            "maximum_limits": [
+              0.1618879735469818,
+              0.1668272167444229,
+              0.19308099150657654,
+              0.9156628847122192
+            ]
+          },
+          {
+            "comparison": "cached_generation",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.00019398207250586808,
+              0.00019915842902015554,
+              0.0002349855055050699,
+              0.00018178612707443813
+            ],
+            "max_absolute_difference_by_layer": [
+              0.00205230712890625,
+              0.0030345916748046875,
+              0.0064716339111328125,
+              0.01883697509765625
+            ],
+            "maximum_limits": [
+              0.1618879735469818,
+              0.1668272167444229,
+              0.19308099150657654,
+              0.9156628847122192
+            ]
+          }
+        ]
+      },
+      {
+        "checkpoint": 32,
+        "passed": true,
+        "comparisons": [
+          {
+            "comparison": "full_forward",
+            "passed": true,
+            "relative_l2_by_layer": [
+              1.2113339380448451e-06,
+              1.1998815807601204e-06,
+              1.1601691767282318e-06,
+              9.847951787378406e-07
+            ],
+            "max_absolute_difference_by_layer": [
+              3.4868717193603516e-06,
+              8.58306884765625e-06,
+              7.62939453125e-06,
+              2.288818359375e-05
+            ],
+            "maximum_limits": [
+              0.20833820104599,
+              0.15295062959194183,
+              0.19502755999565125,
+              1.0739538669586182
+            ]
+          },
+          {
+            "comparison": "cached_generation",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.00023313522225717968,
+              0.0001936122752920954,
+              0.00020156050018630583,
+              0.00019373407838044917
+            ],
+            "max_absolute_difference_by_layer": [
+              0.005695343017578125,
+              0.0030040740966796875,
+              0.0029354095458984375,
+              0.02039337158203125
+            ],
+            "maximum_limits": [
+              0.20833820104599,
+              0.15295062959194183,
+              0.19502755999565125,
+              1.0739538669586182
+            ]
+          }
+        ]
+      },
+      {
+        "checkpoint": 64,
+        "passed": true,
+        "comparisons": [
+          {
+            "comparison": "full_forward",
+            "passed": true,
+            "relative_l2_by_layer": [
+              1.0698728374336497e-06,
+              1.1360858707121224e-06,
+              1.0796198921525502e-06,
+              1.3132779486113577e-06
+            ],
+            "max_absolute_difference_by_layer": [
+              4.76837158203125e-06,
+              4.76837158203125e-06,
+              1.33514404296875e-05,
+              0.00011444091796875
+            ],
+            "maximum_limits": [
+              0.13529518246650696,
+              0.13827931880950928,
+              0.2009131908416748,
+              1.0699985027313232
+            ]
+          },
+          {
+            "comparison": "cached_generation",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.00020677895332058108,
+              0.00019986301803397838,
+              0.00020325952365783063,
+              0.000170776100694265
+            ],
+            "max_absolute_difference_by_layer": [
+              0.0017871856689453125,
+              0.0025358200073242188,
+              0.003795623779296875,
+              0.0194244384765625
+            ],
+            "maximum_limits": [
+              0.13529518246650696,
+              0.13827931880950928,
+              0.2009131908416748,
+              1.0699985027313232
+            ]
+          }
+        ]
+      },
+      {
+        "checkpoint": "final",
+        "passed": true,
+        "comparisons": [
+          {
+            "comparison": "full_forward",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "max_absolute_difference_by_layer": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_limits": [
+              0.10850939154624939,
+              0.1533985286951065,
+              0.24360451102256775,
+              0.29643017053604126
+            ]
+          },
+          {
+            "comparison": "cached_generation",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.0001830402182861133,
+              0.000214152193685785,
+              0.00019802509289370648,
+              0.00021078910664264287
+            ],
+            "max_absolute_difference_by_layer": [
+              0.001796722412109375,
+              0.0038957595825195312,
+              0.0037565231323242188,
+              0.0054779052734375
+            ],
+            "maximum_limits": [
+              0.10850939154624939,
+              0.1533985286951065,
+              0.24360451102256775,
+              0.29643017053604126
+            ]
+          }
+        ]
+      }
+    ],
+    "atol": 0.02,
+    "rtol": 0.01,
+    "metric": "per_layer_relative_l2_and_scaled_max"
+  },
+  "seed_reproduction_passed": true,
+  "completed_attempts": 39,
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "memory_total_mib": 6143.5,
+    "peak_allocated_mib": 3944.4150390625,
+    "peak_reserved_mib": 4256.0,
+    "cuda": "12.6"
+  },
+  "bank_sha256": "7adefec0e9cadaf0dde45bda6de9af2f343461380267c7f413975a739400338e",
+  "bank_frozen": false,
+  "complete": false,
+  "selected_temperature": null,
+  "temperatures": [
+    {
+      "temperature": 0.6,
+      "attempts": 13,
+      "mixed_tasks": 0,
+      "pass_rate": 0.6153846153846154,
+      "invalid_truncated_rate": 0.0,
+      "mean_tokens": 78.38461538461539
+    },
+    {
+      "temperature": 0.8,
+      "attempts": 13,
+      "mixed_tasks": 0,
+      "pass_rate": 0.6153846153846154,
+      "invalid_truncated_rate": 0.0,
+      "mean_tokens": 68.3076923076923
+    },
+    {
+      "temperature": 1.0,
+      "attempts": 13,
+      "mixed_tasks": 0,
+      "pass_rate": 0.3076923076923077,
+      "invalid_truncated_rate": 0.07692307692307693,
+      "mean_tokens": 60.46153846153846
+    }
+  ],
+  "ended_at": "2026-10-03T18:20:33.223906+00:00"
+}

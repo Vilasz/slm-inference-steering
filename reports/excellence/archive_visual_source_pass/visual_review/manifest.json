@@ -1,0 +1,504 @@
+{
+  "created_at": "2026-10-18T16:16:21.232208+00:00",
+  "status": "partially_visually_inspected",
+  "pdfs": {
+    "manuscript": {
+      "path": "tcc/build/manuscrito.pdf",
+      "sha256": "12012d8a53a024e651ed84dffc365999c98ba279329a3944633972e3dae1bca2",
+      "pages": 68,
+      "text_spans_outside_page": [],
+      "text_spans_below_8pt": [
+        {
+          "page": 13,
+          "size": 6.0,
+          "text": "𝑖𝑗"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖𝑗"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖𝑗"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖𝑗ℓ𝑡"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖𝑗𝑡"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖𝑗𝑡"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 13,
+          "size": 7.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 16,
+          "size": 6.0,
+          "text": "𝑖𝑗"
+        },
+        {
+          "page": 16,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 17,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 17,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 18,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 19,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 19,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 19,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 20,
+          "size": 6.0,
+          "text": "𝑁"
+        },
+        {
+          "page": 20,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 20,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 20,
+          "size": 6.0,
+          "text": "𝑁(𝜋𝑖)"
+        },
+        {
+          "page": 20,
+          "size": 6.0,
+          "text": "𝑁(𝜋𝑖𝑟𝑖)"
+        },
+        {
+          "page": 21,
+          "size": 6.0,
+          "text": "𝑋"
+        },
+        {
+          "page": 21,
+          "size": 6.0,
+          "text": "𝑁(𝜋𝑋𝑟𝑋)"
+        },
+        {
+          "page": 21,
+          "size": 6.0,
+          "text": "𝑋"
+        },
+        {
+          "page": 21,
+          "size": 6.0,
+          "text": "𝑋[𝜋𝑋]"
+        },
+        {
+          "page": 21,
+          "size": 6.0,
+          "text": "𝑋[𝑟𝑋]"
+        },
+        {
+          "page": 25,
+          "size": 6.0,
+          "text": "𝑢"
+        },
+        {
+          "page": 26,
+          "size": 6.0,
+          "text": "𝑖"
+        },
+        {
+          "page": 26,
+          "size": 6.0,
+          "text": "tr"
+        },
+        {
+          "page": 29,
+          "size": 6.0,
+          "text": "𝑏"
+        },
+        {
+          "page": 29,
+          "size": 6.0,
+          "text": "𝑏"
+        },
+        {
+          "page": 29,
+          "size": 6.0,
+          "text": "obs"
+        },
+        {
+          "page": 32,
+          "size": 6.0,
+          "text": "∗"
+        },
+        {
+          "page": 33,
+          "size": 6.0,
+          "text": "𝜋"
+        },
+        {
+          "page": 33,
+          "size": 6.0,
+          "text": "𝑉"
+        }
+      ],
+      "geometry_scope": "Text spans only; equations subscripts may be small; neither check certifies diagram legibility"
+    },
+    "summary": {
+      "path": "reports/excellence/materials/research_summary_en.pdf",
+      "sha256": "206e6a341f1f5845d9231dacc712de2f6f2cd9f3f77ff9ffb333b1713abc4a4d",
+      "pages": 2,
+      "text_spans_outside_page": [],
+      "text_spans_below_8pt": [
+        {
+          "page": 2,
+          "size": 7.28000020980835,
+          "text": "𝑑"
+        },
+        {
+          "page": 2,
+          "size": 7.28000020980835,
+          "text": "𝐸[𝑇]"
+        }
+      ],
+      "geometry_scope": "Text spans only; equations subscripts may be small; neither check certifies diagram legibility"
+    },
+    "slides": {
+      "path": "reports/excellence/materials/defesa.pdf",
+      "sha256": "6dea660ff825918db2514a3b5ba2acabb9c2784d338faa83dd9d358a743b7af8",
+      "pages": 12,
+      "text_spans_outside_page": [],
+      "text_spans_below_8pt": [],
+      "geometry_scope": "Text spans only; equations subscripts may be small; neither check certifies diagram legibility"
+    }
+  },
+  "groups": {
+    "manuscript_001_004": {
+      "pdf": "manuscript",
+      "pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "image": "reports/excellence/visual_review/manuscript_001_004.jpg",
+      "image_sha256": "bcda16477090d327aea0c6063bba73cdfbf7188322c652d8985643bc4903461b",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:16:44.072537+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Final hashes inspected: covers, separate abstracts and keywords, contents, introduction, literature, numbered Quadros 1-3, notation and equations. No cropped content or margin overflow; captions and source lines visible."
+    },
+    "manuscript_005_008": {
+      "pdf": "manuscript",
+      "pages": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "image": "reports/excellence/visual_review/manuscript_005_008.jpg",
+      "image_sha256": "be86b8babe6db67992e5189c4c9ad92a5af5212c758d05461e0598da2862a4ef",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:16:44.074725+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Final hashes inspected: covers, separate abstracts and keywords, contents, introduction, literature, numbered Quadros 1-3, notation and equations. No cropped content or margin overflow; captions and source lines visible."
+    },
+    "manuscript_009_012": {
+      "pdf": "manuscript",
+      "pages": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "image": "reports/excellence/visual_review/manuscript_009_012.jpg",
+      "image_sha256": "24dc4e41baa4e3c43bdcace325933f9a192b6a6302460db5422100a74874c45e",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:16:44.076725+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Final hashes inspected: covers, separate abstracts and keywords, contents, introduction, literature, numbered Quadros 1-3, notation and equations. No cropped content or margin overflow; captions and source lines visible."
+    },
+    "manuscript_013_016": {
+      "pdf": "manuscript",
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "image": "reports/excellence/visual_review/manuscript_013_016.jpg",
+      "image_sha256": "213b9158aca3bb59c364ecd3d01007fd41eb2632a317e2afada3eae9c6c87424",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:16:44.078539+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Final hashes inspected: covers, separate abstracts and keywords, contents, introduction, literature, numbered Quadros 1-3, notation and equations. No cropped content or margin overflow; captions and source lines visible."
+    },
+    "manuscript_017_020": {
+      "pdf": "manuscript",
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "image": "reports/excellence/visual_review/manuscript_017_020.jpg",
+      "image_sha256": "562ec263383171005eed542667f5516d38155406c9d95e416b28709e19db08c3",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:16:57.954145+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected full mathematics and method pages: equations, finite-cost derivation, oracle qualifications, Quadros 4-5, cross-fitting, bootstrap and replay steps. Formulas stay within margins; tables/captions/source lines complete."
+    },
+    "manuscript_021_024": {
+      "pdf": "manuscript",
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "image": "reports/excellence/visual_review/manuscript_021_024.jpg",
+      "image_sha256": "aaf2701dbfb6edb9581c1bc7fa5d673a79f8bff9fa0c9f324fcd48a724ab1fbf",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:16:57.954145+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected full mathematics and method pages: equations, finite-cost derivation, oracle qualifications, Quadros 4-5, cross-fitting, bootstrap and replay steps. Formulas stay within margins; tables/captions/source lines complete."
+    },
+    "manuscript_025_028": {
+      "pdf": "manuscript",
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "image": "reports/excellence/visual_review/manuscript_025_028.jpg",
+      "image_sha256": "d41fa478f15b1cbb613bdbb3c1140c4617e39b6f3e5f6f96cb2f13b55a70b9a2",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:16:57.954145+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected full mathematics and method pages: equations, finite-cost derivation, oracle qualifications, Quadros 4-5, cross-fitting, bootstrap and replay steps. Formulas stay within margins; tables/captions/source lines complete."
+    },
+    "manuscript_029_032": {
+      "pdf": "manuscript",
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "image": "reports/excellence/visual_review/manuscript_029_032.jpg",
+      "image_sha256": "771a54f0732924000a1ad73df73c183ca201b01667acf38ae86d4ace80c01d85",
+      "reviewed": true,
+      "reviewed_at": "2026-10-18T16:16:57.954145+00:00",
+      "reviewer": "Codex visual inspection of rendered pages",
+      "notes": "Inspected full mathematics and method pages: equations, finite-cost derivation, oracle qualifications, Quadros 4-5, cross-fitting, bootstrap and replay steps. Formulas stay within margins; tables/captions/source lines complete."
+    },
+    "manuscript_033_036": {
+      "pdf": "manuscript",
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ],
+      "image": "reports/excellence/visual_review/manuscript_033_036.jpg",
+      "image_sha256": "2b7390bc4c2aa66dafa77980cb35b3828679c141be05fc5dca2bd5af28ae2189",
+      "reviewed": false
+    },
+    "manuscript_037_040": {
+      "pdf": "manuscript",
+      "pages": [
+        37,
+        38,
+        39,
+        40
+      ],
+      "image": "reports/excellence/visual_review/manuscript_037_040.jpg",
+      "image_sha256": "d8df1904fbb616be340d79284c57ef42def643a8f7e5f3b320d3e3311eb5f899",
+      "reviewed": false
+    },
+    "manuscript_041_044": {
+      "pdf": "manuscript",
+      "pages": [
+        41,
+        42,
+        43,
+        44
+      ],
+      "image": "reports/excellence/visual_review/manuscript_041_044.jpg",
+      "image_sha256": "10a4e25d62a75ad3bd9182c992d0e29cc860610babaca19e072f3ec59b2fd03b",
+      "reviewed": false
+    },
+    "manuscript_045_048": {
+      "pdf": "manuscript",
+      "pages": [
+        45,
+        46,
+        47,
+        48
+      ],
+      "image": "reports/excellence/visual_review/manuscript_045_048.jpg",
+      "image_sha256": "2e36e74e489468249b16a718ff2c3bd12d342864d634306a887a7d568fe48fa5",
+      "reviewed": false
+    },
+    "manuscript_049_052": {
+      "pdf": "manuscript",
+      "pages": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "image": "reports/excellence/visual_review/manuscript_049_052.jpg",
+      "image_sha256": "8347699f35c42214b62f96726c1c8e95860abdb0423327258ba32e3368c551b5",
+      "reviewed": false
+    },
+    "manuscript_053_056": {
+      "pdf": "manuscript",
+      "pages": [
+        53,
+        54,
+        55,
+        56
+      ],
+      "image": "reports/excellence/visual_review/manuscript_053_056.jpg",
+      "image_sha256": "f00ca7da5e2b77f07ab479bb6295b498f48882cf309c9243b4420cb9569bfbe2",
+      "reviewed": false
+    },
+    "manuscript_057_060": {
+      "pdf": "manuscript",
+      "pages": [
+        57,
+        58,
+        59,
+        60
+      ],
+      "image": "reports/excellence/visual_review/manuscript_057_060.jpg",
+      "image_sha256": "9c38fca11c9d892b5276047d6c558f22b5c34066f47413b2a06d12e1f231ce82",
+      "reviewed": false
+    },
+    "manuscript_061_064": {
+      "pdf": "manuscript",
+      "pages": [
+        61,
+        62,
+        63,
+        64
+      ],
+      "image": "reports/excellence/visual_review/manuscript_061_064.jpg",
+      "image_sha256": "db9022eeba4dd4fa82744aaaacae4ee36ad6fcf30b91e92c926829f1d1ec30f9",
+      "reviewed": false
+    },
+    "manuscript_065_068": {
+      "pdf": "manuscript",
+      "pages": [
+        65,
+        66,
+        67,
+        68
+      ],
+      "image": "reports/excellence/visual_review/manuscript_065_068.jpg",
+      "image_sha256": "fcdf825229cbc02cb0f8bd85a15c9d131aa58e1107202b7191363f1173733e3f",
+      "reviewed": false
+    },
+    "summary_001_002": {
+      "pdf": "summary",
+      "pages": [
+        1,
+        2
+      ],
+      "image": "reports/excellence/visual_review/summary_001_002.jpg",
+      "image_sha256": "a544dbdc79e783afd0813e5d9ff96d1b55b000357262e2047edf26645609ddf8",
+      "reviewed": false
+    },
+    "slides_001_004": {
+      "pdf": "slides",
+      "pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "image": "reports/excellence/visual_review/slides_001_004.jpg",
+      "image_sha256": "19ce4ae1d63688acf80f636c9190c70c2fd48e8c669dfc7f959c47468e003f5a",
+      "reviewed": false
+    },
+    "slides_005_008": {
+      "pdf": "slides",
+      "pages": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "image": "reports/excellence/visual_review/slides_005_008.jpg",
+      "image_sha256": "3df96cbfe355a812051527927ae36cddfd1b78f397d7c8960a4bc11fd64c13e4",
+      "reviewed": false
+    },
+    "slides_009_012": {
+      "pdf": "slides",
+      "pages": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "image": "reports/excellence/visual_review/slides_009_012.jpg",
+      "image_sha256": "92632d01e2c9a593653bb5cc087cbe3cdb0c6b16bbc86740f751f9c0854842de",
+      "reviewed": false
+    }
+  },
+  "updated_at": "2026-10-18T16:16:57.954145+00:00"
+}

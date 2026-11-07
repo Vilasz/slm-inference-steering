@@ -1,0 +1,10 @@
+{
+  "completed_at": "2026-11-05T19:28:52.174396+00:00",
+  "candidates": 2640,
+  "source_sha256": "8e55c7f8905254029d6ef3e92a17a77f01727f7ba206c5e73098613b26b856fb",
+  "mismatches": [],
+  "all_match": true,
+  "memory_limit_bytes": 3221225472,
+  "historical_default_memory_limit_bytes": 4294967296,
+  "scope": "Official base+plus checker rerun in OS sandbox; original labels/artifacts were not changed."
+}

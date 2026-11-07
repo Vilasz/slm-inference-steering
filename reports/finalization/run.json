@@ -1,0 +1,23 @@
+{
+  "started_at_utc": "2026-11-07T21:41:15+00:00",
+  "deadline_utc": "2026-11-08T00:41:15+00:00",
+  "restrictions": [
+    "CPU only",
+    "no new generation, model downloads, probe fitting or historical edits"
+  ],
+  "git_head": "73fce19fc9ff5f38f02ec0ac7c963460bfc81974",
+  "git_index_sha256_before": "175202e9a888d3c1f257fb54d0165504248cffc67eb73a38a0de8f34619366a3",
+  "later_user_authorization": "GPU permitted if it accelerates existing-artifact verification; no new generation, downloads or costly fitting",
+  "status": "completed",
+  "review_completed_at_utc": "2026-11-07T22:23:20.559892+00:00",
+  "review_elapsed_minutes": 42.092664866666674,
+  "within_180_minute_limit": true,
+  "gpu_used": false,
+  "new_generations": 0,
+  "model_weight_downloads": 0,
+  "scientific_probes_refitted": false,
+  "unit_test_fitting": "Tiny synthetic MLP determinism check only",
+  "final_pdf": "tcc/build/manuscrito.pdf",
+  "publication_directory": "dist/github_final",
+  "verification": "Numerics and PDF reproduced from a Git-extracted copy in the separate 27-package CPU environment"
+}

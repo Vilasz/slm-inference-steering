@@ -6,7 +6,7 @@ import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 from tqdm import tqdm
 
@@ -14,6 +14,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
+
+if TYPE_CHECKING:
+    from slm_steering.activations.steering import SteeredCodeGenerator
 
 
 def parse_args() -> argparse.Namespace:
@@ -110,7 +113,7 @@ def prepare_torch_runtime(args: argparse.Namespace) -> None:
     import torch  # noqa: F401
 
 
-def build_generator(args: argparse.Namespace, initial_layer: int) -> SteeredCodeGenerator:
+def build_generator(args: argparse.Namespace, initial_layer: int) -> "SteeredCodeGenerator":
     from slm_steering.activations.steering import SteeredCodeGenerator, SteeringConfig
     from slm_steering.generation import GeneratorConfig
 
@@ -131,7 +134,7 @@ def build_generator(args: argparse.Namespace, initial_layer: int) -> SteeredCode
 def run_single_sweep_point(
     args: argparse.Namespace,
     point,
-    generator: SteeredCodeGenerator,
+    generator: "SteeredCodeGenerator",
     problems: list[Any],
     jsonl_path: Path,
     summary_path: Path,

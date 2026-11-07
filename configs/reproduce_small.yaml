@@ -1,0 +1,71 @@
+{
+  "name": "reproduce_small",
+  "output_dir": "runs/config_runs/reproduce_small",
+  "description": "Small end-to-end reproduction scaffold. Heavy steps require CUDA and cached/downloadable models.",
+  "steps": [
+    {
+      "name": "phase2_core",
+      "type": "command",
+      "command": [
+        "{python}",
+        "scripts/run_experiment_matrix.py",
+        "--models",
+        "qwen2.5-coder-0.5b-instruct",
+        "--temperatures",
+        "0.2,0.8",
+        "--n-values",
+        "1,5",
+        "--limit",
+        "10",
+        "--max-new-tokens",
+        "256",
+        "--skip-existing",
+        "--continue-on-error",
+        "--require-cuda"
+      ]
+    },
+    {
+      "name": "activation_extract",
+      "type": "command",
+      "command": [
+        "{python}",
+        "scripts/extract_activations.py",
+        "--input-jsonl",
+        "runs/phase2/qwen05b_temp08_n5.jsonl",
+        "--summary-json",
+        "runs/phase2/qwen05b_temp08_n5_summary.json",
+        "--output-dir",
+        "runs/phase3/qwen_phase3_probe",
+        "--layers",
+        "0:28:4",
+        "--token-position",
+        "completion_last",
+        "--difficulty-filter",
+        "all",
+        "--require-cuda"
+      ]
+    },
+    {
+      "name": "latent_geometry",
+      "type": "command",
+      "command": [
+        "{python}",
+        "scripts/analyze_latent_geometry.py",
+        "--activations-dir",
+        "runs/phase3/qwen_phase3_probe",
+        "--phase2-runs-dir",
+        "runs/phase2",
+        "--output-dir",
+        "runs/phase35/latent_geometry",
+        "--n-bootstrap",
+        "100",
+        "--n-permutations",
+        "100"
+      ]
+    },
+    {
+      "name": "report",
+      "type": "report"
+    }
+  ]
+}

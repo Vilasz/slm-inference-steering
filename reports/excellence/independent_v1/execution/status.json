@@ -1,0 +1,166 @@
+{
+  "started_at": "2026-10-17T14:18:12.102433+00:00",
+  "supervisor_pid": 19812,
+  "status": "completed",
+  "source_sha256": "f15ba909910109620bc935f57b8b87fda5d4f37362e4159dc1473682c2b037cd",
+  "initial_collector_pid": 33164,
+  "sessions": [
+    {
+      "phase": "technical",
+      "completed_attempts": 225,
+      "ended_at": "2026-10-17T14:37:05.826637+00:00"
+    },
+    {
+      "phase": "technical",
+      "completed_attempts": 338,
+      "ended_at": "2026-10-17T14:47:17.617164+00:00"
+    },
+    {
+      "phase": "technical",
+      "completed_attempts": 400,
+      "ended_at": "2026-10-17T14:52:28.693949+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 124,
+      "ended_at": "2026-10-17T15:02:35.899191+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 243,
+      "ended_at": "2026-10-17T15:12:48.008849+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 362,
+      "ended_at": "2026-10-17T15:22:55.043882+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 477,
+      "ended_at": "2026-10-17T15:33:07.026274+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 603,
+      "ended_at": "2026-10-17T15:43:19.184934+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 723,
+      "ended_at": "2026-10-17T15:53:31.479347+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 836,
+      "ended_at": "2026-10-17T16:03:43.633483+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 924,
+      "ended_at": "2026-10-17T16:13:56.227304+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 1005,
+      "ended_at": "2026-10-17T16:24:13.853060+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 1097,
+      "ended_at": "2026-10-17T16:34:26.000771+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 1177,
+      "ended_at": "2026-10-17T16:44:37.985121+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 1267,
+      "ended_at": "2026-10-17T16:54:50.077865+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 1340,
+      "ended_at": "2026-10-17T17:05:08.685962+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 1453,
+      "ended_at": "2026-10-17T17:15:31.110570+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 1574,
+      "ended_at": "2026-10-17T17:25:38.262359+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 1696,
+      "ended_at": "2026-10-17T17:35:50.535902+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 1813,
+      "ended_at": "2026-10-17T17:45:57.896730+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 1930,
+      "ended_at": "2026-10-17T17:56:05.216894+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 2049,
+      "ended_at": "2026-10-17T18:06:17.527881+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 2175,
+      "ended_at": "2026-10-17T18:16:24.802939+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 2293,
+      "ended_at": "2026-10-17T18:26:31.861240+00:00"
+    },
+    {
+      "phase": "main",
+      "completed_attempts": 2400,
+      "ended_at": "2026-10-17T18:36:03.700735+00:00"
+    }
+  ],
+  "phase": "completed",
+  "updated_at": "2026-10-18T16:32:10.521153+00:00",
+  "banks": {
+    "technical": {
+      "expected_attempts": 400,
+      "numerical_checks_passed": true,
+      "status": "completed",
+      "completed_attempts": 400
+    },
+    "main": {
+      "expected_attempts": 2400,
+      "numerical_checks_passed": true,
+      "status": "completed",
+      "completed_attempts": 2400
+    }
+  },
+  "child_pid": null,
+  "current_log": "reports/excellence/independent_v1/execution/final_publication.log",
+  "ended_at": "2026-10-18T16:32:10.521153+00:00",
+  "publication_recovery_receipt": "reports/excellence/independent_v1/execution/publication_recovery.json",
+  "failure_history": [
+    {
+      "failed_at": "2026-10-17T18:36:23.767133+00:00",
+      "failure": {
+        "type": "RuntimeError",
+        "message": "publication failed with exit code 1; inspect C:\\Users\\joaof\\slm-inference-steering\\reports\\excellence\\independent_v1\\execution\\publication.log"
+      },
+      "original_ended_at": "2026-10-17T18:36:13.734981+00:00",
+      "archived_status": "reports/excellence/independent_v1/execution/publication_failure_20261018_123404/status.json"
+    }
+  ],
+  "completion_mode": "Approved collection completed by original supervisor; reporting recovered separately and final visual review completed"
+}

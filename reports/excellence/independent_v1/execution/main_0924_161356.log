@@ -1,0 +1,41 @@
+
+2026-10-17T16:13:56.306976+00:00 command=["C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe", "-u", "C:\\Users\\joaof\\slm-inference-steering\\scripts\\run_excellence_extension.py", "--phase", "main", "--time-budget-seconds", "600", "--wsl-python", "/home/joaof/.venvs/slm-evalplus-v031/bin/python"]
+<string>:8: SyntaxWarning: invalid escape sequence '\.'
+<string>:8: SyntaxWarning: invalid escape sequence '\.'
+<string>:9: SyntaxWarning: invalid escape sequence '\w'
+<string>:9: SyntaxWarning: invalid escape sequence '\w'
+main 983/2400 Mbpp/305 attempt=8
+main 984/2400 Mbpp/597 attempt=8
+main 985/2400 Mbpp/725 attempt=8
+main 986/2400 Mbpp/9 attempt=8
+main 987/2400 Mbpp/620 attempt=8
+main 988/2400 Mbpp/568 attempt=8
+main 989/2400 Mbpp/639 attempt=8
+main 990/2400 Mbpp/286 attempt=8
+main 991/2400 Mbpp/422 attempt=8
+main 992/2400 Mbpp/589 attempt=8
+main 993/2400 Mbpp/273 attempt=8
+main 994/2400 Mbpp/557 attempt=8
+main 995/2400 Mbpp/239 attempt=8
+main 996/2400 Mbpp/251 attempt=8
+main 997/2400 Mbpp/565 attempt=8
+main 998/2400 Mbpp/598 attempt=8
+main 999/2400 Mbpp/257 attempt=8
+main 1000/2400 Mbpp/720 attempt=8
+main 1001/2400 Mbpp/556 attempt=8
+main 1002/2400 Mbpp/784 attempt=8
+main 1003/2400 Mbpp/758 attempt=8
+main 1004/2400 Mbpp/70 attempt=8
+main 1005/2400 Mbpp/592 attempt=8
+empt=7
+main 955/2400 Mbpp/759 attempt=7
+main 956/2400 Mbpp/138 attempt=7
+main 957/2400 Mbpp/409 attempt=7
+main 958/2400 Mbpp/628 attempt=7
+main 959/2400 Mbpp/602 attempt=7
+main 960/2400 Mbpp/578 attempt=7
+main 961/2400 Mbpp/283 attempt=8
+main 962/2400 Mbpp/412 attempt=8
+main 963/2400 Mbpp/427 attempt=8
+main 964/2400 Mbpp/440 attempt=8
+main 965/2400 Mbpp/126 attempt=8

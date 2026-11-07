@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-10-17T06:38:04.918269+00:00",
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "memory_total_mib": 6143.5,
+    "peak_allocated_mib": 4085.0,
+    "peak_reserved_mib": 4978.0,
+    "cuda": "12.6",
+    "driver_version": "576.52",
+    "weight_storage_dtype": "bfloat16",
+    "linear_compute_dtype": "float32",
+    "python": "3.12.8",
+    "torch": "2.12.0+cu126",
+    "bf16_supported": true,
+    "requested_gpu": "RTX 4060",
+    "requested_gpu_present": false
+  },
+  "known_candidate_pairs": 50,
+  "generation_seconds_per_candidate_reference": 8.47500416399911,
+  "reference_mean_tokens": 74.36,
+  "reference_prefill_event_span_seconds": 0.24933090881347655,
+  "nonprefill_wall_seconds_per_token": 0.11061959729943026,
+  "historical_target_mean_length": 47.49375,
+  "forecast_seconds_per_attempt_including_verification": 5.71118113804999,
+  "scenarios": [
+    {
+      "main_tasks": 100,
+      "technical_tasks": 20,
+      "attempts": 2400,
+      "expected_hours": 3.8074540920333266,
+      "hours_with_50pct_buffer": 5.71118113804999
+    },
+    {
+      "main_tasks": 120,
+      "technical_tasks": 20,
+      "attempts": 2800,
+      "expected_hours": 4.442029774038882,
+      "hours_with_50pct_buffer": 6.663044661058321
+    }
+  ],
+  "limitations": [
+    "Linear length extrapolation from known HumanEval pilot to new MBPP tasks is a planning approximation",
+    "50% buffer covers variability and interruptions but is not a probabilistic bound",
+    "CUDA event spans include host scheduling and capture gaps; not isolated kernel FLOPs",
+    "No extrapolation to an unavailable RTX4060 and no policy wall-clock savings claimed"
+  ]
+}

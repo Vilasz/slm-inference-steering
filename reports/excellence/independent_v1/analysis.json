@@ -1,0 +1,711 @@
+{
+  "created_at": "2026-10-18T16:21:26.064510+00:00",
+  "status": "completed_approved_independent_analysis",
+  "primary": {
+    "estimate": -0.16359060402684564,
+    "ci95": [
+      -0.2402298061170319,
+      -0.0942741120201171
+    ],
+    "tasks": 120,
+    "replications": 10000,
+    "seed": 20261017,
+    "undefined_draws": 0,
+    "identified": true,
+    "directional_hypothesis_supported": true
+  },
+  "recall": [
+    {
+      "family": "HB",
+      "retained_correct": 986,
+      "active_correct": 1192,
+      "recall": 0.8271812080536913,
+      "ci95": [
+        0.7499951587916344,
+        0.8971813610038177
+      ],
+      "undefined_draws": 0
+    },
+    {
+      "family": "B",
+      "retained_correct": 1181,
+      "active_correct": 1192,
+      "recall": 0.9907718120805369,
+      "ci95": [
+        0.9829719384391433,
+        0.9971182937712926
+      ],
+      "undefined_draws": 0
+    }
+  ],
+  "main_tasks": 120,
+  "main_attempts": 2400,
+  "technical_tasks": 20,
+  "active_attempts_t8": 2400,
+  "active_correct_t8": 1192,
+  "mixed_tasks_t8": 74,
+  "heterogeneity": {
+    "tasks_with_active_correct": 94,
+    "tasks_without_active_correct": 26,
+    "tasks_with_discordant_correct_decisions": 33,
+    "discordant_correct_candidates": 213,
+    "undefined_task_deletions": 0,
+    "leave_one_task_out_estimate_range": [
+      -0.1680887372013652,
+      -0.15004262574595056
+    ],
+    "most_influential_tasks": [
+      {
+        "task_id": "Mbpp/101",
+        "estimate_without_task": -0.15004262574595056,
+        "change_from_full": 0.013547978280895073
+      },
+      {
+        "task_id": "Mbpp/309",
+        "estimate_without_task": -0.15017064846416384,
+        "change_from_full": 0.013419955562681801
+      },
+      {
+        "task_id": "Mbpp/471",
+        "estimate_without_task": -0.1517476555839727,
+        "change_from_full": 0.011842948442872925
+      },
+      {
+        "task_id": "Mbpp/472",
+        "estimate_without_task": -0.1523404255319149,
+        "change_from_full": 0.011250178494930735
+      },
+      {
+        "task_id": "Mbpp/232",
+        "estimate_without_task": -0.1526001705029838,
+        "change_from_full": 0.010990433523861837
+      },
+      {
+        "task_id": "Mbpp/736",
+        "estimate_without_task": -0.15332197614991483,
+        "change_from_full": 0.010268627876930808
+      },
+      {
+        "task_id": "Mbpp/413",
+        "estimate_without_task": -0.1554800339847069,
+        "change_from_full": 0.008110570042138748
+      },
+      {
+        "task_id": "Mbpp/758",
+        "estimate_without_task": -0.1570458404074703,
+        "change_from_full": 0.006544763619375338
+      },
+      {
+        "task_id": "Mbpp/106",
+        "estimate_without_task": -0.15722738799661876,
+        "change_from_full": 0.006363216030226881
+      },
+      {
+        "task_id": "Mbpp/130",
+        "estimate_without_task": -0.1575809199318569,
+        "change_from_full": 0.0060096840949887265
+      }
+    ],
+    "scope": "Post-hoc fixed-scorer deletion diagnostics; not a refit or a significance test after each exclusion"
+  },
+  "post_hoc_similarity_cluster_sensitivity": {
+    "estimate": -0.16359060402684564,
+    "ci95": [
+      -0.23983557923917392,
+      -0.09531487386881299
+    ],
+    "tasks": 118,
+    "replications": 10000,
+    "seed": 20261017,
+    "undefined_draws": 0,
+    "identified": true,
+    "clusters": 118,
+    "scope": "Post-hoc sensitivity: join prompt-similarity pairs flagged by the label-blind post-start audit; sole primary task-bootstrap unchanged"
+  },
+  "secondary_predictive_metrics": [
+    {
+      "family": "B",
+      "roc_auc": 0.5087441386283835,
+      "pr_auc": 0.527440789027254,
+      "log_loss": 0.7002027348797835,
+      "brier": 0.25337712352260733,
+      "within_task_auc": 0.536786196432578,
+      "wt_auc_interval": {
+        "estimate": 0.536786196432578,
+        "ci95": [
+          0.4914653925038745,
+          0.5852470054710767
+        ],
+        "tasks": 74,
+        "replications": 10000,
+        "seed": 20261017,
+        "unit": "task_id"
+      },
+      "ece_10_bins_task_weighted": 0.052242909775144605
+    },
+    {
+      "family": "HB",
+      "roc_auc": 0.4577397884350416,
+      "pr_auc": 0.4741372780420585,
+      "log_loss": 0.7882522288945302,
+      "brier": 0.289921251527857,
+      "within_task_auc": 0.4605220883873167,
+      "wt_auc_interval": {
+        "estimate": 0.4605220883873167,
+        "ci95": [
+          0.4121140740674773,
+          0.5084638415492712
+        ],
+        "tasks": 74,
+        "replications": 10000,
+        "seed": 20261017,
+        "unit": "task_id"
+      },
+      "ece_10_bins_task_weighted": 0.1743224013754188
+    }
+  ],
+  "policy_summaries": [
+    {
+      "policy": "fixed",
+      "budget": 1,
+      "resolution": 0.5083333333333333,
+      "resolved_tasks": 61,
+      "mean_tokens": 40.78333333333333,
+      "mean_attempts_started": 1.0,
+      "correct_false_aborts_started": 0,
+      "active_correct_started": 61,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "verifier",
+      "budget": 1,
+      "resolution": 0.5083333333333333,
+      "resolved_tasks": 61,
+      "mean_tokens": 40.78333333333333,
+      "mean_attempts_started": 1.0,
+      "correct_false_aborts_started": 0,
+      "active_correct_started": 61,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "B",
+      "budget": 1,
+      "resolution": 0.5083333333333333,
+      "resolved_tasks": 61,
+      "mean_tokens": 40.78333333333333,
+      "mean_attempts_started": 1.0,
+      "correct_false_aborts_started": 0,
+      "active_correct_started": 61,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "HB",
+      "budget": 1,
+      "resolution": 0.4,
+      "resolved_tasks": 48,
+      "mean_tokens": 35.25,
+      "mean_attempts_started": 1.0,
+      "correct_false_aborts_started": 13,
+      "active_correct_started": 61,
+      "saving_vs_verifier": {
+        "estimate": 0.13567633837351856,
+        "ci95": [
+          0.08106258963933735,
+          0.2006072874493927
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "oracle",
+      "budget": 1,
+      "resolution": 0.5083333333333333,
+      "resolved_tasks": 61,
+      "mean_tokens": 21.558333333333334,
+      "mean_attempts_started": 1.0,
+      "correct_false_aborts_started": 0,
+      "active_correct_started": 61,
+      "saving_vs_verifier": {
+        "estimate": 0.47139354311401716,
+        "ci95": [
+          0.37172181021727374,
+          0.5642753638227044
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "fixed",
+      "budget": 5,
+      "resolution": 0.65,
+      "resolved_tasks": 78,
+      "mean_tokens": 214.475,
+      "mean_attempts_started": 5.0,
+      "correct_false_aborts_started": 0,
+      "active_correct_started": 296,
+      "saving_vs_verifier": {
+        "estimate": -0.7433448486080063,
+        "ci95": [
+          -1.0597943199743305,
+          -0.5237708524647414
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "verifier",
+      "budget": 5,
+      "resolution": 0.65,
+      "resolved_tasks": 78,
+      "mean_tokens": 123.025,
+      "mean_attempts_started": 2.6,
+      "correct_false_aborts_started": 0,
+      "active_correct_started": 78,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "B",
+      "budget": 5,
+      "resolution": 0.65,
+      "resolved_tasks": 78,
+      "mean_tokens": 122.45,
+      "mean_attempts_started": 2.6,
+      "correct_false_aborts_started": 0,
+      "active_correct_started": 78,
+      "saving_vs_verifier": {
+        "estimate": 0.00467384677910998,
+        "ci95": [
+          0.0,
+          0.012901299941150926
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "HB",
+      "budget": 5,
+      "resolution": 0.5833333333333334,
+      "resolved_tasks": 70,
+      "mean_tokens": 115.075,
+      "mean_attempts_started": 2.9583333333333335,
+      "correct_false_aborts_started": 34,
+      "active_correct_started": 104,
+      "saving_vs_verifier": {
+        "estimate": 0.06462101198943304,
+        "ci95": [
+          0.011909588080619423,
+          0.12917781963894287
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "oracle",
+      "budget": 5,
+      "resolution": 0.65,
+      "resolved_tasks": 78,
+      "mean_tokens": 38.40833333333333,
+      "mean_attempts_started": 2.6,
+      "correct_false_aborts_started": 0,
+      "active_correct_started": 78,
+      "saving_vs_verifier": {
+        "estimate": 0.6878005825374247,
+        "ci95": [
+          0.6113432505885439,
+          0.7452222821475145
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "fixed",
+      "budget": 10,
+      "resolution": 0.7333333333333333,
+      "resolved_tasks": 88,
+      "mean_tokens": 439.95,
+      "mean_attempts_started": 10.0,
+      "correct_false_aborts_started": 0,
+      "active_correct_started": 596,
+      "saving_vs_verifier": {
+        "estimate": -1.0552008720024912,
+        "ci95": [
+          -1.5634385272260962,
+          -0.7315862826516519
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "verifier",
+      "budget": 10,
+      "resolution": 0.7333333333333333,
+      "resolved_tasks": 88,
+      "mean_tokens": 214.06666666666666,
+      "mean_attempts_started": 4.175,
+      "correct_false_aborts_started": 0,
+      "active_correct_started": 88,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "B",
+      "budget": 10,
+      "resolution": 0.725,
+      "resolved_tasks": 87,
+      "mean_tokens": 213.25,
+      "mean_attempts_started": 4.2,
+      "correct_false_aborts_started": 1,
+      "active_correct_started": 88,
+      "saving_vs_verifier": {
+        "estimate": 0.0038150109000311128,
+        "ci95": [
+          0.0,
+          0.010822458373323771
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "HB",
+      "budget": 10,
+      "resolution": 0.675,
+      "resolved_tasks": 81,
+      "mean_tokens": 204.575,
+      "mean_attempts_started": 4.816666666666666,
+      "correct_false_aborts_started": 47,
+      "active_correct_started": 128,
+      "saving_vs_verifier": {
+        "estimate": 0.04433976954219876,
+        "ci95": [
+          -0.007012875943053908,
+          0.10907544119712201
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "oracle",
+      "budget": 10,
+      "resolution": 0.7333333333333333,
+      "resolved_tasks": 88,
+      "mean_tokens": 55.43333333333333,
+      "mean_attempts_started": 4.175,
+      "correct_false_aborts_started": 0,
+      "active_correct_started": 88,
+      "saving_vs_verifier": {
+        "estimate": 0.7410464029897228,
+        "ci95": [
+          0.6764122274503311,
+          0.7897923938317688
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "fixed",
+      "budget": 20,
+      "resolution": 0.7833333333333333,
+      "resolved_tasks": 94,
+      "mean_tokens": 873.2583333333333,
+      "mean_attempts_started": 20.0,
+      "correct_false_aborts_started": 0,
+      "active_correct_started": 1192,
+      "saving_vs_verifier": {
+        "estimate": -1.5460045190602298,
+        "ci95": [
+          -2.3271580885890355,
+          -1.0637912787754213
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "verifier",
+      "budget": 20,
+      "resolution": 0.7833333333333333,
+      "resolved_tasks": 94,
+      "mean_tokens": 342.9916666666667,
+      "mean_attempts_started": 6.575,
+      "correct_false_aborts_started": 0,
+      "active_correct_started": 94,
+      "saving_vs_verifier": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "B",
+      "budget": 20,
+      "resolution": 0.7833333333333333,
+      "resolved_tasks": 94,
+      "mean_tokens": 342.3833333333333,
+      "mean_attempts_started": 6.641666666666667,
+      "correct_false_aborts_started": 1,
+      "active_correct_started": 95,
+      "saving_vs_verifier": {
+        "estimate": 0.0017736096600986517,
+        "ci95": [
+          -0.015680065083579123,
+          0.014729873668156613
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "HB",
+      "budget": 20,
+      "resolution": 0.7333333333333333,
+      "resolved_tasks": 88,
+      "mean_tokens": 334.85,
+      "mean_attempts_started": 7.75,
+      "correct_false_aborts_started": 64,
+      "active_correct_started": 152,
+      "saving_vs_verifier": {
+        "estimate": 0.023737214218032432,
+        "ci95": [
+          -0.015163789808528127,
+          0.0695209403787436
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    },
+    {
+      "policy": "oracle",
+      "budget": 20,
+      "resolution": 0.7833333333333333,
+      "resolved_tasks": 94,
+      "mean_tokens": 77.35833333333333,
+      "mean_attempts_started": 6.575,
+      "correct_false_aborts_started": 0,
+      "active_correct_started": 94,
+      "saving_vs_verifier": {
+        "estimate": 0.7744600208945795,
+        "ci95": [
+          0.717680551082085,
+          0.8168266551807403
+        ],
+        "tasks": 120,
+        "unit": "ratio of task-average costs"
+      }
+    }
+  ],
+  "secondary_HB_vs_B_effects": [
+    {
+      "budget": 1,
+      "resolution_delta_vs_B": {
+        "estimate": -0.10833333333333334,
+        "ci95": [
+          -0.16666666666666666,
+          -0.058333333333333334
+        ],
+        "tasks": 120,
+        "replications": 10000,
+        "seed": 20261017,
+        "unit": "task_id"
+      },
+      "token_delta_vs_B": {
+        "estimate": -5.533333333333333,
+        "ci95": [
+          -8.066666666666666,
+          -3.3
+        ],
+        "tasks": 120,
+        "replications": 10000,
+        "seed": 20261017,
+        "unit": "task_id"
+      }
+    },
+    {
+      "budget": 5,
+      "resolution_delta_vs_B": {
+        "estimate": -0.06666666666666667,
+        "ci95": [
+          -0.11666666666666667,
+          -0.025
+        ],
+        "tasks": 120,
+        "replications": 10000,
+        "seed": 20261017,
+        "unit": "task_id"
+      },
+      "token_delta_vs_B": {
+        "estimate": -7.375,
+        "ci95": [
+          -15.35,
+          -1.058125000000003
+        ],
+        "tasks": 120,
+        "replications": 10000,
+        "seed": 20261017,
+        "unit": "task_id"
+      }
+    },
+    {
+      "budget": 10,
+      "resolution_delta_vs_B": {
+        "estimate": -0.05,
+        "ci95": [
+          -0.1,
+          -0.008333333333333333
+        ],
+        "tasks": 120,
+        "replications": 10000,
+        "seed": 20261017,
+        "unit": "task_id"
+      },
+      "token_delta_vs_B": {
+        "estimate": -8.675,
+        "ci95": [
+          -22.975208333333335,
+          2.2835416666666637
+        ],
+        "tasks": 120,
+        "replications": 10000,
+        "seed": 20261017,
+        "unit": "task_id"
+      }
+    },
+    {
+      "budget": 20,
+      "resolution_delta_vs_B": {
+        "estimate": -0.05,
+        "ci95": [
+          -0.09166666666666666,
+          -0.016666666666666666
+        ],
+        "tasks": 120,
+        "replications": 10000,
+        "seed": 20261017,
+        "unit": "task_id"
+      },
+      "token_delta_vs_B": {
+        "estimate": -7.533333333333333,
+        "ci95": [
+          -24.441875,
+          6.966666666666667
+        ],
+        "tasks": 120,
+        "replications": 10000,
+        "seed": 20261017,
+        "unit": "task_id"
+      }
+    }
+  ],
+  "audit": [
+    {
+      "phase": "technical",
+      "tasks": 20,
+      "attempts": 400,
+      "all_functional_statuses_and_parsed_sources_verified": true,
+      "bank_sha256": "488e670cdb7efb70cbb2d3130d842644e61d5239a339e480621fd537289daa77",
+      "numerical_checks_passed": true,
+      "sessions": 4,
+      "session_seconds": 2117.546000000002
+    },
+    {
+      "phase": "main",
+      "tasks": 120,
+      "attempts": 2400,
+      "all_functional_statuses_and_parsed_sources_verified": true,
+      "bank_sha256": "d81ddde6214c3fd5c142180269ddf77e3c2e4e5d351d26a19a7d51e7b918ee0a",
+      "numerical_checks_passed": true,
+      "sessions": 22,
+      "session_seconds": 13243.610000000073
+    }
+  ],
+  "rescoring_max_probability_error": 4.440892098500626e-16,
+  "protocol_sha256": "191b5185d7e3d972a8011d709aa1d973c59a779b5f69bf25e1f65f88d162d22d",
+  "freeze_manifest_sha256": "e8c273535100d4bc89bf5af9be35e2d563009fab7c61148a0487db9b930bb748",
+  "approval_source": "Explicit student approval; advisor review reported by student",
+  "interpretation": "Sole confirmatory endpoint is paired candidate retention at t8; all other comparisons are descriptive",
+  "limitations": [
+    "One fixed model and one additional function-level benchmark sample",
+    "New locally unexposed tasks do not certify absence of pretraining contamination",
+    "Task bootstrap assumes exchangeable tasks; deterministic hash reservation is not a census",
+    "No target fitting, threshold revision, outcome-dependent replacement or significance stopping",
+    "Independent retention confirmation does not confirm original incremental-value or operational-benefit hypotheses",
+    "Token replay does not establish wall-clock policy savings"
+  ],
+  "inputs": {
+    "docs/protocols/EXCELLENCE_EXTENSION_v1.approval.json": "b2e64f213ae8ff4b84ff36d0d95de3305fceb0cf42848f9be74a50d46318b8db",
+    "docs/protocols/EXCELLENCE_EXTENSION_v1.md": "191b5185d7e3d972a8011d709aa1d973c59a779b5f69bf25e1f65f88d162d22d",
+    "reports/excellence/proposal_design.json": "577d757406972660d6022d6285ef180b903036659481c36a1f23ef4e6b458c9e",
+    "reports/excellence/independent_v1/freeze/manifest.json": "e8c273535100d4bc89bf5af9be35e2d563009fab7c61148a0487db9b930bb748",
+    "reports/excellence/independent_v1/results.json": "21f08ea0fffdec3f1153b02b9e8068bbbc347ca432aa4dc6f473149d2cd76528",
+    "reports/excellence/independent_v1/predictions.csv": "6710c691d7f39d31851557dfc5d7d051820353c5f03e6f2293646de4814b1681",
+    "reports/excellence/independent_v1/policy_per_task.csv": "40c57d56696a58a2510fef8772ac4dea32ec7dfa86dce4112e61acec38644f29",
+    "reports/excellence/independent_v1/retention_per_task.csv": "070fa34cd00201e69f75c34bc1a0fb047e1f44dfa358133c2f1c11a68d1c5274",
+    "reports/excellence/independent_v1/calibration.csv": "bb40869e74b11860a6ab74db6c6e325fc4299cc0041395aac5635f5f515872b7",
+    "src/slm_steering/excellence/independent_report.py": "2083c84e8bba8d12e7532dc5712899dcd1e0801904e814bb44d09e124980721c",
+    "reports/excellence/independent_v1/task_influence.csv": "1ef7ba40014dff1dc5bc9c92b0a1c1458914cb779541f860a627cce940df31cc",
+    "reports/excellence/reserved_task_audit.json": "95634fb5a69d56a26f08c4a66f1f4fa4fa5fe82794666bd278ee91b8d3db2630",
+    "reports/excellence/reserved_task_contents.json": "e0a8f26880af9adb6cb8f030ad290b9dfaac9a8a30f7e3a458946217a7bf0cfd",
+    "runs/excellence/independent_v1/technical/manifest.json": "6f72b90502463686488443ade27cacdc07d6b30f5562ec0888af7ebd51cea186",
+    "runs/excellence/independent_v1/technical/trajectories.jsonl": "488e670cdb7efb70cbb2d3130d842644e61d5239a339e480621fd537289daa77",
+    "runs/excellence/independent_v1/main/manifest.json": "a4de4768049dd33dce0b6c29bd36513ee6c94976db33534c10cdff657dcf9865",
+    "runs/excellence/independent_v1/main/trajectories.jsonl": "d81ddde6214c3fd5c142180269ddf77e3c2e4e5d351d26a19a7d51e7b918ee0a",
+    "reports/excellence/independent_v1/independent_retention.pdf": "b664041ca88330bb2cf13ff9894ea936be73e1e33c1078801225a16dbc987327",
+    "reports/excellence/independent_v1/independent_retention.png": "be107087da1e52f42b0aa339a68e67dd4898a8b5d235ff8ef181c82c615dc815",
+    "reports/excellence/independent_v1/independent_retention.svg": "72cddf270bed0df847231563f77e27e6d4cc426c86f2797ab74731a33273fdef",
+    "reports/excellence/independent_v1/independent_secondary.pdf": "f2f6e7dd44b8e66eb4ad3f49bb631df067b490f4989e229ed02f7f2deb4fa0db",
+    "reports/excellence/independent_v1/independent_secondary.png": "acf5c631d792e1dd373473a72270d6269d6fe7e6843c30751f3d1fb1c696969c",
+    "reports/excellence/independent_v1/independent_secondary.svg": "7d899b6972f8452e72674a0d7b85c9b7e0529d2b81e659b934e258c23a0e9e9c"
+  }
+}

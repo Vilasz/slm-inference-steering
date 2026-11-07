@@ -1,0 +1,1096 @@
+{
+  "created_at": "2026-11-06T05:09:53.050378+00:00",
+  "contract": {
+    "name": "qwen",
+    "phase": "external",
+    "ids": [
+      "Mbpp/563",
+      "Mbpp/85",
+      "Mbpp/799",
+      "Mbpp/771",
+      "Mbpp/728",
+      "Mbpp/124",
+      "Mbpp/235",
+      "Mbpp/266",
+      "Mbpp/739",
+      "Mbpp/72",
+      "Mbpp/281",
+      "Mbpp/268",
+      "Mbpp/755",
+      "Mbpp/394",
+      "Mbpp/162",
+      "Mbpp/473",
+      "Mbpp/797",
+      "Mbpp/88",
+      "Mbpp/555",
+      "Mbpp/567",
+      "Mbpp/583",
+      "Mbpp/116",
+      "Mbpp/585",
+      "Mbpp/300",
+      "Mbpp/560",
+      "Mbpp/105",
+      "Mbpp/603",
+      "Mbpp/608",
+      "Mbpp/89",
+      "Mbpp/433",
+      "Mbpp/631",
+      "Mbpp/478",
+      "Mbpp/430",
+      "Mbpp/726",
+      "Mbpp/284",
+      "Mbpp/262",
+      "Mbpp/607",
+      "Mbpp/722",
+      "Mbpp/730",
+      "Mbpp/240",
+      "Mbpp/468",
+      "Mbpp/160",
+      "Mbpp/432",
+      "Mbpp/405",
+      "Mbpp/267",
+      "Mbpp/242",
+      "Mbpp/109",
+      "Mbpp/794",
+      "Mbpp/128",
+      "Mbpp/619",
+      "Mbpp/84",
+      "Mbpp/809",
+      "Mbpp/82",
+      "Mbpp/762",
+      "Mbpp/456",
+      "Mbpp/751",
+      "Mbpp/785",
+      "Mbpp/475",
+      "Mbpp/629",
+      "Mbpp/137",
+      "Mbpp/306",
+      "Mbpp/57",
+      "Mbpp/429",
+      "Mbpp/261",
+      "Mbpp/272",
+      "Mbpp/127",
+      "Mbpp/765",
+      "Mbpp/742",
+      "Mbpp/559",
+      "Mbpp/587",
+      "Mbpp/69",
+      "Mbpp/171",
+      "Mbpp/64",
+      "Mbpp/576",
+      "Mbpp/237",
+      "Mbpp/599",
+      "Mbpp/75",
+      "Mbpp/623",
+      "Mbpp/226",
+      "Mbpp/803",
+      "Mbpp/17",
+      "Mbpp/102",
+      "Mbpp/777",
+      "Mbpp/793",
+      "Mbpp/18",
+      "Mbpp/604",
+      "Mbpp/800",
+      "Mbpp/253",
+      "Mbpp/12",
+      "Mbpp/415",
+      "Mbpp/406",
+      "Mbpp/766",
+      "Mbpp/280",
+      "Mbpp/732",
+      "Mbpp/633",
+      "Mbpp/454",
+      "Mbpp/558",
+      "Mbpp/133",
+      "Mbpp/455",
+      "Mbpp/167"
+    ],
+    "attempts": 20,
+    "generator": "33d7b42ba1b9c48c6e8141216dd46f8499df5bed72a3c2da2597b7a0cbc7228b",
+    "collector": "99ee33afd5c8a2644c65dd23ba31ca6a00edb22098bfb4650b1bd770b7d8cecc",
+    "sandbox": "4df9ad177c638048996b84ff1b160d5fce2180f248973bc76eba55dca9c7de9e",
+    "worker": "f9097593cb4b421740f2fbe530c5eccb263c8a5e0d96d0e28a2a5648b3431413",
+    "historical_worker": "d7949a521fe6af7ff5ea54e26a448f80a478946c72b5cc135e8dbceca016b397",
+    "metadata": "420c1b46e3339a2c147fdde6832a90f59ca49a55586c60dc5b8f6e532c95a2b9"
+  },
+  "sessions": [
+    {
+      "ended_at": "2026-11-06T05:19:53.554460+00:00",
+      "new_attempts": 88,
+      "wall_seconds": 600.5,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4592.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T05:30:06.735937+00:00",
+      "new_attempts": 96,
+      "wall_seconds": 605.1870000000054,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4694.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T05:40:16.771848+00:00",
+      "new_attempts": 95,
+      "wall_seconds": 602.4690000000119,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4748.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T05:50:28.377691+00:00",
+      "new_attempts": 97,
+      "wall_seconds": 603.9530000000086,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4748.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T06:00:38.974790+00:00",
+      "new_attempts": 94,
+      "wall_seconds": 602.6719999999914,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4608.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T06:10:49.982711+00:00",
+      "new_attempts": 87,
+      "wall_seconds": 603.125,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4578.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T06:21:12.705249+00:00",
+      "new_attempts": 90,
+      "wall_seconds": 614.640000000014,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4596.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T06:31:22.856667+00:00",
+      "new_attempts": 93,
+      "wall_seconds": 602.1559999999881,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4654.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T06:41:31.269794+00:00",
+      "new_attempts": 95,
+      "wall_seconds": 600.2660000000033,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3968.28857421875,
+        "peak_reserved_mib": 4550.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T06:51:39.686937+00:00",
+      "new_attempts": 98,
+      "wall_seconds": 600.5789999999979,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4346.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T07:01:51.387556+00:00",
+      "new_attempts": 96,
+      "wall_seconds": 603.125,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4434.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T07:12:10.012281+00:00",
+      "new_attempts": 96,
+      "wall_seconds": 610.2820000000065,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4490.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T07:22:21.018354+00:00",
+      "new_attempts": 94,
+      "wall_seconds": 602.125,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4494.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T07:32:33.692339+00:00",
+      "new_attempts": 93,
+      "wall_seconds": 603.7969999999914,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4572.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T07:42:46.813462+00:00",
+      "new_attempts": 92,
+      "wall_seconds": 604.359999999986,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4568.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T07:53:30.997086+00:00",
+      "new_attempts": 90,
+      "wall_seconds": 601.25,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4524.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T08:03:43.071032+00:00",
+      "new_attempts": 94,
+      "wall_seconds": 603.0629999999946,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4650.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T08:13:53.386518+00:00",
+      "new_attempts": 87,
+      "wall_seconds": 600.8910000000033,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4694.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T08:24:08.182608+00:00",
+      "new_attempts": 92,
+      "wall_seconds": 605.2660000000033,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4608.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T08:34:23.009559+00:00",
+      "new_attempts": 96,
+      "wall_seconds": 605.4370000000054,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4656.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T08:44:55.581041+00:00",
+      "new_attempts": 93,
+      "wall_seconds": 622.9060000000172,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3994.00537109375,
+        "peak_reserved_mib": 4674.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    },
+    {
+      "ended_at": "2026-11-06T08:49:54.284071+00:00",
+      "new_attempts": 44,
+      "wall_seconds": 289.01499999998487,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3965.59912109375,
+        "peak_reserved_mib": 4382.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    }
+  ],
+  "expected_attempts": 2000,
+  "status": "completed",
+  "completed_attempts": 2000,
+  "last_session_started_at": "2026-11-06T08:45:05.265020+00:00",
+  "benchmark": {
+    "benchmark": "mbpp",
+    "version": "v0.2.0",
+    "evalplus_version": "0.3.1",
+    "official_dataset_md5": "ee43ecabebf20deef4bb776a405ac5b1",
+    "dataset_sha256": "0c19f3417188883596e73f035a364958d4c92210efb8304990f72199f6526541",
+    "python": "3.12.3",
+    "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "checker": "evalplus.eval.untrusted_check",
+    "fast_check": true,
+    "mini": false,
+    "noextreme": false,
+    "minimum_time_limit": 1,
+    "groundtruth_time_factor": 4
+  },
+  "verifier_controls": {
+    "positive": {
+      "passed": true,
+      "error_type": null,
+      "verifier_status": {
+        "base": "pass",
+        "plus": "pass"
+      },
+      "verification_time_seconds": 0.021469844999955967,
+      "test_counts": {
+        "base": 3,
+        "plus": 108
+      }
+    },
+    "negative": {
+      "passed": false,
+      "error_type": "evalplus_fail",
+      "verifier_status": {
+        "base": "fail",
+        "plus": "fail"
+      },
+      "verification_time_seconds": 0.01850052599911578,
+      "test_counts": {
+        "base": 3,
+        "plus": 108
+      }
+    },
+    "sandbox": {
+      "host_home_hidden": true,
+      "windows_hidden": true,
+      "no_credentials": true,
+      "address_space_limited": true,
+      "cpu_limited": true,
+      "network_blocked": true,
+      "application_readonly": true
+    }
+  },
+  "numerical_checks": [
+    {
+      "checkpoint": 0,
+      "comparison": "full_sequence",
+      "relative_l2": 1.3072270803604624e-06,
+      "maximum_absolute": 8.165836334228516e-06,
+      "passed": true
+    },
+    {
+      "checkpoint": 0,
+      "comparison": "cached",
+      "relative_l2": 0.00018958517007936407,
+      "maximum_absolute": 0.003734588623046875,
+      "passed": true
+    },
+    {
+      "token_offset": 0,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 0,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 0,
+      "quantity": "token_margins",
+      "absolute_difference": 1.1444091796875e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 1,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 1,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 1,
+      "quantity": "token_margins",
+      "absolute_difference": 7.62939453125e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 2,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 2,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 2,
+      "quantity": "token_margins",
+      "absolute_difference": 2.288818359375e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 3,
+      "quantity": "token_logprobs",
+      "absolute_difference": 6.020069122314453e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 3,
+      "quantity": "token_entropies",
+      "absolute_difference": 5.960464477539062e-07,
+      "passed": true
+    },
+    {
+      "token_offset": 3,
+      "quantity": "token_margins",
+      "absolute_difference": 1.33514404296875e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 4,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 4,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 4,
+      "quantity": "token_margins",
+      "absolute_difference": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 5,
+      "quantity": "token_logprobs",
+      "absolute_difference": 4.507601261138916e-07,
+      "passed": true
+    },
+    {
+      "token_offset": 5,
+      "quantity": "token_entropies",
+      "absolute_difference": 1.1622905731201172e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 5,
+      "quantity": "token_margins",
+      "absolute_difference": 7.62939453125e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 6,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 6,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 6,
+      "quantity": "token_margins",
+      "absolute_difference": 3.62396240234375e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 7,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 7,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 7,
+      "quantity": "token_margins",
+      "absolute_difference": 5.7220458984375e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 8,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 8,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 8,
+      "quantity": "token_margins",
+      "absolute_difference": 5.7220458984375e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 9,
+      "quantity": "token_logprobs",
+      "absolute_difference": 4.708766937255859e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 9,
+      "quantity": "token_entropies",
+      "absolute_difference": 4.410743713378906e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 9,
+      "quantity": "token_margins",
+      "absolute_difference": 5.7220458984375e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 10,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 10,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 10,
+      "quantity": "token_margins",
+      "absolute_difference": 9.5367431640625e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 11,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 11,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 11,
+      "quantity": "token_margins",
+      "absolute_difference": 3.814697265625e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 12,
+      "quantity": "token_logprobs",
+      "absolute_difference": 1.6689300537109375e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 12,
+      "quantity": "token_entropies",
+      "absolute_difference": 7.748603820800781e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 12,
+      "quantity": "token_margins",
+      "absolute_difference": 2.09808349609375e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 13,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 13,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 13,
+      "quantity": "token_margins",
+      "absolute_difference": 2.86102294921875e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 14,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 14,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 14,
+      "quantity": "token_margins",
+      "absolute_difference": 1.1444091796875e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 15,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 15,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 15,
+      "quantity": "token_margins",
+      "absolute_difference": 5.7220458984375e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 16,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 16,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 16,
+      "quantity": "token_margins",
+      "absolute_difference": 1.33514404296875e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 17,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 17,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 17,
+      "quantity": "token_margins",
+      "absolute_difference": 9.5367431640625e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 18,
+      "quantity": "token_logprobs",
+      "absolute_difference": 1.2293457984924316e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 18,
+      "quantity": "token_entropies",
+      "absolute_difference": 3.084540367126465e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 18,
+      "quantity": "token_margins",
+      "absolute_difference": 1.9073486328125e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 19,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 19,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 19,
+      "quantity": "token_margins",
+      "absolute_difference": 5.7220458984375e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 20,
+      "quantity": "token_logprobs",
+      "absolute_difference": 2.0116567611694336e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 20,
+      "quantity": "token_entropies",
+      "absolute_difference": 3.0994415283203125e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 20,
+      "quantity": "token_margins",
+      "absolute_difference": 1.1444091796875e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 21,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 21,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 21,
+      "quantity": "token_margins",
+      "absolute_difference": 4.9591064453125e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 22,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 22,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 22,
+      "quantity": "token_margins",
+      "absolute_difference": 1.9073486328125e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 23,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 23,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 23,
+      "quantity": "token_margins",
+      "absolute_difference": 3.814697265625e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 24,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 24,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 24,
+      "quantity": "token_margins",
+      "absolute_difference": 2.86102294921875e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 25,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 25,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 25,
+      "quantity": "token_margins",
+      "absolute_difference": 3.814697265625e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 26,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 26,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 26,
+      "quantity": "token_margins",
+      "absolute_difference": 1.811981201171875e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 27,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 27,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 27,
+      "quantity": "token_margins",
+      "absolute_difference": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 28,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 28,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 28,
+      "quantity": "token_margins",
+      "absolute_difference": 5.7220458984375e-06,
+      "passed": true
+    },
+    {
+      "token_offset": 29,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 29,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 29,
+      "quantity": "token_margins",
+      "absolute_difference": 1.33514404296875e-05,
+      "passed": true
+    },
+    {
+      "token_offset": 30,
+      "quantity": "token_logprobs",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 30,
+      "quantity": "token_entropies",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "token_offset": 30,
+      "quantity": "token_margins",
+      "absolute_difference": 1.9073486328125e-06,
+      "passed": true
+    }
+  ],
+  "capture_benchmark": {
+    "tokens": 31,
+    "instrumented_seconds": 5.491786600003252,
+    "uninstrumented_seconds": 4.8522644999902695,
+    "copy_seconds": 0.16624619998037815,
+    "limitation": "One technical pair; overhead estimate has substantial timing noise."
+  },
+  "updated_at": "2026-11-06T08:49:54.084583+00:00",
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "memory_total_mib": 6143.5,
+    "peak_allocated_mib": 3965.59912109375,
+    "peak_reserved_mib": 4382.0,
+    "cuda": "12.6",
+    "driver_version": "576.52",
+    "weight_storage_dtype": "bfloat16",
+    "linear_compute_dtype": "float32"
+  }
+}

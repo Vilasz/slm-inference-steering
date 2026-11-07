@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "snapshot_attempts": 31,
+  "current_attempts": 39,
+  "snapshot_sha256": "43ae7f3ba060f88bfd369db4ebf26415981ffae2efb125768f01f83ba0c43c3b",
+  "recomputed_prefix_sha256": "43ae7f3ba060f88bfd369db4ebf26415981ffae2efb125768f01f83ba0c43c3b"
+}

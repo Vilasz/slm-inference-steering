@@ -1,0 +1,602 @@
+{
+  "started_at": "2026-10-15T16:39:30.774134+00:00",
+  "command": [
+    "C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\joaof\\slm-inference-steering\\scripts\\build_candidate_bank.py",
+    "--phase",
+    "transfer",
+    "--output-dir",
+    "C:\\Users\\joaof\\slm-inference-steering\\runs\\candidate_bank\\transfer_v0.2",
+    "--pilot-manifest",
+    "C:\\Users\\joaof\\slm-inference-steering\\runs\\candidate_bank\\pilot_v0.2\\manifest.json",
+    "--transfer-bundle",
+    "runs/transfer/protocol_v0.2/models.joblib",
+    "--config",
+    "C:\\Users\\joaof\\slm-inference-steering\\configs\\protocol_v0.2.yaml",
+    "--wsl-python",
+    "/home/joaof/.venvs/slm-evalplus-v031/bin/python",
+    "--time-budget-seconds",
+    "1000000"
+  ],
+  "git_commit": "73fce19fc9ff5f38f02ec0ac7c963460bfc81974",
+  "git_dirty": true,
+  "config_hash": "270c2715f46f0e5aee218962ffa688b367e033d15fe9d047d6c2950f3a3f4a6b",
+  "protocol_hash": "e5ce9af1f95a4bf91ada58a3a11495f92c24a2ae3bd6d9eaf9ddebe69139b04c",
+  "python": "3.12.8",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "torch": "2.12.0+cu126",
+    "transformers": "4.46.3",
+    "evalplus": "0.3.1",
+    "numpy": "1.26.4",
+    "scikit-learn": "1.5.2",
+    "statsmodels": "0.14.4",
+    "PyYAML": "6.0.2"
+  },
+  "source_hashes": {
+    "src/slm_steering/research/__init__.py": "cb434ed9d7904af8cf2f14d4518a465fa76987aabe0e6e0958e175b4ec54343a",
+    "src/slm_steering/research/bank.py": "03aec8aa23efcd0b6bd916da47242919147f002904b1cf3d2513b29819e31c65",
+    "src/slm_steering/research/delivery.py": "8df63418332313dd3e14436c262a096d30ee49f7ca1675133ef78fc009dadf57",
+    "src/slm_steering/research/evaluation.py": "f5eb7901ed1c53063cc73383a8437d251da0e02849bb56760e3560d824b47abe",
+    "src/slm_steering/research/features.py": "bbe81fbab35a9d6dfa95f0f6893f05397ca461647c380401e4194fcff20426ac",
+    "src/slm_steering/research/freeze.py": "647a5177883e2df3acddba9729bbbe0f746051f28d5aa898a9c9e33cdc404263",
+    "src/slm_steering/research/generation.py": "99e17401a0d0448f050859324f85d6dac9f78001e2eec8970979adf2204148c4",
+    "src/slm_steering/research/policy.py": "893d1e7ae141dbdb572b693178460625eb63984753f82ef92a0794f243ee4dd5",
+    "src/slm_steering/research/probes.py": "366a1dacdb8ca679dfeba006b03935878ab2dc9de3b8ccd83c4162f772b853b7",
+    "src/slm_steering/research/protocol.py": "721d28c17ed3b48b8ca9cc39b0112eef85d3f1650cfcd802e9d988e1dfbfda15",
+    "src/slm_steering/research/reporting.py": "0acc99370a76cc9d7f195755ab1cabc06a9d2371b112256c48fbf66eccee1368",
+    "src/slm_steering/research/statistics.py": "ff1afdf4e58e503e07f847c930226a6e8ebda12cfa3ced873937fdb73c78ddb5",
+    "src/slm_steering/research/transfer.py": "3b4c8c2666ebd6df553607490a737fa48b33d078aacb925d6899e4d26de8056b",
+    "src/slm_steering/research/visualization.py": "868d346b7e6f4fbcc47c53bc4b876fd34ea470704ccd4385de025139a250a610"
+  },
+  "evalplus_worker_hash": "d7949a521fe6af7ff5ea54e26a448f80a478946c72b5cc135e8dbceca016b397",
+  "protocol_version": "0.2",
+  "run_id": "transfer_v0.2",
+  "phase": "transfer",
+  "status": "completed",
+  "config": {
+    "protocol_version": "0.2",
+    "model": {
+      "id": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+      "revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+      "tokenizer_revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+      "dtype": "bfloat16",
+      "linear_compute_dtype": "float32",
+      "attention_backend": "eager",
+      "device": "cuda"
+    },
+    "benchmark": {
+      "name": "humaneval",
+      "evalplus_version": "0.3.1"
+    },
+    "pilot": {
+      "tasks": 32,
+      "selection_prefix": "protocol-v0.1-pilot:",
+      "temperatures": [
+        0.6,
+        0.8,
+        1.0
+      ],
+      "attempts_per_task": 10,
+      "max_invalid_truncated_excess": 0.05
+    },
+    "decoding": {
+      "top_p": 0.95,
+      "top_k": 0,
+      "max_new_tokens": 512,
+      "do_sample": true
+    },
+    "candidate_bank": {
+      "attempts_per_task": 20,
+      "budgets": [
+        1,
+        5,
+        10,
+        20
+      ]
+    },
+    "activations": {
+      "checkpoints": [
+        0,
+        8,
+        16,
+        32,
+        64,
+        "final"
+      ],
+      "primary_checkpoint": 32,
+      "depth_fractions": [
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "storage_dtype": "float16",
+      "invariance_atol": 0.02,
+      "invariance_rtol": 0.01,
+      "invariance_metric": "per_layer_relative_l2_and_scaled_max"
+    },
+    "statistics": {
+      "outer_folds": 5,
+      "inner_folds": 3,
+      "regularization_c": [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ],
+      "bootstrap_replications": 2000,
+      "permutation_replications": 10000,
+      "seed": 20260921,
+      "calibration": "selection_cross_fitted_development",
+      "association_test": "outer_fold_permutation_bonferroni"
+    },
+    "policy": {
+      "minimum_correct_recall": 0.97,
+      "noninferiority_margin": 0.03,
+      "checkpoints": [
+        8,
+        16,
+        32,
+        64
+      ],
+      "tie_tolerance": 1e-09
+    },
+    "resources": {
+      "generation_batch_size": 1,
+      "cpu_threads": 4,
+      "verification_workers": 1,
+      "default_session_seconds": 600
+    },
+    "schema": {
+      "label": "evalplus_base_and_plus_pass",
+      "risk_set": "T>t",
+      "margin": "temperature_scaled_pre_top_p"
+    },
+    "robustness": {
+      "benchmark": "mbpp",
+      "tasks": 32,
+      "selection_prefix": "protocol-v0.2-mbpp-transfer:",
+      "attempts_per_task": 20,
+      "mode": "frozen_transfer"
+    }
+  },
+  "sessions": [
+    {
+      "started_at": "2026-10-15T16:39:30.939912+00:00",
+      "git_commit": "73fce19fc9ff5f38f02ec0ac7c963460bfc81974",
+      "git_dirty": true,
+      "time_budget_seconds": 1000000.0,
+      "new_attempts": 640,
+      "provenance": {
+        "started_at": "2026-10-15T16:39:30.774134+00:00",
+        "command": [
+          "C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe",
+          "C:\\Users\\joaof\\slm-inference-steering\\scripts\\build_candidate_bank.py",
+          "--phase",
+          "transfer",
+          "--output-dir",
+          "C:\\Users\\joaof\\slm-inference-steering\\runs\\candidate_bank\\transfer_v0.2",
+          "--pilot-manifest",
+          "C:\\Users\\joaof\\slm-inference-steering\\runs\\candidate_bank\\pilot_v0.2\\manifest.json",
+          "--transfer-bundle",
+          "runs/transfer/protocol_v0.2/models.joblib",
+          "--config",
+          "C:\\Users\\joaof\\slm-inference-steering\\configs\\protocol_v0.2.yaml",
+          "--wsl-python",
+          "/home/joaof/.venvs/slm-evalplus-v031/bin/python",
+          "--time-budget-seconds",
+          "1000000"
+        ],
+        "git_commit": "73fce19fc9ff5f38f02ec0ac7c963460bfc81974",
+        "git_dirty": true,
+        "config_hash": "270c2715f46f0e5aee218962ffa688b367e033d15fe9d047d6c2950f3a3f4a6b",
+        "protocol_hash": "e5ce9af1f95a4bf91ada58a3a11495f92c24a2ae3bd6d9eaf9ddebe69139b04c",
+        "python": "3.12.8",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "packages": {
+          "torch": "2.12.0+cu126",
+          "transformers": "4.46.3",
+          "evalplus": "0.3.1",
+          "numpy": "1.26.4",
+          "scikit-learn": "1.5.2",
+          "statsmodels": "0.14.4",
+          "PyYAML": "6.0.2"
+        },
+        "source_hashes": {
+          "src/slm_steering/research/__init__.py": "cb434ed9d7904af8cf2f14d4518a465fa76987aabe0e6e0958e175b4ec54343a",
+          "src/slm_steering/research/bank.py": "03aec8aa23efcd0b6bd916da47242919147f002904b1cf3d2513b29819e31c65",
+          "src/slm_steering/research/delivery.py": "8df63418332313dd3e14436c262a096d30ee49f7ca1675133ef78fc009dadf57",
+          "src/slm_steering/research/evaluation.py": "f5eb7901ed1c53063cc73383a8437d251da0e02849bb56760e3560d824b47abe",
+          "src/slm_steering/research/features.py": "bbe81fbab35a9d6dfa95f0f6893f05397ca461647c380401e4194fcff20426ac",
+          "src/slm_steering/research/freeze.py": "647a5177883e2df3acddba9729bbbe0f746051f28d5aa898a9c9e33cdc404263",
+          "src/slm_steering/research/generation.py": "99e17401a0d0448f050859324f85d6dac9f78001e2eec8970979adf2204148c4",
+          "src/slm_steering/research/policy.py": "893d1e7ae141dbdb572b693178460625eb63984753f82ef92a0794f243ee4dd5",
+          "src/slm_steering/research/probes.py": "366a1dacdb8ca679dfeba006b03935878ab2dc9de3b8ccd83c4162f772b853b7",
+          "src/slm_steering/research/protocol.py": "721d28c17ed3b48b8ca9cc39b0112eef85d3f1650cfcd802e9d988e1dfbfda15",
+          "src/slm_steering/research/reporting.py": "0acc99370a76cc9d7f195755ab1cabc06a9d2371b112256c48fbf66eccee1368",
+          "src/slm_steering/research/statistics.py": "ff1afdf4e58e503e07f847c930226a6e8ebda12cfa3ced873937fdb73c78ddb5",
+          "src/slm_steering/research/transfer.py": "3b4c8c2666ebd6df553607490a737fa48b33d078aacb925d6899e4d26de8056b",
+          "src/slm_steering/research/visualization.py": "868d346b7e6f4fbcc47c53bc4b876fd34ea470704ccd4385de025139a250a610"
+        },
+        "evalplus_worker_hash": "d7949a521fe6af7ff5ea54e26a448f80a478946c72b5cc135e8dbceca016b397"
+      },
+      "ended_at": "2026-10-15T17:39:14.807154+00:00",
+      "wall_seconds": 3583.8589999999967,
+      "hardware": {
+        "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+        "memory_total_mib": 6143.5,
+        "peak_allocated_mib": 3957.1005859375,
+        "peak_reserved_mib": 4466.0,
+        "cuda": "12.6",
+        "driver_version": "576.52",
+        "weight_storage_dtype": "bfloat16",
+        "linear_compute_dtype": "float32"
+      }
+    }
+  ],
+  "transfer_bundle_sha256": "1adfc6660ed8748c58dc47dbce7e34b2d086d62a076b990bab6934d155f8df83",
+  "transfer_mode": "frozen_transfer_no_target_fitting",
+  "benchmark": {
+    "benchmark": "mbpp",
+    "version": "v0.2.0",
+    "evalplus_version": "0.3.1",
+    "official_dataset_md5": "ee43ecabebf20deef4bb776a405ac5b1",
+    "dataset_sha256": "0c19f3417188883596e73f035a364958d4c92210efb8304990f72199f6526541",
+    "python": "3.12.3",
+    "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "checker": "evalplus.eval.untrusted_check",
+    "fast_check": true,
+    "mini": false,
+    "noextreme": false,
+    "minimum_time_limit": 1,
+    "groundtruth_time_factor": 4
+  },
+  "pilot_task_ids": [],
+  "task_ids": [
+    "Mbpp/772",
+    "Mbpp/111",
+    "Mbpp/285",
+    "Mbpp/123",
+    "Mbpp/569",
+    "Mbpp/282",
+    "Mbpp/808",
+    "Mbpp/470",
+    "Mbpp/252",
+    "Mbpp/445",
+    "Mbpp/773",
+    "Mbpp/279",
+    "Mbpp/463",
+    "Mbpp/58",
+    "Mbpp/265",
+    "Mbpp/439",
+    "Mbpp/397",
+    "Mbpp/775",
+    "Mbpp/735",
+    "Mbpp/564",
+    "Mbpp/145",
+    "Mbpp/68",
+    "Mbpp/259",
+    "Mbpp/791",
+    "Mbpp/630",
+    "Mbpp/166",
+    "Mbpp/600",
+    "Mbpp/65",
+    "Mbpp/100",
+    "Mbpp/92",
+    "Mbpp/276",
+    "Mbpp/296"
+  ],
+  "expected_attempts": 640,
+  "attempts_per_temperature": 20,
+  "development_only": false,
+  "layers": [
+    6,
+    13,
+    20,
+    27
+  ],
+  "prompt_template_hash": "17e16d36fb48f18d69cbb627f7e0f77ac09cb84383340b7c7248c7fba25f0e9f",
+  "verifier_controls": {
+    "positive": {
+      "passed": true,
+      "error_type": null,
+      "verifier_status": {
+        "base": "pass",
+        "plus": "pass"
+      },
+      "verification_time_seconds": 0.020798088000001158,
+      "test_counts": {
+        "base": 3,
+        "plus": 106
+      }
+    },
+    "negative": {
+      "passed": false,
+      "error_type": "evalplus_fail",
+      "verifier_status": {
+        "base": "fail",
+        "plus": "fail"
+      },
+      "verification_time_seconds": 0.01786806399999996,
+      "test_counts": {
+        "base": 3,
+        "plus": 106
+      }
+    }
+  },
+  "causal_invariance": {
+    "passed": true,
+    "checks": [
+      {
+        "checkpoint": 0,
+        "passed": true,
+        "comparisons": [
+          {
+            "comparison": "full_forward",
+            "passed": true,
+            "relative_l2_by_layer": [
+              4.8302126742783e-06,
+              3.121610234302352e-06,
+              2.2959040961723076e-06,
+              1.5896640661594574e-06
+            ],
+            "max_absolute_difference_by_layer": [
+              1.8328428268432617e-05,
+              2.3365020751953125e-05,
+              2.8967857360839844e-05,
+              2.6226043701171875e-05
+            ],
+            "maximum_limits": [
+              0.17684900760650635,
+              0.190098375082016,
+              0.23203490674495697,
+              0.9126142263412476
+            ]
+          },
+          {
+            "comparison": "cached_generation",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.00017083533958620411,
+              0.00022515684306767658,
+              0.000175060502776696,
+              0.00017189367884809785
+            ],
+            "max_absolute_difference_by_layer": [
+              0.002597808837890625,
+              0.005786895751953125,
+              0.003032684326171875,
+              0.0114288330078125
+            ],
+            "maximum_limits": [
+              0.17684900760650635,
+              0.190098375082016,
+              0.23203490674495697,
+              0.9126142263412476
+            ]
+          }
+        ]
+      },
+      {
+        "checkpoint": 8,
+        "passed": true,
+        "comparisons": [
+          {
+            "comparison": "full_forward",
+            "passed": true,
+            "relative_l2_by_layer": [
+              8.177634640560427e-07,
+              7.644941319995269e-07,
+              7.515274091929314e-07,
+              8.857417697072378e-07
+            ],
+            "max_absolute_difference_by_layer": [
+              3.814697265625e-06,
+              5.7220458984375e-06,
+              1.049041748046875e-05,
+              5.340576171875e-05
+            ],
+            "maximum_limits": [
+              0.13566303253173828,
+              0.19011297821998596,
+              0.29706910252571106,
+              1.0224295854568481
+            ]
+          },
+          {
+            "comparison": "cached_generation",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.000217003081826273,
+              0.00023376239002536011,
+              0.00018784615668080004,
+              0.0001731564371707236
+            ],
+            "max_absolute_difference_by_layer": [
+              0.003803253173828125,
+              0.00432586669921875,
+              0.0037860870361328125,
+              0.01940155029296875
+            ],
+            "maximum_limits": [
+              0.13566303253173828,
+              0.19011297821998596,
+              0.29706910252571106,
+              1.0224295854568481
+            ]
+          }
+        ]
+      },
+      {
+        "checkpoint": 16,
+        "passed": true,
+        "comparisons": [
+          {
+            "comparison": "full_forward",
+            "passed": true,
+            "relative_l2_by_layer": [
+              8.408529197367898e-07,
+              7.393431928903738e-07,
+              8.281606937998731e-07,
+              6.556231824106362e-07
+            ],
+            "max_absolute_difference_by_layer": [
+              2.86102294921875e-06,
+              2.86102294921875e-06,
+              4.5299530029296875e-06,
+              1.52587890625e-05
+            ],
+            "maximum_limits": [
+              0.1438901573419571,
+              0.19770455360412598,
+              0.23224543035030365,
+              1.2823941707611084
+            ]
+          },
+          {
+            "comparison": "cached_generation",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.00020653239982213264,
+              0.00021901267519181536,
+              0.0002242439415504535,
+              0.00013438045731211499
+            ],
+            "max_absolute_difference_by_layer": [
+              0.0016474723815917969,
+              0.0048313140869140625,
+              0.005794525146484375,
+              0.01140594482421875
+            ],
+            "maximum_limits": [
+              0.1438901573419571,
+              0.19770455360412598,
+              0.23224543035030365,
+              1.2823941707611084
+            ]
+          }
+        ]
+      },
+      {
+        "checkpoint": 32,
+        "passed": true,
+        "comparisons": [
+          {
+            "comparison": "full_forward",
+            "passed": true,
+            "relative_l2_by_layer": [
+              8.249377287938842e-07,
+              7.4542145966916e-07,
+              9.425693292541837e-07,
+              9.293572134083661e-07
+            ],
+            "max_absolute_difference_by_layer": [
+              3.814697265625e-06,
+              3.814697265625e-06,
+              6.67572021484375e-06,
+              6.103515625e-05
+            ],
+            "maximum_limits": [
+              0.1035999059677124,
+              0.18957431614398956,
+              0.20803353190422058,
+              1.095958948135376
+            ]
+          },
+          {
+            "comparison": "cached_generation",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.00020858202557849705,
+              0.00020192213130016063,
+              0.00021083466907478667,
+              0.00023180760066324906
+            ],
+            "max_absolute_difference_by_layer": [
+              0.0015778541564941406,
+              0.004306793212890625,
+              0.0064792633056640625,
+              0.02910614013671875
+            ],
+            "maximum_limits": [
+              0.1035999059677124,
+              0.18957431614398956,
+              0.20803353190422058,
+              1.095958948135376
+            ]
+          }
+        ]
+      },
+      {
+        "checkpoint": "final",
+        "passed": true,
+        "comparisons": [
+          {
+            "comparison": "full_forward",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "max_absolute_difference_by_layer": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_limits": [
+              0.10444392263889313,
+              0.15436817705631256,
+              0.2493436187505722,
+              0.259189635515213
+            ]
+          },
+          {
+            "comparison": "cached_generation",
+            "passed": true,
+            "relative_l2_by_layer": [
+              0.00019590247644178972,
+              0.00018791982800261392,
+              0.00018484965657940782,
+              0.00020740558283052757
+            ],
+            "max_absolute_difference_by_layer": [
+              0.0021076202392578125,
+              0.00196075439453125,
+              0.0037584304809570312,
+              0.006610870361328125
+            ],
+            "maximum_limits": [
+              0.10444392263889313,
+              0.15436817705631256,
+              0.2493436187505722,
+              0.259189635515213
+            ]
+          }
+        ]
+      }
+    ],
+    "atol": 0.02,
+    "rtol": 0.01,
+    "metric": "per_layer_relative_l2_and_scaled_max"
+  },
+  "seed_reproduction_passed": true,
+  "completed_attempts": 640,
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "memory_total_mib": 6143.5,
+    "peak_allocated_mib": 3957.1005859375,
+    "peak_reserved_mib": 4466.0,
+    "cuda": "12.6",
+    "driver_version": "576.52",
+    "weight_storage_dtype": "bfloat16",
+    "linear_compute_dtype": "float32"
+  },
+  "bank_sha256": "625b24e8abec429892fc7bbe2b9624aafb5b5d8a0f227893ff5bf96c5892a576",
+  "bank_frozen": true,
+  "ended_at": "2026-10-15T17:39:14.823147+00:00"
+}

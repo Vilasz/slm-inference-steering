@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-10-15T06:50:21.125824+00:00",
+  "passed": true,
+  "preserved_attempts": 304,
+  "preserved_prefix_sha256": "17df2993a2c94280d43673a6cbf5dbfa3c1bd78a880e760ef07d19e8f6cd1182",
+  "observed_complete_attempts": 307,
+  "new_attempts": 3,
+  "duplicate_attempts": 0
+}

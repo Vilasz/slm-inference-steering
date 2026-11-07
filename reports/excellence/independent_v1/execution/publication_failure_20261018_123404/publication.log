@@ -1,0 +1,18 @@
+
+2026-10-17T18:36:13.740528+00:00 command=["C:\\Users\\joaof\\slm-inference-steering\\.venv\\Scripts\\python.exe", "-u", "C:\\Users\\joaof\\slm-inference-steering\\scripts\\publish_excellence_independent.py"]
+Traceback (most recent call last):
+  File "C:\Users\joaof\slm-inference-steering\scripts\analyze_excellence_independent.py", line 10, in <module>
+    run(ROOT)
+  File "C:\Users\joaof\slm-inference-steering\src\slm_steering\excellence\independent_report.py", line 142, in run
+    audit.append({'phase': phase, 'tasks': len(design[key]), 'attempts': len(records),
+                                               ~~~~~~^^^^^
+KeyError: 'tokenizer_revision'
+
+Traceback (most recent call last):
+  File "C:\Users\joaof\slm-inference-steering\scripts\publish_excellence_independent.py", line 207, in <module>
+    main()
+  File "C:\Users\joaof\slm-inference-steering\scripts\publish_excellence_independent.py", line 156, in main
+    run(['-u', 'scripts/analyze_excellence_independent.py'])
+  File "C:\Users\joaof\slm-inference-steering\scripts\publish_excellence_independent.py", line 26, in run
+    raise RuntimeError(f'Publication command failed: {arguments}')
+RuntimeError: Publication command failed: ['-u', 'scripts/analyze_excellence_independent.py']

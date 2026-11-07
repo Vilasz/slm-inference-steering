@@ -1,0 +1,37 @@
+#heading(numbering: none, outlined: false)[Resumo]
+Este estudo avalia sinais latentes de corretude e interrupção precoce na geração
+de código pelo Qwen2.5-Coder-1.5B-Instruct. Um piloto de 960 trajetórias escolhe
+o regime de amostragem por regra fixa. O banco principal contém 2.640 tentativas
+em 132 tarefas HumanEval+, avaliadas pelo EvalPlus. A validação aninhada por
+tarefa separa treinamento, seleção e teste. No endpoint primário de 32 tokens,
+2158 trajetórias permanecem ativas e 92
+tarefas contêm ambos os resultados. A diferença de WT-AUC entre H+B e B foi
+-0,047, IC 95% [-0,099; 0,006]; a diferença de log loss foi 0,038, IC 95% [0,007; 0,071]. O resultado não satisfaz o critério de
+ganho incremental definido no protocolo. Políticas são comparadas com as mesmas
+sementes e orçamentos contra parada por verificador e por observáveis.
+Os critérios conjuntos para afirmar benefício operacional não foram satisfeitos. A transferência aplica um sistema congelado a 640 tentativas MBPP+, sem ajuste nos dados alvo. A execução respeita uma GPU de 6 GB. Os intervalos
+são condicionais aos modelos OOF ajustados. O histórico de exposição a tarefas
+é divulgado e não se reivindica pré-registro independente nem aprovação do
+orientador por inferência a partir da execução.
+
+Análises exploratórias com PCA e correção residual reduzem a desvantagem da combinação, sem estabelecer superioridade sobre B. Um oracle retrospectivo preserva os corretos e quantifica o espaço econômico idealizado.
+
+#par(first-line-indent: 0pt)[*Palavras-chave:* geração de código; probing; corretude funcional; validação agrupada; inferência adaptativa.]
+
+#heading(numbering: none, outlined: false)[Abstract]
+We evaluate hidden correctness signals and early termination with
+Qwen2.5-Coder-1.5B-Instruct. A 960-trajectory pilot selects sampling by a fixed
+rule. The main bank comprises 2,640 attempts across 132 HumanEval+ tasks with
+official EvalPlus labels and task-grouped nested validation. At the primary
+32-token endpoint, 2158 trajectories remain active and
+92 tasks contain both outcomes. The H+B versus B within-task
+AUC difference is -0.047 with a 95% interval
+[-0.099, 0.006]. The log-loss difference is
+0.038 [0.007, 0.071].
+The predeclared incremental-gain criterion is not met.
+Paired policies are compared against verifier stopping and observable-feature
+aborts. Frozen transfer uses 640 MBPP+ attempts without target fitting.
+Intervals are conditional on fitted out-of-fold scorers; prior task exposure
+is disclosed. No independent preregistration or advisor approval is claimed.
+
+Exploratory PCA and anchored residual readouts reduce the original deficit without establishing improvement over B. A retrospective label-aware oracle quantifies economic headroom while preserving every correct candidate.

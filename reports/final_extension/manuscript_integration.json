@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-06T08:50:54.990009+00:00",
+  "external_results_included": true,
+  "pilot_results_included": true,
+  "chapter_sha256": "4b7d4c9c8eea2324972e2d6d5d0074e5dde6554e37b73cab94198a436894c890",
+  "main_sha256": "fcb20d2039f1d122f67cf47311a543cdeb709861c4b7fdb1a662f997a628bbe5",
+  "compiled": true,
+  "previous_manuscript": "reports\\final_extension\\manuscript_before_extension\\manifest.json"
+}

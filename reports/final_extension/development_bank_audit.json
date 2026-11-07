@@ -1,0 +1,27 @@
+{
+  "audited_at": "2026-11-05T19:29:00.600277+00:00",
+  "phase": "development",
+  "banks": [
+    {
+      "model": "deepseek",
+      "phase": "pilot",
+      "candidates": 240,
+      "tasks": 12,
+      "all_checks_passed": true
+    },
+    {
+      "model": "deepseek",
+      "phase": "source",
+      "candidates": 2640,
+      "tasks": 132,
+      "all_checks_passed": true
+    },
+    {
+      "model": "qwen",
+      "phase": "technical",
+      "candidates": 12,
+      "tasks": 12,
+      "all_checks_passed": true
+    }
+  ]
+}

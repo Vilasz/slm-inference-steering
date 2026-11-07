@@ -1,0 +1,20 @@
+{
+  "measured_at": "2026-11-04T12:49:25.167821+00:00",
+  "python": "3.12.8",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "total_memory_mib": 6143.5,
+  "cuda_runtime": "12.6",
+  "bf16_supported": true,
+  "driver": "576.52",
+  "packages": {
+    "torch": "2.12.0+cu126",
+    "transformers": "4.46.3",
+    "numpy": "1.26.4",
+    "scipy": "1.14.1",
+    "scikit-learn": "1.5.2",
+    "evalplus": "0.3.1",
+    "huggingface-hub": "0.25.2",
+    "safetensors": "0.4.5"
+  }
+}

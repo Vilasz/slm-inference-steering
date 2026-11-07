@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\joaof\slm-inference-steering\scripts\run_complete_research.py", line 128, in <module>
+    main()
+  File "C:\Users\joaof\slm-inference-steering\scripts\run_complete_research.py", line 108, in main
+    raise RuntimeError(f'Stage {name} exited {result.returncode}; see {directory / (name + ".log")}')
+RuntimeError: Stage main_bank exited 1073807364; see C:\Users\joaof\slm-inference-steering\reports\research\full_execution_v0.2\main_bank.log

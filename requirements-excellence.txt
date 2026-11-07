@@ -1,0 +1,8 @@
+# Complete local research/publication environment, plus the new PDF audit tooling.
+# Historical requirements.txt, requirements-notebooks.txt and uv.lock stay unchanged.
+-r requirements.txt
+-r requirements-notebooks.txt
+PyMuPDF==1.28.2
+requests==2.34.2
+ruff==0.8.4
+mypy==1.14.1

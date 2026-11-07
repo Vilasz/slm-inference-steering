@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-10-13T02:16:23.978452+00:00",
+  "benchmark": {
+    "benchmark": "mbpp",
+    "version": "v0.2.0",
+    "evalplus_version": "0.3.1",
+    "official_dataset_md5": "ee43ecabebf20deef4bb776a405ac5b1",
+    "dataset_sha256": "0c19f3417188883596e73f035a364958d4c92210efb8304990f72199f6526541",
+    "python": "3.12.3",
+    "platform": "Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "checker": "evalplus.eval.untrusted_check",
+    "fast_check": true,
+    "mini": false,
+    "noextreme": false,
+    "minimum_time_limit": 1,
+    "groundtruth_time_factor": 4
+  },
+  "task_count": 378,
+  "control_task": "Mbpp/2",
+  "canonical_positive": true,
+  "negative_rejected": true,
+  "scope": "Verifier-only preflight; no target-model generations or transfer metrics"
+}

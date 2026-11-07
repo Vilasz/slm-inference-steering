@@ -1,0 +1,381 @@
+{
+  "created_at": "2026-10-17T06:28:36.073160+00:00",
+  "status": "completed",
+  "known_candidate_verifications": [
+    {
+      "task_id": "HumanEval/35",
+      "attempt_id": 27,
+      "checker_seconds": 0.07396656299999993,
+      "rpc_wall_seconds": 0.0824399999983143,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/45",
+      "attempt_id": 28,
+      "checker_seconds": 0.02233098199999972,
+      "rpc_wall_seconds": 0.024942299991380423,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/43",
+      "attempt_id": 26,
+      "checker_seconds": 0.016043667000000816,
+      "rpc_wall_seconds": 0.023816400003852323,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/66",
+      "attempt_id": 22,
+      "checker_seconds": 0.025581836000000635,
+      "rpc_wall_seconds": 0.031878699985099956,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/66",
+      "attempt_id": 25,
+      "checker_seconds": 0.024695719000000338,
+      "rpc_wall_seconds": 0.02509069998632185,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/35",
+      "attempt_id": 23,
+      "checker_seconds": 0.021627886000000096,
+      "rpc_wall_seconds": 0.022001500008627772,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/101",
+      "attempt_id": 22,
+      "checker_seconds": 0.016934267999999975,
+      "rpc_wall_seconds": 0.020002400007797405,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/101",
+      "attempt_id": 29,
+      "checker_seconds": 0.016321613999999762,
+      "rpc_wall_seconds": 0.01683079998474568,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/101",
+      "attempt_id": 20,
+      "checker_seconds": 0.016738790999999864,
+      "rpc_wall_seconds": 0.017150200001196936,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/29",
+      "attempt_id": 22,
+      "checker_seconds": 0.023283219999999716,
+      "rpc_wall_seconds": 0.027957500016782433,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/92",
+      "attempt_id": 29,
+      "checker_seconds": 0.014413868000000107,
+      "rpc_wall_seconds": 0.017932399990968406,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/125",
+      "attempt_id": 23,
+      "checker_seconds": 0.015944964000000006,
+      "rpc_wall_seconds": 0.0190903999900911,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/144",
+      "attempt_id": 28,
+      "checker_seconds": 0.02336474900000063,
+      "rpc_wall_seconds": 0.02689720000489615,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/139",
+      "attempt_id": 20,
+      "checker_seconds": 0.014636047999999846,
+      "rpc_wall_seconds": 3.0920066999970004,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/85",
+      "attempt_id": 28,
+      "checker_seconds": 0.02180245699999972,
+      "rpc_wall_seconds": 0.028776099992683157,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/43",
+      "attempt_id": 24,
+      "checker_seconds": 0.013813648999999373,
+      "rpc_wall_seconds": 0.014398400002392009,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/85",
+      "attempt_id": 23,
+      "checker_seconds": 0.02260181800000005,
+      "rpc_wall_seconds": 0.023361200001090765,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/85",
+      "attempt_id": 26,
+      "checker_seconds": 0.020503995999998637,
+      "rpc_wall_seconds": 0.021090199996251613,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/60",
+      "attempt_id": 20,
+      "checker_seconds": 0.014866701999999066,
+      "rpc_wall_seconds": 0.015714499983005226,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/43",
+      "attempt_id": 23,
+      "checker_seconds": 0.020883441000000502,
+      "rpc_wall_seconds": 0.021510799997486174,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/64",
+      "attempt_id": 27,
+      "checker_seconds": 0.01918293399999982,
+      "rpc_wall_seconds": 0.024060099996859208,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/102",
+      "attempt_id": 26,
+      "checker_seconds": 0.014260989999998586,
+      "rpc_wall_seconds": 0.017113400012021884,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/37",
+      "attempt_id": 23,
+      "checker_seconds": 0.013984847999999772,
+      "rpc_wall_seconds": 0.020818299992242828,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/5",
+      "attempt_id": 25,
+      "checker_seconds": 0.014264537000000743,
+      "rpc_wall_seconds": 0.01560429998789914,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/102",
+      "attempt_id": 24,
+      "checker_seconds": 0.013771617999999819,
+      "rpc_wall_seconds": 0.014327899989439175,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/12",
+      "attempt_id": 21,
+      "checker_seconds": 0.01470720899999911,
+      "rpc_wall_seconds": 0.02062539997859858,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/37",
+      "attempt_id": 29,
+      "checker_seconds": 0.02133215899999996,
+      "rpc_wall_seconds": 0.021921300009125844,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/92",
+      "attempt_id": 28,
+      "checker_seconds": 0.020818009999999276,
+      "rpc_wall_seconds": 0.021467499987920746,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/43",
+      "attempt_id": 28,
+      "checker_seconds": 0.021232200000000034,
+      "rpc_wall_seconds": 0.02187899997807108,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/102",
+      "attempt_id": 25,
+      "checker_seconds": 0.013804454999998939,
+      "rpc_wall_seconds": 0.014440800005104393,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/5",
+      "attempt_id": 28,
+      "checker_seconds": 0.014117859000000621,
+      "rpc_wall_seconds": 0.014768099994398654,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/83",
+      "attempt_id": 28,
+      "checker_seconds": 0.013998046999999403,
+      "rpc_wall_seconds": 1.0195896999794059,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/48",
+      "attempt_id": 29,
+      "checker_seconds": 0.019997535999999982,
+      "rpc_wall_seconds": 0.022546399995917454,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/148",
+      "attempt_id": 29,
+      "checker_seconds": 0.014473779999999437,
+      "rpc_wall_seconds": 0.017496499989647418,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/69",
+      "attempt_id": 21,
+      "checker_seconds": 0.023934924000000635,
+      "rpc_wall_seconds": 0.039389099983964115,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/139",
+      "attempt_id": 27,
+      "checker_seconds": 3.0567780450000015,
+      "rpc_wall_seconds": 3.0573110000113957,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/144",
+      "attempt_id": 21,
+      "checker_seconds": 0.03214838200000081,
+      "rpc_wall_seconds": 0.03266659998917021,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/34",
+      "attempt_id": 24,
+      "checker_seconds": 0.021490395999999024,
+      "rpc_wall_seconds": 0.028638500021770597,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/35",
+      "attempt_id": 24,
+      "checker_seconds": 0.01970325400000128,
+      "rpc_wall_seconds": 0.020268000022042543,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/109",
+      "attempt_id": 27,
+      "checker_seconds": 0.02216127400000012,
+      "rpc_wall_seconds": 0.02834739998797886,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/81",
+      "attempt_id": 27,
+      "checker_seconds": 0.014671372999998766,
+      "rpc_wall_seconds": 0.024365599994780496,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/37",
+      "attempt_id": 28,
+      "checker_seconds": 0.02227383099999969,
+      "rpc_wall_seconds": 0.022918300004675984,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/64",
+      "attempt_id": 29,
+      "checker_seconds": 0.022942349000000917,
+      "rpc_wall_seconds": 0.023509299993747845,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/64",
+      "attempt_id": 26,
+      "checker_seconds": 0.021717320000000484,
+      "rpc_wall_seconds": 0.02223309999681078,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/94",
+      "attempt_id": 27,
+      "checker_seconds": 1.3810784069999986,
+      "rpc_wall_seconds": 2.1615385999903083,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/4",
+      "attempt_id": 21,
+      "checker_seconds": 0.020772416999999876,
+      "rpc_wall_seconds": 0.026523400010773912,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/66",
+      "attempt_id": 29,
+      "checker_seconds": 0.025676995000001313,
+      "rpc_wall_seconds": 0.026252899988321587,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/148",
+      "attempt_id": 20,
+      "checker_seconds": 0.020785774000000146,
+      "rpc_wall_seconds": 0.02138980000745505,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/102",
+      "attempt_id": 21,
+      "checker_seconds": 0.015642499000000143,
+      "rpc_wall_seconds": 0.01625320001039654,
+      "historical_label_reproduced": true
+    },
+    {
+      "task_id": "HumanEval/109",
+      "attempt_id": 28,
+      "checker_seconds": 0.013727145999999024,
+      "rpc_wall_seconds": 0.014384599984623492,
+      "historical_label_reproduced": true
+    }
+  ],
+  "mean_checker_seconds": 0.10811613611999993,
+  "mean_verifier_rpc_seconds": 0.20811072999669705,
+  "gate_microbenchmarks": [
+    {
+      "family": "B",
+      "repetitions": 100,
+      "mean_seconds": 0.0002801010000985116,
+      "p50_seconds": 0.0002600500010885298,
+      "p95_seconds": 0.0004546799973468296,
+      "scope": "Warm CPU observable construction and scaler/logistic/Platt inference; excludes disk IO and GPU-to-CPU transfer"
+    },
+    {
+      "family": "HB",
+      "repetitions": 100,
+      "mean_seconds": 0.00032951499975752085,
+      "p50_seconds": 0.0002837499923771247,
+      "p95_seconds": 0.0007199650121037846,
+      "scope": "Warm CPU observable construction and scaler/logistic/Platt inference; excludes disk IO and GPU-to-CPU transfer"
+    }
+  ],
+  "limitations": [
+    "Warm microbenchmarks are not end-to-end policy latency",
+    "Capture benchmark was partly concurrent with CPU exploratory analysis; timings are descriptive",
+    "Verifier includes first-task oracle setup in RPC wall time; checker-internal time is reported separately"
+  ]
+}

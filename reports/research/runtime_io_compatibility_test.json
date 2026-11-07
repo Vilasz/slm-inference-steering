@@ -1,0 +1,7 @@
+{
+  "created_at": "2026-10-15T13:21:49.690257+00:00",
+  "passed": true,
+  "scope": "Frozen write_json called under real Windows reader lock, runtime retry shim active through PYTHONPATH",
+  "frozen_sources_changed": false,
+  "sitecustomize_path": "C:\\Users\\joaof\\slm-inference-steering\\scripts\\research_runtime\\sitecustomize.py"
+}

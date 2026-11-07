@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-10-16T03:06:38.424606+00:00",
+  "reason": "Post-hoc exploratory robustness, calibration, and generalization diagnostics requested after original completed execution; no refitting, threshold changes, or new sampling",
+  "protected_inputs": {
+    "runs/candidate_bank/pilot_v0.2/trajectories.jsonl": "9b241a61af270d7820e8dbfeeb8611f53071ac7755340ee2a0c0e5d455f11009",
+    "runs/candidate_bank/definitive_v0.2/trajectories.jsonl": "8e55c7f8905254029d6ef3e92a17a77f01727f7ba206c5e73098613b26b856fb",
+    "runs/candidate_bank/transfer_v0.2/trajectories.jsonl": "625b24e8abec429892fc7bbe2b9624aafb5b5d8a0f227893ff5bf96c5892a576",
+    "runs/probes/protocol_v0.2/outer_predictions.csv": "96f941052ef85e6778c3a993596ab841573262169ba7d9adee12f803a26f6a8d",
+    "runs/probes/protocol_v0.2/selection_audit.json": "60fa7a0aede1abf3df1772482810835c95a3e39c158da3fe93ed0c33e54ae070",
+    "runs/transfer/protocol_v0.2/models.joblib": "1adfc6660ed8748c58dc47dbce7e34b2d086d62a076b990bab6934d155f8df83",
+    "runs/transfer/protocol_v0.2/models.json": "c336453eb4bd1d5e09d9db30b8b65a6d43aa3135658f9449f43ee427133680e8",
+    "reports/protocol_v0.2/results.json": "0cc3d457fe59a656418dae2df02e69a38ce424703ee78e036b1a31d9561d2949",
+    "reports/transfer_v0.2/results.json": "841bec2240af6d56f120ed72ad7ae9d34561c6694e5d6937f911b1f31c860910",
+    "reports/transfer_v0.2/predictions.csv": "58fb6b419c6bd4a80d23e75044597341d069b9fcd534e4c23eb247cad78f06c1",
+    "reports/research/execution_freeze_v0.2/manifest.json": "4340a00cdc3cc5dd9676276ef70a3a8f7d3cae331d00a4c030340809c4e2497a"
+  },
+  "archived_artifacts": [
+    "reports/research/full_execution_v0.2/status.json",
+    "reports/research/full_execution_v0.2/progress.json",
+    "reports/final_review/evidence.json",
+    "reports/final_review/delivery_manifest.json",
+    "notebooks/final_research_summary.ipynb",
+    "tcc/build/manuscrito.pdf",
+    "RESULTS.md"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "development_only": true,
+  "attempts": 39,
+  "planned_attempts": 960,
+  "completion_tokens": 2693,
+  "generation_seconds": 427.161076300079,
+  "verification_seconds": 4.53258116200012,
+  "maximum_causal_relative_l2": 0.0002622956952742492,
+  "pilot_hours_extrapolated": 2.9517515040142164,
+  "definitive_hours_extrapolated": 8.117316636039096,
+  "temperature_selected": false
+}

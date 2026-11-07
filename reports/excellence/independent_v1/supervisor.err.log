@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\joaof\slm-inference-steering\scripts\run_approved_excellence.py", line 150, in <module>
+    main()
+  File "C:\Users\joaof\slm-inference-steering\scripts\run_approved_excellence.py", line 134, in main
+    run_child([sys.executable, '-u', str(publisher)], state, 'publication')
+  File "C:\Users\joaof\slm-inference-steering\scripts\run_approved_excellence.py", line 82, in run_child
+    raise RuntimeError(f'{label} failed with exit code {process.returncode}; inspect {path}')
+RuntimeError: publication failed with exit code 1; inspect C:\Users\joaof\slm-inference-steering\reports\excellence\independent_v1\execution\publication.log

@@ -1,0 +1,32 @@
+{
+  "name": "main_humaneval",
+  "output_dir": "runs/config_runs/main_humaneval",
+  "description": "Small reproducible HumanEval run. Requires a local model/GPU for practical runtime.",
+  "steps": [
+    {
+      "name": "phase2_qwen15b_temp08_n5",
+      "type": "command",
+      "command": [
+        "{python}",
+        "scripts/run_experiment_matrix.py",
+        "--models",
+        "qwen2.5-coder-1.5b-instruct",
+        "--temperatures",
+        "0.8",
+        "--n-values",
+        "5",
+        "--limit",
+        "30",
+        "--max-new-tokens",
+        "256",
+        "--skip-existing",
+        "--continue-on-error",
+        "--require-cuda"
+      ]
+    },
+    {
+      "name": "report",
+      "type": "report"
+    }
+  ]
+}

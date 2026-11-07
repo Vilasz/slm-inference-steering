@@ -1,0 +1,3951 @@
+{
+  "status": "post_hoc_exploratory_frozen_predictions",
+  "created_at": "2026-10-18T16:26:29.421647+00:00",
+  "timing": "Requested after completion and inspection of the fixed-design results",
+  "settings": {
+    "seed": 20260921,
+    "task_bootstrap_replications": 2000,
+    "calibration_equal_width_bins": 10,
+    "primary_checkpoint": "32",
+    "common_cohort_checkpoints": [
+      "8",
+      "16",
+      "32",
+      "64"
+    ]
+  },
+  "limitations": [
+    "Conditional on fixed fitted scores; models are not refitted during bootstrap or deletions",
+    "Pointwise exploratory intervals; no simultaneous coverage or new confirmatory claims",
+    "Outer folds share training data and are not independent replications",
+    "Common cohort conditions on trajectory length T>64 and is not a causal time comparison",
+    "Calibration error depends on binning and sample size; use with proper losses",
+    "Percentile ECE bootstrap can be biased upward and need not contain the empirical ECE",
+    "Excluding historically generated tasks only changes evaluation; training is not redone",
+    "OOF source and full-source-fitted target scorers use different evaluation procedures",
+    "Development recall 0.97 is an empirical selection target, not a held-out guarantee"
+  ],
+  "inputs": {
+    "runs/probes/protocol_v0.2/outer_predictions.csv": "96f941052ef85e6778c3a993596ab841573262169ba7d9adee12f803a26f6a8d",
+    "runs/probes/protocol_v0.2/selection_audit.json": "60fa7a0aede1abf3df1772482810835c95a3e39c158da3fe93ed0c33e54ae070",
+    "reports/protocol_v0.2/results.json": "0cc3d457fe59a656418dae2df02e69a38ce424703ee78e036b1a31d9561d2949",
+    "reports/research/legacy_task_presence.json": "749bc025d25cc4c0df1e48508056e30cc04da6d00909fa306752997357ff3688",
+    "reports/transfer_v0.2/predictions.csv": "58fb6b419c6bd4a80d23e75044597341d069b9fcd534e4c23eb247cad78f06c1",
+    "runs/transfer/protocol_v0.2/models.json": "c336453eb4bd1d5e09d9db30b8b65a6d43aa3135658f9449f43ee427133680e8",
+    "reports/transfer_v0.2/results.json": "841bec2240af6d56f120ed72ad7ae9d34561c6694e5d6937f911b1f31c860910",
+    "scripts/research_diagnostics.py": "d147ce4300237bc2b01db53575a74054ad6b413cf838b1b331a5ec2266bbbba1",
+    "scripts/analyze_research_robustness.py": "e33fd5d09a8323e477a1ea9baa35c545c3e538a00ba19a3baed02debd1a3ca40"
+  },
+  "primary_reproduction": {
+    "within_task_auc": {
+      "matches": true,
+      "effect": {
+        "estimate": -0.04702865751183576,
+        "ci95": [
+          -0.09937495818447424,
+          0.005583498622638421
+        ],
+        "tasks": 92,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    "log_loss": {
+      "matches": true,
+      "effect": {
+        "estimate": 0.03785060488521885,
+        "ci95": [
+          0.006657260077646494,
+          0.0706158375881566
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    }
+  },
+  "contrasts": [
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "0",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "0",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": -0.01807774602960097,
+        "ci95": [
+          -0.04129754942522017,
+          0.0064316668792643835
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "0",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": -0.008283421732022013,
+        "ci95": [
+          -0.01889527491692786,
+          0.0032293541026667746
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "0",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "tasks": 100,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "0",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": -0.01804374498395133,
+        "ci95": [
+          -0.04116615655470943,
+          0.00636393408675178
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "0",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": -0.008265939591159259,
+        "ci95": [
+          -0.018838414881727498,
+          0.003203928356247932
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "16",
+      "attempts": 2608,
+      "tasks": 132,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.04389628254283069,
+        "ci95": [
+          -0.08729382666358128,
+          0.0003031983171990066
+        ],
+        "tasks": 97,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "16",
+      "attempts": 2608,
+      "tasks": 132,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.021437334197917324,
+        "ci95": [
+          -0.02221065176821263,
+          0.05913178935753007
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "16",
+      "attempts": 2608,
+      "tasks": 132,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.014548548072131679,
+        "ci95": [
+          -0.0022526759058681275,
+          0.029670719915142415
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "16",
+      "attempts": 2608,
+      "tasks": 132,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.05908830524622391,
+        "ci95": [
+          -0.10196022814343075,
+          -0.013932406324130975
+        ],
+        "tasks": 97,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "16",
+      "attempts": 2608,
+      "tasks": 132,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.015691631204814704,
+        "ci95": [
+          -0.02429753676334432,
+          0.05051608087966672
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "16",
+      "attempts": 2608,
+      "tasks": 132,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.011649628700600682,
+        "ci95": [
+          -0.0035669160098516332,
+          0.0255755100896853
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "32",
+      "attempts": 2158,
+      "tasks": 132,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.06004633395733728,
+        "ci95": [
+          -0.1143251150204028,
+          -0.003948685130266649
+        ],
+        "tasks": 92,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "32",
+      "attempts": 2158,
+      "tasks": 132,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.05664955988398495,
+        "ci95": [
+          0.02413480348888345,
+          0.09017440318771779
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "32",
+      "attempts": 2158,
+      "tasks": 132,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.026073306992450085,
+        "ci95": [
+          0.011682080976002072,
+          0.041194286918266994
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "32",
+      "attempts": 2158,
+      "tasks": 132,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.04702865751183576,
+        "ci95": [
+          -0.09937495818447424,
+          0.005583498622638421
+        ],
+        "tasks": 92,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "32",
+      "attempts": 2158,
+      "tasks": 132,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.03785060488521885,
+        "ci95": [
+          0.006657260077646494,
+          0.0706158375881566
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "32",
+      "attempts": 2158,
+      "tasks": 132,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.016280740444894023,
+        "ci95": [
+          0.0032315040755384688,
+          0.030076835957192617
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "64",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.03923621201612106,
+        "ci95": [
+          -0.14604948708915566,
+          0.06562419422700218
+        ],
+        "tasks": 69,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "64",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.048431115274086466,
+        "ci95": [
+          0.0033891756071305836,
+          0.09279095907892188
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "64",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.023625648573001715,
+        "ci95": [
+          0.004414789327960425,
+          0.04277779749107135
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "64",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.03171799638480513,
+        "ci95": [
+          -0.12818441247393894,
+          0.06433894588914653
+        ],
+        "tasks": 69,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "64",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.03366904356115446,
+        "ci95": [
+          -0.007929767919086912,
+          0.07469697993837685
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "64",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.016500574140176937,
+        "ci95": [
+          -0.0017228223136768674,
+          0.034080180503766516
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "8",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.029738934843965795,
+        "ci95": [
+          -0.08061753697202563,
+          0.020705437556348436
+        ],
+        "tasks": 100,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "8",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": -0.011560091878786177,
+        "ci95": [
+          -0.03299453669797109,
+          0.008221709324780474
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "8",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": -0.005677105381656986,
+        "ci95": [
+          -0.01576719160392012,
+          0.0038265616893455737
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "8",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.03716572055825151,
+        "ci95": [
+          -0.08530070373979093,
+          0.006717639774978168
+        ],
+        "tasks": 100,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "8",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": -0.01139393178111864,
+        "ci95": [
+          -0.03220578405485923,
+          0.007909612027542203
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "8",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": -0.005607736602751119,
+        "ci95": [
+          -0.01548991852557523,
+          0.003575109288613253
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "final",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.13067349633510625,
+        "ci95": [
+          -0.18231502696563842,
+          -0.075309985543621
+        ],
+        "tasks": 100,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "final",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.09525278826318925,
+        "ci95": [
+          0.05973871346227168,
+          0.13011359225347882
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "final",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.041624699611402236,
+        "ci95": [
+          0.026723059495131145,
+          0.056801954758338574
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "final",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.049056826781749406,
+        "ci95": [
+          -0.09173833906246831,
+          -0.007955963563547764
+        ],
+        "tasks": 100,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "final",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.05945351164744303,
+        "ci95": [
+          0.028885317530429166,
+          0.09081006684347254
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "original_risk_set",
+      "checkpoint": "final",
+      "attempts": 2640,
+      "tasks": 132,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.025156126548280457,
+        "ci95": [
+          0.01260565887704399,
+          0.038626720469721106
+        ],
+        "tasks": 132,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "16",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.03605202582273483,
+        "ci95": [
+          -0.10265233032172325,
+          0.034273416807162116
+        ],
+        "tasks": 69,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "16",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.018474123923147467,
+        "ci95": [
+          -0.03259097067521023,
+          0.06405568296847582
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "16",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.013113205418280012,
+        "ci95": [
+          -0.006483583736508906,
+          0.031164884786950772
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "16",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.06709045256128944,
+        "ci95": [
+          -0.12972539390391583,
+          -0.005737851386073576
+        ],
+        "tasks": 69,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "16",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.010266513257900066,
+        "ci95": [
+          -0.037192103205190674,
+          0.053395601598052886
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "16",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.008988745643061482,
+        "ci95": [
+          -0.008779998446868399,
+          0.026272152443585394
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "32",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.012954896345064004,
+        "ci95": [
+          -0.09379372118795606,
+          0.06895708342879057
+        ],
+        "tasks": 69,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "32",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.043520273489145056,
+        "ci95": [
+          -0.0035864631497698235,
+          0.0909492723030462
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "32",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.020848968520340155,
+        "ci95": [
+          -8.155018479904287e-05,
+          0.04151997573812746
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "32",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.021210012589843508,
+        "ci95": [
+          -0.08867394104486495,
+          0.04755206559856317
+        ],
+        "tasks": 69,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "32",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.0287463321456452,
+        "ci95": [
+          -0.016642852582861956,
+          0.07530193021038185
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "32",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.013180411449594021,
+        "ci95": [
+          -0.005990868577868273,
+          0.03270625650425671
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "64",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.03923621201612106,
+        "ci95": [
+          -0.14604948708915566,
+          0.06562419422700218
+        ],
+        "tasks": 69,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "64",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.048431115274086466,
+        "ci95": [
+          0.0033891756071305836,
+          0.09279095907892188
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "64",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.023625648573001715,
+        "ci95": [
+          0.004414789327960425,
+          0.04277779749107135
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "64",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.03171799638480513,
+        "ci95": [
+          -0.12818441247393894,
+          0.06433894588914653
+        ],
+        "tasks": 69,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "64",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.03366904356115446,
+        "ci95": [
+          -0.007929767919086912,
+          0.07469697993837685
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "64",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.016500574140176937,
+        "ci95": [
+          -0.0017228223136768674,
+          0.034080180503766516
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "8",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.015648749510464487,
+        "ci95": [
+          -0.08128830243941959,
+          0.058039213327936136
+        ],
+        "tasks": 69,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "8",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": -0.01129340388865822,
+        "ci95": [
+          -0.03421195895092305,
+          0.012074774415834117
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "8",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": -0.006027578401479283,
+        "ci95": [
+          -0.016730997517090365,
+          0.004985396690773051
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "8",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.029790047468187565,
+        "ci95": [
+          -0.08834281840509194,
+          0.033045009986435114
+        ],
+        "tasks": 69,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "8",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": -0.013725484422673729,
+        "ci95": [
+          -0.035390826212239594,
+          0.008343816666689418
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "8",
+      "attempts": 1228,
+      "tasks": 122,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": -0.00727060112499237,
+        "ci95": [
+          -0.017465845848052435,
+          0.002959722299723326
+        ],
+        "tasks": 122,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "16",
+      "attempts": 640,
+      "tasks": 32,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.1774762703702816,
+        "ci95": [
+          -0.31243388567903,
+          -0.04459310087147261
+        ],
+        "tasks": 24,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "16",
+      "attempts": 640,
+      "tasks": 32,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.0144145586355276,
+        "ci95": [
+          -0.02877333019601492,
+          0.05629827734718392
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "16",
+      "attempts": 640,
+      "tasks": 32,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.006897963310631236,
+        "ci95": [
+          -0.01403498392618464,
+          0.027000275806848415
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "16",
+      "attempts": 640,
+      "tasks": 32,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.09699238644768832,
+        "ci95": [
+          -0.20381203367683873,
+          0.014898820550257146
+        ],
+        "tasks": 24,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "16",
+      "attempts": 640,
+      "tasks": 32,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.0041558989162935565,
+        "ci95": [
+          -0.03886713484067203,
+          0.04542853419539981
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "16",
+      "attempts": 640,
+      "tasks": 32,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.0020391004887679648,
+        "ci95": [
+          -0.018836136879353118,
+          0.021782004929040165
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "32",
+      "attempts": 377,
+      "tasks": 31,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.01620724047194634,
+        "ci95": [
+          -0.15244073113252035,
+          0.1376658199054031
+        ],
+        "tasks": 18,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "32",
+      "attempts": 377,
+      "tasks": 31,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.0100924703804843,
+        "ci95": [
+          -0.03905855906502908,
+          0.05835248736045604
+        ],
+        "tasks": 31,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "32",
+      "attempts": 377,
+      "tasks": 31,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.006727573479666675,
+        "ci95": [
+          -0.014704232949807366,
+          0.027517555741171505
+        ],
+        "tasks": 31,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "32",
+      "attempts": 377,
+      "tasks": 31,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": 0.00040655150949269993,
+        "ci95": [
+          -0.12551045881315487,
+          0.1379294977671203
+        ],
+        "tasks": 18,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "32",
+      "attempts": 377,
+      "tasks": 31,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": -0.008013664657668774,
+        "ci95": [
+          -0.041028482948340356,
+          0.023884554782384156
+        ],
+        "tasks": 31,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "32",
+      "attempts": 377,
+      "tasks": 31,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": -0.0028505738338214202,
+        "ci95": [
+          -0.017207236811840682,
+          0.011314660025756563
+        ],
+        "tasks": 31,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "64",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.31805555555555554,
+        "ci95": [
+          -0.6781944444444443,
+          0.008333333333333378
+        ],
+        "tasks": 6,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "64",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.09879542553584063,
+        "ci95": [
+          0.04240408672482182,
+          0.15943276082989088
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "64",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.048357512495846945,
+        "ci95": [
+          0.02091028256326941,
+          0.0778297340755141
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "64",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.3055555555555555,
+        "ci95": [
+          -0.6666666666666666,
+          3.700743415417188e-17
+        ],
+        "tasks": 6,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "64",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.054300503411193336,
+        "ci95": [
+          0.00041478132689785435,
+          0.10742548259657252
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "64",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.026621823479620416,
+        "ci95": [
+          0.0008532772877807023,
+          0.05223357626345637
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "8",
+      "attempts": 640,
+      "tasks": 32,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.043293646829105394,
+        "ci95": [
+          -0.15637644458726113,
+          0.0543038156738754
+        ],
+        "tasks": 24,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "8",
+      "attempts": 640,
+      "tasks": 32,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.16193037829380902,
+        "ci95": [
+          0.08828809695557926,
+          0.2439116654089609
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "8",
+      "attempts": 640,
+      "tasks": 32,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.06896089212569693,
+        "ci95": [
+          0.03605969121174891,
+          0.10492527699395407
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "8",
+      "attempts": 640,
+      "tasks": 32,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.05086256972552442,
+        "ci95": [
+          -0.16255343467010214,
+          0.043157212081729485
+        ],
+        "tasks": 24,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "8",
+      "attempts": 640,
+      "tasks": 32,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.16469345167019234,
+        "ci95": [
+          0.08953716570625032,
+          0.24925292493684384
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "original_risk_set",
+      "checkpoint": "8",
+      "attempts": 640,
+      "tasks": 32,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.06919920541719038,
+        "ci95": [
+          0.03656494597447615,
+          0.10585125263438272
+        ],
+        "tasks": 32,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "16",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.05000000000000002,
+        "ci95": [
+          -0.20000000000000004,
+          0.11111111111111112
+        ],
+        "tasks": 6,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "16",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.07757205139765147,
+        "ci95": [
+          0.013501529455273015,
+          0.13991589126955575
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "16",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.03607701468364607,
+        "ci95": [
+          0.0057905473394266735,
+          0.06550926561733181
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "16",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.03472222222222223,
+        "ci95": [
+          -0.18055555555555558,
+          0.10416666666666667
+        ],
+        "tasks": 6,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "16",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.06098144460897902,
+        "ci95": [
+          -0.003491337643604033,
+          0.12352292849006007
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "16",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.027885770844803915,
+        "ci95": [
+          -0.0024227339707942426,
+          0.05727460235878707
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "32",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.06805555555555555,
+        "ci95": [
+          -0.3458333333333334,
+          0.21527777777777776
+        ],
+        "tasks": 6,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "32",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.05462732320921173,
+        "ci95": [
+          -0.0243915264373833,
+          0.13466213645635092
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "32",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.02420597428030542,
+        "ci95": [
+          -0.013273091902663384,
+          0.06198682897476645
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "32",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.020833333333333332,
+        "ci95": [
+          -0.3125,
+          0.2505208333333305
+        ],
+        "tasks": 6,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "32",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.002469518944671936,
+        "ci95": [
+          -0.0647189360917238,
+          0.06703286005553555
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "32",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 8.467729181449446e-06,
+        "ci95": [
+          -0.03166893168553774,
+          0.02990115445235116
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "64",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.31805555555555554,
+        "ci95": [
+          -0.6781944444444443,
+          0.008333333333333378
+        ],
+        "tasks": 6,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "64",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.09879542553584063,
+        "ci95": [
+          0.04240408672482182,
+          0.15943276082989088
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "64",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.048357512495846945,
+        "ci95": [
+          0.02091028256326941,
+          0.0778297340755141
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "64",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.3055555555555555,
+        "ci95": [
+          -0.6666666666666666,
+          3.700743415417188e-17
+        ],
+        "tasks": 6,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "64",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.054300503411193336,
+        "ci95": [
+          0.00041478132689785435,
+          0.10742548259657252
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "64",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.026621823479620416,
+        "ci95": [
+          0.0008532772877807023,
+          0.05223357626345637
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "8",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": 0.005555555555555536,
+        "ci95": [
+          -0.08333333333333337,
+          0.07236111111111032
+        ],
+        "tasks": 6,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "8",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.22604421854012968,
+        "ci95": [
+          0.07377800279188503,
+          0.3875644397892311
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "8",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.09579845101396563,
+        "ci95": [
+          0.03239553511157026,
+          0.159852729964091
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "8",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": 0.033333333333333326,
+        "ci95": [
+          0.0,
+          0.09999999999999998
+        ],
+        "tasks": 6,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "8",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.2312620533582999,
+        "ci95": [
+          0.07501319055828787,
+          0.3955664311963573
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "cohort": "common_T_gt_64",
+      "checkpoint": "8",
+      "attempts": 125,
+      "tasks": 17,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.09728919302914128,
+        "ci95": [
+          0.030930148470499963,
+          0.1632645288200482
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    }
+  ],
+  "fold_contrasts": [
+    {
+      "fold": 0,
+      "attempts": 452,
+      "tasks": 27,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.14236327903398538,
+        "ci95": [
+          -0.2765999628257245,
+          0.004071993132675265
+        ],
+        "tasks": 19,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 0,
+      "attempts": 452,
+      "tasks": 27,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.10059782453610817,
+        "ci95": [
+          0.03704755410413135,
+          0.16530525800019452
+        ],
+        "tasks": 27,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 0,
+      "attempts": 452,
+      "tasks": 27,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.044137092472621424,
+        "ci95": [
+          0.015371965171419817,
+          0.07253267386249555
+        ],
+        "tasks": 27,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 0,
+      "attempts": 452,
+      "tasks": 27,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.13364853751972866,
+        "ci95": [
+          -0.2703631686872684,
+          0.010652575119940092
+        ],
+        "tasks": 19,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 0,
+      "attempts": 452,
+      "tasks": 27,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.10639047093086892,
+        "ci95": [
+          0.024800972542704875,
+          0.19180214512039098
+        ],
+        "tasks": 27,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 0,
+      "attempts": 452,
+      "tasks": 27,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.042398811603870566,
+        "ci95": [
+          0.008887277105960992,
+          0.0761736079378796
+        ],
+        "tasks": 27,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 1,
+      "attempts": 464,
+      "tasks": 27,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.03183694746528971,
+        "ci95": [
+          -0.109986322179504,
+          0.047390860117798604
+        ],
+        "tasks": 22,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 1,
+      "attempts": 464,
+      "tasks": 27,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.06543545190360735,
+        "ci95": [
+          0.020588476397610585,
+          0.10934420302356149
+        ],
+        "tasks": 27,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 1,
+      "attempts": 464,
+      "tasks": 27,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.03100498184925826,
+        "ci95": [
+          0.010368751727970544,
+          0.05071070429898551
+        ],
+        "tasks": 27,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 1,
+      "attempts": 464,
+      "tasks": 27,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.014907650714803112,
+        "ci95": [
+          -0.08820499297939134,
+          0.058782825857483297
+        ],
+        "tasks": 22,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 1,
+      "attempts": 464,
+      "tasks": 27,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.04171707962142678,
+        "ci95": [
+          0.004246085974881867,
+          0.0798096257825453
+        ],
+        "tasks": 27,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 1,
+      "attempts": 464,
+      "tasks": 27,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.020059742061122838,
+        "ci95": [
+          0.0026493222643806367,
+          0.0377693855139534
+        ],
+        "tasks": 27,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 2,
+      "attempts": 382,
+      "tasks": 26,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": 0.0342283025616359,
+        "ci95": [
+          -0.09365980200355198,
+          0.15655872657435158
+        ],
+        "tasks": 18,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 2,
+      "attempts": 382,
+      "tasks": 26,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.004704447534563584,
+        "ci95": [
+          -0.0886870312410394,
+          0.09320218884217257
+        ],
+        "tasks": 26,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 2,
+      "attempts": 382,
+      "tasks": 26,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.0038031238565248587,
+        "ci95": [
+          -0.03654999838633979,
+          0.04210864232079863
+        ],
+        "tasks": 26,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 2,
+      "attempts": 382,
+      "tasks": 26,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": 0.03770294202892242,
+        "ci95": [
+          -0.07791168954955718,
+          0.14659686486126436
+        ],
+        "tasks": 18,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 2,
+      "attempts": 382,
+      "tasks": 26,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": -0.017172355487285455,
+        "ci95": [
+          -0.10047666239103392,
+          0.059356901247912715
+        ],
+        "tasks": 26,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 2,
+      "attempts": 382,
+      "tasks": 26,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": -0.0060064556534199925,
+        "ci95": [
+          -0.04142903853945942,
+          0.026939492803501164
+        ],
+        "tasks": 26,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 3,
+      "attempts": 448,
+      "tasks": 26,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.13872080869918238,
+        "ci95": [
+          -0.28781771291232794,
+          0.00539310400047842
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 3,
+      "attempts": 448,
+      "tasks": 26,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.043475400906982584,
+        "ci95": [
+          -0.027109081365063112,
+          0.11363597425746363
+        ],
+        "tasks": 26,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 3,
+      "attempts": 448,
+      "tasks": 26,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.021272433622921808,
+        "ci95": [
+          -0.010525125582488127,
+          0.05334271457653212
+        ],
+        "tasks": 26,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 3,
+      "attempts": 448,
+      "tasks": 26,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.1264517110148598,
+        "ci95": [
+          -0.26927992167146575,
+          0.014019708412982548
+        ],
+        "tasks": 17,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 3,
+      "attempts": 448,
+      "tasks": 26,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.02176992513142489,
+        "ci95": [
+          -0.033604178820759,
+          0.07798065512561228
+        ],
+        "tasks": 26,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 3,
+      "attempts": 448,
+      "tasks": 26,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.010431801772823516,
+        "ci95": [
+          -0.0148118100032921,
+          0.03597844571196012
+        ],
+        "tasks": 26,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 4,
+      "attempts": 412,
+      "tasks": 26,
+      "comparison": "H minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": -0.02355020477601746,
+        "ci95": [
+          -0.15499742538575256,
+          0.11321664035890998
+        ],
+        "tasks": 16,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 4,
+      "attempts": 412,
+      "tasks": 26,
+      "comparison": "H minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.06700643774359595,
+        "ci95": [
+          -0.02490478434101945,
+          0.1534546199860063
+        ],
+        "tasks": 26,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 4,
+      "attempts": 412,
+      "tasks": 26,
+      "comparison": "H minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.029264462378732554,
+        "ci95": [
+          -0.011601987271118738,
+          0.06812912982992435
+        ],
+        "tasks": 26,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 4,
+      "attempts": 412,
+      "tasks": 26,
+      "comparison": "HB minus B",
+      "metric": "within_task_auc",
+      "effect": {
+        "estimate": 0.0007300105152272529,
+        "ci95": [
+          -0.12429013559146107,
+          0.1253081767035424
+        ],
+        "tasks": 16,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 4,
+      "attempts": 412,
+      "tasks": 26,
+      "comparison": "HB minus B",
+      "metric": "log_loss",
+      "effect": {
+        "estimate": 0.03376304496881837,
+        "ci95": [
+          -0.04819250528531573,
+          0.10926737427086243
+        ],
+        "tasks": 26,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "fold": 4,
+      "attempts": 412,
+      "tasks": 26,
+      "comparison": "HB minus B",
+      "metric": "brier",
+      "effect": {
+        "estimate": 0.013369915025642212,
+        "ci95": [
+          -0.022903508373442256,
+          0.047492298532720106
+        ],
+        "tasks": 26,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    }
+  ],
+  "influence_summary": [
+    {
+      "metric": "brier",
+      "overall_delta": 0.016280740444894023,
+      "leave_one_out_range": [
+        0.014487779393501704,
+        0.018113173007076485
+      ],
+      "sign_preserved_all_deletions": true,
+      "largest_absolute_influence_task": "HumanEval/44"
+    },
+    {
+      "metric": "log_loss",
+      "overall_delta": 0.03785060488521885,
+      "leave_one_out_range": [
+        0.03247336755322134,
+        0.042036992041204896
+      ],
+      "sign_preserved_all_deletions": true,
+      "largest_absolute_influence_task": "HumanEval/26"
+    },
+    {
+      "metric": "within_task_auc",
+      "overall_delta": -0.04702865751183576,
+      "leave_one_out_range": [
+        -0.05506425293851296,
+        -0.03875424715482297
+      ],
+      "sign_preserved_all_deletions": true,
+      "largest_absolute_influence_task": "HumanEval/26"
+    }
+  ],
+  "historical_exposure_sensitivity": {
+    "excluded_task_ids": [
+      "HumanEval/0",
+      "HumanEval/1",
+      "HumanEval/2",
+      "HumanEval/3",
+      "HumanEval/6",
+      "HumanEval/7",
+      "HumanEval/8",
+      "HumanEval/9",
+      "HumanEval/10",
+      "HumanEval/11",
+      "HumanEval/13",
+      "HumanEval/14",
+      "HumanEval/15",
+      "HumanEval/16",
+      "HumanEval/17",
+      "HumanEval/18",
+      "HumanEval/19",
+      "HumanEval/20",
+      "HumanEval/21",
+      "HumanEval/22",
+      "HumanEval/23",
+      "HumanEval/24",
+      "HumanEval/25",
+      "HumanEval/26",
+      "HumanEval/27",
+      "HumanEval/28"
+    ],
+    "attempts": 1755,
+    "tasks": 106,
+    "contrasts": [
+      {
+        "comparison": "H minus B",
+        "metric": "within_task_auc",
+        "effect": {
+          "estimate": -0.04939727418741865,
+          "ci95": [
+            -0.1108299313970534,
+            0.012460494520529294
+          ],
+          "tasks": 75,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        }
+      },
+      {
+        "comparison": "H minus B",
+        "metric": "log_loss",
+        "effect": {
+          "estimate": 0.03768562643586863,
+          "ci95": [
+            -0.0005391135756019285,
+            0.07506956995791672
+          ],
+          "tasks": 106,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        }
+      },
+      {
+        "comparison": "H minus B",
+        "metric": "brier",
+        "effect": {
+          "estimate": 0.01802847304676212,
+          "ci95": [
+            0.0013866235447983826,
+            0.03478306930271066
+          ],
+          "tasks": 106,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        }
+      },
+      {
+        "comparison": "HB minus B",
+        "metric": "within_task_auc",
+        "effect": {
+          "estimate": -0.034134398080037896,
+          "ci95": [
+            -0.09255357134626162,
+            0.02467610309954349
+          ],
+          "tasks": 75,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        }
+      },
+      {
+        "comparison": "HB minus B",
+        "metric": "log_loss",
+        "effect": {
+          "estimate": 0.01921448245824197,
+          "ci95": [
+            -0.01571480297505273,
+            0.05359106469942047
+          ],
+          "tasks": 106,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        }
+      },
+      {
+        "comparison": "HB minus B",
+        "metric": "brier",
+        "effect": {
+          "estimate": 0.008748053088736772,
+          "ci95": [
+            -0.00645729257359614,
+            0.02371589807678303
+          ],
+          "tasks": 106,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        }
+      }
+    ]
+  },
+  "calibration": [
+    {
+      "dataset": "HumanEval+ OOF",
+      "checkpoint": "32",
+      "predictor": "B",
+      "tasks": 132,
+      "attempts": 2158,
+      "bins": 10,
+      "ece": 0.0444675843865321,
+      "ece_ci95": [
+        0.038397960163124495,
+        0.09749101173074408
+      ],
+      "rmsce": 0.06203457092008307,
+      "maximum_gap": 0.12706603545983566,
+      "reliability": [
+        {
+          "bin": 0,
+          "lower": 0.0,
+          "upper": 0.1,
+          "attempts": 37,
+          "task_weight_mass": 0.015704349256980835,
+          "mean_probability": 0.06973659278606027,
+          "observed_rate": 0.16436617164043768
+        },
+        {
+          "bin": 1,
+          "lower": 0.1,
+          "upper": 0.2,
+          "attempts": 102,
+          "task_weight_mass": 0.0450047848751409,
+          "mean_probability": 0.1529647840946109,
+          "observed_rate": 0.2613755759174999
+        },
+        {
+          "bin": 2,
+          "lower": 0.2,
+          "upper": 0.3,
+          "attempts": 210,
+          "task_weight_mass": 0.09200215240269419,
+          "mean_probability": 0.2511257585170035,
+          "observed_rate": 0.27323242483038507
+        },
+        {
+          "bin": 3,
+          "lower": 0.3,
+          "upper": 0.4,
+          "attempts": 302,
+          "task_weight_mass": 0.13407111249603512,
+          "mean_probability": 0.35644118777875106,
+          "observed_rate": 0.40957746165992054
+        },
+        {
+          "bin": 4,
+          "lower": 0.4,
+          "upper": 0.5,
+          "attempts": 455,
+          "task_weight_mass": 0.19638380296538901,
+          "mean_probability": 0.4524064703225875,
+          "observed_rate": 0.4488363500750523
+        },
+        {
+          "bin": 5,
+          "lower": 0.5,
+          "upper": 0.6,
+          "attempts": 365,
+          "task_weight_mass": 0.15423510651662917,
+          "mean_probability": 0.5499652604369077,
+          "observed_rate": 0.4228992249770721
+        },
+        {
+          "bin": 6,
+          "lower": 0.6,
+          "upper": 0.7,
+          "attempts": 432,
+          "task_weight_mass": 0.20762559470165715,
+          "mean_probability": 0.6520026120093544,
+          "observed_rate": 0.6748329945445846
+        },
+        {
+          "bin": 7,
+          "lower": 0.7,
+          "upper": 0.8,
+          "attempts": 175,
+          "task_weight_mass": 0.10500768307903122,
+          "mean_probability": 0.7373480888062574,
+          "observed_rate": 0.7494541817842575
+        },
+        {
+          "bin": 8,
+          "lower": 0.8,
+          "upper": 0.9,
+          "attempts": 80,
+          "task_weight_mass": 0.04996541370644241,
+          "mean_probability": 0.8369595718132271,
+          "observed_rate": 0.8896764774338248
+        },
+        {
+          "bin": 9,
+          "lower": 0.9,
+          "upper": 1.0,
+          "attempts": 0,
+          "task_weight_mass": 0.0,
+          "mean_probability": null,
+          "observed_rate": null
+        }
+      ]
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "checkpoint": "32",
+      "predictor": "H",
+      "tasks": 132,
+      "attempts": 2158,
+      "bins": 10,
+      "ece": 0.031296997715547455,
+      "ece_ci95": [
+        0.024596683697244656,
+        0.08743396985295747
+      ],
+      "rmsce": 0.07539750770512388,
+      "maximum_gap": 0.9144390751235297,
+      "reliability": [
+        {
+          "bin": 0,
+          "lower": 0.0,
+          "upper": 0.1,
+          "attempts": 0,
+          "task_weight_mass": 0.0,
+          "mean_probability": null,
+          "observed_rate": null
+        },
+        {
+          "bin": 1,
+          "lower": 0.1,
+          "upper": 0.2,
+          "attempts": 1,
+          "task_weight_mass": 0.0003787878787878788,
+          "mean_probability": 0.1892653186042274,
+          "observed_rate": 0.0
+        },
+        {
+          "bin": 2,
+          "lower": 0.2,
+          "upper": 0.3,
+          "attempts": 27,
+          "task_weight_mass": 0.01286375196011419,
+          "mean_probability": 0.2612303428637511,
+          "observed_rate": 0.46442249983991946
+        },
+        {
+          "bin": 3,
+          "lower": 0.3,
+          "upper": 0.4,
+          "attempts": 123,
+          "task_weight_mass": 0.05695500821274815,
+          "mean_probability": 0.37000818725621515,
+          "observed_rate": 0.4016708498103001
+        },
+        {
+          "bin": 4,
+          "lower": 0.4,
+          "upper": 0.5,
+          "attempts": 941,
+          "task_weight_mass": 0.4134497525751397,
+          "mean_probability": 0.46434057610407453,
+          "observed_rate": 0.44150855085192436
+        },
+        {
+          "bin": 5,
+          "lower": 0.5,
+          "upper": 0.6,
+          "attempts": 757,
+          "task_weight_mass": 0.34536587664402185,
+          "mean_probability": 0.5362397489091033,
+          "observed_rate": 0.5502829221071721
+        },
+        {
+          "bin": 6,
+          "lower": 0.6,
+          "upper": 0.7,
+          "attempts": 222,
+          "task_weight_mass": 0.11734617122669473,
+          "mean_probability": 0.6374893156861295,
+          "observed_rate": 0.666765578196398
+        },
+        {
+          "bin": 7,
+          "lower": 0.7,
+          "upper": 0.8,
+          "attempts": 62,
+          "task_weight_mass": 0.04271893433077643,
+          "mean_probability": 0.7348774340253874,
+          "observed_rate": 0.6864537826330926
+        },
+        {
+          "bin": 8,
+          "lower": 0.8,
+          "upper": 0.9,
+          "attempts": 22,
+          "task_weight_mass": 0.009785353535353538,
+          "mean_probability": 0.8170599213688433,
+          "observed_rate": 0.20645161290322575
+        },
+        {
+          "bin": 9,
+          "lower": 0.9,
+          "upper": 1.0,
+          "attempts": 3,
+          "task_weight_mass": 0.0011363636363636365,
+          "mean_probability": 0.9144390751235297,
+          "observed_rate": 0.0
+        }
+      ]
+    },
+    {
+      "dataset": "HumanEval+ OOF",
+      "checkpoint": "32",
+      "predictor": "HB",
+      "tasks": 132,
+      "attempts": 2158,
+      "bins": 10,
+      "ece": 0.02606296642012019,
+      "ece_ci95": [
+        0.027599475551389197,
+        0.08413737178914867
+      ],
+      "rmsce": 0.06419654999746645,
+      "maximum_gap": 0.9429600089247865,
+      "reliability": [
+        {
+          "bin": 0,
+          "lower": 0.0,
+          "upper": 0.1,
+          "attempts": 0,
+          "task_weight_mass": 0.0,
+          "mean_probability": null,
+          "observed_rate": null
+        },
+        {
+          "bin": 1,
+          "lower": 0.1,
+          "upper": 0.2,
+          "attempts": 22,
+          "task_weight_mass": 0.010998772182982711,
+          "mean_probability": 0.1651090976149808,
+          "observed_rate": 0.4380412578761113
+        },
+        {
+          "bin": 2,
+          "lower": 0.2,
+          "upper": 0.3,
+          "attempts": 74,
+          "task_weight_mass": 0.031422761821368626,
+          "mean_probability": 0.2625696175720575,
+          "observed_rate": 0.2521791853257575
+        },
+        {
+          "bin": 3,
+          "lower": 0.3,
+          "upper": 0.4,
+          "attempts": 324,
+          "task_weight_mass": 0.14670678478728016,
+          "mean_probability": 0.3580986815042265,
+          "observed_rate": 0.3296299411974286
+        },
+        {
+          "bin": 4,
+          "lower": 0.4,
+          "upper": 0.5,
+          "attempts": 713,
+          "task_weight_mass": 0.3151652539731277,
+          "mean_probability": 0.4521571212991006,
+          "observed_rate": 0.45153034335603787
+        },
+        {
+          "bin": 5,
+          "lower": 0.5,
+          "upper": 0.6,
+          "attempts": 583,
+          "task_weight_mass": 0.2616983817474601,
+          "mean_probability": 0.548927834705364,
+          "observed_rate": 0.5807971963634774
+        },
+        {
+          "bin": 6,
+          "lower": 0.6,
+          "upper": 0.7,
+          "attempts": 253,
+          "task_weight_mass": 0.11501808930038596,
+          "mean_probability": 0.6434086765568738,
+          "observed_rate": 0.6268098424248628
+        },
+        {
+          "bin": 7,
+          "lower": 0.7,
+          "upper": 0.8,
+          "attempts": 142,
+          "task_weight_mass": 0.09178036022779901,
+          "mean_probability": 0.7458441090804827,
+          "observed_rate": 0.7464339308211606
+        },
+        {
+          "bin": 8,
+          "lower": 0.8,
+          "upper": 0.9,
+          "attempts": 44,
+          "task_weight_mass": 0.02607323232323232,
+          "mean_probability": 0.8441877048259226,
+          "observed_rate": 0.576271186440678
+        },
+        {
+          "bin": 9,
+          "lower": 0.9,
+          "upper": 1.0,
+          "attempts": 3,
+          "task_weight_mass": 0.0011363636363636365,
+          "mean_probability": 0.9429600089247865,
+          "observed_rate": 0.0
+        }
+      ]
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "checkpoint": "32",
+      "predictor": "B",
+      "tasks": 31,
+      "attempts": 377,
+      "bins": 10,
+      "ece": 0.15213696115157826,
+      "ece_ci95": [
+        0.0845680966755453,
+        0.24493768794513163
+      ],
+      "rmsce": 0.1685276293126867,
+      "maximum_gap": 0.401861005181828,
+      "reliability": [
+        {
+          "bin": 0,
+          "lower": 0.0,
+          "upper": 0.1,
+          "attempts": 1,
+          "task_weight_mass": 0.0026881720430107525,
+          "mean_probability": 0.09400561613296425,
+          "observed_rate": 0.0
+        },
+        {
+          "bin": 1,
+          "lower": 0.1,
+          "upper": 0.2,
+          "attempts": 13,
+          "task_weight_mass": 0.06165877133619068,
+          "mean_probability": 0.1688707021352452,
+          "observed_rate": 0.5707317073170732
+        },
+        {
+          "bin": 2,
+          "lower": 0.2,
+          "upper": 0.3,
+          "attempts": 22,
+          "task_weight_mass": 0.04753389649399837,
+          "mean_probability": 0.256443399345732,
+          "observed_rate": 0.13511324250620702
+        },
+        {
+          "bin": 3,
+          "lower": 0.3,
+          "upper": 0.4,
+          "attempts": 77,
+          "task_weight_mass": 0.16801926144031407,
+          "mean_probability": 0.3572714922413447,
+          "observed_rate": 0.24211871591143072
+        },
+        {
+          "bin": 4,
+          "lower": 0.4,
+          "upper": 0.5,
+          "attempts": 130,
+          "task_weight_mass": 0.32399407091682136,
+          "mean_probability": 0.45821259529065916,
+          "observed_rate": 0.35680242099560194
+        },
+        {
+          "bin": 5,
+          "lower": 0.5,
+          "upper": 0.6,
+          "attempts": 133,
+          "task_weight_mass": 0.39408969873740674,
+          "mean_probability": 0.5444788937850039,
+          "observed_rate": 0.7179108458926342
+        },
+        {
+          "bin": 6,
+          "lower": 0.6,
+          "upper": 0.7,
+          "attempts": 1,
+          "task_weight_mass": 0.0020161290322580645,
+          "mean_probability": 0.6097563528740909,
+          "observed_rate": 1.0
+        },
+        {
+          "bin": 7,
+          "lower": 0.7,
+          "upper": 0.8,
+          "attempts": 0,
+          "task_weight_mass": 0.0,
+          "mean_probability": null,
+          "observed_rate": null
+        },
+        {
+          "bin": 8,
+          "lower": 0.8,
+          "upper": 0.9,
+          "attempts": 0,
+          "task_weight_mass": 0.0,
+          "mean_probability": null,
+          "observed_rate": null
+        },
+        {
+          "bin": 9,
+          "lower": 0.9,
+          "upper": 1.0,
+          "attempts": 0,
+          "task_weight_mass": 0.0,
+          "mean_probability": null,
+          "observed_rate": null
+        }
+      ]
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "checkpoint": "32",
+      "predictor": "H",
+      "tasks": 31,
+      "attempts": 377,
+      "bins": 10,
+      "ece": 0.12659556251912238,
+      "ece_ci95": [
+        0.05625574015314315,
+        0.2208375370983087
+      ],
+      "rmsce": 0.1387438125257975,
+      "maximum_gap": 0.7469477646284898,
+      "reliability": [
+        {
+          "bin": 0,
+          "lower": 0.0,
+          "upper": 0.1,
+          "attempts": 0,
+          "task_weight_mass": 0.0,
+          "mean_probability": null,
+          "observed_rate": null
+        },
+        {
+          "bin": 1,
+          "lower": 0.1,
+          "upper": 0.2,
+          "attempts": 0,
+          "task_weight_mass": 0.0,
+          "mean_probability": null,
+          "observed_rate": null
+        },
+        {
+          "bin": 2,
+          "lower": 0.2,
+          "upper": 0.3,
+          "attempts": 1,
+          "task_weight_mass": 0.005376344086021505,
+          "mean_probability": 0.2530522353715102,
+          "observed_rate": 1.0
+        },
+        {
+          "bin": 3,
+          "lower": 0.3,
+          "upper": 0.4,
+          "attempts": 30,
+          "task_weight_mass": 0.07041066601762697,
+          "mean_probability": 0.3613137514610189,
+          "observed_rate": 0.15201975669475837
+        },
+        {
+          "bin": 4,
+          "lower": 0.4,
+          "upper": 0.5,
+          "attempts": 154,
+          "task_weight_mass": 0.41329088521363566,
+          "mean_probability": 0.459220177428194,
+          "observed_rate": 0.32188350805503846
+        },
+        {
+          "bin": 5,
+          "lower": 0.5,
+          "upper": 0.6,
+          "attempts": 159,
+          "task_weight_mass": 0.4540917533701914,
+          "mean_probability": 0.5440517633551468,
+          "observed_rate": 0.6360031122440716
+        },
+        {
+          "bin": 6,
+          "lower": 0.6,
+          "upper": 0.7,
+          "attempts": 33,
+          "task_weight_mass": 0.056830351312524494,
+          "mean_probability": 0.6262263385658066,
+          "observed_rate": 0.7903787965835533
+        },
+        {
+          "bin": 7,
+          "lower": 0.7,
+          "upper": 0.8,
+          "attempts": 0,
+          "task_weight_mass": 0.0,
+          "mean_probability": null,
+          "observed_rate": null
+        },
+        {
+          "bin": 8,
+          "lower": 0.8,
+          "upper": 0.9,
+          "attempts": 0,
+          "task_weight_mass": 0.0,
+          "mean_probability": null,
+          "observed_rate": null
+        },
+        {
+          "bin": 9,
+          "lower": 0.9,
+          "upper": 1.0,
+          "attempts": 0,
+          "task_weight_mass": 0.0,
+          "mean_probability": null,
+          "observed_rate": null
+        }
+      ]
+    },
+    {
+      "dataset": "MBPP+ frozen",
+      "checkpoint": "32",
+      "predictor": "HB",
+      "tasks": 31,
+      "attempts": 377,
+      "bins": 10,
+      "ece": 0.12082307501478835,
+      "ece_ci95": [
+        0.06482749950504925,
+        0.21833550664896348
+      ],
+      "rmsce": 0.13405811176969312,
+      "maximum_gap": 0.8871033331650217,
+      "reliability": [
+        {
+          "bin": 0,
+          "lower": 0.0,
+          "upper": 0.1,
+          "attempts": 0,
+          "task_weight_mass": 0.0,
+          "mean_probability": null,
+          "observed_rate": null
+        },
+        {
+          "bin": 1,
+          "lower": 0.1,
+          "upper": 0.2,
+          "attempts": 1,
+          "task_weight_mass": 0.005376344086021505,
+          "mean_probability": 0.11289666683497832,
+          "observed_rate": 1.0
+        },
+        {
+          "bin": 2,
+          "lower": 0.2,
+          "upper": 0.3,
+          "attempts": 27,
+          "task_weight_mass": 0.08795615815989331,
+          "mean_probability": 0.26709510795838426,
+          "observed_rate": 0.3723084745228876
+        },
+        {
+          "bin": 3,
+          "lower": 0.3,
+          "upper": 0.4,
+          "attempts": 59,
+          "task_weight_mass": 0.1283510302186024,
+          "mean_probability": 0.35320569122655754,
+          "observed_rate": 0.2510482231467816
+        },
+        {
+          "bin": 4,
+          "lower": 0.4,
+          "upper": 0.5,
+          "attempts": 131,
+          "task_weight_mass": 0.3278609194992897,
+          "mean_probability": 0.45055724096050803,
+          "observed_rate": 0.3212506162419086
+        },
+        {
+          "bin": 5,
+          "lower": 0.5,
+          "upper": 0.6,
+          "attempts": 103,
+          "task_weight_mass": 0.35088797733110133,
+          "mean_probability": 0.5471362717301976,
+          "observed_rate": 0.6531561976392372
+        },
+        {
+          "bin": 6,
+          "lower": 0.6,
+          "upper": 0.7,
+          "attempts": 48,
+          "task_weight_mass": 0.08550418643797252,
+          "mean_probability": 0.6303534845199514,
+          "observed_rate": 0.7684540124059163
+        },
+        {
+          "bin": 7,
+          "lower": 0.7,
+          "upper": 0.8,
+          "attempts": 8,
+          "task_weight_mass": 0.014063384267119412,
+          "mean_probability": 0.7101865688253165,
+          "observed_rate": 0.8725687458081824
+        },
+        {
+          "bin": 8,
+          "lower": 0.8,
+          "upper": 0.9,
+          "attempts": 0,
+          "task_weight_mass": 0.0,
+          "mean_probability": null,
+          "observed_rate": null
+        },
+        {
+          "bin": 9,
+          "lower": 0.9,
+          "upper": 1.0,
+          "attempts": 0,
+          "task_weight_mass": 0.0,
+          "mean_probability": null,
+          "observed_rate": null
+        }
+      ]
+    }
+  ],
+  "correct_retention": {
+    "HumanEval+ OOF": {
+      "by_fold": [
+        {
+          "policy": "B",
+          "fold": 0,
+          "checkpoint": 8,
+          "threshold": 0.48309345667904696,
+          "development_recall": 0.9758364312267658,
+          "active_correct": 222,
+          "retained_correct": 221,
+          "held_out_recall": 0.9954954954954955
+        },
+        {
+          "policy": "HB",
+          "fold": 0,
+          "checkpoint": 8,
+          "threshold": 0.30775265318406636,
+          "development_recall": 0.9851301115241635,
+          "active_correct": 222,
+          "retained_correct": 220,
+          "held_out_recall": 0.990990990990991
+        },
+        {
+          "policy": "B",
+          "fold": 1,
+          "checkpoint": 8,
+          "threshold": 0.31915183601160096,
+          "development_recall": 0.9721115537848606,
+          "active_correct": 294,
+          "retained_correct": 291,
+          "held_out_recall": 0.9897959183673469
+        },
+        {
+          "policy": "HB",
+          "fold": 1,
+          "checkpoint": 8,
+          "threshold": 0.26180486238833495,
+          "development_recall": 0.9760956175298805,
+          "active_correct": 294,
+          "retained_correct": 282,
+          "held_out_recall": 0.9591836734693877
+        },
+        {
+          "policy": "B",
+          "fold": 2,
+          "checkpoint": 32,
+          "threshold": 0.23718831370784993,
+          "development_recall": 0.9700598802395209,
+          "active_correct": 196,
+          "retained_correct": 175,
+          "held_out_recall": 0.8928571428571429
+        },
+        {
+          "policy": "HB",
+          "fold": 2,
+          "checkpoint": 8,
+          "threshold": 0.42358024248193843,
+          "development_recall": 0.9804496578690127,
+          "active_correct": 275,
+          "retained_correct": 269,
+          "held_out_recall": 0.9781818181818182
+        },
+        {
+          "policy": "B",
+          "fold": 3,
+          "checkpoint": 8,
+          "threshold": 0.3096899547330995,
+          "development_recall": 0.9821073558648111,
+          "active_correct": 292,
+          "retained_correct": 260,
+          "held_out_recall": 0.8904109589041096
+        },
+        {
+          "policy": "HB",
+          "fold": 3,
+          "checkpoint": 64,
+          "threshold": 0.37839534811565634,
+          "development_recall": 0.9980506822612085,
+          "active_correct": 133,
+          "retained_correct": 131,
+          "held_out_recall": 0.9849624060150376
+        },
+        {
+          "policy": "B",
+          "fold": 4,
+          "checkpoint": 8,
+          "threshold": 0.4764332667463443,
+          "development_recall": 0.9704524469067405,
+          "active_correct": 215,
+          "retained_correct": 211,
+          "held_out_recall": 0.9813953488372092
+        },
+        {
+          "policy": "HB",
+          "fold": 4,
+          "checkpoint": 32,
+          "threshold": 0.3572859676271296,
+          "development_recall": 0.973744292237443,
+          "active_correct": 155,
+          "retained_correct": 154,
+          "held_out_recall": 0.9935483870967742
+        }
+      ],
+      "aggregate": [
+        {
+          "policy": "B",
+          "tasks": 132,
+          "active_correct": 1219,
+          "retained_correct": 1158,
+          "recall": 0.9499589827727646,
+          "ci95": [
+            0.9074776873520638,
+            0.9825192220714608
+          ],
+          "undefined_bootstrap_draws": 0
+        },
+        {
+          "policy": "HB",
+          "tasks": 130,
+          "active_correct": 1079,
+          "retained_correct": 1056,
+          "recall": 0.9786839666357738,
+          "ci95": [
+            0.9605702925607335,
+            0.9925324855117886
+          ],
+          "undefined_bootstrap_draws": 0
+        }
+      ],
+      "target": 0.97,
+      "denominator": "All active correct candidates at the frozen policy checkpoint; no conditioning on replay initiation",
+      "estimand": "Candidate-level recall (ratio of summed counts); tasks are resampled as clusters"
+    },
+    "MBPP+ frozen": {
+      "by_fold": [
+        {
+          "policy": "B",
+          "fold": "external",
+          "checkpoint": 16,
+          "threshold": 0.3091252652480124,
+          "development_recall": 0.9702892885066459,
+          "active_correct": 366,
+          "retained_correct": 356,
+          "held_out_recall": 0.9726775956284153
+        },
+        {
+          "policy": "HB",
+          "fold": "external",
+          "checkpoint": 8,
+          "threshold": 0.26953905544150975,
+          "development_recall": 0.9714946070878274,
+          "active_correct": 366,
+          "retained_correct": 276,
+          "held_out_recall": 0.7540983606557377
+        }
+      ],
+      "aggregate": [
+        {
+          "policy": "B",
+          "tasks": 32,
+          "active_correct": 366,
+          "retained_correct": 356,
+          "recall": 0.9726775956284153,
+          "ci95": [
+            0.9550554366565602,
+            0.9887656142112862
+          ],
+          "undefined_bootstrap_draws": 0
+        },
+        {
+          "policy": "HB",
+          "tasks": 32,
+          "active_correct": 366,
+          "retained_correct": 276,
+          "recall": 0.7540983606557377,
+          "ci95": [
+            0.6186639175257732,
+            0.8773604614495191
+          ],
+          "undefined_bootstrap_draws": 0
+        }
+      ],
+      "target": 0.97,
+      "denominator": "All active correct candidates at the frozen policy checkpoint; no conditioning on replay initiation",
+      "estimand": "Candidate-level recall (ratio of summed counts); tasks are resampled as clusters"
+    }
+  },
+  "transfer_policy_diagnostics": {
+    "summaries": [
+      {
+        "budget": 20,
+        "policy": "B",
+        "tasks": 32,
+        "resolution": 0.84375,
+        "completion_tokens_per_task": 256.96875,
+        "attempts_started_per_task": 4.84375,
+        "fully_generated_attempts_per_task": 4.25,
+        "correct_false_abort_rate": 0.06896551724137931,
+        "active_correct_false_abort_rate": 0.06896551724137931,
+        "correct_attempts_started": 29,
+        "active_correct_attempts_started": 29
+      },
+      {
+        "budget": 20,
+        "policy": "HB",
+        "tasks": 32,
+        "resolution": 0.78125,
+        "completion_tokens_per_task": 292.625,
+        "attempts_started_per_task": 6.3125,
+        "fully_generated_attempts_per_task": 4.78125,
+        "correct_false_abort_rate": 0.4791666666666667,
+        "active_correct_false_abort_rate": 0.4791666666666667,
+        "correct_attempts_started": 48,
+        "active_correct_attempts_started": 48
+      },
+      {
+        "budget": 20,
+        "policy": "fixed",
+        "tasks": 32,
+        "resolution": 0.84375,
+        "completion_tokens_per_task": 949.875,
+        "attempts_started_per_task": 20.0,
+        "fully_generated_attempts_per_task": 20.0,
+        "correct_false_abort_rate": 0.0,
+        "active_correct_false_abort_rate": 0.0,
+        "correct_attempts_started": 366,
+        "active_correct_attempts_started": 177
+      },
+      {
+        "budget": 20,
+        "policy": "verifier",
+        "tasks": 32,
+        "resolution": 0.84375,
+        "completion_tokens_per_task": 279.90625,
+        "attempts_started_per_task": 4.78125,
+        "fully_generated_attempts_per_task": 4.78125,
+        "correct_false_abort_rate": 0.0,
+        "active_correct_false_abort_rate": 0.0,
+        "correct_attempts_started": 27,
+        "active_correct_attempts_started": 16
+      }
+    ],
+    "comparisons": [
+      {
+        "budget": 20,
+        "comparison": "HB minus verifier",
+        "resolution_delta": {
+          "estimate": -0.0625,
+          "ci95": [
+            -0.15625,
+            0.0
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        },
+        "token_delta": {
+          "estimate": 12.71875,
+          "ci95": [
+            -0.59453125,
+            34.53125
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        }
+      },
+      {
+        "budget": 20,
+        "comparison": "HB minus B",
+        "resolution_delta": {
+          "estimate": -0.0625,
+          "ci95": [
+            -0.15625,
+            0.0
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        },
+        "token_delta": {
+          "estimate": 35.65625,
+          "ci95": [
+            13.0921875,
+            64.43828124999999
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        }
+      }
+    ]
+  },
+  "decision_ledger": [
+    {
+      "criterion": "Primary WT-AUC gain",
+      "estimate": -0.04702865751183576,
+      "ci95": [
+        -0.09937495818447424,
+        0.005583498622638421
+      ],
+      "boundary": 0,
+      "direction": "positive",
+      "satisfied": false
+    },
+    {
+      "criterion": "Primary log-loss reduction",
+      "estimate": 0.03785060488521885,
+      "ci95": [
+        0.006657260077646495,
+        0.07061583758815658
+      ],
+      "boundary": 0,
+      "direction": "negative_point",
+      "satisfied": false
+    },
+    {
+      "criterion": "N=20 HB minus verifier: resolution_delta",
+      "estimate": -0.015151515151515152,
+      "ci95": [
+        -0.03787878787878788,
+        0.0
+      ],
+      "boundary": -0.03,
+      "direction": "noninferiority",
+      "satisfied": false
+    },
+    {
+      "criterion": "N=20 HB minus verifier: token_delta",
+      "estimate": -7.181818181818182,
+      "ci95": [
+        -18.734848484848484,
+        0.8037878787878746
+      ],
+      "boundary": 0,
+      "direction": "negative",
+      "satisfied": false
+    },
+    {
+      "criterion": "N=20 HB minus B: resolution_delta",
+      "estimate": 0.022727272727272728,
+      "ci95": [
+        -0.015151515151515152,
+        0.06060606060606061
+      ],
+      "boundary": -0.03,
+      "direction": "noninferiority",
+      "satisfied": true
+    },
+    {
+      "criterion": "N=20 HB minus B: token_delta",
+      "estimate": 12.962121212121213,
+      "ci95": [
+        -26.335416666666667,
+        77.05265151515148
+      ],
+      "boundary": 0,
+      "direction": "negative",
+      "satisfied": false
+    },
+    {
+      "criterion": "H2 joint criterion",
+      "satisfied": false
+    },
+    {
+      "criterion": "Online identity replay with actual abort",
+      "satisfied": true
+    },
+    {
+      "criterion": "Joint operational benefit",
+      "satisfied": false
+    }
+  ]
+}

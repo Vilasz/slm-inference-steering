@@ -1,0 +1,825 @@
+{
+  "status": "secondary_frozen_transfer_offline",
+  "metrics": [
+    {
+      "checkpoint": 8,
+      "family": "B",
+      "roc_auc": 0.4700400861553189,
+      "pr_auc": 0.578248517887394,
+      "log_loss": 0.7181154697914993,
+      "brier": 0.26218605460534794,
+      "within_task_auc": 0.5448769374375266,
+      "intervals": {
+        "roc_auc": [
+          0.33791715360365604,
+          0.6147177725740472
+        ],
+        "pr_auc": [
+          0.43461981287847845,
+          0.7228740432219388
+        ],
+        "log_loss": [
+          0.6843772905260533,
+          0.7533368931107719
+        ],
+        "brier": [
+          0.24558472149619767,
+          0.27934895514819735
+        ]
+      }
+    },
+    {
+      "checkpoint": 8,
+      "family": "H",
+      "roc_auc": 0.3724522356507518,
+      "pr_auc": 0.48970182740545265,
+      "log_loss": 0.8800458480853083,
+      "brier": 0.3311469467310449,
+      "within_task_auc": 0.5015832906084212,
+      "intervals": {
+        "roc_auc": [
+          0.2628473901209153,
+          0.487174509131633
+        ],
+        "pr_auc": [
+          0.37507511835972307,
+          0.641959224695981
+        ],
+        "log_loss": [
+          0.793632121155335,
+          0.972888367995269
+        ],
+        "brier": [
+          0.29257467253531955,
+          0.3714294120420228
+        ]
+      }
+    },
+    {
+      "checkpoint": 8,
+      "family": "HB",
+      "roc_auc": 0.3636123409516972,
+      "pr_auc": 0.486618813812109,
+      "log_loss": 0.8828089214616917,
+      "brier": 0.3313852600225383,
+      "within_task_auc": 0.4940143677120022,
+      "intervals": {
+        "roc_auc": [
+          0.2508656911444935,
+          0.482726639345159
+        ],
+        "pr_auc": [
+          0.3692928637753892,
+          0.6460211668179023
+        ],
+        "log_loss": [
+          0.7904735015755376,
+          0.9805845713812882
+        ],
+        "brier": [
+          0.2910487080652944,
+          0.3739320672474685
+        ]
+      }
+    },
+    {
+      "checkpoint": 16,
+      "family": "B",
+      "roc_auc": 0.7253500059830083,
+      "pr_auc": 0.7624931863061072,
+      "log_loss": 0.6587838596150686,
+      "brier": 0.23335430938856846,
+      "within_task_auc": 0.7151262281982579,
+      "intervals": {
+        "roc_auc": [
+          0.6257472388676385,
+          0.8201359837060416
+        ],
+        "pr_auc": [
+          0.6201102626872412,
+          0.8695100678732435
+        ],
+        "log_loss": [
+          0.617212250563445,
+          0.6976847028949542
+        ],
+        "brier": [
+          0.21339754977319658,
+          0.2521032666345601
+        ]
+      }
+    },
+    {
+      "checkpoint": 16,
+      "family": "H",
+      "roc_auc": 0.6099278050337043,
+      "pr_auc": 0.702945912654303,
+      "log_loss": 0.6731984182505961,
+      "brier": 0.24025227269919974,
+      "within_task_auc": 0.5376499578279764,
+      "intervals": {
+        "roc_auc": [
+          0.5050767063310742,
+          0.7028240060531322
+        ],
+        "pr_auc": [
+          0.53730283387793,
+          0.8252586699627088
+        ],
+        "log_loss": [
+          0.6491372697136006,
+          0.6975534584358135
+        ],
+        "brier": [
+          0.2284380950729844,
+          0.25220429593545113
+        ]
+      }
+    },
+    {
+      "checkpoint": 16,
+      "family": "HB",
+      "roc_auc": 0.6441107255394679,
+      "pr_auc": 0.721066253011936,
+      "log_loss": 0.6629397585313621,
+      "brier": 0.23539340987733642,
+      "within_task_auc": 0.6181338417505696,
+      "intervals": {
+        "roc_auc": [
+          0.5432756200506138,
+          0.7340635095636436
+        ],
+        "pr_auc": [
+          0.5628746004442822,
+          0.8422314666397143
+        ],
+        "log_loss": [
+          0.6314139421927829,
+          0.6944372173642549
+        ],
+        "brier": [
+          0.22000484609912713,
+          0.25067324739602587
+        ]
+      }
+    },
+    {
+      "checkpoint": 32,
+      "family": "B",
+      "roc_auc": 0.7561646268289786,
+      "pr_auc": 0.8104291208787979,
+      "log_loss": 0.647831227399416,
+      "brier": 0.2257008233638688,
+      "within_task_auc": 0.6422636731460261,
+      "intervals": {
+        "roc_auc": [
+          0.6290372243299441,
+          0.8607345692555444
+        ],
+        "pr_auc": [
+          0.665251138335289,
+          0.9037204176459872
+        ],
+        "log_loss": [
+          0.5894445450244736,
+          0.7078493158698946
+        ],
+        "brier": [
+          0.19967216825269368,
+          0.2519317061176395
+        ]
+      }
+    },
+    {
+      "checkpoint": 32,
+      "family": "H",
+      "roc_auc": 0.7064464014096857,
+      "pr_auc": 0.6819643001554685,
+      "log_loss": 0.6579236977799003,
+      "brier": 0.23242839684353542,
+      "within_task_auc": 0.6260564326740797,
+      "intervals": {
+        "roc_auc": [
+          0.5922351288504264,
+          0.8072403232159896
+        ],
+        "pr_auc": [
+          0.5133987127036578,
+          0.8251569771998243
+        ],
+        "log_loss": [
+          0.6321758822710211,
+          0.6824887679191681
+        ],
+        "brier": [
+          0.21984284272698193,
+          0.2445006553413762
+        ]
+      }
+    },
+    {
+      "checkpoint": 32,
+      "family": "HB",
+      "roc_auc": 0.7330216923698518,
+      "pr_auc": 0.7280707352492399,
+      "log_loss": 0.6398175627417474,
+      "brier": 0.22285024953004734,
+      "within_task_auc": 0.6426702246555187,
+      "intervals": {
+        "roc_auc": [
+          0.6144274083326312,
+          0.8354712752431233
+        ],
+        "pr_auc": [
+          0.5614856690626339,
+          0.8583347996960721
+        ],
+        "log_loss": [
+          0.5938274788407075,
+          0.6866844184981172
+        ],
+        "brier": [
+          0.20105515101261134,
+          0.2441668065432
+        ]
+      }
+    },
+    {
+      "checkpoint": 64,
+      "family": "B",
+      "roc_auc": 0.9151731150258384,
+      "pr_auc": 0.9163565581853981,
+      "log_loss": 0.5899113431201027,
+      "brier": 0.19941419900677773,
+      "within_task_auc": 0.8472222222222222,
+      "intervals": {
+        "roc_auc": [
+          0.8094948872473877,
+          0.9874250276043836
+        ],
+        "pr_auc": [
+          0.7130787770912859,
+          0.9902670909427065
+        ],
+        "log_loss": [
+          0.5442244188950379,
+          0.627870106864463
+        ],
+        "brier": [
+          0.1776184668609852,
+          0.21794064528471885
+        ]
+      }
+    },
+    {
+      "checkpoint": 64,
+      "family": "H",
+      "roc_auc": 0.6138660445557986,
+      "pr_auc": 0.5618985228906017,
+      "log_loss": 0.6887067686559435,
+      "brier": 0.24777171150262464,
+      "within_task_auc": 0.5291666666666667,
+      "intervals": {
+        "roc_auc": [
+          0.4511994554818359,
+          0.7558487844446496
+        ],
+        "pr_auc": [
+          0.2991511320278783,
+          0.8138159660309421
+        ],
+        "log_loss": [
+          0.6297763746283813,
+          0.746847373812582
+        ],
+        "brier": [
+          0.2188459761638763,
+          0.27622546781161117
+        ]
+      }
+    },
+    {
+      "checkpoint": 64,
+      "family": "HB",
+      "roc_auc": 0.7411535059609335,
+      "pr_auc": 0.6792978842428946,
+      "log_loss": 0.6442118465312963,
+      "brier": 0.2260360224863981,
+      "within_task_auc": 0.5416666666666666,
+      "intervals": {
+        "roc_auc": [
+          0.5781711098473677,
+          0.8805530070634059
+        ],
+        "pr_auc": [
+          0.3834502658435465,
+          0.9091767985302366
+        ],
+        "log_loss": [
+          0.5776264271386925,
+          0.7127293951330101
+        ],
+        "brier": [
+          0.1939308787463228,
+          0.2591048751845765
+        ]
+      }
+    }
+  ],
+  "deltas": [
+    {
+      "checkpoint": 8,
+      "mixed_tasks": 24,
+      "delta_wt_auc": {
+        "estimate": -0.05086256972552442,
+        "ci95": [
+          -0.16255343467010214,
+          0.043157212081729485
+        ],
+        "tasks": 24,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "checkpoint": 16,
+      "mixed_tasks": 24,
+      "delta_wt_auc": {
+        "estimate": -0.09699238644768832,
+        "ci95": [
+          -0.20381203367683873,
+          0.014898820550257146
+        ],
+        "tasks": 24,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "checkpoint": 32,
+      "mixed_tasks": 18,
+      "delta_wt_auc": {
+        "estimate": 0.00040655150949269993,
+        "ci95": [
+          -0.12551045881315487,
+          0.1379294977671203
+        ],
+        "tasks": 18,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    },
+    {
+      "checkpoint": 64,
+      "mixed_tasks": 6,
+      "delta_wt_auc": {
+        "estimate": -0.3055555555555555,
+        "ci95": [
+          -0.6666666666666666,
+          3.700743415417188e-17
+        ],
+        "tasks": 6,
+        "replications": 2000,
+        "seed": 20260921,
+        "unit": "task_id"
+      }
+    }
+  ],
+  "policies": {
+    "summaries": [
+      {
+        "budget": 1,
+        "policy": "B",
+        "tasks": 32,
+        "resolution": 0.53125,
+        "completion_tokens_per_task": 44.6875,
+        "attempts_started_per_task": 1.0,
+        "fully_generated_attempts_per_task": 0.9375,
+        "correct_false_abort_rate": 0.0,
+        "active_correct_false_abort_rate": 0.0,
+        "correct_attempts_started": 17,
+        "active_correct_attempts_started": 17
+      },
+      {
+        "budget": 1,
+        "policy": "HB",
+        "tasks": 32,
+        "resolution": 0.4375,
+        "completion_tokens_per_task": 43.90625,
+        "attempts_started_per_task": 1.0,
+        "fully_generated_attempts_per_task": 0.875,
+        "correct_false_abort_rate": 0.17647058823529413,
+        "active_correct_false_abort_rate": 0.17647058823529413,
+        "correct_attempts_started": 17,
+        "active_correct_attempts_started": 17
+      },
+      {
+        "budget": 1,
+        "policy": "fixed",
+        "tasks": 32,
+        "resolution": 0.53125,
+        "completion_tokens_per_task": 47.34375,
+        "attempts_started_per_task": 1.0,
+        "fully_generated_attempts_per_task": 1.0,
+        "correct_false_abort_rate": 0.0,
+        "active_correct_false_abort_rate": 0.0,
+        "correct_attempts_started": 17,
+        "active_correct_attempts_started": 8
+      },
+      {
+        "budget": 1,
+        "policy": "verifier",
+        "tasks": 32,
+        "resolution": 0.53125,
+        "completion_tokens_per_task": 47.34375,
+        "attempts_started_per_task": 1.0,
+        "fully_generated_attempts_per_task": 1.0,
+        "correct_false_abort_rate": 0.0,
+        "active_correct_false_abort_rate": 0.0,
+        "correct_attempts_started": 17,
+        "active_correct_attempts_started": 8
+      },
+      {
+        "budget": 5,
+        "policy": "B",
+        "tasks": 32,
+        "resolution": 0.75,
+        "completion_tokens_per_task": 111.75,
+        "attempts_started_per_task": 2.34375,
+        "fully_generated_attempts_per_task": 2.03125,
+        "correct_false_abort_rate": 0.07692307692307693,
+        "active_correct_false_abort_rate": 0.07692307692307693,
+        "correct_attempts_started": 26,
+        "active_correct_attempts_started": 26
+      },
+      {
+        "budget": 5,
+        "policy": "HB",
+        "tasks": 32,
+        "resolution": 0.71875,
+        "completion_tokens_per_task": 126.34375,
+        "attempts_started_per_task": 2.625,
+        "fully_generated_attempts_per_task": 2.1875,
+        "correct_false_abort_rate": 0.28125,
+        "active_correct_false_abort_rate": 0.28125,
+        "correct_attempts_started": 32,
+        "active_correct_attempts_started": 32
+      },
+      {
+        "budget": 5,
+        "policy": "fixed",
+        "tasks": 32,
+        "resolution": 0.78125,
+        "completion_tokens_per_task": 245.28125,
+        "attempts_started_per_task": 5.0,
+        "fully_generated_attempts_per_task": 5.0,
+        "correct_false_abort_rate": 0.0,
+        "active_correct_false_abort_rate": 0.0,
+        "correct_attempts_started": 86,
+        "active_correct_attempts_started": 45
+      },
+      {
+        "budget": 5,
+        "policy": "verifier",
+        "tasks": 32,
+        "resolution": 0.78125,
+        "completion_tokens_per_task": 128.6875,
+        "attempts_started_per_task": 2.3125,
+        "fully_generated_attempts_per_task": 2.3125,
+        "correct_false_abort_rate": 0.0,
+        "active_correct_false_abort_rate": 0.0,
+        "correct_attempts_started": 25,
+        "active_correct_attempts_started": 14
+      },
+      {
+        "budget": 10,
+        "policy": "B",
+        "tasks": 32,
+        "resolution": 0.84375,
+        "completion_tokens_per_task": 162.34375,
+        "attempts_started_per_task": 3.28125,
+        "fully_generated_attempts_per_task": 2.9375,
+        "correct_false_abort_rate": 0.06896551724137931,
+        "active_correct_false_abort_rate": 0.06896551724137931,
+        "correct_attempts_started": 29,
+        "active_correct_attempts_started": 29
+      },
+      {
+        "budget": 10,
+        "policy": "HB",
+        "tasks": 32,
+        "resolution": 0.75,
+        "completion_tokens_per_task": 176.4375,
+        "attempts_started_per_task": 3.90625,
+        "fully_generated_attempts_per_task": 3.0,
+        "correct_false_abort_rate": 0.4146341463414634,
+        "active_correct_false_abort_rate": 0.4146341463414634,
+        "correct_attempts_started": 41,
+        "active_correct_attempts_started": 41
+      },
+      {
+        "budget": 10,
+        "policy": "fixed",
+        "tasks": 32,
+        "resolution": 0.84375,
+        "completion_tokens_per_task": 488.46875,
+        "attempts_started_per_task": 10.0,
+        "fully_generated_attempts_per_task": 10.0,
+        "correct_false_abort_rate": 0.0,
+        "active_correct_false_abort_rate": 0.0,
+        "correct_attempts_started": 183,
+        "active_correct_attempts_started": 95
+      },
+      {
+        "budget": 10,
+        "policy": "verifier",
+        "tasks": 32,
+        "resolution": 0.84375,
+        "completion_tokens_per_task": 178.4375,
+        "attempts_started_per_task": 3.21875,
+        "fully_generated_attempts_per_task": 3.21875,
+        "correct_false_abort_rate": 0.0,
+        "active_correct_false_abort_rate": 0.0,
+        "correct_attempts_started": 27,
+        "active_correct_attempts_started": 16
+      },
+      {
+        "budget": 20,
+        "policy": "B",
+        "tasks": 32,
+        "resolution": 0.84375,
+        "completion_tokens_per_task": 256.96875,
+        "attempts_started_per_task": 4.84375,
+        "fully_generated_attempts_per_task": 4.25,
+        "correct_false_abort_rate": 0.06896551724137931,
+        "active_correct_false_abort_rate": 0.06896551724137931,
+        "correct_attempts_started": 29,
+        "active_correct_attempts_started": 29
+      },
+      {
+        "budget": 20,
+        "policy": "HB",
+        "tasks": 32,
+        "resolution": 0.78125,
+        "completion_tokens_per_task": 292.625,
+        "attempts_started_per_task": 6.3125,
+        "fully_generated_attempts_per_task": 4.78125,
+        "correct_false_abort_rate": 0.4791666666666667,
+        "active_correct_false_abort_rate": 0.4791666666666667,
+        "correct_attempts_started": 48,
+        "active_correct_attempts_started": 48
+      },
+      {
+        "budget": 20,
+        "policy": "fixed",
+        "tasks": 32,
+        "resolution": 0.84375,
+        "completion_tokens_per_task": 949.875,
+        "attempts_started_per_task": 20.0,
+        "fully_generated_attempts_per_task": 20.0,
+        "correct_false_abort_rate": 0.0,
+        "active_correct_false_abort_rate": 0.0,
+        "correct_attempts_started": 366,
+        "active_correct_attempts_started": 177
+      },
+      {
+        "budget": 20,
+        "policy": "verifier",
+        "tasks": 32,
+        "resolution": 0.84375,
+        "completion_tokens_per_task": 279.90625,
+        "attempts_started_per_task": 4.78125,
+        "fully_generated_attempts_per_task": 4.78125,
+        "correct_false_abort_rate": 0.0,
+        "active_correct_false_abort_rate": 0.0,
+        "correct_attempts_started": 27,
+        "active_correct_attempts_started": 16
+      }
+    ],
+    "comparisons": [
+      {
+        "budget": 1,
+        "comparison": "HB minus verifier",
+        "resolution_delta": {
+          "estimate": -0.09375,
+          "ci95": [
+            -0.21875,
+            0.0
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        },
+        "token_delta": {
+          "estimate": -3.4375,
+          "ci95": [
+            -7.1875,
+            -0.3125
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        }
+      },
+      {
+        "budget": 1,
+        "comparison": "HB minus B",
+        "resolution_delta": {
+          "estimate": -0.09375,
+          "ci95": [
+            -0.21875,
+            0.0
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        },
+        "token_delta": {
+          "estimate": -0.78125,
+          "ci95": [
+            -6.03125,
+            5.313281249999996
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        }
+      },
+      {
+        "budget": 5,
+        "comparison": "HB minus verifier",
+        "resolution_delta": {
+          "estimate": -0.0625,
+          "ci95": [
+            -0.15625,
+            0.0
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        },
+        "token_delta": {
+          "estimate": -2.34375,
+          "ci95": [
+            -12.34375,
+            4.90625
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        }
+      },
+      {
+        "budget": 5,
+        "comparison": "HB minus B",
+        "resolution_delta": {
+          "estimate": -0.03125,
+          "ci95": [
+            -0.15625,
+            0.0625
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        },
+        "token_delta": {
+          "estimate": 14.59375,
+          "ci95": [
+            -0.09375,
+            30.877343749999987
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        }
+      },
+      {
+        "budget": 10,
+        "comparison": "HB minus verifier",
+        "resolution_delta": {
+          "estimate": -0.09375,
+          "ci95": [
+            -0.21875,
+            0.0
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        },
+        "token_delta": {
+          "estimate": -2.0,
+          "ci95": [
+            -17.5625,
+            10.125
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        }
+      },
+      {
+        "budget": 10,
+        "comparison": "HB minus B",
+        "resolution_delta": {
+          "estimate": -0.09375,
+          "ci95": [
+            -0.21875,
+            0.0
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        },
+        "token_delta": {
+          "estimate": 14.09375,
+          "ci95": [
+            -2.5625,
+            31.375781249999996
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        }
+      },
+      {
+        "budget": 20,
+        "comparison": "HB minus verifier",
+        "resolution_delta": {
+          "estimate": -0.0625,
+          "ci95": [
+            -0.15625,
+            0.0
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        },
+        "token_delta": {
+          "estimate": 12.71875,
+          "ci95": [
+            -0.59453125,
+            34.53125
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        }
+      },
+      {
+        "budget": 20,
+        "comparison": "HB minus B",
+        "resolution_delta": {
+          "estimate": -0.0625,
+          "ci95": [
+            -0.15625,
+            0.0
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        },
+        "token_delta": {
+          "estimate": 35.65625,
+          "ci95": [
+            13.0921875,
+            64.43828124999999
+          ],
+          "tasks": 32,
+          "replications": 2000,
+          "seed": 20260921,
+          "unit": "task_id"
+        }
+      }
+    ],
+    "H3": {
+      "offline_statistical_support": false,
+      "online_replay_validated": false,
+      "incremental_over_observables": false,
+      "system_result_finalized": false,
+      "primary_budget": 20
+    },
+    "wall_clock_savings": "Not inferred from token replay; require online timing",
+    "accounting": "Completion tokens only; prompt-prefill tokens and verification times are separate"
+  },
+  "bundle_sha256": "1adfc6660ed8748c58dc47dbce7e34b2d086d62a076b990bab6934d155f8df83",
+  "bank_sha256": "625b24e8abec429892fc7bbe2b9624aafb5b5d8a0f227893ff5bf96c5892a576",
+  "target_labels_used_for_fitting": false
+}

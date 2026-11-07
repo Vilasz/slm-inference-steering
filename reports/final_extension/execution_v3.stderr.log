@@ -1,0 +1,3 @@
+<candidate>:4: SyntaxWarning: invalid escape sequence '\d'
+<candidate>:7: SyntaxWarning: invalid escape sequence '\d'
+<candidate>:20: SyntaxWarning: invalid escape sequence '\d'

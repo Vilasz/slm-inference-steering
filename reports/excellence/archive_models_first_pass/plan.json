@@ -1,0 +1,313 @@
+{
+  "status": "post_hoc_exploratory",
+  "endpoint": 32,
+  "source_bank_sha256": "8e55c7f8905254029d6ef3e92a17a77f01727f7ba206c5e73098613b26b856fb",
+  "source_sha256": "a648c52d968e1221ea06a72a2164350848f12b2788ea8b6f2feef6c4420dac0f",
+  "families": {
+    "prompt_only": [
+      [
+        {
+          "mode": "observable",
+          "columns": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ]
+    ],
+    "mean_nll": [
+      [
+        {
+          "mode": "observable",
+          "columns": [
+            5
+          ]
+        }
+      ],
+      [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ]
+    ],
+    "last_nll": [
+      [
+        {
+          "mode": "observable",
+          "columns": [
+            6
+          ]
+        }
+      ],
+      [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ]
+    ],
+    "mean_entropy": [
+      [
+        {
+          "mode": "observable",
+          "columns": [
+            7
+          ]
+        }
+      ],
+      [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ]
+    ],
+    "max_entropy": [
+      [
+        {
+          "mode": "observable",
+          "columns": [
+            8
+          ]
+        }
+      ],
+      [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ]
+    ],
+    "logit_margin": [
+      [
+        {
+          "mode": "observable",
+          "columns": [
+            9
+          ]
+        }
+      ],
+      [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ]
+    ],
+    "nll_pair": [
+      [
+        {
+          "mode": "observable",
+          "columns": [
+            5,
+            6
+          ]
+        }
+      ],
+      [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ]
+    ],
+    "entropy_pair": [
+      [
+        {
+          "mode": "observable",
+          "columns": [
+            7,
+            8
+          ]
+        }
+      ],
+      [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ]
+    ],
+    "confidence_only": [
+      [
+        {
+          "mode": "observable",
+          "columns": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ]
+    ],
+    "B_reproduced": [
+      [
+        {
+          "mode": "observable",
+          "columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ]
+    ],
+    "HB_stronger": [
+      [
+        {
+          "mode": "combined",
+          "layer": 6
+        },
+        {
+          "mode": "combined",
+          "layer": 13
+        },
+        {
+          "mode": "combined",
+          "layer": 20
+        },
+        {
+          "mode": "combined",
+          "layer": 27
+        }
+      ],
+      [
+        1e-05,
+        0.0001,
+        0.001
+      ]
+    ],
+    "HB_pca16": [
+      [
+        {
+          "mode": "combined",
+          "layer": 6,
+          "components": 16
+        },
+        {
+          "mode": "combined",
+          "layer": 13,
+          "components": 16
+        },
+        {
+          "mode": "combined",
+          "layer": 20,
+          "components": 16
+        },
+        {
+          "mode": "combined",
+          "layer": 27,
+          "components": 16
+        }
+      ],
+      [
+        0.001,
+        0.01,
+        0.1,
+        1.0
+      ]
+    ],
+    "HB_pca64": [
+      [
+        {
+          "mode": "combined",
+          "layer": 6,
+          "components": 64
+        },
+        {
+          "mode": "combined",
+          "layer": 13,
+          "components": 64
+        },
+        {
+          "mode": "combined",
+          "layer": 20,
+          "components": 64
+        },
+        {
+          "mode": "combined",
+          "layer": 27,
+          "components": 64
+        }
+      ],
+      [
+        0.001,
+        0.01,
+        0.1,
+        1.0
+      ]
+    ],
+    "H_residual_B": [
+      [
+        {
+          "mode": "residual",
+          "layer": 6
+        },
+        {
+          "mode": "residual",
+          "layer": 13
+        },
+        {
+          "mode": "residual",
+          "layer": 20
+        },
+        {
+          "mode": "residual",
+          "layer": 27
+        }
+      ],
+      [
+        1e-05,
+        0.0001,
+        0.001
+      ]
+    ]
+  },
+  "outer_folds": "Exactly the original v0.2 task partition",
+  "inner_folds": 3,
+  "calibration": "Whole model selection cross-fitted inside outer training",
+  "residual": "Cross-fit entire calibrated first-stage B on each residual training partition; no second Platt fit",
+  "pca": "Training-only weighted scaling followed by unweighted randomized whitened PCA; transforms refitted inside every split",
+  "inference": "Pointwise task bootstrap conditional on fitted scores; exploratory comparisons, no new confirmation"
+}

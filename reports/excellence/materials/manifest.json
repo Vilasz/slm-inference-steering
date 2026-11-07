@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-10-18T16:25:57.939113+00:00",
+  "research_summary_pages": 2,
+  "defense_slides": 12,
+  "questions_in_guide": 44,
+  "independent_results_claimed": true,
+  "inputs": {
+    "reports/excellence/results.json": "fd107fa9ffcdbd1b53af72aecbf6720cef1eea4c63bf2c16c716815111f50527",
+    "docs/excellence_defense.md": "a4ee344e6b6eafec314e63af4cd6bd51ee8195c2c113eafdcf079ab32d0ec8da",
+    "scripts/build_excellence_materials.py": "b877f47e9d4390f076fe3fe620ed89b1135d963ddbe9590f335d122e958e9e8b"
+  },
+  "artifacts": {
+    "reports/excellence/materials/defesa.pdf": "aae14a774da795b315d05f4aa6f95a8d378c4c65979d55a3d6a9b65a4b350d21",
+    "reports/excellence/materials/defesa.typ": "cf6d1603344589cd7be4ae0a3d7fed64f1b33cc0d30326aefbe7a32f28d742b2",
+    "reports/excellence/materials/research_summary_en.pdf": "5b8c5a389adbadbb7f9e08be713cced0d93d1c69de501a3c8a9951de6b24bf39",
+    "reports/excellence/materials/research_summary_en.typ": "1a82627822a281206213981e851ae66647664d0aecbdd0fd450c5d265f84bf85"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "completed_after_reporting_and_visual_recovery",
+  "command": ".venv/Scripts/python.exe -u scripts/publish_excellence_independent.py",
+  "publisher_pid": 14164,
+  "reason": "Correct report configuration-key shadowing; reuse complete approved banks",
+  "original_failure_archive": "reports/excellence/independent_v1/execution/publication_failure_20261018_123404",
+  "original_failure_status_sha256": "e8ecb6f86a420c8be79cde7b3e91d1ce8adb06da84b1b77bb8cda39eee5be557",
+  "corrected_report_sha256": "2083c84e8bba8d12e7532dc5712899dcd1e0801904e814bb44d09e124980721c",
+  "receipt_recorded_at": "2026-10-18T15:39:28.131119+00:00",
+  "initial_recovery_started_before": "2026-10-18T15:34:54.848811+00:00",
+  "completed_at": "2026-10-18T16:32:10.484190+00:00",
+  "final_publisher_pid": 35104,
+  "original_supervisor_unchanged": true,
+  "final_artifacts": {
+    "reports/excellence/independent_v1/execution/publication_recovery.log": "ba9644a94adb45b35947ce9efcc2153bc84e14a9013318bfe1ee391de9c78230",
+    "reports/excellence/independent_v1/execution/final_publication.log": "05dc818327b82658dac7e9566299a2526febc0b0e4cdf9f91fa5b454034b9c65",
+    "reports/excellence/final_verification.json": "c4d9fc5a66d2bdd4ebdb903185686338c729b3a0a7ef80ff0e896ec1a77ebc9a",
+    "reports/excellence/final_quality_manifest.json": "1f920a43b4f4cb3bf4ec137b8574620fd359bd259ba62933bdbc39aace18687b",
+    "reports/excellence/visual_review/manifest.json": "78f031d454839abe74eef1fc55f4e3e050ea9af33748094d27df982386cab9ae"
+  }
+}

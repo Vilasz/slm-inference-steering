@@ -1,0 +1,34 @@
+{
+  "name": "main_mbpp",
+  "output_dir": "runs/config_runs/main_mbpp",
+  "description": "Small MBPP run using the common benchmark interface. Requires dataset access and a model.",
+  "steps": [
+    {
+      "name": "mbpp_baseline",
+      "type": "command",
+      "command": [
+        "{python}",
+        "scripts/run_baseline.py",
+        "--benchmark",
+        "mbpp",
+        "--limit",
+        "20",
+        "--n",
+        "3",
+        "--temperature",
+        "0.8",
+        "--max-new-tokens",
+        "256",
+        "--output-jsonl",
+        "runs/mbpp/mbpp_qwen15b_n3.jsonl",
+        "--summary-json",
+        "runs/mbpp/mbpp_qwen15b_n3_summary.json",
+        "--require-cuda"
+      ]
+    },
+    {
+      "name": "report",
+      "type": "report"
+    }
+  ]
+}

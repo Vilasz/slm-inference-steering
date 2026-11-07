@@ -1,0 +1,23 @@
+{
+  "archived_at_utc": "2026-11-07T20:59:09.116738+00:00",
+  "files": {
+    "tcc/lib.typ": "4a4b15ad1d209257d71ad3836c1d5137f6ef0c9ad77d572b2b93b34aade02c4c",
+    "tcc/main.typ": "fcb20d2039f1d122f67cf47311a543cdeb709861c4b7fdb1a662f997a628bbe5",
+    "tcc/README.md": "30e29e86cdff8dd40a2b4552e39452963e1e3c952ec2e18cc92fd5aada175aad",
+    "tcc/reference_sources.json": "b93539839f2fc1ea94d6ca103e0cc287281488587045e91c7bd352ada6fe0a38",
+    "tcc/referencias.bib": "35f911777dd9d4855ca13bc2788959709015bd8189b012115162bd3146877da9",
+    "tcc/build/manuscrito.pdf": "fba654d661d187ec6c9660c771b354e9f8b2430e6f0986f567376b07b0c3e1cb",
+    "tcc/chapters/01_introducao.typ": "bd3d5d8c4784ae8ba01f7143cabb3b867199fa7eaeb4bfac9367ffd74aab4673",
+    "tcc/chapters/02_relacionados.typ": "7b9b2c104ed7af05d3c420ebdcb2a709f3e35f58ce481ecddf5a4dcb455ddbcf",
+    "tcc/chapters/03_fundamentacao.typ": "bdc2a699f1e9e39a53b243725a260c4312361712593ac6d2bc63092d9500091d",
+    "tcc/chapters/04_metodologia.typ": "822cea9e45abf512a6ea9ec5780b6571379167a1fafbeddf8af64ad8d5b2ebfb",
+    "tcc/chapters/06_discussao.typ": "30ce9452e1e0f89876adb6adda8ddd1e2ac260b7d466a3424bbe73acc6565bb4",
+    "tcc/chapters/08_reprodutibilidade.typ": "11a5d79e55b0960eb1688cd2a606ad31cfd7241341b092a60e33eb709a544a80",
+    "tcc/chapters/09_robustez_modelos.typ": "4b7d4c9c8eea2324972e2d6d5d0074e5dde6554e37b73cab94198a436894c890",
+    "tcc/generated/conclusao.typ": "51918af2a7ec7e6c54ae213ab16a670e1ec7d2adf2e570378d55ae5f0e6e873b",
+    "tcc/generated/discussion_findings.typ": "ee082675a47057bc69cc0c5e22f2d33fe45d6804a19a5d67013d91e2b35030df",
+    "tcc/generated/excellence.typ": "73f86f27251e661ea22ecc1f810ba5e2a5c785b012d4d6fb2fe70fcd81dc48c7",
+    "tcc/generated/resultados.typ": "4a7ee21e85d749a15c6b060f9847fa5275658b28c142b254ad22b9d92f2c3534",
+    "tcc/generated/resumo.typ": "a3c9befb1bf372029772e5bb2f4f3e579cf5b1d40490f166b6a2d4c2409ea49d"
+  }
+}

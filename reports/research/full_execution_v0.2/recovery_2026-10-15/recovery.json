@@ -1,0 +1,10 @@
+﻿{
+    "recovered_at_utc":  "2026-10-15T06:47:48.0905395Z",
+    "reason":  "Previous main_bank process exited 1073807364; writer PID no longer exists",
+    "previous_writer_pid":  19784,
+    "previous_writer_alive":  false,
+    "validated_attempts":  304,
+    "bank_sha256":  "17df2993a2c94280d43673a6cbf5dbfa3c1bd78a880e760ef07d19e8f6cd1182",
+    "frozen_sources_validated":  true,
+    "policy":  "Resume append-only from the next attempt, preserving sample size and frozen sources"
+}
